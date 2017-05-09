@@ -58,7 +58,7 @@ def main():
 
     data = json2obj(data)
 
-    print(data[0].name)
+    print(data[1].sections[0].code)
 
     # print(vars(data))
 
