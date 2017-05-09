@@ -32,12 +32,24 @@ def main():
     #
     # thawed = jsonpickle.decode(frozen)
 
-    with open('stylish-05-09-2017.json') as data_file:
+    x = -1
+    y = 0
+    with open('stylish-05-09-2017wintendo.json') as data_file:
         # data = data_file.read()
         data = json.load(data_file)
         # data['id'] = 134  # <--- add `id` value.
-        data[1]['name'] = "fsdsdfsd"
-        print(data[1]['name'])
+        for dataIndexer in data:
+            x = x + 1
+            # print(x)
+            # print(dataIndexer['name'])
+            if("Xelnect's dark style (inspired)(global)" in dataIndexer['name']):
+                y=x
+        # if()
+        # data[1]['name'] = "fsdsdfsd"
+
+        # print(y)
+        # print(x)
+        print(data[y]['name'])
 
 
     with open('data.json', 'w') as f:
