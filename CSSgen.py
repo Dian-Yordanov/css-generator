@@ -1,8 +1,9 @@
 from __future__ import print_function
 import json
-# import simplejson as json
 from collections import namedtuple
-from pprint import pprint
+import io
+import os
+import jsonpickle
 
 try:
     from types import SimpleNamespace as Namespace
@@ -14,7 +15,42 @@ except ImportError:
 def _json_object_hook(d): return namedtuple('X', d.keys())(*d.values())
 def json2obj(data): return json.loads(data, object_hook=_json_object_hook)
 
+# def _json_object_hook(d): return namedtuple('X', d.keys())(*d.values())
+# def obj2json(data): return json.loads(data, object_hook=_json_object_hook)
+
 def main():
+
+
+
+    # filename = 'data.json'
+
+    # Use jsonpickle to transform the object into a JSON string:
+    #
+    # import jsonpickle
+    # frozen = jsonpickle.encode(obj)
+    # Use jsonpickle to recreate a Python object from a JSON string:
+    #
+    # thawed = jsonpickle.decode(frozen)
+
+    with open('stylish-05-09-2017.json') as data_file:
+        # data = data_file.read()
+        data = json.load(data_file)
+        # data['id'] = 134  # <--- add `id` value.
+        data[1]['name'] = "fsdsdfsd"
+        print(data[1]['name'])
+
+
+    with open('data.txt', 'w') as f:
+        json.dump(data, f, indent=4)
+
+    # with open(filename, 'r') as f:
+    #     data = json.load(f)
+    #     data['id'] = 134  # <--- add `id` value.
+
+    # os.remove(filename)
+    # with open(filename, 'w') as f:
+    #     json.dump(data, f, indent=4)
+
 
     # with open('credentials', 'r') as myfile:
     #     data = myfile.read()
@@ -28,64 +64,50 @@ def main():
     # username = StringTranslator[3]
     # password = StringTranslator[4]
 
-    with open('stylish-05-09-2017.json') as data_file:
-        data = data_file.read()
-        # data1 = json.load(data_file)
-    # pprint(data1)
 
-        # Parse JSON into an object with attributes corresponding to dict keys.
-    # x = json.loads(data, object_hook=lambda d: namedtuple('X', d.keys())(*d.values()))
-    # x = json2obj(data)
 
-    # print(data1)
-    # print(data)
+    # with open('stylish-05-09-2017.json') as json_data:
+    #     data = json.load(json_data)
 
-    # str1 = str(data)
-    #
-    # print(len(str1))
-    # # str1 = str(dict1)
-    # #
-    # # str1 = ''.join(data)
-    # str1 = str1[1:len(str1)-1]
+    # frozen = jsonpickle.encode(data)
+    # thawed = jsonpickle.decode(frozen)
 
-    # # print(len(str1))
-    # #
-    # print(str1)
+    # thawed = jsonpickle.decode(data)
+    # print(thawed)
+    # print(thawed[1])
 
-    # print(data)
+    # frozen = jsonpickle.encode(thawed)
 
-    # data = '{"name": "John Smith", "hometown": {"name": "New York", "id": 123}}'
+    # data = json2obj(data)
+    # print(data[1].sections[0].code)
 
-    data = json2obj(data)
+    # frozen = jsonpickle.encode(data)
 
-    print(data[1].sections[0].code)
 
-    # print(vars(data))
+    # jsonConverted  = json.dumps(data, default=lambda o: o.__dict__)
+    # jsonConverted = json.dumps(data.__dict__)
+    # print(data[0])
 
-    # x = json.loads(data, object_hook=lambda d: Namespace(**d))
-    # print(x)
-
-        # json.loads
-        # # jsonFile = json.dumps(data, separators=(',', ':'), sort_keys=True)
-        # jsonFile = json.dumps(data)
-    # pprint(data)
-    # print jsonFile.dumps("\"code")
-
-    # for 'code' in {data}:
-
-    # for k in {jsonFile}:
-    #     if("code" in k):
-    #         print k
+# Use jsonpickle to transform the object into a JSON string:
+#
+# import jsonpickle
+# frozen = jsonpickle.encode(obj)
+# Use jsonpickle to recreate a Python object from a JSON string:
+#
+# thawed = jsonpickle.decode(frozen)
 
 
 
+    # with io.open('data.txt', 'w', encoding='utf-8') as f:
+    #     f.write(json.dumps(jsonConverted, ensure_ascii=False))
 
+    # print(data[1].sections[0].code)
 
-    # print jsonFile
+    # data[1].sections[0].code = ""
+    # print(data[1].sections[0].code)
 
-    # print "fgfgf"
-    # print "fgfgf"
-
+    # with open('data.txt', 'w') as outfile:
+    #     json.dump(frozen, outfile)
 
 if __name__ == '__main__':
     main()
