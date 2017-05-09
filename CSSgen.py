@@ -13,6 +13,7 @@ def main():
     # password = StringTranslator[4]
 
     print "fgfgf"
+    print "fgfgf"
 
 
 if __name__ == '__main__':
