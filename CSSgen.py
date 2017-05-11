@@ -32,11 +32,19 @@ def main():
             # print(str(dataIndexer)+"\n")
             if("Xelnect's dark style (inspired)(global)" in dataIndexer['name']):
                 y=x
-
+                z=""
                 for string in dataIndexer:
-                    print(string + "=" + str(dataIndexer[string]))
-                    # for string2 in string:
-                    #     print(string2 + "=" + str(string2))
+                    # print(string + "=" + str(dataIndexer[string]))
+                    if 'sections' in string:
+                        for string2 in str(dataIndexer[string]):
+                            # print string2
+                            # print string2
+                            # if 'code' in string2:
+                            z=z+string2
+                                # print string2
+                        #     # print(string2 + "=" + str(string))
+                        # print(z)
+        print(data[y]['sections'])
 
                 # print(data[y]['sections']['code'])
                 # print(str(dataIndexer)+"\n")
