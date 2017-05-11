@@ -7,6 +7,8 @@ import json
 # except ImportError:
 #     # Python 2.x fallback
 #     from argparse import Namespace
+import os
+
 from __init__ import format_css
 
 # def _json_object_hook(d): return namedtuple('X', d.keys())(*d.values())
@@ -53,6 +55,10 @@ def main():
 
     data = returnCSSFromFileAndName("stylish-05-09-2017.json", "Xelnect's dark style (inspired)(global)")
 
+    # css = "/* make input elements more awesome */ input:hover{background-color: red;}"
+    # css = format_css(unicodefy(data))
+
+    os.remove('data.css')
     with open('data.css', 'a') as the_file:
         the_file.write(unicodefy(data))
 
