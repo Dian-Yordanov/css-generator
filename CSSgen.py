@@ -16,14 +16,14 @@ from __init__ import format_css
 # def getUnicode(string):
 #     return string.encode('utf-8')
 
-
-def main():
+def returnCSSFromFileAndName(File,Name):
+    css = ""
 
     x = -1
     x1 = -1
     y = 0
     y1 = 0
-    with open('stylish-05-09-2017.json') as data_file:
+    with open(File) as data_file:
         data = json.load(data_file)
         for dataIndexer in data:
             x = x + 1
@@ -32,8 +32,8 @@ def main():
             #     print(string)
 
             # print(str(dataIndexer)+"\n")
-            if("Xelnect's dark style (inspired)(global)" in dataIndexer['name']):
-                y=x
+            if (Name in dataIndexer['name']):
+                y = x
                 # z=""
                 # for string in dataIndexer:
                 #     # print(string + "=" + str(dataIndexer[string]))
@@ -52,6 +52,14 @@ def main():
             # print dataIndexer2
             break
         print data[y]['sections'][x1]['code']
+        css = data[y]['sections'][x1]['code']
+
+    return css
+
+def main():
+
+    data = returnCSSFromFileAndName("stylish-05-09-2017.json", "Xelnect's dark style (inspired)(global)")
+
         # print dataIndexer2['code']
             # if ("Xelnect's dark style (inspired)(global)" in dataIndexer2['code']):
             #     y = x
