@@ -12,6 +12,9 @@ from __init__ import format_css
 # def _json_object_hook(d): return namedtuple('X', d.keys())(*d.values())
 # def json2obj(data): return json.loads(data, object_hook=_json_object_hook)
 
+def unicodefy(String):
+    return unicode(String).encode('utf-8')
+
 def returnCSSFromFileAndName(File,Name):
     x = -1
     x1 = -1
@@ -49,6 +52,10 @@ def createJsonFileFromCssAndNameAndCssValue(File,Name,CssValue):
 def main():
 
     data = returnCSSFromFileAndName("stylish-05-09-2017.json", "Xelnect's dark style (inspired)(global)")
+
+    with open('data.css', 'a') as the_file:
+        the_file.write(unicodefy(data))
+
     jsonThatIsReturned = createJsonFileFromCssAndNameAndCssValue("stylish-05-09-2017.json", "Xelnect's dark style (inspired)(global)",data)
 
     # print(jsonThatIsReturned)
