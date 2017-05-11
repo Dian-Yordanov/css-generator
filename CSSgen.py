@@ -20,7 +20,9 @@ from __init__ import format_css
 def main():
 
     x = -1
+    x1 = -1
     y = 0
+    y1 = 0
     with open('stylish-05-09-2017.json') as data_file:
         data = json.load(data_file)
         for dataIndexer in data:
@@ -32,19 +34,29 @@ def main():
             # print(str(dataIndexer)+"\n")
             if("Xelnect's dark style (inspired)(global)" in dataIndexer['name']):
                 y=x
-                z=""
-                for string in dataIndexer:
-                    # print(string + "=" + str(dataIndexer[string]))
-                    if 'sections' in string:
-                        for string2 in str(dataIndexer[string]):
-                            # print string2
-                            # print string2
-                            # if 'code' in string2:
-                            z=z+string2
-                                # print string2
-                        #     # print(string2 + "=" + str(string))
-                        # print(z)
-        print(data[y]['sections'])
+                # z=""
+                # for string in dataIndexer:
+                #     # print(string + "=" + str(dataIndexer[string]))
+                #     if 'sections' in string:
+                #         for string2 in str(dataIndexer[string]):
+                #             # print string2
+                #             # print string2
+                #             # if 'code' in string2:
+                #             z=z+string2
+                #                 # print string2
+                #         #     # print(string2 + "=" + str(string))
+                #         # print(z)
+        # print data[y]['sections']['code']
+        for dataIndexer2 in data[y]['sections']:
+            x1 = x1 + 1
+            # print dataIndexer2
+            break
+        print data[y]['sections'][x1]['code']
+        # print dataIndexer2['code']
+            # if ("Xelnect's dark style (inspired)(global)" in dataIndexer2['code']):
+            #     y = x
+
+        # print(data[y]['sections'])
 
                 # print(data[y]['sections']['code'])
                 # print(str(dataIndexer)+"\n")
