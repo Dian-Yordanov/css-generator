@@ -9,12 +9,8 @@ import json
 #     from argparse import Namespace
 from __init__ import format_css
 
-
 # def _json_object_hook(d): return namedtuple('X', d.keys())(*d.values())
 # def json2obj(data): return json.loads(data, object_hook=_json_object_hook)
-
-# def getUnicode(string):
-#     return string.encode('utf-8')
 
 def returnCSSFromFileAndName(File,Name):
     css = ""
@@ -79,7 +75,7 @@ def main():
     # css = "/* make input elements more awesome */ input:hover{background-color: red;}"
     # css = format_css(css)
 
-    with open('data.json', 'w') as f:
+    with open('data.css', 'w') as f:
         json.dump(data, f, indent=4)
 
 if __name__ == '__main__':
