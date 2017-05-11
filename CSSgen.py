@@ -1,4 +1,4 @@
-# from __future__ import print_function
+from __future__ import print_function
 import json
 # from collections import namedtuple
 
@@ -28,16 +28,36 @@ def returnCSSFromFileAndName(File,Name):
         css = data[y]['sections'][x1]['code']
     return css
 
+def createJsonFileFromCssAndNameAndCssValue(File,Name,CssValue):
+
+    x = -1
+    x1 = -1
+    y = 0
+    with open(File) as data_file:
+        data = json.load(data_file)
+        for dataIndexer in data:
+            x = x + 1
+            if (Name in dataIndexer['name']):
+                y = x
+        for dataIndexer2 in data[y]['sections']:
+            x1 = x1 + 1
+            break
+        data[y]['sections'][x1]['code'] = CssValue
+        jsonTobeReturned = data
+    return jsonTobeReturned
+
 def main():
 
     data = returnCSSFromFileAndName("stylish-05-09-2017.json", "Xelnect's dark style (inspired)(global)")
+    jsonThatIsReturned = createJsonFileFromCssAndNameAndCssValue("stylish-05-09-2017.json", "Xelnect's dark style (inspired)(global)",data)
 
+    # print(jsonThatIsReturned)
 
     # css = "/* make input elements more awesome */ input:hover{background-color: red;}"
     # css = format_css(css)
 
-    with open('data.css', 'w') as f:
-        json.dump(data, f, indent=4)
+    with open('data.json', 'w') as f:
+        json.dump(jsonThatIsReturned, f, indent=4)
 
 if __name__ == '__main__':
     main()
