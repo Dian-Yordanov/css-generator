@@ -4,6 +4,8 @@ import os
 import asyncio
 import datetime
 from multiprocessing import Pool
+import urllib.request
+import urllib.parse
 
 # import await as await
 
@@ -14,13 +16,37 @@ from multiprocessing import Pool
 
 @asyncio.coroutine
 def display_date(loop):
-    end_time = loop.time() + 5.0
+    end_time = loop.time() + 1.0
     while True:
-        os.system("php test.php")
-        # print(datetime.datetime.now())
+        pastebin_vars = {
+                        "api_option": "paste",
+                        "api_dev_key": "57fe1369d02477a235057557cbeabaa1",
+                        "api_paste_code": "testing pastebin right now",
+                        "api_paste_private": "0",
+                        "api_paste_name": "testing.html",
+                        "api_paste_expire_date": "10M",
+                        "api_paste_format": "html5",
+                        "api_paste_name": "title"
+                        }
+        # "api_paste_code": "<head>Testing</head>",
+        response = urllib.request.urlopen('http://pastebin.com/api/api_post.php', urllib.parse.urlencode(pastebin_vars).encode(
+            "utf-8"))
+        url = response.read()
+        print(url)
+        # with urllib.request.urlopen("http://pastebin.com/api/api_post.php") as url:
+        #     s = url.read()
+        # I'm guessing this would output the html source code?
+
+        # response = urllib.urlopen('http://pastebin.com/api/api_post.php', urllib.urlencode(pastebin_vars))
+        # url = response.read()
+        # print(url)
+    #     os.system("php test.php")
+    #     print(datetime.datetime.now())
         if (loop.time() + 1.0) >= end_time:
             break
-        yield from asyncio.sleep(1)
+        for bar in asyncio.sleep(1):
+            yield bar
+    # yield from asyncio.sleep(1)
 
 def main():
     loop = asyncio.get_event_loop()
