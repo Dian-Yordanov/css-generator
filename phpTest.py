@@ -15,6 +15,10 @@ import requests
 #     os.system("php test.php")
 #     return x*x
 
+def makePostRequest(url,data):
+    response = requests.post(url, data=data)
+    return response
+
 @asyncio.coroutine
 def display_date(loop):
     end_time = loop.time() + 1.0
@@ -31,13 +35,16 @@ def display_date(loop):
                         }
         # "api_paste_code": "<head>Testing</head>",
         url1 = 'http://pastebin.com/api/api_post.php'
-        data1 = pastebin_vars
-        response = requests.post(url1, data=data1)
+
+        # response = requests.post(url1, data=data1)
+
+        response1 = makePostRequest(url1, pastebin_vars)
+
         # response = urllib.request.urlopen('http://pastebin.com/api/api_post.php', urllib.parse.urlencode(pastebin_vars).encode(
         #     "utf-8"))
         # url = response.read()
         # print(url)
-        print(response.content)
+        print(response1.content)
         # with urllib.request.urlopen("http://pastebin.com/api/api_post.php") as url:
         #     s = url.read()
         # I'm guessing this would output the html source code?
