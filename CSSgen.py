@@ -1,5 +1,8 @@
 from __future__ import print_function
 import json
+import os
+
+
 # from collections import namedtuple
 
 # try:
@@ -7,7 +10,6 @@ import json
 # except ImportError:
 #     # Python 2.x fallback
 #     from argparse import Namespace
-import os
 
 from __init__ import format_css
 
@@ -58,8 +60,8 @@ def main():
     # css = "/* make input elements more awesome */ input:hover{background-color: red;}"
     # css = format_css(unicodefy(data))
 
-    os.remove('data.css')
-    with open('data.css', 'a') as the_file:
+    os.remove('static/data.css')
+    with open('static/data.css', 'a') as the_file:
         the_file.write(unicodefy(data))
 
     jsonThatIsReturned = createJsonFileFromCssAndNameAndCssValue("stylish-05-09-2017.json", "Xelnect's dark style (inspired)(global)",data)
@@ -71,6 +73,10 @@ def main():
 
     with open('data.json', 'w') as f:
         json.dump(jsonThatIsReturned, f, indent=4)
+
+    os.system('python flaskTest.py')
+    # os.system('WID=`xdotool search "Mozilla Firefox" | head -1`xdotool windowactivate --sync $WID')
+
 
 if __name__ == '__main__':
     main()
