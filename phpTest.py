@@ -4,8 +4,9 @@ import os
 import asyncio
 import datetime
 from multiprocessing import Pool
-import urllib.request
+# import urllib.request
 import urllib.parse
+import requests
 
 # import await as await
 
@@ -29,10 +30,14 @@ def display_date(loop):
                         "api_paste_name": "title"
                         }
         # "api_paste_code": "<head>Testing</head>",
-        response = urllib.request.urlopen('http://pastebin.com/api/api_post.php', urllib.parse.urlencode(pastebin_vars).encode(
-            "utf-8"))
-        url = response.read()
-        print(url)
+        url1 = 'http://pastebin.com/api/api_post.php'
+        data1 = pastebin_vars
+        response = requests.post(url1, data=data1)
+        # response = urllib.request.urlopen('http://pastebin.com/api/api_post.php', urllib.parse.urlencode(pastebin_vars).encode(
+        #     "utf-8"))
+        # url = response.read()
+        # print(url)
+        print(response.content)
         # with urllib.request.urlopen("http://pastebin.com/api/api_post.php") as url:
         #     s = url.read()
         # I'm guessing this would output the html source code?
@@ -46,6 +51,7 @@ def display_date(loop):
             break
         for bar in asyncio.sleep(1):
             yield bar
+    # POST /api/save
     # yield from asyncio.sleep(1)
 
 def main():
