@@ -74,7 +74,9 @@ def main():
     with open('data.json', 'w') as f:
         json.dump(jsonThatIsReturned, f, indent=4)
 
+
     os.system('python flaskTest.py')
+
     # os.system('WID=`xdotool search "Mozilla Firefox" | head -1`xdotool windowactivate --sync $WID')
 
 
