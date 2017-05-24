@@ -1,0 +1,78 @@
+html {background:
+
+/* i really want this to be global */
+/***** COPY AND PASTE THE URL OF YOUR BACKROUND-IMAGE INSIDE THE "": *****/
+
+/*url(https://i.imgur.com/9rVXvIY.png)*/
+
+/***** FOR A SIMPLE BLACK BACKGROUND JUST REMOVE THE URL LINE ABOVE *****/
+/***** Some background-images (you can also use your own url):
+
+default: https://i.imgur.com/9rVXvIY.png
+old default: http://abload.de/img/ultra_x2vm9k.jpg
+http://abload.de/img/b2w4shd.png
+http://abload.de/img/b3qrs99.png
+http://abload.de/img/b4zcse8.png
+http://abload.de/img/b5b1s7x.png
+http://abload.de/img/b6umsmy.png
+http://abload.de/img/b7ars8c.png
+http://abload.de/img/kubrickbgcolor2darkr8skc.png
+http://abload.de/img/xpattern_darkq8s3i.png
+http://abload.de/img/mainpatternolxcq.png
+
+*/ #000 /* fixed */ !important}
+
+* {
+color: #FFF !important;
+text-shadow: 0 0 3px #000 !important;
+box-shadow: none !important;
+background-color: transparent!important;
+border-color: #444 !important;
+border-top-color: #444 !important;
+border-bottom-color: #444 !important;
+border-left-color: #444 !important;
+border-right-color: #444 !important}
+*:before, *:after {background-color: transparent !important; border-color: #444 !important}
+
+/*----- links -----*/
+
+
+
+a, a * {
+color: #336699 !important;
+text-decoration: none !important}
+a:hover, a:hover *, a:visited:hover, a:visited:hover *, span[onclick]:hover, div[onclick]:hover, [role="link"]:hover, [role="link"]:hover *, [role="button"]:hover *, [role="menuitem"]:hover, [role="menuitem"]:hover *, .link:hover, .link:hover * {
+color: #fff !important;
+text-shadow: 0 0 5px rgba(255,255,200,0.9) !important}
+a:visited, a:visited * {
+color: #607069 !important}
+a.highlight, a.highlight *, a.active, a.active *, .selected, .selected *, [href="#"] {
+color: #DDD !important;
+font-weight: bold !important}
+
+h1, h2, h3, h4, h5, h6, h1 *, h2 *, h3 *, strong, [id*="headline"], [class*="headline"], [id*="header"], [class*="header"], [class*="header"] td {color: #DDD !important}
+a h1, a h2, a h3, a h4, a h5, a h6, h1 a, h2 a, h3 a, a strong, a[id*="headline"], a[class*="headline"], a[id*="header"], a[class*="header"] {text-decoration: underline !important}
+[class*="error"], [class*="alert"], code, span[onclick], div[onclick] {color: #900 !important}
+
+::-moz-selection {background: #377 !important; color: #000 !important}
+::selection {background: #377 !important; color: #000 !important}
+:focus {outline: none !important}
+
+/*----- MENU & CO BACKGROUND-COLORS -----*/
+div[style="display: block;"] {background: rgba(0,0,0,.5) !important}
+
+table {
+background: rgba(0,0,0,.6) !important;
+border-radius: 6px !important}
+table > tbody > tr:nth-child(even), table > tbody > tr > td:nth-child(even) {
+background-color: rgba(0,0,0,.2) !important}
+
+iframe, embed, header, nav, footer, label [onclick], nav ul, div[style*="position:"][style*="left:"][style*="visible"], div[style*="z-index:"][style*="left:"][style*="visible"], div[style*="-moz-user-select"], div[role="menu"], div[role="dialog"], span[class*="script"] div, [id*="menu"], [class*="dropdown"], [class*="popup"], [class="title"], ul[style*="display:"], ul[style*="visibility:"] ul, [id*="nav"] ul, [class*="nav"] ul, ul[class*="menu"], a[onclick][style*="display"], a[id*="ghosteryfirefox"], #ghostery-purple-bubble, #translator-popup, .menu, .tooltip, .hovercard, .vbmenu_popup {
+background: rgba(5,5,5,.9) !important;
+border-radius: 5px;
+box-shadow: 1px 1px 5px #000 !important}
+[id*="overlay"], [id*="lightbox"], blockquote {
+background-color: rgba(35,35,35,.9) !important;
+border-radius: 5px}
+pre, dl, .Message code {
+background-color: rgba(5,5,5,.5) !important}
