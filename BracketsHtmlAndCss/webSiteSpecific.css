@@ -1,4 +1,3 @@
-
 #blueBar{background:#000000 linear-gradient(to bottom,#000000,#000000)!important}
 .hasSmurfbar #blueBarHolder #blueBar:after{background:rgba(0,0,0,0) linear-gradient(to bottom,rgba(0,0,0,.12),rgba(0,0,0,0))!important;border-top:1px solid #000000!important}
 #blueBarNAXAnchor{background:rgba(0,0,0,0) linear-gradient(to bottom,rgba(0,0,0,.12),rgba(0,0,0,0))!important;border-top:1px solid #000000!important}
@@ -13,6 +12,11 @@ background-color: #ff00ff!important
 div._5wdf._5w1r div {
 background-color: #000000!important
 }
+
+
+
+
+
 embed{
 animation: none;
 animation-delay: 0;
@@ -122,7 +126,7 @@ page-break-inside: auto;
 perspective: none;
 perspective-origin: 50% 50%;
 position: static;
-/* May need to alter quotes for different locales (e.g fr) */
+ May need to alter quotes for different locales (e.g fr) 
 quotes: 'ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬ ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ' 'ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬ ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¿ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â½' 'ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬ ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¹ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“' 'ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬ ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¾ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢';
 right: auto;
 tab-size: 8;
@@ -152,6 +156,12 @@ widows: 0;
 word-spacing: normal;
 z-index: auto;
 }
+
+
+
+
+
+
 /*OVERRIDE RES COMMENT BOX HIGHLIGHTING*/
 .commentarea .sitetable .thing .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
 background-color:#000000 !important;
@@ -246,92 +256,10 @@ background-color: #000!important;
 div.authorInfoToolTip{
 background-color: #000!important;
 } 
-.html5-play-progress, .ytp-play-progress {
-background: #FFFFFF !important; /* Old browsers */
-background: -moz-linear-gradient(left, #1b1b1b 0%, #FFFFFF 100%) !important;
-background: -webkit-gradient(linear, left top, right top, color-stop(0%,#1b1b1b), color-stop(100%,#FFFFFF)) !important;
-background: -webkit-linear-gradient(left, #1b1b1b 0%,#FFFFFF 100%) !important;
-background: -o-linear-gradient(left, #1b1b1b 0%,#FFFFFF 100%) !important;
-background: -ms-linear-gradient(left, #1b1b1b 0%,#FFFFFF 100%) !important;
-background: linear-gradient(to right, #1b1b1b 0%,#FFFFFF 100%) !important;
-}
-/*.html5-load-progress, .ytp-load-progress {
-background: #404040 !important;
-}*/
-/* actual scrubber button */
-.html5-scrubber-button, .ytp-scrubber-button {
-background: #383A3B !important;
-border-color: #1B1B1B !important;
-box-shadow: 0px 0px 3px #FFFFFF, 0px 0px 5px #FFFFFF, 0px 0px 0px #FFFFFF !important;
-transition: box-shadow 0.2s, background 0.2s !important;
-}
-/* scrubber button on hover */
-.html5-scrubber-button:hover, .ytp-scrubber-button:hover {
-background: #FFFFFF !important;
-border-color: #1B1B1B !important;
-box-shadow: 0px 0px 6px #FFFFFF, 0px 0px 8px #FFFFFF, 0px 0px 10px #FFFFFF !important;
-}
-/* volume control */
-.ytp-volume-slider-foreground:before {
-background: #FFFFFF !important; /* Old browsers */
-background: -moz-linear-gradient(left, #1b1b1b 0%, #FFFFFF 100%) !important;
-background: -webkit-gradient(linear, left top, right top, color-stop(0%,#1b1b1b), color-stop(100%,#FFFFFF)) !important;
-background: -webkit-linear-gradient(left, #1b1b1b 0%,#FFFFFF 100%) !important;
-background: -o-linear-gradient(left, #1b1b1b 0%,#FFFFFF 100%) !important;
-background: -ms-linear-gradient(left, #1b1b1b 0%,#FFFFFF 100%) !important;
-background: linear-gradient(to right, #1b1b1b 0%,#FFFFFF 100%) !important;
-}
-div.boardBanner {
-background-color: #000!important;
-}
-span.boardList {
-background-color: #000!important;
-}
-div.center{
-background-color: #000!important;
-}
-div.desktop{
-background-color: #000!important;
-} 
-body, #content, #settingsMenu, td.postblock, tr, div.extPanel, strong, span.button, div#theme.panel {color: #FFFFFF!important; background-color: #000 !important; background-image: none !important;}
-blockquote.postMessage {
-background-color: #000!important;
-}
-div.g_b {
-background-color: #000000!important;
-}
-/* dark grey gradient */
-kbd, .minibutton, a.feed, .button:not(img), button.classy, a.button.classy, .pagination a, .list-browser-filterbar,
-.gobutton, .header, .pagination .gap, .comment-header, .pagehead ul.tabs li a, .login_form input[type="submit"],
-.top-bar, ul#bootcamp li a h4, .minibutton:disabled, .pull-info, .notification-indicator,
-#gists .context-menu-container, .zeroclipboard-button, pre.headers, .branch-link,
-body#com #header, .white-nav .selected span, .select-menu-header, .clone-url-button a,
-.filter-tab, #header-wrapper, #header-wrapper .nav, pre div:hover, .diff-table tr:hover pre, .pagination span,
-.commit-ref, .cheatsheet h2, .file-box .highlight tr:not(.inline-comments):hover td, .section a.section-head,
-.dashboard-tabs li a, .full-commit .browse-button, a.function-button, .capped-box h3,
-.expandable-line-num .diff-expander:hover, .boxed-group .heading, #contributors .capped-card h3,
-.comment-form-head.tabnav, .add-pill-form, .gist .gist-file .gist-meta, .file .meta {
-background: linear-gradient(to bottom, #000000, #000000) !important;
-border-color: #000 !important;
-}
-.fm-left-panel {
-background-color: #181818 !important;
-}
 
-.fm-tree-folder {
-color: #ddd !important;
-}
 
-/* Explorer background */
-.fmholder, #fmholder {
-background-color: #222 !important;
-}
 
-/* Tasks */
-.fm-new-folder, .search-files-result,
-.fm-file-upload, .search-messages-result {
-color: #eee !important;
-}
+
 
 /* Unselected Files */
 .grid-table td, .grid-share-table td, .contacts-grid-table td {
@@ -346,7 +274,7 @@ background-color: #333 !important;
 color: #eee !important;
 }
 
-/* Selected File */
+ Selected File 
 .grid-table tr.ui-selected td, .grid-share-table tr.ui-selected td, .contacts-grid-table tr.ui-selected td {
 background-color: #555 !important;
 }
@@ -526,3 +454,98 @@ a.give-gold.login-required {
 a.noCtrlF {
     display: none!important;
 }
+
+
+
+
+
+.html5-play-progress, .ytp-play-progress {
+background: #FFFFFF !important; /* Old browsers */
+background: -moz-linear-gradient(left, #1b1b1b 0%, #FFFFFF 100%) !important;
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#1b1b1b), color-stop(100%,#FFFFFF)) !important;
+background: -webkit-linear-gradient(left, #1b1b1b 0%,#FFFFFF 100%) !important;
+background: -o-linear-gradient(left, #1b1b1b 0%,#FFFFFF 100%) !important;
+background: -ms-linear-gradient(left, #1b1b1b 0%,#FFFFFF 100%) !important;
+background: linear-gradient(to right, #1b1b1b 0%,#FFFFFF 100%) !important;
+}
+/*.html5-load-progress, .ytp-load-progress {
+background: #404040 !important;
+}*/
+/* actual scrubber button */
+.html5-scrubber-button, .ytp-scrubber-button {
+background: #383A3B !important;
+border-color: #1B1B1B !important;
+box-shadow: 0px 0px 3px #FFFFFF, 0px 0px 5px #FFFFFF, 0px 0px 0px #FFFFFF !important;
+transition: box-shadow 0.2s, background 0.2s !important;
+}
+/* scrubber button on hover */
+.html5-scrubber-button:hover, .ytp-scrubber-button:hover {
+background: #FFFFFF !important;
+border-color: #1B1B1B !important;
+box-shadow: 0px 0px 6px #FFFFFF, 0px 0px 8px #FFFFFF, 0px 0px 10px #FFFFFF !important;
+}
+/* volume control */
+.ytp-volume-slider-foreground:before {
+background: #FFFFFF !important; /* Old browsers */
+background: -moz-linear-gradient(left, #1b1b1b 0%, #FFFFFF 100%) !important;
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#1b1b1b), color-stop(100%,#FFFFFF)) !important;
+background: -webkit-linear-gradient(left, #1b1b1b 0%,#FFFFFF 100%) !important;
+background: -o-linear-gradient(left, #1b1b1b 0%,#FFFFFF 100%) !important;
+background: -ms-linear-gradient(left, #1b1b1b 0%,#FFFFFF 100%) !important;
+background: linear-gradient(to right, #1b1b1b 0%,#FFFFFF 100%) !important;
+}
+/* dark grey gradient */
+kbd, .minibutton, a.feed, .button:not(img), button.classy, a.button.classy, .pagination a, .list-browser-filterbar,
+.gobutton, .header, .pagination .gap, .comment-header, .pagehead ul.tabs li a, .login_form input[type="submit"],
+.top-bar, ul#bootcamp li a h4, .minibutton:disabled, .pull-info, .notification-indicator,
+#gists .context-menu-container, .zeroclipboard-button, pre.headers, .branch-link,
+body#com #header, .white-nav .selected span, .select-menu-header, .clone-url-button a,
+.filter-tab, #header-wrapper, #header-wrapper .nav, pre div:hover, .diff-table tr:hover pre, .pagination span,
+.commit-ref, .cheatsheet h2, .file-box .highlight tr:not(.inline-comments):hover td, .section a.section-head,
+.dashboard-tabs li a, .full-commit .browse-button, a.function-button, .capped-box h3,
+.expandable-line-num .diff-expander:hover, .boxed-group .heading, #contributors .capped-card h3,
+.comment-form-head.tabnav, .add-pill-form, .gist .gist-file .gist-meta, .file .meta {
+background: linear-gradient(to bottom, #000000, #000000) !important;
+border-color: #000 !important;
+}
+.fm-left-panel {
+background-color: #181818 !important;
+}
+
+.fm-tree-folder {
+color: #ddd !important;
+}
+
+/* Explorer background */
+.fmholder, #fmholder {
+background-color: #222 !important;
+}
+
+/* Tasks */
+.fm-new-folder, .search-files-result,
+.fm-file-upload, .search-messages-result {
+color: #eee !important;
+}
+div.boardBanner {
+background-color: #000!important;
+}
+span.boardList {
+background-color: #000!important;
+}
+div.center{
+background-color: #000!important;
+}
+div.desktop{
+background-color: #000!important;
+} 
+div.g_b {
+background-color: #000000!important;
+}
+blockquote.postMessage {
+background-color: #000!important;
+}
+
+
+
+
+

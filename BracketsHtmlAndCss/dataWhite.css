@@ -1,41 +1,20 @@
-html {background:
-
-/* i really want this to be global */
-/***** COPY AND PASTE THE URL OF YOUR BACKROUND-IMAGE INSIDE THE "": *****/
-
-/*url(https://i.imgur.com/9rVXvIY.png)*/
-
-/***** FOR A SIMPLE BLACK BACKGROUND JUST REMOVE THE URL LINE ABOVE *****/
-/***** Some background-images (you can also use your own url):
-
-default: https://i.imgur.com/9rVXvIY.png
-old default: http://abload.de/img/ultra_x2vm9k.jpg
-http://abload.de/img/b2w4shd.png
-http://abload.de/img/b3qrs99.png
-http://abload.de/img/b4zcse8.png
-http://abload.de/img/b5b1s7x.png
-http://abload.de/img/b6umsmy.png
-http://abload.de/img/b7ars8c.png
-http://abload.de/img/kubrickbgcolor2darkr8skc.png
-http://abload.de/img/xpattern_darkq8s3i.png
-http://abload.de/img/mainpatternolxcq.png
-
-*/ #000 /* fixed */ !important}
+html {background: */ #FFF /* fixed */ !important}
 
 * {
-color: #FFF !important;
-text-shadow: 0 0 3px #000 !important;
+color: #000 !important;
+text-shadow: 0 0 3px #FFF !important;
 box-shadow: none !important;
 background-color: transparent!important;
-border-color: #444 !important;
-border-top-color: #444 !important;
-border-bottom-color: #444 !important;
-border-left-color: #444 !important;
-border-right-color: #444 !important}
-*:before, *:after {background-color: transparent !important; border-color: #444 !important}
+border-color: #666 !important;
+border-top-color: #666 !important;
+border-bottom-color: #666 !important;
+border-left-color: #666 !important;
+border-right-color: #666 !important}
+*:before, *:after {background-color: transparent !important; border-color: #666 !important}
 
 /*----- links -----*/
 
+body, #content, #settingsMenu, td.postblock, tr, div.extPanel, strong, span.button, div#theme.panel {color: #000!important; background-color: #FFF !important; background-image: none !important;}
 
 
 a, a * {
