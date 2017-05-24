@@ -1,20 +1,20 @@
-html {background: */ #000 /* fixed */ !important}
+html {background: */ rgba(0,0,0, 1) /* fixed */ !important}
 
 * {
-color: #FFF !important;
-text-shadow: 0 0 3px #000 !important;
+color: rgba(255,255,255,1) !important;
+text-shadow: 0 0 1px rgba(0,0,0, 1) !important;
 box-shadow: none !important;
 background-color: transparent!important;
-border-color: #666 !important;
-border-top-color: #666 !important;
-border-bottom-color: #666 !important;
-border-left-color: #666 !important;
-border-right-color: #666 !important}
-*:before, *:after {background-color: transparent !important; border-color: #666 !important}
+border-color: rgba(128,128,128, 1) !important;
+border-top-color: rgba(128,128,128, 1) !important;
+border-bottom-color: rgba(128,128,128, 1) !important;
+border-left-color: rgba(128,128,128, 1) !important;
+border-right-color: rgba(128,128,128, 1) !important}
+*:before, *:after {background-color: transparent !important; border-color: rgba(128,128,128, 1) !important}
 
 /*----- links -----*/
 
-body, #content, #settingsMenu, td.postblock, tr, div.extPanel, strong, span.button, div#theme.panel {color: #FFF!important; background-color: #000 !important; background-image: none !important;}
+body, #content, #settingsMenu, td.postblock, tr, div.extPanel, strong, span.button, div#theme.panel {color: rgba(255,255,255,1) !important; background-color: rgba(0,0,0, 1) !important; background-image: none !important;}
 
 a, a * {
 color: #336699 !important;
