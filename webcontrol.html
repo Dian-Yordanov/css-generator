@@ -159,9 +159,9 @@
 	function updateUITiming() {
 		$.each(obj.timing, function(index, item) {
 			index++;
-			val = [item[index][0].slice(0, 2), ":", item[index][0].slice(2)].join('');
+			val = [item[Index][0].slice(0, 2), ":", item[Index][0].slice(2)].join('');
 			$('#zone-' + index + '-start').attr("value", val);
-			val = [item[index][1].slice(0, 2), ":", item[index][1].slice(2)].join('');
+			val = [item[Index][1].slice(0, 2), ":", item[Index][1].slice(2)].join('');
 			$('#zone-' + index + '-end').attr("value", val);
 		});
 	}
