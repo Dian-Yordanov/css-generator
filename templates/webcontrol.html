@@ -1,353 +1,355 @@
 <html>
 <header>
-	<title>Alarmsystem</title>
+    <title>Alarmsystem</title>
 </header>
 <script src="http://zeptojs.com/zepto.min.js"></script>
 <script>
-	var obj;
-	var w;
-	const MAX_SENSORS = 4;
-	const SLEEPING = 0;
-	const ACTIVE = 1;
-	const OFFLINE = 2;
-	const ALARM = 3;
-	const OFF = 0;
-	const ON = 1;
+    var obj;
+    var w;
+    const MAX_SENSORS = 4;
+    const SLEEPING = 0;
+    const ACTIVE = 1;
+    const OFFLINE = 2;
+    const ALARM = 3;
+    const OFF = 0;
+    const ON = 1;
 
-//	function controlWholeSecurityUI() {
-//		if (obj.systemState == OFF) {
-//			document.getElementById('h_whole').checked = false;
-//			document.getElementById('ed_whole').checked = false;
-//			document.getElementById('h_whole').disabled = true;
-//		} else {
-//			document.getElementById('ed_whole').checked = true;
-//			document.getElementById('h_whole').disabled = false;
-//			document.getElementById('h_whole').checked = true;
-//		}
-//	}
+    //	function controlWholeSecurityUI() {
+    //		if (obj.systemState == OFF) {
+    //			document.getElementById('h_whole').checked = false;
+    //			document.getElementById('ed_whole').checked = false;
+    //			document.getElementById('h_whole').disabled = true;
+    //		} else {
+    //			document.getElementById('ed_whole').checked = true;
+    //			document.getElementById('h_whole').disabled = false;
+    //			document.getElementById('h_whole').checked = true;
+    //		}
+    //	}
 
-	function controlWholeSecurity() {
-		$.get("api/foo/?a=hello&b=world", function(response) {
-//			if (response == 1 || response == 0) {
-//				obj.systemState = response;
-//				getStateOnLoad();
-//			} else {
-//				alert("Time change failed");
-//			}
-		});
-	}
-//
-//	function hushWholeSecurityUI() {
-//		if (obj.hush == OFF && obj.systemState == ON) {
-//			document.getElementById('h_whole').checked = false;
-//		} else if (obj.hush == ON && obj.systemState == ON) {
-//			document.getElementById('h_whole').checked = true;
-//		}
-//		if (obj.systemState == OFF) {
-//			document.getElementById('h_whole').checked = false;
-//		}
-//	}
-//
-//	function hushWholeSecurity() {
-//		$.get("setState.cgi?hush", function(response) {
-//			if (response == 1 || response == 0) {
-//				obj.hush = response;
-//				getStateOnLoad();
-//			} else {
-//				alert("Hushing failed");
-//			}
-//		});
-//	}
-//
-//	function checkZoneStateUI() {
-//		for (i = 0; i < MAX_SENSORS; i++) {
-//			var e = i + 1;
-//			if (obj.zoneState[i] == ACTIVE) {
-//				document.getElementById('onoffswitchRoom' + e).checked = true;
-//				$('#zone-' + e).css({
-//					border: "2px solid green",
-//					animation: "none"
-//				});
-//			} else if (obj.zoneState[i] == ALARM) {
-//				document.getElementById('onoffswitchRoom' + e).checked = true;
-//				$('#zone-' + e).css({
-//					border: "5px solid red"
-//				});
-//				if (obj.hush == OFF) {
-//					$('#zone-' + e).css({
-//						animation: "blink 1s linear infinite"
-//					});
-//				} else {
-//					$('#zone-' + e).css({
-//						animation: "none"
-//					});
-//				}
-//			} else if (obj.zoneState[i] == SLEEPING) {
-//				document.getElementById('onoffswitchRoom' + e).checked = true;
-//				$('#zone-' + e).css({
-//					border: "2px solid blue",
-//					animation: "none"
-//				});
-//			} else if (obj.zoneState[i] == OFFLINE) {
-//				document.getElementById('onoffswitchRoom' + e).checked = false;
-//				$('#zone-' + e).css({
-//					border: "2px solid black",
-//					animation: "none"
-//				});
-//			}
-//			if (obj.systemState == OFF) {
-//				document.getElementById('onoffswitchRoom' + e).disabled = true;
-//			} else {
-//				document.getElementById('onoffswitchRoom' + e).disabled = false;
-//			}
-//		}
-//	}
-//
-//	function startTimer() {
-//
-//		setInterval(function() {
-//			hours = parseInt(obj.currentTime / 3600, 10);
-//			minutes = parseInt((obj.currentTime / 60) % 60, 10);
-//			seconds = parseInt(obj.currentTime % 60, 10);
-//
-//			hours = hours < 10 ? '0' + hours : hours;
-//			minutes = minutes < 10 ? '0' + minutes : minutes;
-//			seconds = seconds < 10 ? '0' + seconds : seconds;
-//
-//			document.querySelector('#time').textContent = hours + ':' + minutes + ':' + seconds;
-//			++obj.currentTime;
-//		}, 1000);
-//
-//	}
-//
-//	function suspendZone(zone) {
-//		zone = zone - 1;
-//		$.get("setState.cgi?zone=" + zone, function(response) {
-//			obj.zoneState[zone] = response;
-//			checkZoneStateUI();
-//		});
-//
-//	}
-//
-//	function changeTimingSystem() {
-//		var time = document.getElementById('systemTimeInput').value;
-//		time = time.replace(/:/gi, '-');
-//		if (time.length == 5)
-//			time += '-00';
-//		$.get("api/foo/?a=hello&b=world" + time, function(response) {
-//			if (response == 1) {
-//				str = time + '';
-//				seconds = parseInt(str.substr(6, 2));
-//				minutes = parseInt(str.substr(3, 2));
-//				hours = parseInt(str.substr(0, 2));
-//				obj.currentTime = 3600 * hours + (60 * minutes) + seconds;
-//			}
-//		});
-//	}
-//
-//
-//	function getStateOnLoad() {
-//		$.get("getState.cgi", function(response) {
-//			obj = JSON.parse(response);
-//			controlWholeSecurityUI();
-//			hushWholeSecurityUI();
-//			checkZoneStateUI();
-//			updateUITiming();
-//		});
-//	}
-//
-//	function updateUITiming() {
-//		$.each(obj.timing, function(index, item) {
-//			index++;
-//			val = [item[Index][0].slice(0, 2), ":", item[Index][0].slice(2)].join('');
-//			$('#zone-' + index + '-start').attr("value", val);
-//			val = [item[Index][1].slice(0, 2), ":", item[Index][1].slice(2)].join('');
-//			$('#zone-' + index + '-end').attr("value", val);
-//		});
-//	}
-//
-//	function changeTimingZone() {
-//		zone = $('#timeSelect').attr("value");
-//		zone--;
-//		start = document.getElementById("setTimeStart").value.replace(':', '');
-//		end = document.getElementById("setTimeEnd").value.replace(':', '');
-//		$.get('setTime.cgi?zone=' + zone + ';' + start + ';' + end, function(response) {
-//			updateUITiming();
-//			checkZoneStateUI();
-//		});
-//	}
-//
-//	window.onload = function() {
-//		getStateOnLoad();
-//		startTimer();
-//		setInterval(getStateOnLoad, 2000);
-//	}
+    function controlWholeSecurity(checkbox) {
+        if (checkbox.checked) {
+            $.get("api/foo/?a=dsfsdfsfdssfsdf", function(response) {});
+        }
+        if (!checkbox.checked) {
+            $.get("api/foo/?a=hello&b=world", function(response) {});
+        }
+    }
+    //        if( $(this).is(":checked") )
+    //                {
+
+    //                }
+    //	}
+    //
+    //	function hushWholeSecurityUI() {
+    //		if (obj.hush == OFF && obj.systemState == ON) {
+    //			document.getElementById('h_whole').checked = false;
+    //		} else if (obj.hush == ON && obj.systemState == ON) {
+    //			document.getElementById('h_whole').checked = true;
+    //		}
+    //		if (obj.systemState == OFF) {
+    //			document.getElementById('h_whole').checked = false;
+    //		}
+    //	}
+    //
+    //	function hushWholeSecurity() {
+    //		$.get("setState.cgi?hush", function(response) {
+    //			if (response == 1 || response == 0) {
+    //				obj.hush = response;
+    //				getStateOnLoad();
+    //			} else {
+    //				alert("Hushing failed");
+    //			}
+    //		});
+    //	}
+    //
+    //	function checkZoneStateUI() {
+    //		for (i = 0; i < MAX_SENSORS; i++) {
+    //			var e = i + 1;
+    //			if (obj.zoneState[i] == ACTIVE) {
+    //				document.getElementById('onoffswitchRoom' + e).checked = true;
+    //				$('#zone-' + e).css({
+    //					border: "2px solid green",
+    //					animation: "none"
+    //				});
+    //			} else if (obj.zoneState[i] == ALARM) {
+    //				document.getElementById('onoffswitchRoom' + e).checked = true;
+    //				$('#zone-' + e).css({
+    //					border: "5px solid red"
+    //				});
+    //				if (obj.hush == OFF) {
+    //					$('#zone-' + e).css({
+    //						animation: "blink 1s linear infinite"
+    //					});
+    //				} else {
+    //					$('#zone-' + e).css({
+    //						animation: "none"
+    //					});
+    //				}
+    //			} else if (obj.zoneState[i] == SLEEPING) {
+    //				document.getElementById('onoffswitchRoom' + e).checked = true;
+    //				$('#zone-' + e).css({
+    //					border: "2px solid blue",
+    //					animation: "none"
+    //				});
+    //			} else if (obj.zoneState[i] == OFFLINE) {
+    //				document.getElementById('onoffswitchRoom' + e).checked = false;
+    //				$('#zone-' + e).css({
+    //					border: "2px solid black",
+    //					animation: "none"
+    //				});
+    //			}
+    //			if (obj.systemState == OFF) {
+    //				document.getElementById('onoffswitchRoom' + e).disabled = true;
+    //			} else {
+    //				document.getElementById('onoffswitchRoom' + e).disabled = false;
+    //			}
+    //		}
+    //	}
+    //
+    //	function startTimer() {
+    //
+    //		setInterval(function() {
+    //			hours = parseInt(obj.currentTime / 3600, 10);
+    //			minutes = parseInt((obj.currentTime / 60) % 60, 10);
+    //			seconds = parseInt(obj.currentTime % 60, 10);
+    //
+    //			hours = hours < 10 ? '0' + hours : hours;
+    //			minutes = minutes < 10 ? '0' + minutes : minutes;
+    //			seconds = seconds < 10 ? '0' + seconds : seconds;
+    //
+    //			document.querySelector('#time').textContent = hours + ':' + minutes + ':' + seconds;
+    //			++obj.currentTime;
+    //		}, 1000);
+    //
+    //	}
+    //
+    //	function suspendZone(zone) {
+    //		zone = zone - 1;
+    //		$.get("setState.cgi?zone=" + zone, function(response) {
+    //			obj.zoneState[zone] = response;
+    //			checkZoneStateUI();
+    //		});
+    //
+    //	}
+    //
+    //	function changeTimingSystem() {
+    //		var time = document.getElementById('systemTimeInput').value;
+    //		time = time.replace(/:/gi, '-');
+    //		if (time.length == 5)
+    //			time += '-00';
+    //		$.get("api/foo/?a=hello&b=world" + time, function(response) {
+    //			if (response == 1) {
+    //				str = time + '';
+    //				seconds = parseInt(str.substr(6, 2));
+    //				minutes = parseInt(str.substr(3, 2));
+    //				hours = parseInt(str.substr(0, 2));
+    //				obj.currentTime = 3600 * hours + (60 * minutes) + seconds;
+    //			}
+    //		});
+    //	}
+    //
+    //
+    //	function getStateOnLoad() {
+    //		$.get("getState.cgi", function(response) {
+    //			obj = JSON.parse(response);
+    //			controlWholeSecurityUI();
+    //			hushWholeSecurityUI();
+    //			checkZoneStateUI();
+    //			updateUITiming();
+    //		});
+    //	}
+    //
+    //	function updateUITiming() {
+    //		$.each(obj.timing, function(index, item) {
+    //			index++;
+    //			val = [item[Index][0].slice(0, 2), ":", item[Index][0].slice(2)].join('');
+    //			$('#zone-' + index + '-start').attr("value", val);
+    //			val = [item[Index][1].slice(0, 2), ":", item[Index][1].slice(2)].join('');
+    //			$('#zone-' + index + '-end').attr("value", val);
+    //		});
+    //	}
+    //
+    //	function changeTimingZone() {
+    //		zone = $('#timeSelect').attr("value");
+    //		zone--;
+    //		start = document.getElementById("setTimeStart").value.replace(':', '');
+    //		end = document.getElementById("setTimeEnd").value.replace(':', '');
+    //		$.get('setTime.cgi?zone=' + zone + ';' + start + ';' + end, function(response) {
+    //			updateUITiming();
+    //			checkZoneStateUI();
+    //		});
+    //	}
+    //
+    //	window.onload = function() {
+    //		getStateOnLoad();
+    //		startTimer();
+    //		setInterval(getStateOnLoad, 2000);
+    //	}
 </script>
 
 <style>
-@
-    
-body {
-  text-align: center;
- }
+    @ body {
+        text-align: center;
+    }
 
-#page-wrap {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-/*  grid-gap: 10px;*/
-/*  grid-auto-rows: minmax(100px, auto);*/
-  text-align: left;
-  width: 800px;
-  margin: 0 auto;
-}
-    
-/*
+    #page-wrap {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        /*  grid-gap: 10px;*/
+        /*  grid-auto-rows: minmax(100px, auto);*/
+        text-align: left;
+        width: 800px;
+        margin: 0 auto;
+    }
+    /*
 .right {
-  
+
 }
-.left { 
-  
+.left {
+
 }
-    
+
 */
-/*
+    /*
 keyframes blink { 50% {
 	border-color: black;
 }
 
 }
 */
-.right {
-    display: grid;
-      grid-template-columns: repeat(4, 1fr);
-/*      grid-gap: 10px;*/
-/*      grid-auto-rows: minmax(100px, auto);*/
-      text-align: left;
-/*	display: inline-block;*/
-	margin-right: 10px;
-    grid-column: 1 / 5;
-    grid-row: 1;
-    
-    
-}
 
-.left {
-    display: grid;
-      grid-template-columns: repeat(4, 1fr);
-/*      grid-gap: 10px;*/
-/*      grid-auto-rows: minmax(100px, auto);*/
-      text-align: left;
-/*	display: inline-block*/
-    margin-right: 10px;
-    grid-column: 1 / 5;
-    grid-row: 2 ;
-}
-.text {
-    grid-column: 1 / 3;
-    grid-row: 1 ;
-}
-.object {
-    padding-top: 8px;
-    grid-column: 3 / 4;
-    grid-row: 1 ;
-}
-    
-.buttonForExampleWebpage {
-  
-  display: table;
-  margin: 0 auto;
-  grid-column: 2 / 3;
-  grid-row: 3 ;
+    .right {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        /*      grid-gap: 10px;*/
+        /*      grid-auto-rows: minmax(100px, auto);*/
+        text-align: left;
+        /*	display: inline-block;*/
+        margin-right: 10px;
+        grid-column: 1 / 5;
+        grid-row: 1;
+    }
 
-}
+    .left {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        /*      grid-gap: 10px;*/
+        /*      grid-auto-rows: minmax(100px, auto);*/
+        text-align: left;
+        /*	display: inline-block*/
+        margin-right: 10px;
+        grid-column: 1 / 5;
+        grid-row: 2;
+    }
 
-#zone-1, #zone-2, #zone-3, #zone-4 {
-	margin: 10px;
-	padding: 10px;
-}
+    .text {
+        grid-column: 1 / 3;
+        grid-row: 1;
+    }
 
-.onoffswitch {
-/*
+    .object {
+        padding-top: 8px;
+        grid-column: 3 / 4;
+        grid-row: 1;
+    }
+
+    .buttonForExampleWebpage {
+        display: table;
+        margin: 0 auto;
+        grid-column: 2 / 3;
+        grid-row: 3;
+    }
+
+    #zone-1,
+    #zone-2,
+    #zone-3,
+    #zone-4 {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .onoffswitch {
+        /*
 	top: 25%;
 	right: 25%;
 	left: 25%;
 	bottom: 25%;
 */
-	position: relative;
-	width: 90px;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-}
+        position: relative;
+        width: 90px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+    }
 
-.onoffswitch-checkbox {
-	display: none;
-}
+    .onoffswitch-checkbox {
+        display: none;
+    }
 
-.onoffswitch-label {
-	display: block;
-	overflow: hidden;
-	cursor: pointer;
-	border: 2px solid #999999;
-	border-radius: 20px;
-}
+    .onoffswitch-label {
+        display: block;
+        overflow: hidden;
+        cursor: pointer;
+        border: 2px solid #999999;
+        border-radius: 20px;
+    }
 
-.onoffswitch-inner {
-	display: block;
-	width: 200%;
-	margin-left: -100%;
-}
+    .onoffswitch-inner {
+        display: block;
+        width: 200%;
+        margin-left: -100%;
+    }
 
-.onoffswitch-inner:before, .onoffswitch-inner:after {
-	display: block;
-	float: left;
-	width: 50%;
-	height: 30px;
-	padding: 0;
-	line-height: 30px;
-	font-size: 14px;
-	color: white;
-	font-family: Trebuchet, Arial, sans-serif;
-	font-weight: bold;
-	box-sizing: border-box;
-}
+    .onoffswitch-inner:before,
+    .onoffswitch-inner:after {
+        display: block;
+        float: left;
+        width: 50%;
+        height: 30px;
+        padding: 0;
+        line-height: 30px;
+        font-size: 14px;
+        color: white;
+        font-family: Trebuchet, Arial, sans-serif;
+        font-weight: bold;
+        box-sizing: border-box;
+    }
 
-.onoffswitch-inner:before {
-	content: "ON";
-	padding-left: 10px;
-	background-color: #34A7C1;
-	color: #FFFFFF;
-}
+    .onoffswitch-inner:before {
+        content: "ON";
+        padding-left: 10px;
+        background-color: #34A7C1;
+        color: #FFFFFF;
+    }
 
-.onoffswitch-inner:after {
-	content: "OFF";
-	padding-right: 10px;
-	background-color: #EEEEEE;
-	color: #999999;
-	text-align: right;
-}
+    .onoffswitch-inner:after {
+        content: "OFF";
+        padding-right: 10px;
+        background-color: #EEEEEE;
+        color: #999999;
+        text-align: right;
+    }
 
-.onoffswitch-switch {
-	display: block;
-	width: 18px;
-	margin: 6px;
-	background: #FFFFFF;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	right: 56px;
-	border: 2px solid #999999;
-	border-radius: 20px;
-}
+    .onoffswitch-switch {
+        display: block;
+        width: 18px;
+        margin: 6px;
+        background: #FFFFFF;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 56px;
+        border: 2px solid #999999;
+        border-radius: 20px;
+    }
 
-.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-inner {
-	margin-left: 0;
-}
+    .onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-inner {
+        margin-left: 0;
+    }
 
-.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-switch {
-	right: 0px;
-}
-
+    .onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-switch {
+        right: 0px;
+    }
 </style>
 
 <body>
@@ -367,7 +369,7 @@ keyframes blink { 50% {
             </div>
             <div class="object">
                 <div class="onoffswitch">
-                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="ed_whole" checked onchange="controlWholeSecurity()"> <label class="onoffswitch-label" for="ed_whole"> <span
+                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="ed_whole" checked onchange="controlWholeSecurity(this)"> <label class="onoffswitch-label" for="ed_whole"> <span
                                 class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span>
                             </label>
                 </div>
@@ -388,14 +390,14 @@ keyframes blink { 50% {
                 </div>
             </div>
         </div>
-        
+
         <div class="buttonForExampleWebpage">
-        <input type="button" value="Example webpage" onclick="window.open('http://127.0.0.1:5000/webpageexample')" />
+            <input type="button" value="Example webpage" onclick="window.open('http://127.0.0.1:5000/webpageexample')" />
         </div>
 
 
-<!--        <hr>-->
-<!--
+        <!--        <hr>-->
+        <!--
         <p>
             <b>Alarm zone overview</b>
         </p>
@@ -408,7 +410,7 @@ keyframes blink { 50% {
         <b><font size="3" color="black">black</font></b> - zone currently offline
         <br>
 -->
-<!--
+        <!--
         <div id="zone-1" style="float: left;" class="">
             <fieldset>
                 <legend>Zone 1</legend>
@@ -474,13 +476,13 @@ keyframes blink { 50% {
         </div>
 -->
 
-<!--        <div style="clear: both;"></div>-->
+        <!--        <div style="clear: both;"></div>-->
 
-<!--        <hr>-->
+        <!--        <hr>-->
 
-<!--        <b><p>Check/Change time in each room</p></b>-->
+        <!--        <b><p>Check/Change time in each room</p></b>-->
 
-<!--
+        <!--
         <div style="">
 
             <div class="">
@@ -494,7 +496,7 @@ keyframes blink { 50% {
         </div>
 -->
 
-<!--
+        <!--
         <p>
             System Time <input type="time" id="systemTimeInput" name="time" step="1" /> <br>
             <button type="button" id="Submit_button_time" onclick=changeTimingSystem()>Set</button>

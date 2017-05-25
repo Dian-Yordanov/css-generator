@@ -5,7 +5,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BracketsHtmlAndCss/webcontrol.html" afterPath="$PROJECT_DIR$/BracketsHtmlAndCss/webcontrol.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/webcontrol.html" afterPath="$PROJECT_DIR$/templates/webcontrol.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webcontrol.html" afterPath="$PROJECT_DIR$/webcontrol.html" />
     </list>
     <ignored path="pythonglobalcssgeneratorforstylish.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -19,7 +18,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/pythonglobalcssgeneratorforstylish$CSSgen.coverage" NAME="CSSgen Coverage Results" MODIFIED="1495749559668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonglobalcssgeneratorforstylish$CSSgen.coverage" NAME="CSSgen Coverage Results" MODIFIED="1495751102806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonglobalcssgeneratorforstylish$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1495431499233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonglobalcssgeneratorforstylish$flaskTest.coverage" NAME="flaskTest Coverage Results" MODIFIED="1495572005766" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonglobalcssgeneratorforstylish$phpTest.coverage" NAME="phpTest Coverage Results" MODIFIED="1495560556911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -56,10 +55,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="flaskTest.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="flaskTest.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flaskTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
+            <state relative-caret-position="90">
               <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="21" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
@@ -68,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="webcontrol.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="webcontrol.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/webcontrol.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3685">
-              <caret line="505" column="7" selection-start-line="505" selection-start-column="7" selection-end-line="505" selection-end-column="7" />
+            <state relative-caret-position="204">
+              <caret line="507" column="7" selection-start-line="507" selection-start-column="7" selection-end-line="507" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -93,25 +92,9 @@
       <file leaf-file-name="webcontrol.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BracketsHtmlAndCss/webcontrol.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5840">
-              <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
-              <folding>
-                <marker date="1495750328509" expanded="true" signature="1122:1124" placeholder="{...}" />
-                <marker date="1495750328509" expanded="true" signature="5454:5480" placeholder="{...}" />
-                <marker date="1495750328509" expanded="true" signature="5493:5673" placeholder="{...}" />
-                <marker date="1495750328509" expanded="true" signature="5782:6046" placeholder="{...}" />
-                <marker date="1495750328509" expanded="true" signature="6054:6311" placeholder="{...}" />
-                <marker date="1495750328509" expanded="true" signature="6318:6363" placeholder="{...}" />
-                <marker date="1495750328509" expanded="true" signature="6372:6439" placeholder="{...}" />
-                <marker date="1495750328509" expanded="true" signature="6470:6551" placeholder="{...}" />
-                <marker date="1495750328509" expanded="true" signature="6637:6808" placeholder="{...}" />
-                <marker date="1495750328509" expanded="true" signature="6872:6979" placeholder="{...}" />
-                <marker date="1495750328509" expanded="true" signature="7000:7055" placeholder="{...}" />
-                <marker date="1495750328509" expanded="true" signature="7109:7326" placeholder="{...}" />
-                <marker date="1495750328509" expanded="true" signature="7354:7439" placeholder="{...}" />
-                <marker date="1495750328509" expanded="true" signature="7466:7573" placeholder="{...}" />
-                <marker date="1495750328509" expanded="true" signature="7595:7771" placeholder="{...}" />
-              </folding>
+            <state relative-caret-position="-5930">
+              <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -690,7 +673,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="58" y="0" width="1862" height="1080" extended-state="7" />
+    <frame x="58" y="0" width="1862" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1112,43 +1095,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BracketsHtmlAndCss/webcontrol.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5840">
-          <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
-          <folding>
-            <marker date="1495750328509" expanded="true" signature="1122:1124" placeholder="{...}" />
-            <marker date="1495750328509" expanded="true" signature="5454:5480" placeholder="{...}" />
-            <marker date="1495750328509" expanded="true" signature="5493:5673" placeholder="{...}" />
-            <marker date="1495750328509" expanded="true" signature="5782:6046" placeholder="{...}" />
-            <marker date="1495750328509" expanded="true" signature="6054:6311" placeholder="{...}" />
-            <marker date="1495750328509" expanded="true" signature="6318:6363" placeholder="{...}" />
-            <marker date="1495750328509" expanded="true" signature="6372:6439" placeholder="{...}" />
-            <marker date="1495750328509" expanded="true" signature="6470:6551" placeholder="{...}" />
-            <marker date="1495750328509" expanded="true" signature="6637:6808" placeholder="{...}" />
-            <marker date="1495750328509" expanded="true" signature="6872:6979" placeholder="{...}" />
-            <marker date="1495750328509" expanded="true" signature="7000:7055" placeholder="{...}" />
-            <marker date="1495750328509" expanded="true" signature="7109:7326" placeholder="{...}" />
-            <marker date="1495750328509" expanded="true" signature="7354:7439" placeholder="{...}" />
-            <marker date="1495750328509" expanded="true" signature="7466:7573" placeholder="{...}" />
-            <marker date="1495750328509" expanded="true" signature="7595:7771" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-5930">
+          <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/webcontrol.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3685">
-          <caret line="505" column="7" selection-start-line="505" selection-start-column="7" selection-end-line="505" selection-end-column="7" />
+        <state relative-caret-position="204">
+          <caret line="507" column="7" selection-start-line="507" selection-start-column="7" selection-end-line="507" selection-end-column="7" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
