@@ -1,11 +1,16 @@
 from flask import Flask
 import os
 import webbrowser
-
+from flask import Flask, request
+from flask import render_template
 
 app = Flask(__name__)
 
-from flask import render_template
+@app.route('/api/foo/', methods=['GET'])
+def foo():
+    bar = request.args.to_dict()
+    print bar
+    return 'success', 200
 
 @app.route('/hello/')
 def hello(name=None):
