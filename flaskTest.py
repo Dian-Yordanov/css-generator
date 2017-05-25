@@ -16,10 +16,14 @@ def foo():
 def hello(name=None):
     return render_template('guardianHtml.html', name=name)
 
+@app.route('/')
+def controol(name=None):
+    return render_template('webcontrol.html', name=name)
 
-@app.route("/")
-def hello1():
-    return "Hello Wordsfsdfdsld!"
+
+# @app.route("/")
+# def hello1():
+#     return "Hello Wordsfsdfdsld!"
 
 if __name__ == "__main__":
     app.static_folder = 'static'
