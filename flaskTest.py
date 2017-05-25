@@ -28,7 +28,7 @@ def controol(name=None):
 if __name__ == "__main__":
     app.static_folder = 'static'
 
-    url = 'http://127.0.0.1:5000/hello/'
+    url = 'http://127.0.0.1:5000/'
     chrome_path = '/usr/bin/google-chrome %s'
     webbrowser.get(chrome_path).open(url)
     os.system('WID=`xdotool search "Google Chrome" | head -1`; xdotool windowactivate --sync $WID')
