@@ -26,16 +26,25 @@
 //		}
 //	}
 
-	function controlWholeSecurity() {
-		$.get("setState.cgi?system", function(response) {
-			if (response == 1 || response == 0) {
-				obj.systemState = response;
-				getStateOnLoad();
-			} else {
-				alert("Time change failed");
-			}
+	function controlWholeSecurity(checkbox)
+{
+    if (checkbox.checked)
+    {
+        $.get("api/foo/?a=hello&b=world", function(response) {
+//			if (response == 1 || response == 0) {
+//				obj.systemState = response;
+//				getStateOnLoad();
+//			} else {
+//				alert("Time change failed");
+//			}
 		});
-	}
+    }
+}
+//        if( $(this).is(":checked") )
+//                {
+                   
+//                }
+//	}
 //
 //	function hushWholeSecurityUI() {
 //		if (obj.hush == OFF && obj.systemState == ON) {
@@ -210,11 +219,13 @@ body {
 }
     
 */
+/*
 keyframes blink { 50% {
 	border-color: black;
 }
 
 }
+*/
 .right {
     display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -365,7 +376,7 @@ keyframes blink { 50% {
             </div>
             <div class="object">
                 <div class="onoffswitch">
-                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="ed_whole" checked onchange="controlWholeSecurity()"> <label class="onoffswitch-label" for="ed_whole"> <span
+                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="ed_whole" checked onchange="controlWholeSecurity(this)"> <label class="onoffswitch-label" for="ed_whole"> <span
                                 class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span>
                             </label>
                 </div>
