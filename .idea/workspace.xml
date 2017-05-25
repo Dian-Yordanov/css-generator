@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99d7b7d2-ef8a-459d-85e8-498993b4e186" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BracketsHtmlAndCss/webcontrol.html" afterPath="$PROJECT_DIR$/BracketsHtmlAndCss/webcontrol.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/webcontrol.html" afterPath="$PROJECT_DIR$/templates/webcontrol.html" />
     </list>
     <ignored path="pythonglobalcssgeneratorforstylish.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -92,8 +90,8 @@
       <file leaf-file-name="webcontrol.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BracketsHtmlAndCss/webcontrol.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5930">
-              <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
+            <state relative-caret-position="-5444">
+              <caret line="86" column="4" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -673,7 +671,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="58" y="0" width="1862" height="1080" extended-state="6" />
+    <frame x="58" y="0" width="1862" height="1080" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1095,8 +1093,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BracketsHtmlAndCss/webcontrol.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5930">
-          <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
+        <state relative-caret-position="-5444">
+          <caret line="86" column="4" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="4" />
           <folding />
         </state>
       </provider>

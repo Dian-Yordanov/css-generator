@@ -24,9 +24,36 @@
     //			document.getElementById('h_whole').disabled = false;
     //			document.getElementById('h_whole').checked = true;
     //		}
-    //	}
+    //	}d
 
-    function controlWholeSecurity(checkbox) {
+    function Black(checkbox) {
+        if (checkbox.checked) {
+            $.get("api/foo/?a=dsfsdfsfdssfsdf", function(response) {});
+        }
+        if (!checkbox.checked) {
+            $.get("api/foo/?a=hello&b=world", function(response) {});
+        }
+    }
+    
+      function White(checkbox) {
+        if (checkbox.checked) {
+            $.get("api/foo/?a=dsfsdfsfdssfsdf", function(response) {});
+        }
+        if (!checkbox.checked) {
+            $.get("api/foo/?a=hello&b=world", function(response) {});
+        }
+    }
+    
+    function Pointer(checkbox) {
+        if (checkbox.checked) {
+            $.get("api/foo/?a=dsfsdfsfdssfsdf", function(response) {});
+        }
+        if (!checkbox.checked) {
+            $.get("api/foo/?a=hello&b=world", function(response) {});
+        }
+    }
+    
+      function specific(checkbox) {
         if (checkbox.checked) {
             $.get("api/foo/?a=dsfsdfsfdssfsdf", function(response) {});
         }
@@ -198,7 +225,7 @@
         /*  grid-gap: 10px;*/
         /*  grid-auto-rows: minmax(100px, auto);*/
         text-align: left;
-        width: 800px;
+        width: 400px;
         margin: 0 auto;
     }
     /*
@@ -218,9 +245,9 @@ keyframes blink { 50% {
 }
 */
     
-    .right {
+    .id1 {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+/*        grid-template-columns: repeat(4, 1fr);*/
         /*      grid-gap: 10px;*/
         /*      grid-auto-rows: minmax(100px, auto);*/
         text-align: left;
@@ -230,9 +257,9 @@ keyframes blink { 50% {
         grid-row: 1;
     }
     
-    .left {
+    .id2 {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+/*        grid-template-columns: repeat(4, 1fr);*/
         /*      grid-gap: 10px;*/
         /*      grid-auto-rows: minmax(100px, auto);*/
         text-align: left;
@@ -241,25 +268,57 @@ keyframes blink { 50% {
         grid-column: 1 / 5;
         grid-row: 2;
     }
-    
-    .text {
-        grid-column: 1 / 3;
-        grid-row: 1;
-    }
-    
-    .object {
-        padding-top: 8px;
-        grid-column: 3 / 4;
-        grid-row: 1;
-    }
-    
-    .buttonForExampleWebpage {
-        display: table;
-        margin: 0 auto;
-        grid-column: 2 / 3;
+    .id3 {
+        display: grid;
+/*        grid-template-columns: repeat(4, 1fr);*/
+        /*      grid-gap: 10px;*/
+        /*      grid-auto-rows: minmax(100px, auto);*/
+        text-align: left;
+        /*	display: inline-block*/
+        margin-right: 10px;
+        grid-column: 1 / 5;
         grid-row: 3;
     }
     
+    .id4 {
+        display: grid;
+/*        grid-template-columns: repeat(4, 1fr);*/
+        /*      grid-gap: 10px;*/
+        /*      grid-auto-rows: minmax(100px, auto);*/
+        text-align: left;
+        /*	display: inline-block*/
+        margin-right: 10px;
+        grid-column: 1 / 5;
+        grid-row: 4;
+    }
+    
+    .text {
+        width: 300px;
+        grid-column: 1 / 3;
+/*        grid-row: 2;*/
+    }
+    
+    .object {
+        
+        padding-top: 8px;
+        grid-column: 3 / 4;
+/*        grid-row: 2;*/
+    }
+    
+/*
+    div.text {
+    width: 300px;
+    }
+    
+*/
+    .buttonForExampleWebpage {
+        display: table;
+        margin: 0 auto;
+        grid-column: 2 / 4;
+        grid-row: 5;
+    }
+    
+/*
     #zone-1,
     #zone-2,
     #zone-3,
@@ -267,6 +326,7 @@ keyframes blink { 50% {
         margin: 10px;
         padding: 10px;
     }
+*/
     
     .onoffswitch {
         /*
@@ -361,30 +421,60 @@ keyframes blink { 50% {
 	</div>
 -->
 
-        <div class="right">
+        <div class="id1">
             <div class="text">
                 <p>
-                    <b>Enable/Disable the whole security system</b>
+                    <b>Black theme</b>
                 </p>
             </div>
             <div class="object">
                 <div class="onoffswitch">
-                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="ed_whole" checked onchange="controlWholeSecurity(this)"> <label class="onoffswitch-label" for="ed_whole"> <span
+                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="Black" checked onchange="Black(this)"> <label class="onoffswitch-label" for="Black"> <span
                                 class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span>
                             </label>
                 </div>
             </div>
         </div>
 
-        <div class="left">
+        <div class="id2">
             <div class="text">
                 <p>
-                    <b>Hush the whole security system</b>
+                    <b>White theme</b>
                 </p>
             </div>
             <div class="object">
                 <div class="onoffswitch">
-                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="h_whole" checked onchange="hushWholeSecurity()"> <label class="onoffswitch-label" for="h_whole"> <span
+                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="White" checked onchange="White(this)"> <label class="onoffswitch-label" for="White"> <span
+                        class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        
+        <div class="id3">
+            <div class="text">
+                <p>
+                    <b>Pointer modifications</b>
+                </p>
+            </div>
+            <div class="object">
+                <div class="onoffswitch">
+                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="Pointer" checked onchange="Pointer(this)"> <label class="onoffswitch-label" for="Pointer"> <span
+                                class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span>
+                            </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="id4">
+            <div class="text">
+                <p>
+                    <b>Webpage specific modifications</b>
+                </p>
+            </div>
+            <div class="object">
+                <div class="onoffswitch">
+                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="specific" checked onchange="specific(this)"> <label class="onoffswitch-label" for="specific"> <span
                         class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span>
                     </label>
                 </div>
