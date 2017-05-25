@@ -12,7 +12,7 @@ def foo():
     print bar
     return 'success', 200
 
-@app.route('/hello/')
+@app.route('/webpageexample/')
 def hello(name=None):
     return render_template('guardianHtml.html', name=name)
 
