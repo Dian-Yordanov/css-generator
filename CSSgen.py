@@ -55,6 +55,8 @@ def createJsonFileFromCssAndNameAndCssValue(File,Name,CssValue):
 
 def main():
 
+    print("hello")
+
     data = returnCSSFromFileAndName("stylish-05-09-2017.json", "Xelnect's dark style (inspired)(global)")
 
     # css = "/* make input elements more awesome */ input:hover{background-color: red;}"
@@ -75,10 +77,10 @@ def main():
         json.dump(jsonThatIsReturned, f, indent=4)
 
 
-    os.system('python flaskTest.py')
+    # os.system('python flaskTest.py')
 
     # os.system('WID=`xdotool search "Mozilla Firefox" | head -1`xdotool windowactivate --sync $WID')
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

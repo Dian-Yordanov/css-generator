@@ -21,11 +21,20 @@ def controol(name=None):
     return render_template('webcontrol.html', name=name)
 
 
+def run(runfile):
+    with open(runfile, "r") as rnf:
+        exec(rnf.read())
+
 # @app.route("/")
 # def hello1():
 #     return "Hello Wordsfsdfdsld!"
 
 if __name__ == "__main__":
+
+    # run("CSSgen.py")
+
+    os.system('python CSSgen.py')
+
     app.static_folder = 'static'
 
     url = 'http://127.0.0.1:5000/'
