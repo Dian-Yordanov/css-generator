@@ -26,7 +26,31 @@
     //		}
     //	}d
 
+    window.onload = function() {
+        document.getElementById("Black").checked = false;
+        document.getElementById("White").checked = false;
+        document.getElementById("Pointer").checked = false;
+        document.getElementById("specific").checked = false;
+    }
+    
+    function mutuallyExclusive(id, id1) {
+        var c = document.getElementById(id);
+//        var d = document.getElementById("White");
+
+        if (c.checked == true) {
+            document.getElementById(id1).checked = false;
+        }
+//        if (d.checked == true) {
+//            document.getElementById("Black").checked = false;
+//        }
+    }
+//    document.getElementById("Black").checked = false;
+//    document.getElementById("White").checked = false;
+//    document.getElementById("Pointer").checked = false;
+//    document.getElementById("specific").checked = false;
+
     function Black(checkbox) {
+        mutuallyExclusive("Black","White");
         if (checkbox.checked) {
             $.get("api/foo/?a=dsfsdfsfdssfsdf", function(response) {});
         }
@@ -36,6 +60,7 @@
     }
     
       function White(checkbox) {
+          mutuallyExclusive("White","Black");
         if (checkbox.checked) {
             $.get("api/foo/?a=dsfsdfsfdssfsdf", function(response) {});
         }
