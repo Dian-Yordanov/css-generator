@@ -35,26 +35,23 @@ def getCssFromJson(bar):
     print(bar)
 
     bar = str(bar).replace("\'", "\"")
-    print(bar)
-
     data = json.loads(bar)
 
-    print(data['a'])
+    # print(data['a'])
+
+    # print(bar)
+    # print(data['a'])
     # data = json.dumps(bar)
     # print(data)
-
-
 
     # for dataIndexer in bar['a']:
     #     # x = x + 1
     #     print(dataIndexer)
 
+    if(data['a'] == 'getCssFromJson'):
+        print('data' + " " + data['a'])
+        os.system('python CSSgen.py')
 
-
-    # if(bar[1] is 'getCssFromJson'):
-    #     print 'getCssFromJson'
-    #     os.system('python CSSgen.py')
-    #
 
 
 
