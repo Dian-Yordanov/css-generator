@@ -18,6 +18,8 @@ app = Flask(__name__)
 # PointerCss
 # specificCss
 
+filenames = []
+
 @app.route('/api/foo/', methods=['GET'])
 def foo():
 
@@ -155,7 +157,7 @@ def deciceWhichFunctionToRun(bar):
         getCssFromJson()
     if (data['a'] == 'generateCss'):
         # print('data' + " " + data['a'])
-        generateCss(BlackCss, WhiteCss, PointerCss, specificCss)
+        generateCss()
     if (data['a'] == 'resetCss'):
         # print('data' + " " + data['a'])
         resetCss()
@@ -165,54 +167,57 @@ def deciceWhichFunctionToRun(bar):
 def getCssFromJson():
     os.system('python CSSgen.py')
 
-def generateCss(BlackCss, WhiteCss, PointerCss, specificCss):
+def generateCss():
     print('generateCss')
 
     if (os.path.exists('static/data.css')):
         os.remove('static/data.css')
 
-    filenames = []
-
-    with open('pythonStaticBooleans/BlackCss', 'r') as f:
+    with open("pythonStaticBooleans/BlackCss", "r") as f:
         BlackCss = f.read()
 
-    if (BlackCss == True):
-        filenames.append('BracketsHtmlAndCss/dataDark.css')
+        if (BlackCss == "True"):
+            filenames.append("BracketsHtmlAndCss/dataDark.css")
 
-    if('BracketsHtmlAndCss/dataDark.css' in filenames):
-        if (BlackCss == False):
-            filenames.remove('BracketsHtmlAndCss/dataDark.css')
+        if ("BracketsHtmlAndCss/dataDark.css" in filenames):
+            if (BlackCss == "False" and "BracketsHtmlAndCss/dataDark.css" in filenames):
+                filenames.remove("BracketsHtmlAndCss/dataDark.css")
+        # print(filenames)
 
-    with open('pythonStaticBooleans/WhiteCss', 'r') as f:
+    with open("pythonStaticBooleans/WhiteCss", "r") as f:
         WhiteCss = f.read()
 
-    if (WhiteCss == True):
-        filenames.append('BracketsHtmlAndCss/dataWhite.css')
+        if (WhiteCss == "True"):
+            filenames.append("BracketsHtmlAndCss/dataWhite.css")
 
-    if('BracketsHtmlAndCss/dataDark.css' in filenames):
-        if (WhiteCss == False):
-            filenames.remove('BracketsHtmlAndCss/dataWhite.css')
+        if ("BracketsHtmlAndCss/dataDark.css" in filenames):
+            if (WhiteCss == "False" and "BracketsHtmlAndCss/dataWhite.css" in filenames):
+                filenames.remove("BracketsHtmlAndCss/dataWhite.css")
+        # print(filenames)
 
-    with open('pythonStaticBooleans/PointerCss', 'r') as f:
+    with open("pythonStaticBooleans/PointerCss", "r") as f:
         PointerCss = f.read()
 
-    if (PointerCss == True):
-        filenames.append('BracketsHtmlAndCss/pointer.css')
+        if (PointerCss == "True"):
+            filenames.append("BracketsHtmlAndCss/pointer.css")
 
-    if('BracketsHtmlAndCss/dataDark.css' in filenames):
-        if (PointerCss == False):
-            filenames.remove('BracketsHtmlAndCss/pointer.css')
+        if ("BracketsHtmlAndCss/dataDark.css" in filenames):
+            if (PointerCss == "False" and "BracketsHtmlAndCss/pointer.css" in filenames):
+                filenames.remove("BracketsHtmlAndCss/pointer.css")
+        # print(filenames)
 
-    with open('pythonStaticBooleans/specificCss', 'r') as f:
+    with open("pythonStaticBooleans/specificCss", "r") as f:
         specificCss = f.read()
 
-    if (specificCss == True):
-        filenames.append('BracketsHtmlAndCss/webSiteSpecific.css')
+        if (specificCss == "True"):
+            filenames.append("BracketsHtmlAndCss/webSiteSpecific.css")
 
-    if('BracketsHtmlAndCss/dataDark.css' in filenames):
-        if (specificCss == False):
-            filenames.remove('BracketsHtmlAndCss/webSiteSpecific.css')
+        if ("BracketsHtmlAndCss/dataDark.css" in filenames):
+            if (specificCss == "False" and "BracketsHtmlAndCss/webSiteSpecific.css" in filenames):
+                filenames.remove("BracketsHtmlAndCss/webSiteSpecific.css")
+        # print(filenames)
 
+    # print("sp" + specificCss)
     # 'BracketsHtmlAndCss/dataDark.css', 'BracketsHtmlAndCss/webSiteSpecific.css'
 
     print(BlackCss, WhiteCss, PointerCss, specificCss)
