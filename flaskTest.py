@@ -1,6 +1,7 @@
-from flask import Flask
+from __future__ import print_function
 import os
 import webbrowser
+import json
 from flask import Flask, request
 from flask import render_template
 
@@ -9,7 +10,7 @@ app = Flask(__name__)
 @app.route('/api/foo/', methods=['GET'])
 def foo():
     bar = request.args.to_dict()
-    print bar
+    getCssFromJson(bar)
     return 'success', 200
 
 @app.route('/webpageexample/')
@@ -25,6 +26,38 @@ def run(runfile):
     with open(runfile, "r") as rnf:
         exec(rnf.read())
 
+
+# def unicodefy(String):
+#     return unicode(String).encode('utf-8')
+
+
+def getCssFromJson(bar):
+    print(bar)
+
+    bar = str(bar).replace("\'", "\"")
+    print(bar)
+
+    data = json.loads(bar)
+
+    print(data['a'])
+    # data = json.dumps(bar)
+    # print(data)
+
+
+
+    # for dataIndexer in bar['a']:
+    #     # x = x + 1
+    #     print(dataIndexer)
+
+
+
+    # if(bar[1] is 'getCssFromJson'):
+    #     print 'getCssFromJson'
+    #     os.system('python CSSgen.py')
+    #
+
+
+
 # @app.route("/")
 # def hello1():
 #     return "Hello Wordsfsdfdsld!"
@@ -33,7 +66,7 @@ if __name__ == "__main__":
 
     # run("CSSgen.py")
 
-    os.system('python CSSgen.py')
+
 
     app.static_folder = 'static'
 
