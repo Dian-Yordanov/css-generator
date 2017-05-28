@@ -92,6 +92,13 @@ def deciceWhichFunctionToRun(bar):
             os.remove('pythonStaticBooleans/BlackCss')
         with open('pythonStaticBooleans/BlackCss', 'a') as the_file:
             the_file.write(str(BlackCss))
+
+        WhiteCss = False
+
+        if (os.path.exists('pythonStaticBooleans/WhiteCss')):
+            os.remove('pythonStaticBooleans/WhiteCss')
+        with open('pythonStaticBooleans/WhiteCss', 'a') as the_file:
+            the_file.write(str(WhiteCss))
     # ...
     # the_file.write('Hello\n')
 
@@ -110,6 +117,13 @@ def deciceWhichFunctionToRun(bar):
             os.remove('pythonStaticBooleans/WhiteCss')
         with open('pythonStaticBooleans/WhiteCss', 'a') as the_file:
             the_file.write(str(WhiteCss))
+
+        BlackCss = False
+
+        if (os.path.exists('pythonStaticBooleans/BlackCss')):
+            os.remove('pythonStaticBooleans/BlackCss')
+        with open('pythonStaticBooleans/BlackCss', 'a') as the_file:
+            the_file.write(str(BlackCss))
 
     if (data['a'] == 'Whiteoff'):
         WhiteCss = False
@@ -170,6 +184,7 @@ def getCssFromJson():
 def generateCss():
     print('generateCss')
 
+    filenames.clear()
     if (os.path.exists('static/data.css')):
         os.remove('static/data.css')
 
@@ -230,8 +245,37 @@ def generateCss():
                     outfile.write(line)
 
 def resetCss():
-    print('resetCss')
-    
+
+    BlackCss = False
+
+    if (os.path.exists('pythonStaticBooleans/BlackCss')):
+        os.remove('pythonStaticBooleans/BlackCss')
+    with open('pythonStaticBooleans/BlackCss', 'a') as the_file:
+        the_file.write(str(BlackCss))
+
+    WhiteCss = False
+
+    if (os.path.exists('pythonStaticBooleans/WhiteCss')):
+        os.remove('pythonStaticBooleans/WhiteCss')
+    with open('pythonStaticBooleans/WhiteCss', 'a') as the_file:
+        the_file.write(str(WhiteCss))
+
+    PointerCss = False
+
+    if (os.path.exists('pythonStaticBooleans/PointerCss')):
+        os.remove('pythonStaticBooleans/PointerCss')
+    with open('pythonStaticBooleans/PointerCss', 'a') as the_file:
+        the_file.write(str(PointerCss))
+
+    specificCss = False
+
+    if (os.path.exists('pythonStaticBooleans/specificCss')):
+        os.remove('pythonStaticBooleans/specificCss')
+    with open('pythonStaticBooleans/specificCss', 'a') as the_file:
+        the_file.write(str(specificCss))
+
+
+    filenames.clear()
     if (os.path.exists('static/data.css')):
         os.remove('static/data.css')
 
