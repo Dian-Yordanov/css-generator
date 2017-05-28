@@ -1,6 +1,7 @@
 from __future__ import print_function
 import os
 import webbrowser
+import os.path
 import json
 from flask import Flask, request
 from flask import render_template
@@ -21,6 +22,18 @@ def hello(name=None):
 def controol(name=None):
     return render_template('webcontrol.html', name=name)
 
+@app.context_processor
+def override_url_for():
+    return dict(url_for=dated_url_for)
+
+def dated_url_for(endpoint, **values):
+    if endpoint == 'static':
+        filename = values.get('filename', None)
+        if filename:
+            file_path = os.path.join(app.root_path,
+                                     endpoint, filename)
+            values['q'] = int(os.stat(file_path).st_mtime)
+    return url_for(endpoint, **values)
 
 def run(runfile):
     with open(runfile, "r") as rnf:
@@ -61,7 +74,9 @@ def getCssFromJson():
 def generateCss():
     print('generateCss')
 
-    os.remove('static/data.css')
+    if (os.path.exists('static/data.css')):
+        os.remove('static/data.css')
+
     filenames = ['BracketsHtmlAndCss/dataDark.css', 'BracketsHtmlAndCss/webSiteSpecific.css']
     with open('/media/dianlinux/LinuxExt4/pythonglobalcssgeneratorforstylish/static/data.css', 'w') as outfile:
         for fname in filenames:
@@ -71,7 +86,9 @@ def generateCss():
 
 def resetCss():
     print('resetCss')
-    os.remove('static/data.css')
+    
+    if (os.path.exists('static/data.css')):
+        os.remove('static/data.css')
 
 # @app.route("/")
 # def hello1():
@@ -82,7 +99,7 @@ if __name__ == "__main__":
     # run("CSSgen.py")
 
 
-
+    app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
     app.static_folder = 'static'
 
     url = 'http://127.0.0.1:5000/'
