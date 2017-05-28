@@ -93,6 +93,10 @@
     function getCssFromJson() {
             $.get("api/foo/?a=getCssFromJson", function(response) {});
     }
+    function resetCss() {
+            $.get("api/foo/?a=resetCss", function(response) {});
+    }
+
     //        if( $(this).is(":checked") )
     //                {
 
@@ -361,6 +365,12 @@ keyframes blink { 50% {
         grid-column: 1 / 2;
         grid-row: 5;
     }
+    .resetCss{
+        display: table;
+        margin: 5 auto;
+        grid-column: 1 / 2;
+        grid-row: 6;
+    }
 
 /*
     #zone-1,
@@ -531,6 +541,10 @@ keyframes blink { 50% {
 
         <div class="getCssFromJson">
             <input type="button" value="Get Css From Json" onclick="getCssFromJson()" />
+        </div>
+
+        <div class="resetCss">
+            <input type="button" value="Reset Css" onclick="resetCss()" />
         </div>
 
         <div class="buttonForExampleWebpage">

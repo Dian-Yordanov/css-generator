@@ -51,20 +51,27 @@ def deciceWhichFunctionToRun(bar):
     if (data['a'] == 'generateCss'):
         # print('data' + " " + data['a'])
         generateCss()
+    if (data['a'] == 'resetCss'):
+        # print('data' + " " + data['a'])
+        resetCss()
 
 def getCssFromJson():
     os.system('python CSSgen.py')
 
 def generateCss():
     print('generateCss')
-    # generateCss
-    # filenames = ['file1.txt', 'file2.txt', ...]
-    # with open('path/to/output/file', 'w') as outfile:
-    #     for fname in filenames:
-    #         with open(fname) as infile:
-    #             for line in infile:
-    #                 outfile.write(line)
 
+    os.remove('static/data.css')
+    filenames = ['BracketsHtmlAndCss/dataDark.css', 'BracketsHtmlAndCss/webSiteSpecific.css']
+    with open('/media/dianlinux/LinuxExt4/pythonglobalcssgeneratorforstylish/static/data.css', 'w') as outfile:
+        for fname in filenames:
+            with open(fname) as infile:
+                for line in infile:
+                    outfile.write(line)
+
+def resetCss():
+    print('resetCss')
+    os.remove('static/data.css')
 
 # @app.route("/")
 # def hello1():
