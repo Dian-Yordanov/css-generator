@@ -162,30 +162,6 @@ def deciceWhichFunctionToRun(bar):
 
     # print('data' + " " + data['a'])
 
-# def defineBooleans(bar):
-#
-#     bar = str(bar).replace("\'", "\"")
-#     data = json.loads(bar)
-#     if (data['a'] == 'Blackon'):
-#         BlackCss = True
-#     if (data['a'] == 'Blackoff'):
-#         BlackCss = False
-#
-#     if (data['a'] == 'Whiteon'):
-#         WhiteCss = True
-#     if (data['a'] == 'Whiteoff'):
-#         WhiteCss = False
-#
-#     if (data['a'] == 'Pointeron'):
-#         PointerCss = True
-#     if (data['a'] == 'Pointeroff'):
-#         PointerCss = False
-#
-#     if (data['a'] == 'specificon'):
-#         specificCss = True
-#     if (data['a'] == 'specificoff'):
-#         specificCss = False
-
 def getCssFromJson():
     os.system('python CSSgen.py')
 
@@ -197,12 +173,18 @@ def generateCss(BlackCss, WhiteCss, PointerCss, specificCss):
 
     filenames = []
 
+    with open('pythonStaticBooleans/BlackCss', 'r') as f:
+        BlackCss = f.read()
+
     if (BlackCss == True):
         filenames.append('BracketsHtmlAndCss/dataDark.css')
 
     if('BracketsHtmlAndCss/dataDark.css' in filenames):
         if (BlackCss == False):
             filenames.remove('BracketsHtmlAndCss/dataDark.css')
+
+    with open('pythonStaticBooleans/WhiteCss', 'r') as f:
+        WhiteCss = f.read()
 
     if (WhiteCss == True):
         filenames.append('BracketsHtmlAndCss/dataWhite.css')
@@ -211,12 +193,18 @@ def generateCss(BlackCss, WhiteCss, PointerCss, specificCss):
         if (WhiteCss == False):
             filenames.remove('BracketsHtmlAndCss/dataWhite.css')
 
+    with open('pythonStaticBooleans/PointerCss', 'r') as f:
+        PointerCss = f.read()
+
     if (PointerCss == True):
         filenames.append('BracketsHtmlAndCss/pointer.css')
 
     if('BracketsHtmlAndCss/dataDark.css' in filenames):
         if (PointerCss == False):
             filenames.remove('BracketsHtmlAndCss/pointer.css')
+
+    with open('pythonStaticBooleans/specificCss', 'r') as f:
+        specificCss = f.read()
 
     if (specificCss == True):
         filenames.append('BracketsHtmlAndCss/webSiteSpecific.css')
