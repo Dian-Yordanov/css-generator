@@ -52,38 +52,38 @@
     function Black(checkbox) {
         mutuallyExclusive("Black","White");
         if (checkbox.checked) {
-            $.get("api/foo/?a=dsfsdfsfdssfsdf", function(response) {});
+            $.get("api/foo/?a=Blackon", function(response) {});
         }
         if (!checkbox.checked) {
-            $.get("api/foo/?a=hello&b=world", function(response) {});
+            $.get("api/foo/?a=Blackoff", function(response) {});
         }
     }
 
       function White(checkbox) {
           mutuallyExclusive("White","Black");
         if (checkbox.checked) {
-            $.get("api/foo/?a=dsfsdfsfdssfsdf", function(response) {});
+            $.get("api/foo/?a=Whiteon", function(response) {});
         }
         if (!checkbox.checked) {
-            $.get("api/foo/?a=hello&b=world", function(response) {});
+            $.get("api/foo/?a=Whiteoff", function(response) {});
         }
     }
 
     function Pointer(checkbox) {
         if (checkbox.checked) {
-            $.get("api/foo/?a=dsfsdfsfdssfsdf", function(response) {});
+            $.get("api/foo/?a=Pointeron", function(response) {});
         }
         if (!checkbox.checked) {
-            $.get("api/foo/?a=hello&b=world", function(response) {});
+            $.get("api/foo/?a=Pointeroff", function(response) {});
         }
     }
 
       function specific(checkbox) {
         if (checkbox.checked) {
-            $.get("api/foo/?a=dsfsdfsfdssfsdf", function(response) {});
+            $.get("api/foo/?a=specificon", function(response) {});
         }
         if (!checkbox.checked) {
-            $.get("api/foo/?a=hello&b=world", function(response) {});
+            $.get("api/foo/?a=specificoff", function(response) {});
         }
     }
 
