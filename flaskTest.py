@@ -180,7 +180,7 @@ def generateCss():
             filenames.append("BracketsHtmlAndCss/dataDark.css")
 
         if ("BracketsHtmlAndCss/dataDark.css" in filenames):
-            if (BlackCss == "False" and "BracketsHtmlAndCss/dataDark.css" in filenames):
+            if (BlackCss == "False"):
                 filenames.remove("BracketsHtmlAndCss/dataDark.css")
         # print(filenames)
 
@@ -190,8 +190,8 @@ def generateCss():
         if (WhiteCss == "True"):
             filenames.append("BracketsHtmlAndCss/dataWhite.css")
 
-        if ("BracketsHtmlAndCss/dataDark.css" in filenames):
-            if (WhiteCss == "False" and "BracketsHtmlAndCss/dataWhite.css" in filenames):
+        if ("BracketsHtmlAndCss/dataWhite.css" in filenames):
+            if (WhiteCss == "False"):
                 filenames.remove("BracketsHtmlAndCss/dataWhite.css")
         # print(filenames)
 
@@ -201,8 +201,8 @@ def generateCss():
         if (PointerCss == "True"):
             filenames.append("BracketsHtmlAndCss/pointer.css")
 
-        if ("BracketsHtmlAndCss/dataDark.css" in filenames):
-            if (PointerCss == "False" and "BracketsHtmlAndCss/pointer.css" in filenames):
+        if ("BracketsHtmlAndCss/pointer.css" in filenames):
+            if (PointerCss == "False"):
                 filenames.remove("BracketsHtmlAndCss/pointer.css")
         # print(filenames)
 
@@ -212,10 +212,10 @@ def generateCss():
         if (specificCss == "True"):
             filenames.append("BracketsHtmlAndCss/webSiteSpecific.css")
 
-        if ("BracketsHtmlAndCss/dataDark.css" in filenames):
-            if (specificCss == "False" and "BracketsHtmlAndCss/webSiteSpecific.css" in filenames):
+        if ("BracketsHtmlAndCss/webSiteSpecific.css" in filenames):
+            if (specificCss == "False"):
                 filenames.remove("BracketsHtmlAndCss/webSiteSpecific.css")
-        # print(filenames)
+                print("removed")
 
     # print("sp" + specificCss)
     # 'BracketsHtmlAndCss/dataDark.css', 'BracketsHtmlAndCss/webSiteSpecific.css'
