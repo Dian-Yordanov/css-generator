@@ -10,7 +10,7 @@ app = Flask(__name__)
 @app.route('/api/foo/', methods=['GET'])
 def foo():
     bar = request.args.to_dict()
-    getCssFromJson(bar)
+    deciceWhichFunctionToRun(bar)
     return 'success', 200
 
 @app.route('/webpageexample/')
@@ -30,13 +30,10 @@ def run(runfile):
 # def unicodefy(String):
 #     return unicode(String).encode('utf-8')
 
-
-def getCssFromJson(bar):
-    print(bar)
-
+def deciceWhichFunctionToRun(bar):
+    # print(bar)
     bar = str(bar).replace("\'", "\"")
     data = json.loads(bar)
-
     # print(data['a'])
 
     # print(bar)
@@ -48,11 +45,25 @@ def getCssFromJson(bar):
     #     # x = x + 1
     #     print(dataIndexer)
 
-    if(data['a'] == 'getCssFromJson'):
-        print('data' + " " + data['a'])
-        os.system('python CSSgen.py')
+    if (data['a'] == 'getCssFromJson'):
+        # print('data' + " " + data['a'])
+        getCssFromJson()
+    if (data['a'] == 'generateCss'):
+        # print('data' + " " + data['a'])
+        generateCss()
 
+def getCssFromJson():
+    os.system('python CSSgen.py')
 
+def generateCss():
+    print('generateCss')
+    # generateCss
+    # filenames = ['file1.txt', 'file2.txt', ...]
+    # with open('path/to/output/file', 'w') as outfile:
+    #     for fname in filenames:
+    #         with open(fname) as infile:
+    #             for line in infile:
+    #                 outfile.write(line)
 
 
 # @app.route("/")
