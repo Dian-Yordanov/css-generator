@@ -182,7 +182,7 @@ def generateCss():
         if ("BracketsHtmlAndCss/dataDark.css" in filenames):
             if (BlackCss == "False"):
                 filenames.remove("BracketsHtmlAndCss/dataDark.css")
-        # print(filenames)
+                print("removed")
 
     with open("pythonStaticBooleans/WhiteCss", "r") as f:
         WhiteCss = f.read()
