@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99d7b7d2-ef8a-459d-85e8-498993b4e186" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/webcontrol.html" afterPath="$PROJECT_DIR$/templates/webcontrol.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BracketsHtmlAndCss/dataDark.css" afterPath="$PROJECT_DIR$/BracketsHtmlAndCss/dataDark.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BracketsHtmlAndCss/dataWhite.css" afterPath="$PROJECT_DIR$/BracketsHtmlAndCss/dataWhite.css" />
     </list>
     <ignored path="pythonglobalcssgeneratorforstylish.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,16 +67,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="specificCss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pythonStaticBooleans/specificCss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="WhiteCss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pythonStaticBooleans/WhiteCss">
           <provider selected="true" editor-type-id="text-editor">
@@ -119,8 +110,18 @@
       <file leaf-file-name="dataDark.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BracketsHtmlAndCss/dataDark.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-486">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="518">
+              <caret line="58" column="24" selection-start-line="0" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dataWhite.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BracketsHtmlAndCss/dataWhite.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="6" column="31" selection-start-line="0" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -160,6 +161,8 @@
         <option value="$PROJECT_DIR$/sdfds.py" />
         <option value="$PROJECT_DIR$/flaskTest.py" />
         <option value="$PROJECT_DIR$/templates/webcontrol.html" />
+        <option value="$PROJECT_DIR$/BracketsHtmlAndCss/dataWhite.css" />
+        <option value="$PROJECT_DIR$/BracketsHtmlAndCss/dataDark.css" />
       </list>
     </option>
   </component>
@@ -749,13 +752,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css-format-master/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -1164,10 +1160,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/BracketsHtmlAndCss/dataWhite.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="31" selection-start-line="0" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/BracketsHtmlAndCss/dataDark.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-486">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="518">
+          <caret line="58" column="24" selection-start-line="0" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
           <folding />
         </state>
       </provider>

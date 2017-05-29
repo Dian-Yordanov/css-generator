@@ -14,7 +14,8 @@ border-right-color: rgba(128,128,128, 1) !important}
 
 /*----- links -----*/
 
-body, #content, #settingsMenu, td.postblock, tr, div.extPanel, strong, span.button, div#theme.panel {color: rgba(255,255,255,1) !important; background-color: rgba(0,0,0, 1) !important; background-image: none !important;}
+body, #content, #settingsMenu, td.postblock, tr, div.extPanel, strong, span.button, div#theme.panel {
+    color: rgba(255,255,255,1) !important; background-color: rgba(0,0,0, 1) !important; background-image: none !important;}
 
 a, a * {
 color: #336699 !important;
@@ -45,7 +46,7 @@ border-radius: 6px !important}
 table > tbody > tr:nth-child(even), table > tbody > tr > td:nth-child(even) {
 background-color: rgba(0,0,0,.2) !important}
 
-iframe, embed, header, nav, footer, label [onclick], nav ul, div[style*="position:"][style*="left:"][style*="visible"], div[style*="z-index:"][style*="left:"][style*="visible"], div[style*="-moz-user-select"], div[role="menu"], div[role="dialog"], span[class*="script"] div, [id*="menu"], [class*="dropdown"], [class*="popup"], [class="title"], ul[style*="display:"], ul[style*="visibility:"] ul, [id*="nav"] ul, [class*="nav"] ul, ul[class*="menu"], a[onclick][style*="display"], a[id*="ghosteryfirefox"], #ghostery-purple-bubble, #translator-popup, .menu, .tooltip, 
+iframe, embed, header, nav, footer, label [onclick], nav ul, div[style*="position:"][style*="left:"][style*="visible"], div[style*="z-index:"][style*="left:"][style*="visible"], div[style*="-moz-user-select"], div[role="menu"], div[role="dialog"], span[class*="script"] div, [id*="menu"], [class*="dropdown"], [class*="popup"], [class="title"], ul[style*="display:"], ul[style*="visibility:"] ul, [id*="nav"] ul, [class*="nav"] ul, ul[class*="menu"], a[onclick][style*="display"], a[id*="ghosteryfirefox"], #ghostery-purple-bubble, #translator-popup, .menu, .tooltip,
 
 .hovercard, .vbmenu_popup {
 background: rgba(5,5,5,.9) !important;
