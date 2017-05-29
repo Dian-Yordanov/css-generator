@@ -91,6 +91,9 @@ def deciceWhichFunctionToRun(bar):
     if (data['a'] == 'resetCss'):
         resetCss()
 
+    if ('colour' in data['a']):
+        print('fdsf')
+
 def getCssFromJson():
     os.system('python CSSgen.py')
 
