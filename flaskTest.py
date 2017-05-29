@@ -28,6 +28,16 @@ def run(runfile):
     with open(runfile, "r") as rnf:
         exec(rnf.read())
 
+def booleanSetter(boolean, strboolean, value):
+
+    boolean = value
+    print('pythonStaticBooleans/'+ strboolean)
+
+    if (os.path.exists('pythonStaticBooleans/'+ strboolean)):
+        os.remove('pythonStaticBooleans/'+ strboolean)
+    with open('pythonStaticBooleans/'+ strboolean, 'a') as the_file:
+        the_file.write(str(boolean))
+
 def deciceWhichFunctionToRun(bar):
 
     BlackCss = None
@@ -41,97 +51,45 @@ def deciceWhichFunctionToRun(bar):
     print(data['a'])
 
     if (data['a'] == 'Blackon'):
-        BlackCss = True
 
-        # fn = input('pythonStaticBooleans/BlackCss')
-
-        if (os.path.exists('pythonStaticBooleans/BlackCss')):
-            os.remove('pythonStaticBooleans/BlackCss')
-        with open('pythonStaticBooleans/BlackCss', 'a') as the_file:
-            the_file.write(str(BlackCss))
-
-        WhiteCss = False
-
-        if (os.path.exists('pythonStaticBooleans/WhiteCss')):
-            os.remove('pythonStaticBooleans/WhiteCss')
-        with open('pythonStaticBooleans/WhiteCss', 'a') as the_file:
-            the_file.write(str(WhiteCss))
+        booleanSetter(BlackCss,'BlackCss', True)
+        booleanSetter(WhiteCss,'WhiteCss', False)
 
     if (data['a'] == 'Blackoff'):
-        BlackCss = False
 
-        if (os.path.exists('pythonStaticBooleans/BlackCss')):
-            os.remove('pythonStaticBooleans/BlackCss')
-        with open('pythonStaticBooleans/BlackCss', 'a') as the_file:
-            the_file.write(str(BlackCss))
+        booleanSetter(BlackCss, 'BlackCss', False)
 
     if (data['a'] == 'Whiteon'):
-        WhiteCss = True
 
-        if (os.path.exists('pythonStaticBooleans/WhiteCss')):
-            os.remove('pythonStaticBooleans/WhiteCss')
-        with open('pythonStaticBooleans/WhiteCss', 'a') as the_file:
-            the_file.write(str(WhiteCss))
-
-        BlackCss = False
-
-        if (os.path.exists('pythonStaticBooleans/BlackCss')):
-            os.remove('pythonStaticBooleans/BlackCss')
-        with open('pythonStaticBooleans/BlackCss', 'a') as the_file:
-            the_file.write(str(BlackCss))
+        booleanSetter(WhiteCss, 'WhiteCss', True)
+        booleanSetter(BlackCss, 'BlackCss', False)
 
     if (data['a'] == 'Whiteoff'):
-        WhiteCss = False
 
-        if (os.path.exists('pythonStaticBooleans/WhiteCss')):
-            os.remove('pythonStaticBooleans/WhiteCss')
-        with open('pythonStaticBooleans/WhiteCss', 'a') as the_file:
-            the_file.write(str(WhiteCss))
+        booleanSetter(WhiteCss, 'WhiteCss', False)
 
     if (data['a'] == 'Pointeron'):
-        PointerCss = True
 
-        if (os.path.exists('pythonStaticBooleans/PointerCss')):
-            os.remove('pythonStaticBooleans/PointerCss')
-        with open('pythonStaticBooleans/PointerCss', 'a') as the_file:
-            the_file.write(str(PointerCss))
+        booleanSetter(PointerCss, 'PointerCss', True)
 
     if (data['a'] == 'Pointeroff'):
-        PointerCss = False
 
-        if (os.path.exists('pythonStaticBooleans/PointerCss')):
-            os.remove('pythonStaticBooleans/PointerCss')
-        with open('pythonStaticBooleans/PointerCss', 'a') as the_file:
-            the_file.write(str(PointerCss))
+        booleanSetter(PointerCss, 'PointerCss', False)
 
     if (data['a'] == 'specificon'):
-        specificCss = True
 
-        if (os.path.exists('pythonStaticBooleans/specificCss')):
-            os.remove('pythonStaticBooleans/specificCss')
-        with open('pythonStaticBooleans/specificCss', 'a') as the_file:
-            the_file.write(str(specificCss))
+        booleanSetter(specificCss, 'specificCss', True)
 
     if (data['a'] == 'specificoff'):
-        specificCss = False
 
-        if (os.path.exists('pythonStaticBooleans/specificCss')):
-            os.remove('pythonStaticBooleans/specificCss')
-        with open('pythonStaticBooleans/specificCss', 'a') as the_file:
-            the_file.write(str(specificCss))
-
+        booleanSetter(specificCss, 'specificCss', False)
 
     if (data['a'] == 'getCssFromJson'):
-        # print('data' + " " + data['a'])
         getCssFromJson()
     if (data['a'] == 'generateCss'):
-        # print('data' + " " + data['a'])
         generateCss()
     if (data['a'] == 'resetCss'):
-        # print('data' + " " + data['a'])
         resetCss()
-
-    # print('data' + " " + data['a'])
 
 def getCssFromJson():
     os.system('python CSSgen.py')
@@ -152,7 +110,6 @@ def generateCss():
         if ("BracketsHtmlAndCss/dataDark.css" in filenames):
             if (BlackCss == "False"):
                 filenames.remove("BracketsHtmlAndCss/dataDark.css")
-                print("removed")
 
     with open("pythonStaticBooleans/WhiteCss", "r") as f:
         WhiteCss = f.read()
@@ -163,7 +120,6 @@ def generateCss():
         if ("BracketsHtmlAndCss/dataWhite.css" in filenames):
             if (WhiteCss == "False"):
                 filenames.remove("BracketsHtmlAndCss/dataWhite.css")
-        # print(filenames)
 
     with open("pythonStaticBooleans/PointerCss", "r") as f:
         PointerCss = f.read()
@@ -174,7 +130,6 @@ def generateCss():
         if ("BracketsHtmlAndCss/pointer.css" in filenames):
             if (PointerCss == "False"):
                 filenames.remove("BracketsHtmlAndCss/pointer.css")
-        # print(filenames)
 
     with open("pythonStaticBooleans/specificCss", "r") as f:
         specificCss = f.read()
@@ -186,9 +141,6 @@ def generateCss():
             if (specificCss == "False"):
                 filenames.remove("BracketsHtmlAndCss/webSiteSpecific.css")
                 print("removed")
-
-    # print("sp" + specificCss)
-    # 'BracketsHtmlAndCss/dataDark.css', 'BracketsHtmlAndCss/webSiteSpecific.css'
 
     print(BlackCss, WhiteCss, PointerCss, specificCss)
     print(filenames)
@@ -234,14 +186,7 @@ def resetCss():
     if (os.path.exists('static/data.css')):
         os.remove('static/data.css')
 
-# @app.route("/")
-# def hello1():
-#     return "Hello Wordsfsdfdsld!"
-
 if __name__ == "__main__":
-
-    # run("CSSgen.py")
-
 
     app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
     app.static_folder = 'static'

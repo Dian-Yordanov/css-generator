@@ -1,3 +1,3 @@
-filenames = []
-filenames.append("BracketsHtmlAndCss/webSiteSpecific.css")
-print(filenames)
+boolean = 'ds'
+sdsd = 'pythonStaticBooleans/'+str(boolean)
+print(sdsd)
