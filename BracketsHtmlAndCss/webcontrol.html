@@ -32,7 +32,7 @@
         document.getElementById("Pointer").checked = false;
         document.getElementById("specific").checked = false;
     }
-    
+
     function mutuallyExclusive(id, id1) {
         var c = document.getElementById(id);
 //        var d = document.getElementById("White");
@@ -52,47 +52,55 @@
     function Black(checkbox) {
         mutuallyExclusive("Black","White");
         if (checkbox.checked) {
-            $.get("api/foo/?a=dsfsdfsfdssfsdf", function(response) {});
+            $.get("api/foo/?a=Blackon", function(response) {});
         }
         if (!checkbox.checked) {
-            $.get("api/foo/?a=hello&b=world", function(response) {});
+            $.get("api/foo/?a=Blackoff", function(response) {});
         }
     }
-    
+
       function White(checkbox) {
           mutuallyExclusive("White","Black");
         if (checkbox.checked) {
-            $.get("api/foo/?a=dsfsdfsfdssfsdf", function(response) {});
+            $.get("api/foo/?a=Whiteon", function(response) {});
         }
         if (!checkbox.checked) {
-            $.get("api/foo/?a=hello&b=world", function(response) {});
+            $.get("api/foo/?a=Whiteoff", function(response) {});
         }
     }
-    
+
     function Pointer(checkbox) {
         if (checkbox.checked) {
-            $.get("api/foo/?a=dsfsdfsfdssfsdf", function(response) {});
+            $.get("api/foo/?a=Pointeron", function(response) {});
         }
         if (!checkbox.checked) {
-            $.get("api/foo/?a=hello&b=world", function(response) {});
+            $.get("api/foo/?a=Pointeroff", function(response) {});
         }
     }
-    
+
       function specific(checkbox) {
         if (checkbox.checked) {
-            $.get("api/foo/?a=dsfsdfsfdssfsdf", function(response) {});
+            $.get("api/foo/?a=specificon", function(response) {});
         }
         if (!checkbox.checked) {
-            $.get("api/foo/?a=hello&b=world", function(response) {});
+            $.get("api/foo/?a=specificoff", function(response) {});
         }
     }
-    
+
     function generateCss() {
             $.get("api/foo/?a=generateCss", function(response) {});
     }
     function getCssFromJson() {
             $.get("api/foo/?a=getCssFromJson", function(response) {});
     }
+    function resetCss() {
+            $.get("api/foo/?a=resetCss", function(response) {});
+            document.getElementById("White").checked = false;
+            document.getElementById("Black").checked = false;
+            document.getElementById("Pointer").checked = false;
+            document.getElementById("specific").checked = false;
+    }
+
     //        if( $(this).is(":checked") )
     //                {
 
@@ -250,7 +258,7 @@
     @ body {
         text-align: center;
     }
-    
+
     #page-wrap {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -262,12 +270,12 @@
     }
     /*
 .right {
-  
+
 }
-.left { 
-  
+.left {
+
 }
-    
+
 */
     /*
 keyframes blink { 50% {
@@ -276,7 +284,7 @@ keyframes blink { 50% {
 
 }
 */
-    
+
     .id1 {
         display: grid;
 /*        grid-template-columns: repeat(4, 1fr);*/
@@ -288,7 +296,7 @@ keyframes blink { 50% {
         grid-column: 1 / 5;
         grid-row: 1;
     }
-    
+
     .id2 {
         display: grid;
 /*        grid-template-columns: repeat(4, 1fr);*/
@@ -311,7 +319,7 @@ keyframes blink { 50% {
         grid-column: 1 / 5;
         grid-row: 3;
     }
-    
+
     .id4 {
         display: grid;
 /*        grid-template-columns: repeat(4, 1fr);*/
@@ -323,25 +331,25 @@ keyframes blink { 50% {
         grid-column: 1 / 5;
         grid-row: 4;
     }
-    
+
     .text {
         width: 300px;
         grid-column: 1 / 3;
 /*        grid-row: 2;*/
     }
-    
+
     .object {
-        
+
         padding-top: 8px;
         grid-column: 3 / 4;
 /*        grid-row: 2;*/
     }
-    
+
 /*
     div.text {
     width: 300px;
     }
-    
+
 */
     .buttonForExampleWebpage {
         display: table;
@@ -361,7 +369,13 @@ keyframes blink { 50% {
         grid-column: 1 / 2;
         grid-row: 5;
     }
-    
+    .resetCss{
+        display: table;
+        margin: 5 auto;
+        grid-column: 1 / 2;
+        grid-row: 6;
+    }
+
 /*
     #zone-1,
     #zone-2,
@@ -371,7 +385,7 @@ keyframes blink { 50% {
         padding: 10px;
     }
 */
-    
+
     .onoffswitch {
         /*
 	top: 25%;
@@ -385,11 +399,11 @@ keyframes blink { 50% {
         -moz-user-select: none;
         -ms-user-select: none;
     }
-    
+
     .onoffswitch-checkbox {
         display: none;
     }
-    
+
     .onoffswitch-label {
         display: block;
         overflow: hidden;
@@ -397,13 +411,13 @@ keyframes blink { 50% {
         border: 2px solid #999999;
         border-radius: 20px;
     }
-    
+
     .onoffswitch-inner {
         display: block;
         width: 200%;
         margin-left: -100%;
     }
-    
+
     .onoffswitch-inner:before,
     .onoffswitch-inner:after {
         display: block;
@@ -418,14 +432,14 @@ keyframes blink { 50% {
         font-weight: bold;
         box-sizing: border-box;
     }
-    
+
     .onoffswitch-inner:before {
         content: "ON";
         padding-left: 10px;
         background-color: #34A7C1;
         color: #FFFFFF;
     }
-    
+
     .onoffswitch-inner:after {
         content: "OFF";
         padding-right: 10px;
@@ -433,7 +447,7 @@ keyframes blink { 50% {
         color: #999999;
         text-align: right;
     }
-    
+
     .onoffswitch-switch {
         display: block;
         width: 18px;
@@ -446,11 +460,11 @@ keyframes blink { 50% {
         border: 2px solid #999999;
         border-radius: 20px;
     }
-    
+
     .onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-inner {
         margin-left: 0;
     }
-    
+
     .onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-switch {
         right: 0px;
     }
@@ -494,7 +508,7 @@ keyframes blink { 50% {
                 </div>
             </div>
         </div>
-        
+
         <div class="id3">
             <div class="text">
                 <p>
@@ -528,11 +542,15 @@ keyframes blink { 50% {
         <div class="generateCss">
             <input type="button" value="Generate Css" onclick="generateCss()" />
         </div>
-        
+
         <div class="getCssFromJson">
             <input type="button" value="Get Css From Json" onclick="getCssFromJson()" />
         </div>
-        
+
+        <div class="resetCss">
+            <input type="button" value="Reset Css" onclick="resetCss()" />
+        </div>
+
         <div class="buttonForExampleWebpage">
             <input type="button" value="Example webpage" onclick="window.open('http://127.0.0.1:5000/webpageexample')" />
         </div>
