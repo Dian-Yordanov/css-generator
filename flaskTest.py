@@ -48,6 +48,27 @@ def rgb_to_hex(red, green, blue):
     """Return color as #rrggbb for the given color values."""
     return '#%02x%02x%02x' % (red, green, blue)
 
+def hilo(a, b, c):
+    if c < b: b, c = c, b
+    if b < a: a, b = b, a
+    if c < b: b, c = c, b
+    return a + c
+
+def complement(r, g, b):
+    k = hilo(r, g, b)
+    return tuple(k - u for u in (r, g, b))
+
+def oppositeColoursEngine(x):
+    x = (255 - x) % 255
+    return x
+
+def oppositeColours(r, g, b):
+    r = oppositeColoursEngine(r)
+    g = oppositeColoursEngine(g)
+    b = oppositeColoursEngine(b)
+    stringX = '(' + str(r) + ',' + str(g) + ',' + str(b) + ')'
+    return stringX
+
 def deciceWhichFunctionToRun(bar):
 
     BlackCss = None
@@ -104,7 +125,20 @@ def deciceWhichFunctionToRun(bar):
     if ('colour' in data['a']):
         colourExtractor = '#' + str(data['a']).replace("colour", "")
         rgbColour = hex_to_rgb(colourExtractor)
-        rgbaColour = str(rgbColour)[:-1] + ',1)'
+        rgbaColour = 'rgba' + str(rgbColour)[:-1] + ',1)'
+
+        # print(rgbColour[0])
+
+        print(complement(rgbColour[0], rgbColour[1], rgbColour[2]))
+
+        print(oppositeColours(rgbColour[0], rgbColour[1], rgbColour[2]))
+
+        # with open("BracketsHtmlAndCss/dataDark.css", "rt") as fin:
+        #     with open("BracketsHtmlAndCss/dataCustom.css", "wt") as fout:
+        #         for line in fin:
+        #             fout.write(line.replace('A', 'Orange'))
+
+
         print(rgbaColour)
 
 def getCssFromJson():
