@@ -80,9 +80,11 @@
             document.getElementById("specific").checked = false;
     }
 
-    function myFunction() {
-    var x = document.getElementById("myColor").value;
-    document.getElementById("demo").innerHTML = x;
+    function colourPickerFunction() {
+        var x = document.getElementById("myColor").value;
+        document.getElementById("demo").innerHTML = x;
+        var y = "api/foo/?a=colour".concat(x).replace(/#/g, "")
+        $.get(y, function(response) {});
     }
 
 </script>
@@ -334,7 +336,7 @@
         <div class="colourPicker">
             <p>Pick a color:
                 <br/>
-                <input type="color" id="myColor" onchange="myFunction()"  />
+                <input type="color" id="myColor" onchange="colourPickerFunction()"  />
             </p>
 
             <p id="demo"></p>
