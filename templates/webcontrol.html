@@ -118,12 +118,17 @@
         grid-column: 1 / 5;
         grid-row: 2;
     }
+
+    .EmptySpace {
+        grid-row: 3;
+    }
+
     .id3 {
         display: grid;
         text-align: left;
         margin-right: 10px;
         grid-column: 1 / 5;
-        grid-row: 3;
+        grid-row: 4;
     }
 
     .id4 {
@@ -131,7 +136,11 @@
         text-align: left;
         margin-right: 10px;
         grid-column: 1 / 5;
-        grid-row: 4;
+        grid-row: 5;
+    }
+
+    .EmptySpace2 {
+        grid-row: 6;
     }
 
     .text {
@@ -149,29 +158,32 @@
         display: table;
         margin: 5 auto;
         grid-column: 3 / 4;
-        grid-row: 5;
+        grid-row: 8;
     }
    .generateCss{
         display: table;
         margin: 5 auto;
         grid-column: 2 / 3;
-        grid-row: 5;
+        grid-row: 8;
     }
     .getCssFromJson{
         display: table;
         margin: 5 auto;
         grid-column: 1 / 2;
-        grid-row: 5;
+        grid-row: 8;
     }
     .resetCss{
         display: table;
         margin: 5 auto;
         grid-column: 1 / 2;
-        grid-row: 6;
+        grid-row: 9;
     }
 
     .colourPicker {
-        grid-column: 1 / 2;
+        display: grid;
+        text-align: left;
+        margin-right: 10px;
+        grid-column: 1 / 5;
         grid-row: 7;
     }
 
@@ -287,6 +299,10 @@
             </div>
         </div>
 
+        <div class="EmptySpace">
+            &emsp;
+        </div>
+
         <div class="id3">
             <div class="text">
                 <p>
@@ -317,6 +333,10 @@
             </div>
         </div>
 
+        <div class="EmptySpace2">
+            &emsp;
+        </div>
+
         <div class="generateCss">
             <input type="button" value="Generate Css" onclick="generateCss()" />
         </div>
@@ -334,12 +354,18 @@
         </div>
 
         <div class="colourPicker">
-            <p>Pick a color:
+            <div class="text">
+                <p>
+                    <b>Custom Page Colours</b>
+                </p>
+            </div>
+            <div class="object">
                 <br/>
                 <input type="color" id="myColor" onchange="colourPickerFunction()"  />
-            </p>
+                <p id="demo"></p>
+            </div>
 
-            <p id="demo"></p>
+
         </div>
 
     </div>
