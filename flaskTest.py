@@ -7,26 +7,10 @@ from flask import Flask, request
 from flask import render_template
 
 app = Flask(__name__)
-
-# BlackCss = False
-# WhiteCss = False
-# PointerCss = False
-# specificCss = False
-
-# BlackCss
-# WhiteCss
-# PointerCss
-# specificCss
-
 filenames = []
 
 @app.route('/api/foo/', methods=['GET'])
 def foo():
-
-    # global BlackCss
-    # global WhiteCss
-    # global PointerCss
-    # global specificCss
 
     bar = request.args.to_dict()
     deciceWhichFunctionToRun(bar)
@@ -40,38 +24,11 @@ def hello(name=None):
 def controol(name=None):
     return render_template('webcontrol.html', name=name)
 
-# @app.context_processor
-# def override_url_for():
-#     return dict(url_for=dated_url_for)
-
-# def dated_url_for(endpoint, **values):
-#     if endpoint == 'static':
-#         filename = values.get('filename', None)
-#         if filename:
-#             file_path = os.path.join(app.root_path,
-#                                      endpoint, filename)
-#             values['q'] = int(os.stat(file_path).st_mtime)
-#     return url_for(endpoint, **values)
-
 def run(runfile):
     with open(runfile, "r") as rnf:
         exec(rnf.read())
 
-
-# def unicodefy(String):
-#     return unicode(String).encode('utf-8')
-
 def deciceWhichFunctionToRun(bar):
-
-    # global BlackCss = False
-    # global WhiteCss = False
-    # global PointerCss = False
-    # global specificCss = False
-
-    # global BlackCss
-    # global WhiteCss
-    # global PointerCss
-    # global specificCss
 
     BlackCss = None
     WhiteCss = None
@@ -99,8 +56,6 @@ def deciceWhichFunctionToRun(bar):
             os.remove('pythonStaticBooleans/WhiteCss')
         with open('pythonStaticBooleans/WhiteCss', 'a') as the_file:
             the_file.write(str(WhiteCss))
-    # ...
-    # the_file.write('Hello\n')
 
     if (data['a'] == 'Blackoff'):
         BlackCss = False
