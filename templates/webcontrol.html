@@ -19,6 +19,9 @@
         document.getElementById("White").checked = false;
         document.getElementById("Pointer").checked = false;
         document.getElementById("specific").checked = false;
+        document.getElementById("DarkMinimalisticScrollbar").checked = false;
+        document.getElementById("YouTubeCustomColors").checked = false;
+
     }
 
     function mutuallyExclusive(id, id1) {
@@ -81,14 +84,27 @@
     }
 
     function colourPickerFunction() {
-
-        document.getElementById("White").checked = false;
-        document.getElementById("Black").checked = false;
-
         var x = document.getElementById("myColor").value;
         document.getElementById("demo").innerHTML = x;
         var y = "api/foo/?a=colour".concat(x).replace(/#/g, "")
         $.get(y, function(response) {});
+    }
+
+    function DarkMinimalisticScrollbar(checkbox) {
+        if (checkbox.checked) {
+            $.get("api/foo/?a=DarkMinimalisticScrollbaron", function(response) {});
+        }
+        if (!checkbox.checked) {
+            $.get("api/foo/?a=DarkMinimalisticScrollbaroff", function(response) {});
+        }
+    }
+    function YouTubeCustomColors(checkbox) {
+        if (checkbox.checked) {
+            $.get("api/foo/?a=YouTubeCustomColorson", function(response) {});
+        }
+        if (!checkbox.checked) {
+            $.get("api/foo/?a=YouTubeCustomColorsoff", function(response) {});
+        }
     }
 
 </script>
@@ -147,6 +163,26 @@
         grid-row: 6;
     }
 
+    .DarkMinimalisticScrollbar {
+        display: grid;
+        text-align: left;
+        margin-right: 10px;
+        grid-column: 1 / 5;
+        grid-row: 7;
+    }
+
+    .YouTubeCustomColors {
+        display: grid;
+        text-align: left;
+        margin-right: 10px;
+        grid-column: 1 / 5;
+        grid-row: 8;
+    }
+
+    .EmptySpace3 {
+        grid-row: 9;
+    }
+
     .text {
         width: 300px;
         grid-column: 1 / 3;
@@ -162,25 +198,25 @@
         display: table;
         margin: 5 auto;
         grid-column: 3 / 4;
-        grid-row: 8;
+        grid-row: 11;
     }
    .generateCss{
         display: table;
         margin: 5 auto;
         grid-column: 2 / 3;
-        grid-row: 8;
+        grid-row: 11;
     }
     .getCssFromJson{
         display: table;
         margin: 5 auto;
         grid-column: 1 / 2;
-        grid-row: 8;
+        grid-row: 11;
     }
     .resetCss{
         display: table;
         margin: 5 auto;
         grid-column: 1 / 2;
-        grid-row: 9;
+        grid-row: 12;
     }
 
     .colourPicker {
@@ -188,7 +224,7 @@
         text-align: left;
         margin-right: 10px;
         grid-column: 1 / 5;
-        grid-row: 7;
+        grid-row: 10;
     }
 
     .onoffswitch {
@@ -341,6 +377,57 @@
             &emsp;
         </div>
 
+        <div class="colourPicker">
+            <div class="text">
+                <p>
+                    <b>Custom Page Colours</b>
+                </p>
+            </div>
+            <div class="object">
+                <br/>
+                <input type="color" id="myColor" onchange="colourPickerFunction()"  />
+                <p id="demo"></p>
+            </div>
+        </div>
+
+        <div class="EmptySpace3">
+            &emsp;
+        </div>
+
+        <div class="DarkMinimalisticScrollbar">
+            <div class="text">
+                <p>
+                    <b>Dark minimalistic scrollbar</b>
+                </p>
+            </div>
+            <div class="object">
+                <div class="onoffswitch">
+                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="DarkMinimalisticScrollbar" checked onchange="DarkMinimalisticScrollbar(this)"> <label class="onoffswitch-label" for="DarkMinimalisticScrollbar"> <span
+                                class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span>
+                            </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="YouTubeCustomColors">
+            <div class="text">
+                <p>
+                    <b>YouTube - Custom colors video progress bar </b>
+                </p>
+            </div>
+            <div class="object">
+                <div class="onoffswitch">
+                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="YouTubeCustomColors" checked onchange="YouTubeCustomColors(this)"> <label class="onoffswitch-label" for="YouTubeCustomColors"> <span
+                        class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="EmptySpace4">
+            &emsp;
+        </div>
+
         <div class="generateCss">
             <input type="button" value="Generate Css" onclick="generateCss()" />
         </div>
@@ -355,21 +442,6 @@
 
         <div class="buttonForExampleWebpage">
             <input type="button" value="Example webpage" onclick="window.open('http://127.0.0.1:5000/webpageexample')" />
-        </div>
-
-        <div class="colourPicker">
-            <div class="text">
-                <p>
-                    <b>Custom Page Colours</b>
-                </p>
-            </div>
-            <div class="object">
-                <br/>
-                <input type="color" id="myColor" onchange="colourPickerFunction()"  />
-                <p id="demo"></p>
-            </div>
-
-
         </div>
 
     </div>
