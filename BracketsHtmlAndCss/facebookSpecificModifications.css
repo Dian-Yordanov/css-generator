@@ -1,0 +1,14 @@
+#blueBar{background:#000000 linear-gradient(to bottom,#000000,#000000)!important}
+.hasSmurfbar #blueBarHolder #blueBar:after{background:rgba(0,0,0,0) linear-gradient(to bottom,rgba(0,0,0,.12),rgba(0,0,0,0))!important;border-top:1px solid #000000!important}
+#blueBarNAXAnchor{background:rgba(0,0,0,0) linear-gradient(to bottom,rgba(0,0,0,.12),rgba(0,0,0,0))!important;border-top:1px solid #000000!important}
+span.null {
+background-color: #000000!important
+}
+
+div._5wdf._5w1r {
+background-color: #ff00ff!important
+}
+
+div._5wdf._5w1r div {
+background-color: #000000!important
+}
