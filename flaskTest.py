@@ -127,10 +127,12 @@ def deciceWhichFunctionToRun(bar):
         rgbColour = hex_to_rgb(colourExtractor)
         rgbaColour = 'rgba' + str(rgbColour)[:-1] + ',1)'
 
-        # print(rgbColour[0])
-
         complementColour = 'rgba' + str(complement(rgbColour[0], rgbColour[1], rgbColour[2]))[:-1] + ',1)'
         oppositeColour = 'rgba' + str(oppositeColours(rgbColour[0], rgbColour[1], rgbColour[2]))[:-1] + ',1)'
+
+        complementColour = complementColour.replace(" ", "")
+        oppositeColour = complementColour.replace(" ", "")
+        rgbaColour = rgbaColour.replace(" ", "")
 
         # with open("BracketsHtmlAndCss/dataDark.css", "rt") as fin:
         #     with open("BracketsHtmlAndCss/dataCustom.css", "wt") as fout:
