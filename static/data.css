@@ -1,69 +1,8 @@
-/*----- CHANGE CURSORS -----*/
-* {cursor: url("data:image/x-icon;base64,AAACAAEAICAAAAAAAACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD39/eX9/f3w/f39yz///8A////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////APf397glJSXM9/f3w/f39yz///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A9/f3uAoKCswlJSXM9/f3w/f39ywAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD39/e4BwcHzAoKCswlJSXM9/f3w/f39yz///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////APf397gEBATMBwcHzAoKCswlJSXM9/f3w/f395f39/eX9/f3l/f395f39/eX9/f3l////wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A9/f3uAICAswEBATMBwcHzAoKCswODg7MERERzBUVFcwZGRnMHR0dzDU1Ncz39/eX////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD39/e4AAAAzAICAswEBATMBwcHzAoKCswODg7MERERzBUVFcwvLy/M9/f3l/f39yz///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////APf397gAAADMAAAAzAICAswEBATMBwcHzAoKCswODg7MKCgozPf395f39/cs////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A9/f3uAAAAMwAAADMAAAAzAICAswEBATMBwcHzCIiIsz39/eX9/f3LP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD39/e4AAAAzAAAAMwAAADMAAAAzAICAswcHBzM9/f3l/f39yz///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////APf397gAAADMAAAAzAAAAMwAAADMGRkZzPf395f39/cs////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A9/f3uAAAAMwAAADMAAAAzBkZGcz39/eX9/f3LP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD39/e4AAAAzAAAAMwZGRnM9/f3l/f39yz///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////APf397gAAADMGRkZzPf395f39/cs////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A9/f3uBkZGcz39/eX9/f3LP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD39/e49/f3l/f39yz///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////APf397j39/cs////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////////////////////////////////////////////////////////////////////////////////P////x////8P////B////wAP//8AD///AB///wA///8Af///AP///wH///8D////B////w////8f////P////3////8="), default !important}
-a, a * {cursor: url("data:image/x-icon;base64,AAACAAEAICAAAAUAAQCoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A9/f3lPf398z39/fM9/f3zPf398z39/fM9/f3zPf398z39/fM9/f3lP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////APf39wT39/exFRUVzBkZGcwdHR3MICAgzCQkJMwnJyfMKioqzCwsLMz39/e0////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A9/f3T/f392wRERHMFRUVzBkZGcwdHR3MICAgzCQkJMwnJyfMKioqzPf397H39/cm////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////APf39wT39/exPDw8zA4ODswRERHMFRUVzBkZGcwdHR3MICAgzCQkJMwnJyfM9/f3bPf392z///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A9/f3T/f395AHBwfMCgoKzA4ODswRERHMFRUVzBkZGcwdHR3MICAgzCQkJMxSUlLM9/f3qv///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////APf39wT39/exNTU1zAQEBMwHBwfMCgoKzA4ODswRERHMFRUVzBkZGcwdHR3MICAgzCQkJMz39/ex9/f3Jv///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A9/f3T/f395AAAADMAgICzAQEBMwHBwfMCgoKzA4ODswRERHMFRUVzBkZGcwdHR3MICAgzPf392z39/ds////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD39/exNDQ0ywAAAMwAAADMAgICzAQEBMwHBwfMCgoKzA4ODswRERHMFRUVzBkZGcwdHR3MTU1NzPf396r///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A9/f3T/f395AAAADMNDQ0ywAAAMwAAADMAgICzAQEBMwHBwfMCgoKzA4ODswRERHMFRUVzBkZGcwdHR3M9/f3zP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////APf39yv39/eUGRkZzAAAAMyDg4PMAAAAzAAAAMwAAADMAgICzAQEBMwHBwfMCgoKzA4ODswRERHMFRUVzBkZGcz39/fM////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A9/f3lBkZGcwAAADMAAAAzPf398wAAADMAAAAzAAAAMwAAADMAgICzAQEBMwHBwfMCgoKzA4ODswRERHMFRUVzPf398z///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD39/fMGRkZzBkZGcz39/eU9/f3zAAAAMwAAADMAAAAzAAAAMwAAADMAgICzAQEBMwHBwfM9/f3zA4ODswRERHM9/f3zP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////APf395T39/fM9/f3lPf39yv39/fMAAAAzAAAAMz39/fMAAAAzAAAAMz39/fMAgICzAQEBMz39/fMCgoKzD8/P8z39/eU////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////APf398wAAADMAAAAzPf398wAAADMAAAAzPf398wAAADMAgICzPf398w5OTnM9/f3lPf39xT///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A9/f3zAAAAMwAAADM9/f3zAAAAMwAAADM9/f3zAAAAMw0NDTM9/f3zPf395T39/cU////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD39/fMAAAAzAAAAMz39/fMAAAAzDQ0NMz39/eU9/f3zPf395T39/cr////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////APf398wAAADMAAAAzPf398z39/fM9/f3lPf39yv///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A9/f3zAAAAMwAAADM9/f3zP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD39/fMAAAAzAAAAMz39/fM////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////APf398wAAADMAAAAzPf398z///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A9/f3lAAAAMwAAADM9/f3lP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD39/cr9/f3lPf395T39/cr////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A//////////////////////////////////////////////////////gB///4Af///AH///AD///wAP//4AD//+AB///AAH//wAB//4AAf/8AAH//AAB//xAAf//wAP//8AH///AH///wP///8P////D////w////8P////n///8="), pointer !important}/* dark grey gradient */
-kbd, .minibutton, a.feed, .button:not(img), button.classy, a.button.classy, .pagination a, .list-browser-filterbar,
-.gobutton, .header, .pagination .gap, .comment-header, .pagehead ul.tabs li a, .login_form input[type="submit"],
-.top-bar, ul#bootcamp li a h4, .minibutton:disabled, .pull-info, .notification-indicator,
-#gists .context-menu-container, .zeroclipboard-button, pre.headers, .branch-link,
-body#com #header, .white-nav .selected span, .select-menu-header, .clone-url-button a,
-.filter-tab, #header-wrapper, #header-wrapper .nav, pre div:hover, .diff-table tr:hover pre, .pagination span,
-.commit-ref, .cheatsheet h2, .file-box .highlight tr:not(.inline-comments):hover td, .section a.section-head,
-.dashboard-tabs li a, .full-commit .browse-button, a.function-button, .capped-box h3,
-.expandable-line-num .diff-expander:hover, .boxed-group .heading, #contributors .capped-card h3,
-.comment-form-head.tabnav, .add-pill-form, .gist .gist-file .gist-meta, .file .meta {
-background: linear-gradient(to bottom, #000000, #000000) !important;
-border-color: #000 !important;
-}
-
-.fm-left-panel {
-background-color: #181818 !important;
-}
-
-.fm-tree-folder {
-color: #ddd !important;
-}
-
-/* Explorer background */
-.fmholder, #fmholder {
-background-color: #222 !important;
-}
-
-/* Tasks */
-.fm-new-folder, .search-files-result,
-.fm-file-upload, .search-messages-result {
-color: #eee !important;
-}
-div.boardBanner {
-background-color: #000!important;
-}
-span.boardList {
-background-color: #000!important;
-}
-div.center{
-background-color: #000!important;
-}
-div.desktop{
-background-color: #000!important;
-}
-div.g_b {
-background-color: #000000!important;
-}
-blockquote.postMessage {
-background-color: #000!important;
-}
-
-
-
-
-
-
-
-
-html {background: */ rgba(19,132,76,1) /* fixed */ !important}
+html {background: */ rgba(205,14,14,1) /* fixed */ !important}
 
 * {
-color: rgba(236,123,179,1) !important;
-text-shadow: 0 0 1px rgba(19,132,76,1) !important;
+color: rgba(50,241,241,1) !important;
+text-shadow: 0 0 1px rgba(205,14,14,1) !important;
 box-shadow: none !important;
 background-color: transparent!important;
 border-color: rgba(128,128,128, 1) !important;
@@ -76,15 +15,15 @@ border-right-color: rgba(128,128,128, 1) !important}
 /*----- links -----*/
 
 body, #content, #settingsMenu, td.postblock, tr, div.extPanel, strong, span.button, div#theme.panel {
-    color: rgba(236,123,179,1) !important;
-    background-color: rgba(19,132,76,1) !important; background-image: none !important;}
+    color: rgba(50,241,241,1) !important;
+    background-color: rgba(205,14,14,1) !important; background-image: none !important;}
 
 a, a * {
 color: #336699 !important;
 text-decoration: none !important}
 a:hover, a:hover *, a:visited:hover, a:visited:hover *, span[onclick]:hover, div[onclick]:hover, [role="link"]:hover, [role="link"]:hover *, [role="button"]:hover *, [role="menuitem"]:hover, [role="menuitem"]:hover *, .link:hover, .link:hover * {
-color: rgba(19,132,76,1) !important;
-text-shadow: 0 0 1px rgba(19,132,76,1) !important}
+color: rgba(205,14,14,1) !important;
+text-shadow: 0 0 1px rgba(205,14,14,1) !important}
 a:visited, a:visited * {
 color: #607069 !important}
 a.highlight, a.highlight *, a.active, a.active *, .selected, .selected *, [href="#"] {
@@ -94,25 +33,25 @@ font-weight: bold !important}
 a h1, a h2, a h3, a h4, a h5, a h6, h1 a, h2 a, h3 a, a strong, a[id*="headline"], a[class*="headline"], a[id*="header"], a[class*="header"] {text-decoration: underline !important}
 [class*="error"], [class*="alert"], code, span[onclick], div[onclick] {color: #900 !important}
 
-::-moz-selection {background: #377 !important; color: rgba(19,132,76,1) !important}
-::selection {background: #377 !important; color: rgba(19,132,76,1) !important}
+::-moz-selection {background: #377 !important; color: rgba(205,14,14,1) !important}
+::selection {background: #377 !important; color: rgba(205,14,14,1) !important}
 :focus {outline: none !important}
 
 /*----- MENU & CO BACKGROUND-COLORS -----*/
-div[style="display: block;"] {background: rgba(19,132,76,1) !important}
+div[style="display: block;"] {background: rgba(205,14,14,1) !important}
 
 table {
-background: rgba(19,132,76,1) !important;
+background: rgba(205,14,14,1) !important;
 border-radius: 6px !important}
 table > tbody > tr:nth-child(even), table > tbody > tr > td:nth-child(even) {
-background-color: rgba(236,123,179,1) !important}
+background-color: rgba(50,241,241,1) !important}
 
 iframe, embed, header, nav, footer, label [onclick], nav ul, div[style*="position:"][style*="left:"][style*="visible"], div[style*="z-index:"][style*="left:"][style*="visible"], div[style*="-moz-user-select"], div[role="menu"], div[role="dialog"], span[class*="script"] div, [id*="menu"], [class*="dropdown"], [class*="popup"], [class="title"], ul[style*="display:"], ul[style*="visibility:"] ul, [id*="nav"] ul, [class*="nav"] ul, ul[class*="menu"], a[onclick][style*="display"], a[id*="ghosteryfirefox"], #ghostery-purple-bubble, #translator-popup, .menu, .tooltip,
 
 .hovercard, .vbmenu_popup {
-background: rgba(19,132,76,1) !important;
+background: rgba(205,14,14,1) !important;
 border-radius: 5px;
-box-shadow: 1px 1px 5px rgba(19,132,76,1) !important}
+box-shadow: 1px 1px 5px rgba(205,14,14,1) !important}
 
 [id*="overlay"], [id*="lightbox"], blockquote {
 background-color: rgba(35,35,35,.9) !important;
