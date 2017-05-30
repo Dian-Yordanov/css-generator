@@ -131,7 +131,7 @@ def deciceWhichFunctionToRun(bar):
         oppositeColour = 'rgba' + str(oppositeColours(rgbColour[0], rgbColour[1], rgbColour[2]))[:-1] + ',1)'
 
         complementColour = complementColour.replace(" ", "")
-        oppositeColour = complementColour.replace(" ", "")
+        oppositeColour = oppositeColour.replace(" ", "")
         rgbaColour = rgbaColour.replace(" ", "")
 
         # with open("BracketsHtmlAndCss/dataDark.css", "rt") as fin:
