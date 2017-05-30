@@ -71,6 +71,7 @@
 
     function generateCss() {
             $.get("api/foo/?a=generateCss", function(response) {});
+            document.getElementById('webpageexampleId').src = document.getElementById('webpageexampleId').src
     }
     function getCssFromJson() {
             $.get("api/foo/?a=getCssFromJson", function(response) {});
@@ -253,6 +254,14 @@
         margin-right: 10px;
         grid-column: 1 / 5;
         grid-row: 14;
+    }
+
+    .webpageexample {
+        display: grid;
+        text-align: left;
+        margin-right: 10px;
+        grid-column: 1 / 5;
+        grid-row: 17;
     }
 
     .onoffswitch {
@@ -519,6 +528,12 @@
 
         <div class="buttonForExampleWebpage">
             <input type="button" value="Example webpage" onclick="window.open('http://127.0.0.1:5000/webpageexample')" />
+        </div>
+
+        <div class="webpageexample">
+            <iframe src="http://127.0.0.1:5000/webpageexample" width="300" height="200" id="webpageexampleId">
+                alternative content for browsers which do not support iframe.
+            </iframe>
         </div>
 
     </div>
