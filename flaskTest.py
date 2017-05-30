@@ -134,25 +134,28 @@ def deciceWhichFunctionToRun(bar):
         oppositeColour = oppositeColour.replace(" ", "")
         rgbaColour = rgbaColour.replace(" ", "")
 
-        oppositeColourB = 'colourBusedForReplacing'
+        # oppositeColourB = 'colourBusedForReplacing'
 
-        with open("BracketsHtmlAndCss/dataDark.css", "rt") as fin:
+        with open("BracketsHtmlAndCss/templateCSS.css") as f:
+            lines = f.readlines()
+            lines = [l for l in lines if "ROW" in l]
+            with open("BracketsHtmlAndCss/dataCustom.css", "w") as f1:
+                f1.writelines(lines)
+
+        with open("BracketsHtmlAndCss/templateCSS.css", "rt") as fin:
             with open("BracketsHtmlAndCss/dataCustom.css", "wt") as fout:
 
                 for line in fin:
-                    fout.write(line.replace(rgbaColour, oppositeColourB))
-
-        with open("BracketsHtmlAndCss/dataDark.css", "rt") as fin:
-            with open("BracketsHtmlAndCss/dataCustom.css", "wt") as fout:
-
-                for line in fin:
-                    fout.write(line.replace(oppositeColour, rgbaColour))
-
-        with open("BracketsHtmlAndCss/dataDark.css", "rt") as fin:
-            with open("BracketsHtmlAndCss/dataCustom.css", "wt") as fout:
-
-                for line in fin:
-                    fout.write(line.replace(oppositeColourB, oppositeColour))
+                    if('Colour1ForReplacing' in line):
+                        fout.write(line.replace('Colour1ForReplacing', str(rgbaColour)))
+        #
+        # with open("BracketsHtmlAndCss/templateCSS.css", "rt") as fin:
+        #     with open("BracketsHtmlAndCss/dataCustom.css", "wt") as fout:
+        #         for line in fin:
+                    elif('Colour2ForReplacing' in line):
+                        fout.write(line.replace('Colour2ForReplacing', str(oppositeColour)))
+                    else:
+                        fout.write(line)
 
         print(complementColour)
         print(oppositeColour)

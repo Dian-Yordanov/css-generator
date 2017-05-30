@@ -15,7 +15,8 @@ border-right-color: rgba(128,128,128, 1) !important}
 /*----- links -----*/
 
 body, #content, #settingsMenu, td.postblock, tr, div.extPanel, strong, span.button, div#theme.panel {
-    color: rgba(0,0,0,1)!important; background-color: rgba(255,255,255,1) !important; background-image: none !important;}
+    color: rgba(0,0,0,1) !important;
+    background-color: rgba(255,255,255,1) !important; background-image: none !important;}
 
 a, a * {
 color: #336699 !important;
