@@ -129,16 +129,16 @@ def deciceWhichFunctionToRun(bar):
 
         # print(rgbColour[0])
 
-        print(complement(rgbColour[0], rgbColour[1], rgbColour[2]))
-
-        print(oppositeColours(rgbColour[0], rgbColour[1], rgbColour[2]))
+        complementColour = 'rgba' + str(complement(rgbColour[0], rgbColour[1], rgbColour[2]))[:-1] + ',1)'
+        oppositeColour = 'rgba' + str(oppositeColours(rgbColour[0], rgbColour[1], rgbColour[2]))[:-1] + ',1)'
 
         # with open("BracketsHtmlAndCss/dataDark.css", "rt") as fin:
         #     with open("BracketsHtmlAndCss/dataCustom.css", "wt") as fout:
         #         for line in fin:
         #             fout.write(line.replace('A', 'Orange'))
 
-
+        print(complementColour)
+        print(oppositeColour)
         print(rgbaColour)
 
 def getCssFromJson():
