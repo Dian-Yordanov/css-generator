@@ -75,6 +75,7 @@ def deciceWhichFunctionToRun(bar):
     WhiteCss = None
     PointerCss = None
     specificCss = None
+    CustomCSS = None
 
     bar = str(bar).replace("\'", "\"")
     data = json.loads(bar)
@@ -85,6 +86,7 @@ def deciceWhichFunctionToRun(bar):
 
         booleanSetter(BlackCss,'BlackCss', True)
         booleanSetter(WhiteCss,'WhiteCss', False)
+        booleanSetter(CustomCSS, 'customCSS', False)
 
     if (data['a'] == 'Blackoff'):
 
@@ -94,6 +96,7 @@ def deciceWhichFunctionToRun(bar):
 
         booleanSetter(WhiteCss, 'WhiteCss', True)
         booleanSetter(BlackCss, 'BlackCss', False)
+        booleanSetter(CustomCSS, 'customCSS', False)
 
     if (data['a'] == 'Whiteoff'):
 
@@ -148,10 +151,7 @@ def deciceWhichFunctionToRun(bar):
                 for line in fin:
                     if('Colour1ForReplacing' in line):
                         fout.write(line.replace('Colour1ForReplacing', str(rgbaColour)))
-        #
-        # with open("BracketsHtmlAndCss/templateCSS.css", "rt") as fin:
-        #     with open("BracketsHtmlAndCss/dataCustom.css", "wt") as fout:
-        #         for line in fin:
+
                     elif('Colour2ForReplacing' in line):
                         fout.write(line.replace('Colour2ForReplacing', str(oppositeColour)))
                     else:
@@ -160,6 +160,11 @@ def deciceWhichFunctionToRun(bar):
         print(complementColour)
         print(oppositeColour)
         print(rgbaColour)
+
+        booleanSetter(CustomCSS, 'CustomCSS', True)
+        booleanSetter(BlackCss, 'BlackCss', False)
+        booleanSetter(WhiteCss, 'WhiteCss', False)
+
 
 def getCssFromJson():
     os.system('python CSSgen.py')
@@ -212,7 +217,18 @@ def generateCss():
                 filenames.remove("BracketsHtmlAndCss/webSiteSpecific.css")
                 print("removed")
 
-    print(BlackCss, WhiteCss, PointerCss, specificCss)
+    with open("pythonStaticBooleans/CustomCSS", "r") as f:
+        CustomCSS = f.read()
+
+        if (CustomCSS == "True"):
+            filenames.append("BracketsHtmlAndCss/dataCustom.css")
+
+        if ("BracketsHtmlAndCss/dataCustom.css" in filenames):
+            if (CustomCSS == "False"):
+                filenames.remove("BracketsHtmlAndCss/dataCustom.css")
+
+
+    print(BlackCss, WhiteCss, PointerCss, specificCss, CustomCSS)
     print(filenames)
 
     with open('/media/dianlinux/LinuxExt4/pythonglobalcssgeneratorforstylish/static/data.css', 'w') as outfile:
