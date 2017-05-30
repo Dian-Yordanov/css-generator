@@ -19,6 +19,9 @@
         document.getElementById("White").checked = false;
         document.getElementById("Pointer").checked = false;
         document.getElementById("specific").checked = false;
+        document.getElementById("DarkMinimalisticScrollbar").checked = false;
+        document.getElementById("YouTubeCustomColors").checked = false;
+
     }
 
     function mutuallyExclusive(id, id1) {
@@ -68,6 +71,7 @@
 
     function generateCss() {
             $.get("api/foo/?a=generateCss", function(response) {});
+            document.getElementById('webpageexampleId').src = document.getElementById('webpageexampleId').src
     }
     function getCssFromJson() {
             $.get("api/foo/?a=getCssFromJson", function(response) {});
@@ -85,6 +89,23 @@
         document.getElementById("demo").innerHTML = x;
         var y = "api/foo/?a=colour".concat(x).replace(/#/g, "")
         $.get(y, function(response) {});
+    }
+
+    function DarkMinimalisticScrollbar(checkbox) {
+        if (checkbox.checked) {
+            $.get("api/foo/?a=DarkMinimalisticScrollbaron", function(response) {});
+        }
+        if (!checkbox.checked) {
+            $.get("api/foo/?a=DarkMinimalisticScrollbaroff", function(response) {});
+        }
+    }
+    function YouTubeCustomColors(checkbox) {
+        if (checkbox.checked) {
+            $.get("api/foo/?a=YouTubeCustomColorson", function(response) {});
+        }
+        if (!checkbox.checked) {
+            $.get("api/foo/?a=YouTubeCustomColorsoff", function(response) {});
+        }
     }
 
 </script>
@@ -118,11 +139,11 @@
         grid-column: 1 / 5;
         grid-row: 2;
     }
-    
+
     .EmptySpace {
         grid-row: 3;
     }
-    
+
     .id3 {
         display: grid;
         text-align: left;
@@ -138,7 +159,7 @@
         grid-column: 1 / 5;
         grid-row: 5;
     }
-    
+
     .EmptySpace2 {
         grid-row: 6;
     }
@@ -163,6 +184,34 @@
         grid-row: 9;
     }
 
+    .embededModifications {
+        display: grid;
+        text-align: left;
+        margin-right: 10px;
+        grid-column: 1 / 5;
+        grid-row: 10;
+    }
+
+    .facebookSpecificModifications {
+        display: grid;
+        text-align: left;
+        margin-right: 10px;
+        grid-column: 1 / 5;
+        grid-row: 11;
+    }
+
+    .redditSpecificModifications {
+        display: grid;
+        text-align: left;
+        margin-right: 10px;
+        grid-column: 1 / 5;
+        grid-row: 12;
+    }
+
+    .EmptySpace4 {
+        grid-row: 13;
+    }
+
     .text {
         width: 300px;
         grid-column: 1 / 3;
@@ -178,25 +227,25 @@
         display: table;
         margin: 5 auto;
         grid-column: 3 / 4;
-        grid-row: 11;
+        grid-row: 15;
     }
    .generateCss{
         display: table;
         margin: 5 auto;
         grid-column: 2 / 3;
-        grid-row: 11;
+        grid-row: 15;
     }
     .getCssFromJson{
         display: table;
         margin: 5 auto;
         grid-column: 1 / 2;
-        grid-row: 11;
+        grid-row: 15;
     }
     .resetCss{
         display: table;
         margin: 5 auto;
         grid-column: 1 / 2;
-        grid-row: 12;
+        grid-row: 16;
     }
 
     .colourPicker {
@@ -204,7 +253,15 @@
         text-align: left;
         margin-right: 10px;
         grid-column: 1 / 5;
-        grid-row: 10;
+        grid-row: 14;
+    }
+    
+    .webpageexample {
+        display: grid;
+        text-align: left;
+        margin-right: 10px;
+        grid-column: 1 / 5;
+        grid-row: 17;
     }
 
     .onoffswitch {
@@ -318,11 +375,11 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="EmptySpace">
             &emsp;
         </div>
-        
+
         <div class="id3">
             <div class="text">
                 <p>
@@ -352,7 +409,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="EmptySpace2">
             &emsp;
         </div>
@@ -382,7 +439,7 @@
             </div>
             <div class="object">
                 <div class="onoffswitch">
-                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="Pointer" checked onchange="Pointer(this)"> <label class="onoffswitch-label" for="Pointer"> <span
+                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="DarkMinimalisticScrollbar" checked onchange="DarkMinimalisticScrollbar(this)"> <label class="onoffswitch-label" for="DarkMinimalisticScrollbar"> <span
                                 class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span>
                             </label>
                 </div>
@@ -397,7 +454,7 @@
             </div>
             <div class="object">
                 <div class="onoffswitch">
-                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="specific" checked onchange="specific(this)"> <label class="onoffswitch-label" for="specific"> <span
+                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="YouTubeCustomColors" checked onchange="YouTubeCustomColors(this)"> <label class="onoffswitch-label" for="YouTubeCustomColors"> <span
                         class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span>
                     </label>
                 </div>
@@ -405,6 +462,55 @@
         </div>
 
         <div class="EmptySpace4">
+            &emsp;
+        </div>
+
+        <div class="embededModifications">
+            <div class="text">
+                <p>
+                    <b>Embedded Modifications</b>
+                </p>
+            </div>
+            <div class="object">
+                <div class="onoffswitch">
+                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="embededModifications" checked onchange="embededModifications(this)"> <label class="onoffswitch-label" for="embededModifications"> <span
+                                class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span>
+                            </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="facebookSpecificModifications">
+            <div class="text">
+                <p>
+                    <b>Facebook Specific Modifications</b>
+                </p>
+            </div>
+            <div class="object">
+                <div class="onoffswitch">
+                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="facebookSpecificModifications" checked onchange="facebookSpecificModifications(this)"> <label class="onoffswitch-label" for="facebookSpecificModifications"> <span
+                                class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span>
+                            </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="redditSpecificModifications">
+            <div class="text">
+                <p>
+                    <b>Reddit Specific Modifications</b>
+                </p>
+            </div>
+            <div class="object">
+                <div class="onoffswitch">
+                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="redditSpecificModifications" checked onchange="redditSpecificModifications(this)"> <label class="onoffswitch-label" for="redditSpecificModifications"> <span
+                        class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="EmptySpace5">
             &emsp;
         </div>
 
@@ -424,6 +530,12 @@
             <input type="button" value="Example webpage" onclick="window.open('http://127.0.0.1:5000/webpageexample')" />
         </div>
 
+        <div class="webpageexample">
+            <iframe src="http://127.0.0.1:5000/webpageexample" width="300" height="200" id="webpageexampleId">
+                alternative content for browsers which do not support iframe.
+            </iframe>
+        </div>
+        
     </div>
 </body>
 

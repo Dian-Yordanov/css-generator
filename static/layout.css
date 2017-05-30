@@ -1,0 +1,230 @@
+
+@ body {
+    text-align: center;
+}
+
+#page-wrap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: left;
+    width: 400px;
+    margin: 0 auto;
+}
+
+
+.id1 {
+    display: grid;
+    text-align: left;
+    margin-right: 10px;
+    grid-column: 1 / 5;
+    grid-row: 1;
+}
+
+.id2 {
+    display: grid;
+    text-align: left;
+    margin-right: 10px;
+    grid-column: 1 / 5;
+    grid-row: 2;
+}
+
+.EmptySpace {
+    grid-row: 3;
+}
+
+.id3 {
+    display: grid;
+    text-align: left;
+    margin-right: 10px;
+    grid-column: 1 / 5;
+    grid-row: 4;
+}
+
+.id4 {
+    display: grid;
+    text-align: left;
+    margin-right: 10px;
+    grid-column: 1 / 5;
+    grid-row: 5;
+}
+
+.EmptySpace2 {
+    grid-row: 6;
+}
+
+.DarkMinimalisticScrollbar {
+    display: grid;
+    text-align: left;
+    margin-right: 10px;
+    grid-column: 1 / 5;
+    grid-row: 7;
+}
+
+.YouTubeCustomColors {
+    display: grid;
+    text-align: left;
+    margin-right: 10px;
+    grid-column: 1 / 5;
+    grid-row: 8;
+}
+
+.EmptySpace3 {
+    grid-row: 9;
+}
+
+.embededModifications {
+    display: grid;
+    text-align: left;
+    margin-right: 10px;
+    grid-column: 1 / 5;
+    grid-row: 10;
+}
+
+.facebookSpecificModifications {
+    display: grid;
+    text-align: left;
+    margin-right: 10px;
+    grid-column: 1 / 5;
+    grid-row: 11;
+}
+
+.redditSpecificModifications {
+    display: grid;
+    text-align: left;
+    margin-right: 10px;
+    grid-column: 1 / 5;
+    grid-row: 12;
+}
+
+.EmptySpace4 {
+    grid-row: 13;
+}
+
+.text {
+    width: 300px;
+    grid-column: 1 / 3;
+}
+
+.object {
+
+    padding-top: 8px;
+    grid-column: 3 / 4;
+}
+
+.buttonForExampleWebpage {
+    display: table;
+    margin: 5 auto;
+    grid-column: 3 / 4;
+    grid-row: 15;
+}
+.generateCss{
+    display: table;
+    margin: 5 auto;
+    grid-column: 2 / 3;
+    grid-row: 15;
+}
+.getCssFromJson{
+    display: table;
+    margin: 5 auto;
+    grid-column: 1 / 2;
+    grid-row: 15;
+}
+.resetCss{
+    display: table;
+    margin: 5 auto;
+    grid-column: 1 / 2;
+    grid-row: 16;
+}
+
+.colourPicker {
+    display: grid;
+    text-align: left;
+    margin-right: 10px;
+    grid-column: 1 / 5;
+    grid-row: 14;
+}
+
+.webpageexample {
+    display: grid;
+    text-align: left;
+    margin-right: 10px;
+    grid-column: 1 / 5;
+    grid-row: 17;
+}
+
+.onoffswitch {
+    position: relative;
+    width: 90px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.onoffswitch-checkbox {
+    display: none;
+}
+
+.onoffswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #999999;
+    border-radius: 20px;
+}
+
+.onoffswitch-inner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+}
+
+.onoffswitch-inner:before,
+.onoffswitch-inner:after {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 30px;
+    padding: 0;
+    line-height: 30px;
+    font-size: 14px;
+    color: white;
+    font-family: Trebuchet, Arial, sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #34A7C1;
+    color: #FFFFFF;
+}
+
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #EEEEEE;
+    color: #999999;
+    text-align: right;
+}
+
+.onoffswitch-switch {
+    display: block;
+    width: 18px;
+    margin: 6px;
+    background: #FFFFFF;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 56px;
+    border: 2px solid #999999;
+    border-radius: 20px;
+}
+
+.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+}
