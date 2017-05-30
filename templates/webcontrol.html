@@ -81,6 +81,10 @@
     }
 
     function colourPickerFunction() {
+
+        document.getElementById("White").checked = false;
+        document.getElementById("Black").checked = false;
+
         var x = document.getElementById("myColor").value;
         document.getElementById("demo").innerHTML = x;
         var y = "api/foo/?a=colour".concat(x).replace(/#/g, "")
