@@ -59,7 +59,7 @@ def complement(r, g, b):
     return tuple(k - u for u in (r, g, b))
 
 def oppositeColoursEngine(x):
-    x = (255 - x) % 255
+    x = 255 - x
     return x
 
 def oppositeColours(r, g, b):
@@ -134,10 +134,25 @@ def deciceWhichFunctionToRun(bar):
         oppositeColour = oppositeColour.replace(" ", "")
         rgbaColour = rgbaColour.replace(" ", "")
 
-        # with open("BracketsHtmlAndCss/dataDark.css", "rt") as fin:
-        #     with open("BracketsHtmlAndCss/dataCustom.css", "wt") as fout:
-        #         for line in fin:
-        #             fout.write(line.replace('A', 'Orange'))
+        oppositeColourB = 'colourBusedForReplacing'
+
+        with open("BracketsHtmlAndCss/dataDark.css", "rt") as fin:
+            with open("BracketsHtmlAndCss/dataCustom.css", "wt") as fout:
+
+                for line in fin:
+                    fout.write(line.replace(rgbaColour, oppositeColourB))
+
+        with open("BracketsHtmlAndCss/dataDark.css", "rt") as fin:
+            with open("BracketsHtmlAndCss/dataCustom.css", "wt") as fout:
+
+                for line in fin:
+                    fout.write(line.replace(oppositeColour, rgbaColour))
+
+        with open("BracketsHtmlAndCss/dataDark.css", "rt") as fin:
+            with open("BracketsHtmlAndCss/dataCustom.css", "wt") as fout:
+
+                for line in fin:
+                    fout.write(line.replace(oppositeColourB, oppositeColour))
 
         print(complementColour)
         print(oppositeColour)
