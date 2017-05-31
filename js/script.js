@@ -129,5 +129,8 @@ function redditSpecificModifications(checkbox) {
         $.get("api/foo/?a=redditSpecificModificationsoff", function(response) {});
     }
 }
+function GoToWebsite1(){
+    
+}
 
 
