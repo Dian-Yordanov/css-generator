@@ -3,16 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="99d7b7d2-ef8a-459d-85e8-498993b4e186" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BracketsHtmlAndCss/dataCustom.css" afterPath="$PROJECT_DIR$/BracketsHtmlAndCss/dataCustom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonStaticBooleans/BlackCss" afterPath="$PROJECT_DIR$/pythonStaticBooleans/BlackCss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonStaticBooleans/CustomCSS" afterPath="$PROJECT_DIR$/pythonStaticBooleans/CustomCSS" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonStaticBooleans/DarkMinimalisticScrollbar" afterPath="$PROJECT_DIR$/pythonStaticBooleans/DarkMinimalisticScrollbar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonStaticBooleans/PointerCss" afterPath="$PROJECT_DIR$/pythonStaticBooleans/PointerCss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonStaticBooleans/YouTubeCustomColors" afterPath="$PROJECT_DIR$/pythonStaticBooleans/YouTubeCustomColors" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonStaticBooleans/embededModifications" afterPath="$PROJECT_DIR$/pythonStaticBooleans/embededModifications" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonStaticBooleans/facebookSpecificModifications" afterPath="$PROJECT_DIR$/pythonStaticBooleans/facebookSpecificModifications" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonStaticBooleans/redditSpecificModifications" afterPath="$PROJECT_DIR$/pythonStaticBooleans/redditSpecificModifications" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/data.css" afterPath="$PROJECT_DIR$/static/data.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/layout.css" afterPath="$PROJECT_DIR$/css/layout.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/webcontrol.html" afterPath="$PROJECT_DIR$/templates/webcontrol.html" />
     </list>
     <ignored path="pythonglobalcssgeneratorforstylish.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,7 +21,7 @@
     <SUITE FILE_PATH="coverage/pythonglobalcssgeneratorforstylish$CSSgen.coverage" NAME="CSSgen Coverage Results" MODIFIED="1495763263067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonglobalcssgeneratorforstylish$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1495431499233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonglobalcssgeneratorforstylish$sdfds.coverage" NAME="sdfds Coverage Results" MODIFIED="1496105610988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pythonglobalcssgeneratorforstylish$flaskTest.coverage" NAME="flaskTest Coverage Results" MODIFIED="1496192517146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonglobalcssgeneratorforstylish$flaskTest.coverage" NAME="flaskTest Coverage Results" MODIFIED="1496232676536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonglobalcssgeneratorforstylish$phpTest.coverage" NAME="phpTest Coverage Results" MODIFIED="1495560556911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonglobalcssgeneratorforstylish$testtest.coverage" NAME="testtest Coverage Results" MODIFIED="1494959606225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
@@ -52,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="flaskTest.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="flaskTest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flaskTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="223" column="52" selection-start-line="223" selection-start-column="52" selection-end-line="223" selection-end-column="52" />
+            <state relative-caret-position="217">
+              <caret line="184" column="50" selection-start-line="184" selection-start-column="50" selection-end-line="184" selection-end-column="50" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -64,41 +56,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="facebookSpecificModifications" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pythonStaticBooleans/facebookSpecificModifications">
+      <file leaf-file-name="webcontrol.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/webcontrol.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="414">
+              <caret line="207" column="76" selection-start-line="207" selection-start-column="76" selection-end-line="207" selection-end-column="76" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="embededModifications" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pythonStaticBooleans/embededModifications">
+      <file leaf-file-name="layout.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/layout.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DarkMinimalisticScrollbar" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pythonStaticBooleans/DarkMinimalisticScrollbar">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomCSS" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pythonStaticBooleans/CustomCSS">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="-3189">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -141,10 +113,11 @@
         <option value="$PROJECT_DIR$/BracketsHtmlAndCss/webSiteSpecific.css" />
         <option value="$PROJECT_DIR$/templates/script.js" />
         <option value="$PROJECT_DIR$/templates/layout.css" />
-        <option value="$PROJECT_DIR$/templates/webcontrol.html" />
         <option value="$PROJECT_DIR$/pythonStaticBooleans/CustomCSS" />
         <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/flaskTest.py" />
+        <option value="$PROJECT_DIR$/css/layout.css" />
+        <option value="$PROJECT_DIR$/templates/webcontrol.html" />
       </list>
     </option>
   </component>
@@ -202,7 +175,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -232,6 +205,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pythonglobalcssgeneratorforstylish" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pythonglobalcssgeneratorforstylish" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -293,7 +280,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -712,7 +699,6 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299389" sideWeight="0.5021482" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299389" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299389" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26985744" sideWeight="0.49785176" order="2" side_tool="false" content_ui="tabs" />
@@ -725,6 +711,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299389" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -888,7 +875,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -896,7 +882,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1008">
           <caret line="56" column="47" selection-start-line="0" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -904,7 +889,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="23" column="53" selection-start-line="0" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -912,9 +896,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1170">
           <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#37#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -922,7 +903,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -930,7 +910,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-238">
           <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -938,7 +917,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -946,7 +924,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1310">
           <caret line="207" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="541" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -954,7 +931,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="626">
           <caret line="59" column="1" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -962,7 +938,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="626">
           <caret line="287" column="1" selection-start-line="287" selection-start-column="1" selection-end-line="287" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -970,7 +945,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -978,7 +952,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="19" selection-start-line="0" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -986,7 +959,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -994,55 +966,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1495571995149" expanded="true" signature="8342:8516" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="8532:8726" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="8564:8710" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="8762:8933" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="8949:9140" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="8981:9124" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="9222:9393" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="9409:9600" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="9441:9584" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="9636:9804" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="9820:10008" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="9852:9992" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="444720:444734" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="453358:453372" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="459266:459280" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="464674:464688" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="487027:487041" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="493424:493438" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="499218:499232" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="504495:504509" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="509813:509827" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="517709:517723" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="523414:523428" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="530371:530385" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="535049:535063" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="540248:540262" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="544833:544847" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="551612:551626" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="558005:558019" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="566307:566321" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="569944:569958" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="575629:575643" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="625716:625730" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="630860:630874" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="651514:651528" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="658078:658092" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="663927:663941" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="669195:669209" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="674259:674273" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="702340:702354" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="708131:708145" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="713482:713496" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="719192:719206" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="726376:726390" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="732940:732954" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="739383:739397" placeholder="..." />
-            <marker date="1495571995149" expanded="true" signature="774290:774304" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1050,31 +973,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pythonStaticBooleans/customCSS">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonStaticBooleans/customCSS" />
     <entry file="file://$PROJECT_DIR$/BracketsHtmlAndCss/embededModifications.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="626">
           <caret line="138" column="1" selection-start-line="138" selection-start-column="1" selection-end-line="138" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/layout.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1082,15 +988,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="458">
           <caret line="123" column="36" selection-start-line="123" selection-start-column="9" selection-end-line="123" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/webcontrol.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="169" column="243" selection-start-line="169" selection-start-column="216" selection-end-line="169" selection-end-column="243" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1098,7 +995,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1106,7 +1002,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1114,7 +1009,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1122,7 +1016,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1130,7 +1023,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1138,7 +1030,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1146,7 +1037,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1154,18 +1044,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pythonStaticBooleans/True">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonStaticBooleans/True" />
     <entry file="file://$PROJECT_DIR$/pythonStaticBooleans/WhiteCss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1174,21 +1056,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pythonStaticBooleans/False">
+    <entry file="file://$PROJECT_DIR$/pythonStaticBooleans/False" />
+    <entry file="file://$PROJECT_DIR$/flaskTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="217">
+          <caret line="184" column="50" selection-start-line="184" selection-start-column="50" selection-end-line="184" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/layout.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3189">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flaskTest.py">
+    <entry file="file://$PROJECT_DIR$/templates/webcontrol.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="223" column="52" selection-start-line="223" selection-start-column="52" selection-end-line="223" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="414">
+          <caret line="207" column="76" selection-start-line="207" selection-start-column="76" selection-end-line="207" selection-end-column="76" />
+          <folding />
         </state>
       </provider>
     </entry>
