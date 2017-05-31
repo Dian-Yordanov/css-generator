@@ -129,8 +129,95 @@ function redditSpecificModifications(checkbox) {
         $.get("api/foo/?a=redditSpecificModificationsoff", function(response) {});
     }
 }
+
+
+// var site = 'http://www.reddit.com/'
+// document.getElementById('webpageexampleId').src = site;
+
+var iframe1;
+
+function setiFrame(iframe){
+    iframe1 = iframe;
+}
+
+function getiFrame(){
+    return iframe1;
+}
+
+var getData = function (data) {
+        var iframe = getiFrame();
+        if (data && data.query && data.query.results && data.query.results.resources && data.query.results.resources.content
+            && data.query.results.resources.status == 200) loadHTML(data.query.results.resources.content, iframe);
+        else if (data && data.error && data.error.description) loadHTML(data.error.description, iframe);
+        else loadHTML('Error: Cannot load ' + url, iframe);
+    };
+var loadURL = function (src, iframe) {
+    url = src;
+    setiFrame(iframe);
+    var script = document.createElement('script');
+    script.src = 'http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20data.headers%20where%20url%3D%22'
+        + encodeURIComponent(url) + '%22&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=getData';
+    document.body.appendChild(script);
+};
+var loadHTML = function (html, iframe) {
+    iframe.src = 'about:blank';
+    iframe.contentWindow.document.open();
+    iframe.contentWindow.document.write(html.replace(/<head>/i, '<head><base href="' + url + '"><scr'
+        + 'ipt>document.addEventListener("click", function(e) { if(e.target && e.target.nodeName == "A") ' +
+        '{ e.preventDefault(); parent.loadURL(e.target.href); } });</scr' + 'ipt>'));
+    iframe.contentWindow.document.close();
+}
+
 function GoToWebsite1(){
+    var site = 'http://gizmodo.com/'
+    document.getElementById('webpageexampleId').src = site;
+}
+function GoToWebsite2(){
+
+    // Access-Control-Allow-Origin: http://www.stackoverflow.com
+
+
+    var iframe = document.getElementById('webpageexampleId');
+    var site = 'http://www.reddit.com/'
+    // document.getElementById('webpageexampleId').src = site;
+
+    // document.domain = site;
+
+    // var iframe = document.getElementById('webpageexampleId');
+    // loadURL(iframe.src);
+
+    // var url = iframe.src;
+
+
+
+    // document.getElementById('webpageexampleId').src = site;
+    loadURL(site, iframe);
+
+    // document.getElementById('webpageexampleId').src = site;
 
 }
+
+function GoToWebsite3(){
+
+    var site = 'http://www.reddit.com/'
+    // document.domain = site;
+    document.getElementById('webpageexampleId').src = site;
+
+}
+
+
+function GoToWebsite4(){
+
+    var site = 'http://www.reddit.com/'
+    // document.domain = site;
+    document.getElementById('webpageexampleId').src = site;
+
+}
+
+
+
+
+
+
 
 
