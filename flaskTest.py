@@ -93,6 +93,11 @@ def deciceWhichFunctionToRun(bar):
     PointerCss = None
     specificCss = None
     CustomCSS = None
+    DarkMinimalisticScrollbar = None
+    YouTubeCustomColors = None
+    embededModifications = None
+    facebookSpecificModifications = None
+    redditSpecificModifications = None
 
     bar = str(bar).replace("\'", "\"")
     data = json.loads(bar)

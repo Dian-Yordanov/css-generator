@@ -15,6 +15,10 @@ window.onload = function() {
     document.getElementById("specific").checked = false;
     document.getElementById("DarkMinimalisticScrollbar").checked = false;
     document.getElementById("YouTubeCustomColors").checked = false;
+    document.getElementById("embededModifications").checked = false;
+    document.getElementById("facebookSpecificModifications").checked = false;
+    document.getElementById("redditSpecificModifications").checked = false;
+
 
 }
 
@@ -101,4 +105,29 @@ function YouTubeCustomColors(checkbox) {
         $.get("api/foo/?a=YouTubeCustomColorsoff", function(response) {});
     }
 }
+function embededModifications(checkbox) {
+    if (checkbox.checked) {
+        $.get("api/foo/?a=embededModificationson", function(response) {});
+    }
+    if (!checkbox.checked) {
+        $.get("api/foo/?a=embededModificationsoff", function(response) {});
+    }
+}
+function facebookSpecificModifications(checkbox) {
+    if (checkbox.checked) {
+        $.get("api/foo/?a=facebookSpecificModificationson", function(response) {});
+    }
+    if (!checkbox.checked) {
+        $.get("api/foo/?a=facebookSpecificModificationsoff", function(response) {});
+    }
+}
+function redditSpecificModifications(checkbox) {
+    if (checkbox.checked) {
+        $.get("api/foo/?a=redditSpecificModificationson", function(response) {});
+    }
+    if (!checkbox.checked) {
+        $.get("api/foo/?a=redditSpecificModificationsoff", function(response) {});
+    }
+}
+
 
