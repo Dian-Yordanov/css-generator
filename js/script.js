@@ -169,49 +169,27 @@ var loadHTML = function (html, iframe) {
 }
 
 function GoToWebsite1(){
-    var site = 'http://gizmodo.com/'
-    document.getElementById('webpageexampleId').src = site;
+    var iframe = document.getElementById('webpageexampleId');
+    var site = 'https://www.theguardian.com/';
+    loadURL(site, iframe);
 }
 function GoToWebsite2(){
-
-    // Access-Control-Allow-Origin: http://www.stackoverflow.com
-
-
     var iframe = document.getElementById('webpageexampleId');
-    var site = 'http://www.reddit.com/'
-    // document.getElementById('webpageexampleId').src = site;
-
-    // document.domain = site;
-
-    // var iframe = document.getElementById('webpageexampleId');
-    // loadURL(iframe.src);
-
-    // var url = iframe.src;
-
-
-
-    // document.getElementById('webpageexampleId').src = site;
+    var site = 'https://www.reddit.com/';
     loadURL(site, iframe);
-
-    // document.getElementById('webpageexampleId').src = site;
-
 }
 
 function GoToWebsite3(){
-
-    var site = 'http://www.reddit.com/'
-    // document.domain = site;
-    document.getElementById('webpageexampleId').src = site;
-
+    var iframe = document.getElementById('webpageexampleId');
+    var site = 'https://www.youtube.com/';
+    loadURL(site, iframe);
 }
 
 
 function GoToWebsite4(){
-
-    var site = 'http://www.reddit.com/'
-    // document.domain = site;
-    document.getElementById('webpageexampleId').src = site;
-
+    var iframe = document.getElementById('webpageexampleId');
+    var site = 'https://www.facebook.com/';
+    loadURL(site, iframe);
 }
 
 
