@@ -159,8 +159,6 @@ def deciceWhichFunctionToRun(bar):
         oppositeColour = oppositeColour.replace(" ", "")
         rgbaColour = rgbaColour.replace(" ", "")
 
-        # oppositeColourB = 'colourBusedForReplacing'
-
         with open("BracketsHtmlAndCss/templateCSS.css") as f:
             lines = f.readlines()
             lines = [l for l in lines if "ROW" in l]
@@ -186,6 +184,46 @@ def deciceWhichFunctionToRun(bar):
         booleanSetter(CustomCSS, 'CustomCSS', True)
         booleanSetter(BlackCss, 'BlackCss', False)
         booleanSetter(WhiteCss, 'WhiteCss', False)
+
+    if (data['a'] == 'DarkMinimalisticScrollbaron'):
+
+        booleanSetter(DarkMinimalisticScrollbar, 'DarkMinimalisticScrollbar', True)
+
+    if (data['a'] == 'DarkMinimalisticScrollbaroff'):
+
+        booleanSetter(DarkMinimalisticScrollbar, 'DarkMinimalisticScrollbar', False)
+
+    if (data['a'] == 'YouTubeCustomColorson'):
+
+        booleanSetter(YouTubeCustomColors, 'YouTubeCustomColors', True)
+
+    if (data['a'] == 'YouTubeCustomColorsoff'):
+
+        booleanSetter(YouTubeCustomColors, 'YouTubeCustomColors', False)
+
+    if (data['a'] == 'embededModificationson'):
+
+        booleanSetter(embededModifications, 'embededModifications', True)
+
+    if (data['a'] == 'embededModificationsoff'):
+
+        booleanSetter(embededModifications, 'embededModifications', False)
+
+    if (data['a'] == 'facebookSpecificModificationson'):
+
+        booleanSetter(facebookSpecificModifications, 'facebookSpecificModifications', True)
+
+    if (data['a'] == 'facebookSpecificModificationsoff'):
+
+        booleanSetter(facebookSpecificModifications, 'facebookSpecificModifications', False)
+
+    if (data['a'] == 'redditSpecificModificationson'):
+
+        booleanSetter(redditSpecificModifications, 'redditSpecificModifications', True)
+
+    if (data['a'] == 'redditSpecificModificationsoff'):
+
+        booleanSetter(redditSpecificModifications, 'redditSpecificModifications', False)
 
 
 def getCssFromJson():
@@ -255,8 +293,58 @@ def generateCss():
             if (CustomCSS == "False"):
                 filenames.remove("BracketsHtmlAndCss/dataCustom.css")
 
+    with open("pythonStaticBooleans/DarkMinimalisticScrollbar", "r") as f:
+        DarkMinimalisticScrollbar = f.read()
 
-    print(BlackCss, WhiteCss, PointerCss, specificCss, CustomCSS)
+        if (DarkMinimalisticScrollbar == "True"):
+            filenames.append("BracketsHtmlAndCss/DarkMinimalisticScrollbar.css")
+
+        if ("BracketsHtmlAndCss/DarkMinimalisticScrollbar.css" in filenames):
+            if (DarkMinimalisticScrollbar == "False"):
+                filenames.remove("BracketsHtmlAndCss/DarkMinimalisticScrollbar.css")
+
+    with open("pythonStaticBooleans/YouTubeCustomColors", "r") as f:
+        YouTubeCustomColors = f.read()
+
+        if (YouTubeCustomColors == "True"):
+            filenames.append("BracketsHtmlAndCss/YouTubeCustomColors.css")
+
+        if ("BracketsHtmlAndCss/YouTubeCustomColors.css" in filenames):
+            if (YouTubeCustomColors == "False"):
+                filenames.remove("BracketsHtmlAndCss/YouTubeCustomColors.css")
+
+    with open("pythonStaticBooleans/embededModifications", "r") as f:
+        embededModifications = f.read()
+
+        if (embededModifications == "True"):
+            filenames.append("BracketsHtmlAndCss/embededModifications.css")
+
+        if ("BracketsHtmlAndCss/embededModifications.css" in filenames):
+            if (embededModifications == "False"):
+                filenames.remove("BracketsHtmlAndCss/embededModifications.css")
+
+    with open("pythonStaticBooleans/facebookSpecificModifications", "r") as f:
+        facebookSpecificModifications = f.read()
+
+        if (facebookSpecificModifications == "True"):
+            filenames.append("BracketsHtmlAndCss/facebookSpecificModifications.css")
+
+        if ("BracketsHtmlAndCss/facebookSpecificModifications.css" in filenames):
+            if (facebookSpecificModifications == "False"):
+                filenames.remove("BracketsHtmlAndCss/facebookSpecificModifications.css")
+
+    with open("pythonStaticBooleans/redditSpecificModifications", "r") as f:
+        redditSpecificModifications = f.read()
+
+        if (redditSpecificModifications == "True"):
+            filenames.append("BracketsHtmlAndCss/redditSpecificModifications.css")
+
+        if ("BracketsHtmlAndCss/redditSpecificModifications.css" in filenames):
+            if (redditSpecificModifications == "False"):
+                filenames.remove("BracketsHtmlAndCss/redditSpecificModifications.css")
+
+    print(BlackCss, WhiteCss, PointerCss, specificCss, CustomCSS, DarkMinimalisticScrollbar, YouTubeCustomColors,
+          embededModifications, facebookSpecificModifications, redditSpecificModifications)
     print(filenames)
 
     with open('/media/dianlinux/LinuxExt4/pythonglobalcssgeneratorforstylish/static/data.css', 'w') as outfile:
@@ -287,6 +375,21 @@ def resetCss():
 
     CustomCSS = False
     resetElement(CustomCSS, 'CustomCSS')
+
+    DarkMinimalisticScrollbar = False
+    resetElement(DarkMinimalisticScrollbar, 'DarkMinimalisticScrollbar')
+
+    YouTubeCustomColors = False
+    resetElement(YouTubeCustomColors, 'YouTubeCustomColors')
+
+    embededModifications = False
+    resetElement(embededModifications, 'embededModifications')
+
+    facebookSpecificModifications = False
+    resetElement(facebookSpecificModifications, 'facebookSpecificModifications')
+
+    redditSpecificModifications = False
+    resetElement(redditSpecificModifications, 'redditSpecificModifications')
 
     filenames.clear()
     if (os.path.exists('static/data.css')):
