@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99d7b7d2-ef8a-459d-85e8-498993b4e186" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pythonStaticBooleans/False" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pythonStaticBooleans/True" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskTest.py" afterPath="$PROJECT_DIR$/flaskTest.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BracketsHtmlAndCss/dataCustom.css" afterPath="$PROJECT_DIR$/BracketsHtmlAndCss/dataCustom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonStaticBooleans/BlackCss" afterPath="$PROJECT_DIR$/pythonStaticBooleans/BlackCss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonStaticBooleans/CustomCSS" afterPath="$PROJECT_DIR$/pythonStaticBooleans/CustomCSS" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonStaticBooleans/DarkMinimalisticScrollbar" afterPath="$PROJECT_DIR$/pythonStaticBooleans/DarkMinimalisticScrollbar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonStaticBooleans/PointerCss" afterPath="$PROJECT_DIR$/pythonStaticBooleans/PointerCss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonStaticBooleans/YouTubeCustomColors" afterPath="$PROJECT_DIR$/pythonStaticBooleans/YouTubeCustomColors" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonStaticBooleans/embededModifications" afterPath="$PROJECT_DIR$/pythonStaticBooleans/embededModifications" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonStaticBooleans/facebookSpecificModifications" afterPath="$PROJECT_DIR$/pythonStaticBooleans/facebookSpecificModifications" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonStaticBooleans/redditSpecificModifications" afterPath="$PROJECT_DIR$/pythonStaticBooleans/redditSpecificModifications" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/data.css" afterPath="$PROJECT_DIR$/static/data.css" />
     </list>
     <ignored path="pythonglobalcssgeneratorforstylish.iws" />
     <ignored path=".idea/workspace.xml" />
