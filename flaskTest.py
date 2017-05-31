@@ -103,7 +103,7 @@ def deciceWhichFunctionToRun(bar):
 
         booleanSetter(BlackCss,'BlackCss', True)
         booleanSetter(WhiteCss,'WhiteCss', False)
-        booleanSetter(CustomCSS, 'customCSS', False)
+        booleanSetter(CustomCSS, 'CustomCSS', False)
 
     if (data['a'] == 'Blackoff'):
 
@@ -113,7 +113,7 @@ def deciceWhichFunctionToRun(bar):
 
         booleanSetter(WhiteCss, 'WhiteCss', True)
         booleanSetter(BlackCss, 'BlackCss', False)
-        booleanSetter(CustomCSS, 'customCSS', False)
+        booleanSetter(CustomCSS, 'CustomCSS', False)
 
     if (data['a'] == 'Whiteoff'):
 
@@ -203,6 +203,9 @@ def generateCss():
             if (BlackCss == "False"):
                 filenames.remove("BracketsHtmlAndCss/dataDark.css")
 
+        if ("BracketsHtmlAndCss/dataCustom.css" in filenames):
+                filenames.remove("BracketsHtmlAndCss/dataCustom.css")
+
     with open("pythonStaticBooleans/WhiteCss", "r") as f:
         WhiteCss = f.read()
 
@@ -212,6 +215,9 @@ def generateCss():
         if ("BracketsHtmlAndCss/dataWhite.css" in filenames):
             if (WhiteCss == "False"):
                 filenames.remove("BracketsHtmlAndCss/dataWhite.css")
+
+        if ("BracketsHtmlAndCss/dataCustom.css" in filenames):
+                filenames.remove("BracketsHtmlAndCss/dataCustom.css")
 
     with open("pythonStaticBooleans/PointerCss", "r") as f:
         PointerCss = f.read()
@@ -254,36 +260,28 @@ def generateCss():
                 for line in infile:
                     outfile.write(line)
 
+def resetElement(boolean, booleanName):
+    if (os.path.exists('pythonStaticBooleans/' + booleanName)):
+        os.remove('pythonStaticBooleans/' + booleanName)
+    with open('pythonStaticBooleans/' + booleanName, 'a') as the_file:
+        the_file.write(str(boolean))
+
 def resetCss():
 
     BlackCss = False
-
-    if (os.path.exists('pythonStaticBooleans/BlackCss')):
-        os.remove('pythonStaticBooleans/BlackCss')
-    with open('pythonStaticBooleans/BlackCss', 'a') as the_file:
-        the_file.write(str(BlackCss))
+    resetElement(BlackCss, 'BlackCss')
 
     WhiteCss = False
-
-    if (os.path.exists('pythonStaticBooleans/WhiteCss')):
-        os.remove('pythonStaticBooleans/WhiteCss')
-    with open('pythonStaticBooleans/WhiteCss', 'a') as the_file:
-        the_file.write(str(WhiteCss))
+    resetElement(WhiteCss, 'WhiteCss')
 
     PointerCss = False
-
-    if (os.path.exists('pythonStaticBooleans/PointerCss')):
-        os.remove('pythonStaticBooleans/PointerCss')
-    with open('pythonStaticBooleans/PointerCss', 'a') as the_file:
-        the_file.write(str(PointerCss))
+    resetElement(PointerCss, 'PointerCss')
 
     specificCss = False
+    resetElement(specificCss, 'specificCss')
 
-    if (os.path.exists('pythonStaticBooleans/specificCss')):
-        os.remove('pythonStaticBooleans/specificCss')
-    with open('pythonStaticBooleans/specificCss', 'a') as the_file:
-        the_file.write(str(specificCss))
-
+    CustomCSS = False
+    resetElement(CustomCSS, 'CustomCSS')
 
     filenames.clear()
     if (os.path.exists('static/data.css')):
