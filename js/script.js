@@ -162,6 +162,11 @@ var loadURL = function (src, iframe) {
 var loadHTML = function (html, iframe) {
     iframe.src = 'about:blank';
     iframe.contentWindow.document.open();
+
+    console.log(html.replace(/<head>/i, '<head><base href="' + url + '"><scr'
+        + 'ipt>document.addEventListener("click", function(e) { if(e.target && e.target.nodeName == "A") ' +
+        '{ e.preventDefault(); parent.loadURL(e.target.href); } });</scr' + 'ipt>'));
+
     iframe.contentWindow.document.write(html.replace(/<head>/i, '<head><base href="' + url + '"><scr'
         + 'ipt>document.addEventListener("click", function(e) { if(e.target && e.target.nodeName == "A") ' +
         '{ e.preventDefault(); parent.loadURL(e.target.href); } });</scr' + 'ipt>'));
@@ -184,7 +189,6 @@ function GoToWebsite3(){
     var site = 'https://www.youtube.com/';
     loadURL(site, iframe);
 }
-
 
 function GoToWebsite4(){
     var iframe = document.getElementById('webpageexampleId');
