@@ -1,5 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:font-family="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
+
+<!-- Create a simple CodeMirror instance -->
+<!--<link rel="stylesheet" href="lib/lib/codemirror.css">-->
+<!--<script src="lib/lib/codemirror.js"></script>-->
+
+<!-- javascript -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="lib/lib/codemirror.js"></script>
+
+
 
 <script type="text/javascript">
     var dataFromParent;
@@ -11,18 +21,37 @@
         window.open('http://127.0.0.1:5000/', 'http://127.0.0.1:5000/'); return false
     }
 
+$(document).ready(function(){
+	//code here...
+	var code = $(".codemirror-textarea")[0];
+	var editor = CodeMirror.fromTextArea(code, {
+		lineNumbers : true
+	});
+    });
+    
 </script>
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <p>dsfsd</p>
+
+    <div class="CssField">
+        <input type="text" id="Edit1" font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif; font-size:22px">
+    </div>
+
+    <title>CodeMirror</title>
+    <link rel="stylesheet" type="text/css" href="lib/lib/codemirror.css">
+
+</head>
+<body>
 
     <div id="container">
         <input type="button" value="www.facebook.com" href='http://127.0.0.1:5000/' onclick="localButton()" />
     </div>
 
-</head>
-<body>
+
+		<textarea class="codemirror-textarea"></textarea>
+
 
 </body>
 </html>
