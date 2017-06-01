@@ -3,15 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="99d7b7d2-ef8a-459d-85e8-498993b4e186" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BracketsHtmlAndCss/dataCustom.css" afterPath="$PROJECT_DIR$/BracketsHtmlAndCss/dataCustom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonStaticBooleans/DarkMinimalisticScrollbar" afterPath="$PROJECT_DIR$/pythonStaticBooleans/DarkMinimalisticScrollbar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonStaticBooleans/PointerCss" afterPath="$PROJECT_DIR$/pythonStaticBooleans/PointerCss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonStaticBooleans/YouTubeCustomColors" afterPath="$PROJECT_DIR$/pythonStaticBooleans/YouTubeCustomColors" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonStaticBooleans/embededModifications" afterPath="$PROJECT_DIR$/pythonStaticBooleans/embededModifications" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonStaticBooleans/facebookSpecificModifications" afterPath="$PROJECT_DIR$/pythonStaticBooleans/facebookSpecificModifications" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonStaticBooleans/redditSpecificModifications" afterPath="$PROJECT_DIR$/pythonStaticBooleans/redditSpecificModifications" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonStaticBooleans/specificCss" afterPath="$PROJECT_DIR$/pythonStaticBooleans/specificCss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/data.css" afterPath="$PROJECT_DIR$/static/data.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/script.js" afterPath="$PROJECT_DIR$/js/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/webcontrol.html" afterPath="$PROJECT_DIR$/templates/webcontrol.html" />
     </list>
     <ignored path="pythonglobalcssgeneratorforstylish.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,7 +21,7 @@
     <SUITE FILE_PATH="coverage/pythonglobalcssgeneratorforstylish$CSSgen.coverage" NAME="CSSgen Coverage Results" MODIFIED="1495763263067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonglobalcssgeneratorforstylish$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1495431499233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonglobalcssgeneratorforstylish$sdfds.coverage" NAME="sdfds Coverage Results" MODIFIED="1496105610988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pythonglobalcssgeneratorforstylish$flaskTest.coverage" NAME="flaskTest Coverage Results" MODIFIED="1496279823214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonglobalcssgeneratorforstylish$flaskTest.coverage" NAME="flaskTest Coverage Results" MODIFIED="1496317792954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonglobalcssgeneratorforstylish$phpTest.coverage" NAME="phpTest Coverage Results" MODIFIED="1495560556911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonglobalcssgeneratorforstylish$testtest.coverage" NAME="testtest Coverage Results" MODIFIED="1494959606225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
@@ -54,7 +47,7 @@
       <file leaf-file-name="flaskTest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flaskTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1752">
+            <state relative-caret-position="654">
               <caret line="184" column="50" selection-start-line="184" selection-start-column="50" selection-end-line="184" selection-end-column="50" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
@@ -66,9 +59,11 @@
       <file leaf-file-name="webcontrol.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/webcontrol.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="204" column="44" selection-start-line="204" selection-start-column="44" selection-end-line="204" selection-end-column="64" />
-              <folding />
+            <state relative-caret-position="406">
+              <caret line="252" column="52" selection-start-line="252" selection-start-column="52" selection-end-line="252" selection-end-column="52" />
+              <folding>
+                <element signature="n#style#0;n#input#0;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -76,67 +71,9 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="172" column="4" selection-start-line="172" selection-start-column="4" selection-end-line="172" selection-end-column="4" />
+            <state relative-caret-position="510">
+              <caret line="206" column="1" selection-start-line="206" selection-start-column="1" selection-end-line="206" selection-end-column="1" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="guardianHtml.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/guardianHtml.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="34" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding>
-                <marker date="1496279058966" expanded="true" signature="8341:8515" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="8531:8725" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="8563:8709" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="8761:8932" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="8948:9139" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="8980:9123" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="9221:9392" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="9408:9599" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="9440:9583" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="9635:9803" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="9819:10007" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="9851:9991" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="444719:444733" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="453357:453371" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="459265:459279" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="464673:464687" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="487026:487040" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="493423:493437" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="499217:499231" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="504494:504508" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="509812:509826" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="517708:517722" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="523413:523427" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="530370:530384" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="535048:535062" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="540247:540261" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="544832:544846" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="551611:551625" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="558004:558018" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="566306:566320" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="569943:569957" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="575628:575642" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="625715:625729" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="630859:630873" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="651513:651527" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="658077:658091" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="663926:663940" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="669194:669208" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="674258:674272" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="702339:702353" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="708130:708144" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="713481:713495" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="719191:719205" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="726375:726389" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="732939:732953" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="739382:739396" placeholder="..." />
-                <marker date="1496279058966" expanded="true" signature="774289:774303" placeholder="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -144,7 +81,7 @@
       <file leaf-file-name="layout.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/layout.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4179">
+            <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -191,8 +128,8 @@
         <option value="$PROJECT_DIR$/pythonStaticBooleans/CustomCSS" />
         <option value="$PROJECT_DIR$/flaskTest.py" />
         <option value="$PROJECT_DIR$/css/layout.css" />
-        <option value="$PROJECT_DIR$/templates/webcontrol.html" />
         <option value="$PROJECT_DIR$/templates/guardianHtml.html" />
+        <option value="$PROJECT_DIR$/templates/webcontrol.html" />
         <option value="$PROJECT_DIR$/js/script.js" />
       </list>
     </option>
@@ -251,7 +188,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -356,7 +293,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -768,7 +705,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="58" y="0" width="1862" height="1080" extended-state="7" />
+    <frame x="58" y="0" width="1862" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15037593" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -777,7 +714,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299389" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26985744" sideWeight="0.49785176" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26985744" sideWeight="0.49785176" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1121,19 +1058,9 @@
     <entry file="file://$PROJECT_DIR$/pythonStaticBooleans/False" />
     <entry file="file://$PROJECT_DIR$/css/layout.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4179">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1752">
-          <caret line="184" column="50" selection-start-line="184" selection-start-column="50" selection-end-line="184" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1193,18 +1120,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/flaskTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="654">
+          <caret line="184" column="50" selection-start-line="184" selection-start-column="50" selection-end-line="184" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/webcontrol.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="204" column="44" selection-start-line="204" selection-start-column="44" selection-end-line="204" selection-end-column="64" />
-          <folding />
+        <state relative-caret-position="406">
+          <caret line="252" column="52" selection-start-line="252" selection-start-column="52" selection-end-line="252" selection-end-column="52" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="172" column="4" selection-start-line="172" selection-start-column="4" selection-end-line="172" selection-end-column="4" />
+        <state relative-caret-position="510">
+          <caret line="206" column="1" selection-start-line="206" selection-start-column="1" selection-end-line="206" selection-end-column="1" />
           <folding />
         </state>
       </provider>

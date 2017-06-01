@@ -214,6 +214,47 @@
                 <input type="button" value="www.facebook.com" onclick="GoToWebsite4()" />
             </div>
 
+             <div class="buttonForExampleWebpageOpen">
+
+                     <form onclick="GoToWebsite4()">
+
+                     Last name: <input type="text" name="LastName" value="Mouse"><br>
+                     <input type="submit" value="Submit">
+                     </form>
+
+
+                     <form id="form-id">
+
+                       <a href="#" onclick="document.getElementById('form-id').submit();"> submit </a>
+
+                     </form>
+            </div>
+
+            <script>
+                function removeP2() {
+                    document.getElementById("p2").remove();
+                    }
+                </script>
+
+                <nav>
+                    <form method="POST" onsubmit="removeP2(); return false;">
+                       <button>Remove</button>
+                    </form>
+                </nav>
+                <section id="section">
+                    <p id="p1">Paragraph One.</p>
+                    <p id="p2">Paragraph Two.</p>
+                    <p id="p2">Paragraph Two.</p>
+                </section>
+
+                <form action="javascript:completeAndRedirect();">
+                    <input type="text" id="Edit1"
+                    style="width:280; height:50; font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif; font-size:22px">
+                <input type="submit" value="Submit">
+
+                </form>
+
+
             <div class="webpageexample">
                 <iframe src="http://127.0.0.1:5000/webpageexample" width="1300" height="900" id="webpageexampleId">
                     alternative content for browsers which do not support iframe.
