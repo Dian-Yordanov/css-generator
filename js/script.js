@@ -208,6 +208,21 @@ function completeAndRedirect(edit){
     // alert(edit.value);
 }
 
+function rrr(){
+// output = '<h1>Hello, World!</h1>';
+// window.open('output.html').document.body.innerHTML += output;
+//
+// output = 'Hello, World!';
+// window.open('about:blank').document.body.innerText += output;
+    
+    $(document).ready(function () {
+        var output = "data";
+        var OpenWindow = window.open("htmlPages", "mywin", '');
+        OpenWindow.dataFromParent = output; // dataFromParent is a variable in child.html
+        OpenWindow.init();
+    });
+}
+
 
 
 

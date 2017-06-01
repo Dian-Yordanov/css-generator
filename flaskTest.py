@@ -6,6 +6,7 @@ import json
 from flask import Flask, request
 from flask import render_template
 from flask import Flask, send_from_directory
+from flask import Flask, current_app
 
 app = Flask(__name__)
 filenames = []
@@ -25,9 +26,9 @@ def hello(name=None):
 def controol(name=None):
     return render_template('webcontrol.html', name=name)
 
-
-# set the project root directory as the static folder, you can set others.
-# app = Flask(__name__, static_url_path='')
+@app.route('/htmlPages')
+def hello_world():
+    return current_app.send_static_file('htmlPages.html')
 
 @app.route('/js/<path:path>')
 def send_js(path):
