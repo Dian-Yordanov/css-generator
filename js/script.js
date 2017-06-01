@@ -208,19 +208,27 @@ function completeAndRedirect(edit){
     // alert(edit.value);
 }
 
-function rrr(){
+function callParentWindowToEditCss(typeOfCssFile){
 // output = '<h1>Hello, World!</h1>';
 // window.open('output.html').document.body.innerHTML += output;
 //
 // output = 'Hello, World!';
 // window.open('about:blank').document.body.innerText += output;
-    
+
+    var valueOfType = typeOfCssFile.value;
+
     $(document).ready(function () {
-        var output = "data";
+        // var output = "data";
+        
+
         var OpenWindow = window.open("htmlPages", "mywin", '');
-        OpenWindow.dataFromParent = output; // dataFromParent is a variable in child.html
+        // var OpenWindow = window.open('http://127.0.0.1:5000/htmlPages', 'http://127.0.0.1:5000/htmlPages'); return false;
+        // var OpenWindow = window.open('http://127.0.0.1:5000/htmlPages', "mywin", '');
+        console.log(valueOfType);
+        OpenWindow.dataFromParent = valueOfType; // dataFromParent is a variable in child.html
         OpenWindow.init();
     });
+    // window.open('http://127.0.0.1:5000/htmlPages', 'http://127.0.0.1:5000/htmlPages'); return false
 }
 
 
