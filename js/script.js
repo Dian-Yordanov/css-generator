@@ -163,13 +163,18 @@ var loadHTML = function (html, iframe) {
     iframe.src = 'about:blank';
     iframe.contentWindow.document.open();
 
-    console.log(html.replace(/<head>/i, '<head><base href="' + url + '"><scr'
+    var linkToStaticCss = "<link ".concat('rel="stylesheet" ').concat('type="text/css" ').concat('href="/static/data.css" />');
+    var htmlText = html.replace(/<head>/i, '<head><base href="' + url + '"><scr'
         + 'ipt>document.addEventListener("click", function(e) { if(e.target && e.target.nodeName == "A") ' +
-        '{ e.preventDefault(); parent.loadURL(e.target.href); } });</scr' + 'ipt>'));
+        '{ e.preventDefault(); parent.loadURL(e.target.href); } });</scr' + 'ipt>');
 
-    iframe.contentWindow.document.write(html.replace(/<head>/i, '<head><base href="' + url + '"><scr'
-        + 'ipt>document.addEventListener("click", function(e) { if(e.target && e.target.nodeName == "A") ' +
-        '{ e.preventDefault(); parent.loadURL(e.target.href); } });</scr' + 'ipt>'));
+    htmlText = htmlText.replace('<!doctype html>', '<!DOCTYPE html>');
+    htmlText = htmlText.replace('<!DOCTYPE html>', '<!DOCTYPE html><link rel="stylesheet" type="text/css" href="/static/data.css" />');
+    
+    // console.log(linkToStaticCss);
+    console.log(htmlText);
+
+    iframe.contentWindow.document.write(htmlText);
     iframe.contentWindow.document.close();
 }
 
