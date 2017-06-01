@@ -2,291 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99d7b7d2-ef8a-459d-85e8-498993b4e186" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/lib/codemirror.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/lib/codemirror.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/apl/apl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/apl/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/asciiarmor/asciiarmor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/asciiarmor/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/asn.1/asn.1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/asn.1/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/asterisk/asterisk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/asterisk/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/brainfuck/brainfuck.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/brainfuck/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/clike/clike.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/clike/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/clike/scala.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/clike/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/clojure/clojure.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/clojure/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/cmake/cmake.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/cmake/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/cobol/cobol.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/cobol/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/coffeescript/coffeescript.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/coffeescript/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/commonlisp/commonlisp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/commonlisp/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/crystal/crystal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/crystal/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/css/css.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/css/gss.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/css/gss_test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/css/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/css/less.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/css/less_test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/css/scss.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/css/scss_test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/css/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/cypher/cypher.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/cypher/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/cypher/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/d/d.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/d/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/dart/dart.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/dart/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/diff/diff.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/diff/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/django/django.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/django/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/dockerfile/dockerfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/dockerfile/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/dtd/dtd.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/dtd/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/dylan/dylan.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/dylan/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/dylan/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/ebnf/ebnf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/ebnf/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/ecl/ecl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/ecl/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/eiffel/eiffel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/eiffel/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/elm/elm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/elm/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/erlang/erlang.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/erlang/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/factor/factor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/factor/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/fcl/fcl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/fcl/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/forth/forth.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/forth/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/fortran/fortran.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/fortran/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/gas/gas.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/gas/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/gfm/gfm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/gfm/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/gfm/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/gherkin/gherkin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/gherkin/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/go/go.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/go/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/groovy/groovy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/groovy/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/haml/haml.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/haml/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/haml/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/handlebars/handlebars.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/handlebars/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/haskell-literate/haskell-literate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/haskell-literate/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/haskell/haskell.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/haskell/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/haxe/haxe.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/haxe/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/htmlembedded/htmlembedded.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/htmlembedded/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/htmlmixed/htmlmixed.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/htmlmixed/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/http/http.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/http/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/idl/idl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/idl/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/javascript/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/javascript/javascript.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/javascript/json-ld.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/javascript/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/javascript/typescript.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/jinja2/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/jinja2/jinja2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/jsx/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/jsx/jsx.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/jsx/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/julia/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/julia/julia.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/livescript/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/livescript/livescript.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/lua/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/lua/lua.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/markdown/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/markdown/markdown.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/markdown/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/mathematica/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/mathematica/mathematica.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/mbox/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/mbox/mbox.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/meta.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/mirc/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/mirc/mirc.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/mllike/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/mllike/mllike.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/modelica/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/modelica/modelica.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/mscgen/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/mscgen/mscgen.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/mscgen/mscgen_test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/mscgen/msgenny_test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/mscgen/xu_test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/mumps/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/mumps/mumps.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/nginx/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/nginx/nginx.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/nsis/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/nsis/nsis.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/ntriples/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/ntriples/ntriples.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/octave/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/octave/octave.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/oz/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/oz/oz.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/pascal/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/pascal/pascal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/pegjs/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/pegjs/pegjs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/perl/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/perl/perl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/php/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/php/php.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/php/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/pig/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/pig/pig.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/powershell/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/powershell/powershell.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/powershell/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/properties/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/properties/properties.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/protobuf/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/protobuf/protobuf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/pug/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/pug/pug.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/puppet/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/puppet/puppet.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/python/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/python/python.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/python/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/q/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/q/q.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/r/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/r/r.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/rpm/changes/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/rpm/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/rpm/rpm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/rst/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/rst/rst.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/ruby/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/ruby/ruby.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/ruby/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/rust/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/rust/rust.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/rust/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/sas/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/sas/sas.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/sass/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/sass/sass.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/sass/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/scheme/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/scheme/scheme.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/shell/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/shell/shell.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/shell/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/sieve/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/sieve/sieve.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/slim/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/slim/slim.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/slim/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/smalltalk/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/smalltalk/smalltalk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/smarty/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/smarty/smarty.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/solr/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/solr/solr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/soy/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/soy/soy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/soy/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/sparql/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/sparql/sparql.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/spreadsheet/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/spreadsheet/spreadsheet.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/sql/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/sql/sql.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/stex/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/stex/stex.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/stex/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/stylus/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/stylus/stylus.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/swift/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/swift/swift.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/swift/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/tcl/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/tcl/tcl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/textile/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/textile/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/textile/textile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/tiddlywiki/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/tiddlywiki/tiddlywiki.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/tiddlywiki/tiddlywiki.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/tiki/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/tiki/tiki.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/tiki/tiki.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/toml/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/toml/toml.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/tornado/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/tornado/tornado.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/troff/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/troff/troff.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/ttcn-cfg/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/ttcn-cfg/ttcn-cfg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/ttcn/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/ttcn/ttcn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/turtle/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/turtle/turtle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/twig/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/twig/twig.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/vb/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/vb/vb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/vbscript/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/vbscript/vbscript.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/velocity/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/velocity/velocity.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/verilog/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/verilog/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/verilog/verilog.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/vhdl/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/vhdl/vhdl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/vue/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/vue/vue.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/webidl/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/webidl/webidl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/xml/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/xml/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/xml/xml.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/xquery/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/xquery/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/xquery/xquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/yacas/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/yacas/yacas.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/yaml-frontmatter/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/yaml-frontmatter/yaml-frontmatter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/yaml/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/yaml/yaml.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/z80/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lib/mode/z80/z80.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/htmlPages.html" afterPath="$PROJECT_DIR$/static/htmlPages.html" />
     </list>
     <ignored path="pythonglobalcssgeneratorforstylish.iws" />
@@ -304,7 +19,7 @@
     <SUITE FILE_PATH="coverage/pythonglobalcssgeneratorforstylish$CSSgen.coverage" NAME="CSSgen Coverage Results" MODIFIED="1495763263067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonglobalcssgeneratorforstylish$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1495431499233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonglobalcssgeneratorforstylish$sdfds.coverage" NAME="sdfds Coverage Results" MODIFIED="1496105610988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pythonglobalcssgeneratorforstylish$flaskTest.coverage" NAME="flaskTest Coverage Results" MODIFIED="1496353215609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonglobalcssgeneratorforstylish$flaskTest.coverage" NAME="flaskTest Coverage Results" MODIFIED="1496353364453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonglobalcssgeneratorforstylish$phpTest.coverage" NAME="phpTest Coverage Results" MODIFIED="1495560556911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonglobalcssgeneratorforstylish$testtest.coverage" NAME="testtest Coverage Results" MODIFIED="1494959606225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
@@ -342,8 +57,8 @@
       <file leaf-file-name="htmlPages.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/htmlPages.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="42" column="52" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
+            <state relative-caret-position="213">
+              <caret line="37" column="15" selection-start-line="37" selection-start-column="15" selection-end-line="39" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -1509,14 +1224,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/webcontrol.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3978">
-          <caret line="221" column="26" selection-start-line="220" selection-start-column="20" selection-end-line="222" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/lib/lib/codemirror.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1525,10 +1232,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/webcontrol.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3978">
+          <caret line="221" column="26" selection-start-line="220" selection-start-column="20" selection-end-line="222" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/static/htmlPages.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="42" column="52" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
+        <state relative-caret-position="213">
+          <caret line="37" column="15" selection-start-line="37" selection-start-column="15" selection-end-line="39" selection-end-column="14" />
           <folding />
         </state>
       </provider>
