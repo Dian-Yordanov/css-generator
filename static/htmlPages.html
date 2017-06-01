@@ -6,11 +6,31 @@
     function init() {
         document.write(dataFromParent);
     }
+
+    function localButton(){
+        document.getElementById("container").onclick = function(evt){
+            if (evt.target.tagName === "A")
+                window.open(evt.target.href, evt.target.href);
+
+            return false;
+        }
+    }
+
 </script>
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <p>dsfsd</p>
+
+    <div id="container">
+        <a href='http://127.0.0.1:5000/' onclick="window.open(this.href, this.href); return false">link</a>
+
+        <a href="foo" onclick="window.open('http://127.0.0.1:5000/'); return false">link</a>
+                <input type="button" value="www.facebook.com" onclick="localButton()" />
+
+        <input type="button" value="www.facebook.com" href='http://127.0.0.1:5000/' onclick="window.open(this.href, this.href); return false" />
+    </div>
+
 </head>
 <body>
 
