@@ -215,19 +215,23 @@ function callParentWindowToEditCss(typeOfCssFile){
 // output = 'Hello, World!';
 // window.open('about:blank').document.body.innerText += output;
 
-    var valueOfType = typeOfCssFile.value;
 
-    $(document).ready(function () {
-        // var output = "data";
-        
+    // var valueOfType = typeOfCssFile.value;
+    //
+    // $(document).ready(function () {
+    //     var OpenWindow = window.open("htmlPages", "mywin", '');
+    //     OpenWindow.dataFromParent = valueOfType; // dataFromParent is a variable in child.html
+    //     OpenWindow.init();
+    // });
 
-        var OpenWindow = window.open("htmlPages", "mywin", '');
-        // var OpenWindow = window.open('http://127.0.0.1:5000/htmlPages', 'http://127.0.0.1:5000/htmlPages'); return false;
+
+    window.open('htmlPages','childWindow','width=400,height=400');
+
+
+
+            // var OpenWindow = window.open('http://127.0.0.1:5000/htmlPages', 'http://127.0.0.1:5000/htmlPages'); return false;
         // var OpenWindow = window.open('http://127.0.0.1:5000/htmlPages', "mywin", '');
-        console.log(valueOfType);
-        OpenWindow.dataFromParent = valueOfType; // dataFromParent is a variable in child.html
-        OpenWindow.init();
-    });
+        // console.log(valueOfType);
     // window.open('http://127.0.0.1:5000/htmlPages', 'http://127.0.0.1:5000/htmlPages'); return false
 }
 

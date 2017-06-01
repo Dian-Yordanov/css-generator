@@ -7,11 +7,21 @@
 
 
 <script type="text/javascript">
-    var dataFromParent;
-    function init() {
-        alert(dataFromParent);
-//        document.write(dataFromParent);
+
+    function initializeMainDiv() {
+//        document.getElementById("mainDiv").innerHTML = "Parent window data field value is: " +
+//            window.opener.document.getElementById("data").value
+
+          document.getElementById("mainDiv").value = 'jhjhj';
+                   alert(window.opener.document.getElementById("buttonForLaunchingSecondWindow").value);
+
     }
+
+//    var dataFromParent;
+//    function init() {
+//        alert(dataFromParent);
+////        document.write(dataFromParent);
+//    }
 
     function localButton(){
         window.open('http://127.0.0.1:5000/', 'http://127.0.0.1:5000/'); return false
@@ -39,14 +49,17 @@ $(document).ready(function(){
     <link rel="stylesheet" type="text/css" href="js/lib/lib/codemirror.css">
 
 </head>
-<body>
+<body onload="initializeMainDiv();">
+
+
+
 
     <div id="container">
         <input type="button" value="www.facebook.com" href='http://127.0.0.1:5000/' onclick="localButton()" />
     </div>
 
 
-		<textarea class="codemirror-textarea"></textarea>
+		<textarea id="mainDiv" class="codemirror-textarea"></textarea>
 
 
 </body>
