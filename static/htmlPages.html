@@ -12,8 +12,18 @@
 //        document.getElementById("mainDiv").innerHTML = "Parent window data field value is: " +
 //            window.opener.document.getElementById("data").value
 
-          document.getElementById("mainDiv").value = 'jhjhj';
-                   alert(window.opener.document.getElementById("buttonForLaunchingSecondWindow").value);
+//          document.getElementById("mainDiv").value = 'jhjhj';
+
+//        document.getElementById('mainDiv').value = window.opener.document.getElementById("buttonForLaunchingSecondWindow").value;
+
+//        $("mainDiv").val(window.opener.document.getElementById("buttonForLaunchingSecondWindow").value);
+
+//                   alert(window.opener.document.getElementById("buttonForLaunchingSecondWindow").value);
+
+
+//        var textArea = document.getElementById('mainDiv');
+//        var editor = CodeMirror.fromTextArea(textArea);
+//        editor.getDoc().setValue('var msg = "Hi";');
 
     }
 
@@ -29,21 +39,28 @@
 
 $(document).ready(function(){
 	//code here...
+    
+    textArea = document.getElementById('mainDiv');
 	var code = $(".codemirror-textarea")[0];
 	var editor = CodeMirror.fromTextArea(code, {
 		lineNumbers : true
+
+
 	});
+    editor.getDoc().setValue('var msg = "Hi";');
+
+
     });
+
+
+
+//    document.getElementById('mainDiv').value = window.opener.document.getElementById("buttonForLaunchingSecondWindow").value;
 
 </script>
 
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-
-    <!--<div class="CssField">-->
-        <!--<input type="text" id="Edit1" font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif; font-size:22px">-->
-    <!--</div>-->
 
 
     <link rel="stylesheet" type="text/css" href="js/lib/lib/codemirror.css">
