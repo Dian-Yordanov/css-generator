@@ -4,9 +4,14 @@
     <list default="true" id="99d7b7d2-ef8a-459d-85e8-498993b4e186" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BracketsHtmlAndCss/dataCustom.css" afterPath="$PROJECT_DIR$/BracketsHtmlAndCss/dataCustom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/script.js" afterPath="$PROJECT_DIR$/js/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonStaticBooleans/DarkMinimalisticScrollbar" afterPath="$PROJECT_DIR$/pythonStaticBooleans/DarkMinimalisticScrollbar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonStaticBooleans/PointerCss" afterPath="$PROJECT_DIR$/pythonStaticBooleans/PointerCss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonStaticBooleans/YouTubeCustomColors" afterPath="$PROJECT_DIR$/pythonStaticBooleans/YouTubeCustomColors" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonStaticBooleans/embededModifications" afterPath="$PROJECT_DIR$/pythonStaticBooleans/embededModifications" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonStaticBooleans/facebookSpecificModifications" afterPath="$PROJECT_DIR$/pythonStaticBooleans/facebookSpecificModifications" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonStaticBooleans/redditSpecificModifications" afterPath="$PROJECT_DIR$/pythonStaticBooleans/redditSpecificModifications" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonStaticBooleans/specificCss" afterPath="$PROJECT_DIR$/pythonStaticBooleans/specificCss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/data.css" afterPath="$PROJECT_DIR$/static/data.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/guardianHtml.html" afterPath="$PROJECT_DIR$/templates/guardianHtml.html" />
     </list>
     <ignored path="pythonglobalcssgeneratorforstylish.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -763,7 +768,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="58" y="0" width="1862" height="1080" extended-state="6" />
+    <frame x="58" y="0" width="1862" height="1080" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15037593" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
