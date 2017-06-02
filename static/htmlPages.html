@@ -4,42 +4,73 @@
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/lib/lib/codemirror.js"></script>
 
+        <!--<link rel="stylesheet" href="BracketsHtmlAndCss/DarkMinimalisticScrollbar.css" type="text/css">-->
+        <!--<link rel="stylesheet" href="BracketsHtmlAndCss/dataCustom.css" type="text/css">-->
+        <!--<link rel="stylesheet" href="BracketsHtmlAndCss/dataDark.css" type="text/css">-->
+        <!--<link rel="stylesheet" href="BracketsHtmlAndCss/dataWhite.css" type="text/css">-->
+
 
 
 <script type="text/javascript">
 
-    function initializeMainDiv() {
-//        document.getElementById("mainDiv").innerHTML = "Parent window data field value is: " +
-//            window.opener.document.getElementById("data").value
+    var fileDisplayArea;
 
-//          document.getElementById("mainDiv").value = 'jhjhj';
+    function sadasdas() {
 
-//        document.getElementById('mainDiv').value = window.opener.document.getElementById("buttonForLaunchingSecondWindow").value;
-
-//        $("mainDiv").val(window.opener.document.getElementById("buttonForLaunchingSecondWindow").value);
-
-//                   alert(window.opener.document.getElementById("buttonForLaunchingSecondWindow").value);
-
-
-//        var textArea = document.getElementById('mainDiv');
-//        var editor = CodeMirror.fromTextArea(textArea);
-//        editor.getDoc().setValue('var msg = "Hi";');
+        $.get("api/foo/?a=dfds", function(response) {});
 
     }
-
-//    var dataFromParent;
-//    function init() {
-//        alert(dataFromParent);
-////        document.write(dataFromParent);
-//    }
 
     function localButton(){
         window.open('http://127.0.0.1:5000/', 'http://127.0.0.1:5000/'); return false
     }
 
+//    function readTextFile(file, fileDisplayArea)
+//    {
+//        var rawFile = new XMLHttpRequest();
+//        rawFile.open("GET", file, false);
+//        rawFile.onreadystatechange = function ()
+//        {
+//            if(rawFile.readyState === 4)
+//            {
+//                if(rawFile.status === 200 || rawFile.status == 0)
+//                {
+//                    var allText = rawFile.responseText;
+//                    fileDisplayArea = allText
+//                }
+//            }
+//        }
+//        rawFile.send(null);
+//    }
+
+
+
+
+function readTextFile(file, fileDisplayArea)
+{
+    var rawFile = new XMLHttpRequest();
+    rawFile.open("GET", file, false);
+    rawFile.onreadystatechange = function ()
+    {
+        if(rawFile.readyState === 4)
+        {
+            if(rawFile.status === 200 || rawFile.status == 0)
+            {
+                var allText = rawFile.responseText;
+               alert(allText);
+                fileDisplayArea = allText;
+            }
+        }
+    }
+    rawFile.send(null);
+}
+
+
+
+
 $(document).ready(function(){
 	//code here...
-    
+
     textArea = document.getElementById('mainDiv');
 	var code = $(".codemirror-textarea")[0];
 	var editor = CodeMirror.fromTextArea(code, {
@@ -47,10 +78,20 @@ $(document).ready(function(){
 
 
 	});
-    editor.getDoc().setValue('var msg = "Hi";');
 
+//    readTextFile("file:///C:/your/path/to/file.txt");
+
+
+
+    readTextFile("BracketsHtmlAndCss/dataDark.css");
+
+//   alert(httpGet("http://127.0.0.1:5000/BracketsHtmlAndCss/dataDark.css"));
+//    readTextFile("http://127.0.0.1:5000/BracketsHtmlAndCss/dataDark.css", fileDisplayArea);
+    editor.getDoc().setValue(fileDisplayArea);
+    //window.opener.document.getElementById("buttonForLaunchingSecondWindow").value
 
     });
+
 
 
 
@@ -66,7 +107,7 @@ $(document).ready(function(){
     <link rel="stylesheet" type="text/css" href="js/lib/lib/codemirror.css">
 
 </head>
-<body onload="initializeMainDiv();">
+<body>
 
 
 
@@ -78,6 +119,7 @@ $(document).ready(function(){
 
 		<textarea id="mainDiv" class="codemirror-textarea"></textarea>
 
+        <input type="button" value="www.facebook.com" href='http://127.0.0.1:5000/' onclick="sadasdas()" />
 
 </body>
 </html>

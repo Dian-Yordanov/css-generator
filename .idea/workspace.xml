@@ -2,6 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99d7b7d2-ef8a-459d-85e8-498993b4e186" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flask_cors/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flask_cors/core.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flask_cors/decorator.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flask_cors/extension.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flask_cors/version.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dataDark.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BracketsHtmlAndCss/dataCustom.css" afterPath="$PROJECT_DIR$/BracketsHtmlAndCss/dataCustom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskTest.py" afterPath="$PROJECT_DIR$/flaskTest.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonStaticBooleans/DarkMinimalisticScrollbar" afterPath="$PROJECT_DIR$/pythonStaticBooleans/DarkMinimalisticScrollbar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonStaticBooleans/YouTubeCustomColors" afterPath="$PROJECT_DIR$/pythonStaticBooleans/YouTubeCustomColors" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/data.css" afterPath="$PROJECT_DIR$/static/data.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/htmlPages.html" afterPath="$PROJECT_DIR$/static/htmlPages.html" />
     </list>
     <ignored path="pythonglobalcssgeneratorforstylish.iws" />
@@ -19,7 +31,7 @@
     <SUITE FILE_PATH="coverage/pythonglobalcssgeneratorforstylish$CSSgen.coverage" NAME="CSSgen Coverage Results" MODIFIED="1495763263067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonglobalcssgeneratorforstylish$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1495431499233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonglobalcssgeneratorforstylish$sdfds.coverage" NAME="sdfds Coverage Results" MODIFIED="1496105610988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pythonglobalcssgeneratorforstylish$flaskTest.coverage" NAME="flaskTest Coverage Results" MODIFIED="1496357624551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonglobalcssgeneratorforstylish$flaskTest.coverage" NAME="flaskTest Coverage Results" MODIFIED="1496369738054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonglobalcssgeneratorforstylish$phpTest.coverage" NAME="phpTest Coverage Results" MODIFIED="1495560556911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonglobalcssgeneratorforstylish$testtest.coverage" NAME="testtest Coverage Results" MODIFIED="1494959606225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
@@ -32,11 +44,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="flaskTest.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="flaskTest.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flaskTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+            <state relative-caret-position="410">
+              <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -44,21 +56,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="webcontrol.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/webcontrol.html">
+      <file leaf-file-name="dataDark.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/dataDark.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="238" column="63" selection-start-line="238" selection-start-column="33" selection-end-line="238" selection-end-column="63" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="htmlPages.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="webcontrol.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/webcontrol.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="htmlPages.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/htmlPages.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+            <state relative-caret-position="684">
+              <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -67,8 +89,8 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="227" column="26" selection-start-line="227" selection-start-column="26" selection-end-line="227" selection-end-column="26" />
+            <state relative-caret-position="-2214">
+              <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="58" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -116,12 +138,12 @@
         <option value="$PROJECT_DIR$/templates/guardianHtml.html" />
         <option value="$PROJECT_DIR$/css/layout.css" />
         <option value="$PROJECT_DIR$/html/htmlPages.html" />
-        <option value="$PROJECT_DIR$/flaskTest.py" />
         <option value="$PROJECT_DIR$/static/default.js" />
         <option value="$PROJECT_DIR$/js/default.js" />
         <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/templates/webcontrol.html" />
         <option value="$PROJECT_DIR$/static/htmlPages.html" />
+        <option value="$PROJECT_DIR$/flaskTest.py" />
       </list>
     </option>
   </component>
@@ -179,7 +201,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -302,7 +324,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -312,21 +334,22 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/static/js" />
-      <recent name="$PROJECT_DIR$/static/lib" />
-      <recent name="$PROJECT_DIR$/libs" />
-      <recent name="$PROJECT_DIR$/BracketsHtmlAndCss" />
-      <recent name="$PROJECT_DIR$/templates" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/js" />
       <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$/css" />
       <recent name="$PROJECT_DIR$/static/styles" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/static/js" />
+      <recent name="$PROJECT_DIR$/static/lib" />
+      <recent name="$PROJECT_DIR$/libs" />
     </key>
   </component>
   <component name="RunManager" selected="Python.flaskTest">
@@ -763,20 +786,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css-format-master/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css-format-master/SourceIO.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -844,13 +853,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BracketsHtmlAndCss/dataDark.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="56" column="47" selection-start-line="0" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1007,7 +1009,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1016,81 +1017,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="34" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <marker date="1496279058966" expanded="true" signature="8341:8515" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="8531:8725" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="8563:8709" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="8761:8932" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="8948:9139" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="8980:9123" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="9221:9392" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="9408:9599" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="9440:9583" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="9635:9803" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="9819:10007" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="9851:9991" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="444719:444733" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="453357:453371" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="459265:459279" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="464673:464687" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="487026:487040" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="493423:493437" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="499217:499231" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="504494:504508" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="509812:509826" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="517708:517722" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="523413:523427" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="530370:530384" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="535048:535062" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="540247:540261" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="544832:544846" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="551611:551625" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="558004:558018" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="566306:566320" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="569943:569957" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="575628:575642" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="625715:625729" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="630859:630873" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="651513:651527" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="658077:658091" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="663926:663940" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="669194:669208" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="674258:674272" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="702339:702353" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="708130:708144" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="713481:713495" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="719191:719205" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="726375:726389" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="732939:732953" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="739382:739396" placeholder="..." />
-            <marker date="1496279058966" expanded="true" signature="774289:774303" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libs/codemirror.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libs/codemirror.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/codemirror.css" />
+    <entry file="file://$PROJECT_DIR$/libs/codemirror.js" />
     <entry file="file://$PROJECT_DIR$/js/default.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#42#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1106,7 +1041,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1114,9 +1048,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="9" column="7" selection-start-line="3" selection-start-column="0" selection-end-line="9" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#42#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1132,41 +1063,64 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3963">
           <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_cors/core.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flaskTest.py">
+    <entry file="file://$PROJECT_DIR$/BracketsHtmlAndCss/dataDark.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="627">
+          <caret line="42" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="227" column="26" selection-start-line="227" selection-start-column="26" selection-end-line="227" selection-end-column="26" />
+        <state relative-caret-position="-2214">
+          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="58" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/dataDark.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/webcontrol.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="238" column="63" selection-start-line="238" selection-start-column="33" selection-end-line="238" selection-end-column="63" />
+        <state relative-caret-position="126">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/htmlPages.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+        <state relative-caret-position="684">
+          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

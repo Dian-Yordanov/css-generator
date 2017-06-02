@@ -3,12 +3,21 @@ import os
 import webbrowser
 import os.path
 import json
+
+import flask
 from flask import Flask, request
 from flask import render_template
 from flask import Flask, send_from_directory
 from flask import Flask, current_app
+from flask import Flask
+from flask import Response
+
+# from flask import Flask, session
+
+# from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
+# CORS(app)
 filenames = []
 
 @app.route('/api/foo/', methods=['GET'])
@@ -16,7 +25,25 @@ def foo():
 
     bar = request.args.to_dict()
     deciceWhichFunctionToRun(bar)
-    return 'success', 200
+
+    # resp = flask.Response("Foo bar baz")
+    # # resp.headers['Access-Control-Allow-Origin'] = '*'
+    # return resp
+
+    # @app.route("/")
+    # def home():
+    resp = Response("")
+    # resp.headers['Access-Control-Allow-Origin'] = '*'
+    return resp
+
+    # if __name__ == "__main__":
+    #     app.run()
+
+    # deciceWhichFunctionToRun(bar)
+    #
+    # # response.set_data(json.dumps(d))
+    #
+    # return 'success', 200
 
 @app.route('/webpageexample/')
 def hello(name=None):
@@ -37,6 +64,15 @@ def send_js(path):
 @app.route('/css/<path:path>')
 def send_css(path):
     return send_from_directory('css', path)
+
+@app.route('/BracketsHtmlAndCss/dataDark.css')
+def dfdsfdsfds():
+    return current_app.send_static_file('dataDark.css')
+
+#
+# @app.route('/BracketsHtmlAndCss/<path:path>')
+# def send_css(path):
+#     return send_from_directory('css', path)
 
 
 # if __name__ == "__main__":

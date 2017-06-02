@@ -59,11 +59,11 @@ background-color: #000!important;
 
 
 
-html {background: */ rgba(24,21,21,1) /* fixed */ !important}
+html {background: */ rgba(126,40,40,1) /* fixed */ !important}
 
 * {
-color: rgba(231,234,234,1) !important;
-text-shadow: 0 0 1px rgba(24,21,21,1) !important;
+color: rgba(129,215,215,1) !important;
+text-shadow: 0 0 1px rgba(126,40,40,1) !important;
 box-shadow: none !important;
 background-color: transparent!important;
 border-color: rgba(128,128,128, 1) !important;
@@ -76,15 +76,15 @@ border-right-color: rgba(128,128,128, 1) !important}
 /*----- links -----*/
 
 body, #content, #settingsMenu, td.postblock, tr, div.extPanel, strong, span.button, div#theme.panel {
-    color: rgba(231,234,234,1) !important;
-    background-color: rgba(24,21,21,1) !important; background-image: none !important;}
+    color: rgba(129,215,215,1) !important;
+    background-color: rgba(126,40,40,1) !important; background-image: none !important;}
 
 a, a * {
 color: #336699 !important;
 text-decoration: none !important}
 a:hover, a:hover *, a:visited:hover, a:visited:hover *, span[onclick]:hover, div[onclick]:hover, [role="link"]:hover, [role="link"]:hover *, [role="button"]:hover *, [role="menuitem"]:hover, [role="menuitem"]:hover *, .link:hover, .link:hover * {
-color: rgba(24,21,21,1) !important;
-text-shadow: 0 0 1px rgba(24,21,21,1) !important}
+color: rgba(126,40,40,1) !important;
+text-shadow: 0 0 1px rgba(126,40,40,1) !important}
 a:visited, a:visited * {
 color: #607069 !important}
 a.highlight, a.highlight *, a.active, a.active *, .selected, .selected *, [href="#"] {
@@ -94,108 +94,32 @@ font-weight: bold !important}
 a h1, a h2, a h3, a h4, a h5, a h6, h1 a, h2 a, h3 a, a strong, a[id*="headline"], a[class*="headline"], a[id*="header"], a[class*="header"] {text-decoration: underline !important}
 [class*="error"], [class*="alert"], code, span[onclick], div[onclick] {color: #900 !important}
 
-::-moz-selection {background: #377 !important; color: rgba(24,21,21,1) !important}
-::selection {background: #377 !important; color: rgba(24,21,21,1) !important}
+::-moz-selection {background: #377 !important; color: rgba(126,40,40,1) !important}
+::selection {background: #377 !important; color: rgba(126,40,40,1) !important}
 :focus {outline: none !important}
 
 /*----- MENU & CO BACKGROUND-COLORS -----*/
-div[style="display: block;"] {background: rgba(24,21,21,1) !important}
+div[style="display: block;"] {background: rgba(126,40,40,1) !important}
 
 table {
-background: rgba(24,21,21,1) !important;
+background: rgba(126,40,40,1) !important;
 border-radius: 6px !important}
 table > tbody > tr:nth-child(even), table > tbody > tr > td:nth-child(even) {
-background-color: rgba(231,234,234,1) !important}
+background-color: rgba(129,215,215,1) !important}
 
 iframe, embed, header, nav, footer, label [onclick], nav ul, div[style*="position:"][style*="left:"][style*="visible"], div[style*="z-index:"][style*="left:"][style*="visible"], div[style*="-moz-user-select"], div[role="menu"], div[role="dialog"], span[class*="script"] div, [id*="menu"], [class*="dropdown"], [class*="popup"], [class="title"], ul[style*="display:"], ul[style*="visibility:"] ul, [id*="nav"] ul, [class*="nav"] ul, ul[class*="menu"], a[onclick][style*="display"], a[id*="ghosteryfirefox"], #ghostery-purple-bubble, #translator-popup, .menu, .tooltip,
 
 .hovercard, .vbmenu_popup {
-background: rgba(24,21,21,1) !important;
+background: rgba(126,40,40,1) !important;
 border-radius: 5px;
-box-shadow: 1px 1px 5px rgba(24,21,21,1) !important}
+box-shadow: 1px 1px 5px rgba(126,40,40,1) !important}
 
 [id*="overlay"], [id*="lightbox"], blockquote {
 background-color: rgba(35,35,35,.9) !important;
 border-radius: 5px}
 pre, dl, .Message code {
 background-color: rgba(5,5,5,.5) !important}
-::-webkit-scrollbar{
-	width: 10px!important;
-	height: 10px!important;
-}
-::-webkit-scrollbar-thumb{
-	background-color: #383838!important;
-	border: 2px solid #484848!important;
-	border-radius: 100px!important;
-}
-::-webkit-scrollbar-track{
-	background-color: transparent!important;
-}
-::-webkit-scrollbar-thumb:hover{
-	background: #282828!important;
-}
-::-webkit-scrollbar-thumb:active{
-	background: #181818!important;
-}.html5-play-progress, .ytp-play-progress {
-   background: #ffffff !important; /* Old browsers */
-   background: -moz-linear-gradient(left, #1b1b1b 0%, #ffffff 100%) !important;
-   background: -webkit-gradient(linear, left top, right top, color-stop(0%,#1b1b1b), color-stop(100%,#ffffff)) !important;
-   background: -webkit-linear-gradient(left, #1b1b1b 0%,#ffffff 100%) !important;
-   background: -o-linear-gradient(left, #1b1b1b 0%,#ffffff 100%) !important;
-   background: -ms-linear-gradient(left, #1b1b1b 0%,#ffffff 100%) !important;
-   background: linear-gradient(to right, #1b1b1b 0%,#ffffff 100%) !important;
-}
-/*.html5-load-progress, .ytp-load-progress {
-   background: #404040 !important;
-}*/
-/* scrubber button glow */
-.html5-scrubber-button, .ytp-scrubber-button {
-   border-color: #1B1B1B !important;
-   box-shadow: 0px 0px 3px #ffffff, 0px 0px 5px #ffffff, 0px 0px 0px #ffffff !important;
-   transition: box-shadow 0.2s, background 0.2s !important;
-}
-/* scrubber button */
-.ytp-swatch-background-color, .ytp-swatch-background-color-secondary, .html5-scrubber-button:hover, .ytp-scrubber-button:hover {
-   background-color: #ffffff !important;
-}
-/* scrubber button glow on hover */
-.html5-scrubber-button:hover, .ytp-scrubber-button:hover {
-   border-color: #1B1B1B !important;
-   box-shadow: 0px 0px 6px #ffffff, 0px 0px 8px #ffffff, 0px 0px 10px #ffffff !important;
-}
-/* volume control */
-.ytp-volume-slider-track, .ytp-volume-slider-handle:before {
-   background: #ffffff !important; /* Old browsers */
-   background: -moz-linear-gradient(left, #1b1b1b 0%, #ffffff 100%) !important;
-   background: -webkit-gradient(linear, left top, right top, color-stop(0%,#1b1b1b), color-stop(100%,#ffffff)) !important;
-   background: -webkit-linear-gradient(left, #1b1b1b 0%,#ffffff 100%) !important;
-   background: -o-linear-gradient(left, #1b1b1b 0%,#ffffff 100%) !important;
-   background: -ms-linear-gradient(left, #1b1b1b 0%,#ffffff 100%) !important;
-   background: linear-gradient(to right, #1b1b1b 0%,#ffffff 100%) !important;
-   z-index: -117;
-}
-/* extras */
-.ytp-settings-button.ytp-hd-quality-badge::after, .ytp-settings-button.ytp-4k-quality-badge::after, .ytp-settings-button.ytp-5k-quality-badge::after, .ytp-settings-button.ytp-8k-quality-badge::after, .ytp-settings-button.ytp-3d-badge::after {
-   background-color: #ffffff !important;
-}
-.ytp-swatch-color {
-   color: #ffffff !important;
-}
-.ytp-menuitem[aria-checked="true"] .ytp-menuitem-toggle-checkbox {
-   background: #ffffff !important;
-}
-.ytp-chrome-controls .ytp-button.ytp-youtube-button:hover:not([aria-disabled="true"]):not([disabled]) .ytp-svg-fill-logo-tube-lozenge {
-   fill: #ffffff !important;
-}
-.ytp-cued-thumbnail-overlay:hover .ytp-large-play-button-bg, .ytp-large-play-button.ytp-touch-device .ytp-large-play-button-bg {
-   fill: #ffffff !important;
-}
-.resume-playback-progress-bar {
-   background: #ffffff !important;
-}
-.ytp-chrome-controls .ytp-button[aria-pressed]::after {
-   background-color: #ffffff !important;
-}embed{
+embed{
 animation: none;
 animation-delay: 0;
 animation-direction: normal;
