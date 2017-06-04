@@ -52,34 +52,51 @@ function readTextFile(file)
 
 
 
+
 $(document).ready(function(){
-	//code here...
+
+//var height;
+//if(myCodeMirror.lineCount() > 5) {
+//    height = 50;
+//} else {
+//    height = 20 * myCodeMirror.lineCount();
+//}
+
+//myCodeMirror.setSize(500, height);
 
     textArea = document.getElementById('mainDiv');
 	var code = $(".codemirror-textarea")[0];
 	var editor = CodeMirror.fromTextArea(code, {
-		lineNumbers : true
+		lineNumbers : true,
+        gutter: true,
+        viewportMargin: 5000
 
-
+//        lineWrapping: true
 	});
 
-//    readTextFile("file:///C:/your/path/to/file.txt");
+    var height;
+    if(editor.lineCount() > 500) {
+        height = 5000;
+    } else {
+        height = 2000 * editor.lineCount();
+    }
 
+    editor.setSize(50000, height);
 
+//    var editor = CodeMirror.fromTextArea(document.getElementById("mainDiv"), {
+//        lineNumbers: true,
+//        gutter: true,
+//        lineWrapping: true,
+//        value: startingValue
+//    });
 
     readTextFile("BracketsHtmlAndCss/dataDark.css");
 
-//   alert(httpGet("http://127.0.0.1:5000/BracketsHtmlAndCss/dataDark.css"));
-//    readTextFile("http://127.0.0.1:5000/BracketsHtmlAndCss/dataDark.css", fileDisplayArea);
+//    editor.setValue(startingValue);
+
     editor.getDoc().setValue(fileDisplayArea);
-    //window.opener.document.getElementById("buttonForLaunchingSecondWindow").value
 
     });
-
-
-
-
-//    document.getElementById('mainDiv').value = window.opener.document.getElementById("buttonForLaunchingSecondWindow").value;
 
 </script>
 
