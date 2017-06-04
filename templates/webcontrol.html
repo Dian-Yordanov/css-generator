@@ -238,25 +238,6 @@
 
         <input type="button" id="buttonForLaunchingSecondWindow" value="www.facebook.com" onclick="callParentWindowToEditCss(this)" />
 
-        <h2>Saving text</h2>
-        <textarea id="mainDiv" class="codemirror-textarea"></textarea>
-        <form id="text-options">
-            <label>Filename: <input type="ddd" class="filename" id="text-filename" placeholder="a plain document"/>.txt</label>
-            <input type="submit" value="Save"/>
-        </form>
-
-        <form action="upload" method="post" enctype="multipart/form-data">
-            <input type="file" name="file"><br /><br />
-            <input type="submit" value="Upload">
-        </form>
-
-        {% for file in dloads %}
-            <a href="{{ dloads_src[loop.index0] }}" download>{{ file }}</a>
-        {% endfor %}
-
-        <script async="" src="js/Blob.js"/>
-        <script async="" src="js/FileSaver.min.js"/>
-        <script src="js/demo.js"/>
     </div>
 
 </body>

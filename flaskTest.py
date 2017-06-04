@@ -20,28 +20,11 @@ from flask import Flask, send_file
 
 from io import BytesIO
 
-# from flask import Flask, session
-
-# from flask_cors import CORS, cross_origin
-
 app = Flask(__name__)
 # CORS(app)
 filenames = []
 
 dirCss = '/media/dianlinux/LinuxExt4/pythonglobalcssgeneratorforstylish/BracketsHtmlAndCss/'
-
-# This is the path to the upload directory
-app.config['UPLOAD_FOLDER'] = '/upload/'
-# These are the extension that we are accepting to be uploaded
-app.config['ALLOWED_EXTENSIONS'] = set(['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif', 'css'])
-
-# For a given file, return whether it's an allowed type or not
-
-
-
-def allowed_file(filename):
-    return '.' in filename and \
-           filename.rsplit('.', 1)[1] in app.config['ALLOWED_EXTENSIONS']
 
 @app.route('/api/foo/', methods=['GET'])
 def foo():
@@ -92,63 +75,18 @@ def send_css(path):
 def dfdsfdsfds():
     return current_app.send_static_file('dataDark.css')
 
-# Route that will process the file upload
-@app.route('/upload/', methods=['POST'])
-def upload():
-    # Get the name of the uploaded file
-    file = request.files['file']
-    # Check if the file is one of the allowed types/extensions
-    if file and allowed_file(file.filename):
-        # Make the filename safe, remove unsupported chars
-        filename = secure_filename(file.filename)
-        # Move the file form the temporal folder to
-        # the upload folder we setup
-        file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-        # Redirect the user to the uploaded_file route, which
-        # will basicaly show on the browser the uploaded file
-        return redirect(url_for('uploaded_file',
-                                filename=filename))
-
-# This route is expecting a parameter containing the name
-# of a file. Then it will locate that file on the upload
-# directory and show it on the browser, so if the user uploads
-# an image, that image is going to be show after the upload
-@app.route('/upload/<filename>')
-def uploaded_file(filename):
-    return send_from_directory(app.config['UPLOAD_FOLDER'],
-                               filename)
-
 @app.route('/ddd')
 def index():
 
-    function1()
-    function2()
-
-def function1():
-    return send_file(BytesIO('Hello from Dan Jacob and Stephane Wirtel !'.encode()),
+#     function1()
+#     # function2()
+# 
+# def function1():
+    return send_file(BytesIO('Hello from Dan Jfsdfsdfsdacob and Stephane Wirtel !'.encode()),
                      attachment_filename="testing.txt",
                      as_attachment=True)
-def function2():
-    shutil.move("/home/dianlinux/Downloads/testing.txt", dirCss+"/testing.txt")
-
-
-
-    # strIO = io.BytesIO
-    # strIO.write('Hello from Dan Jacob and Stephane Wirtel !')
-    # strIO.seek(0)
-    # return send_file(strIO,
-    #                  attachment_filename="testing.txt",
-    #                  as_attachment=True)
-
-
-#
-# @app.route('/BracketsHtmlAndCss/<path:path>')
-# def send_css(path):
-#     return send_from_directory('css', path)
-
-
-# if __name__ == "__main__":
-#     app.run()
+# def function2():
+    # shutil.move("/home/dianlinux/Downloads/testing.txt", dirCss+"/testing.txt")
 
 def run(runfile):
     with open(runfile, "r") as rnf:
