@@ -1,23 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:font-family="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/lib/lib/codemirror.js"></script>
         <script type="text/javascript" src="js/lib/mode/css/css.js"></script>
         <script type="text/javascript" src="js/lib/mode/css/scss.html"></script>
 
-
-        <!--<link rel="stylesheet" href="BracketsHtmlAndCss/DarkMinimalisticScrollbar.css" type="text/css">-->
-        <!--<link rel="stylesheet" href="BracketsHtmlAndCss/dataCustom.css" type="text/css">-->
-        <!--<link rel="stylesheet" href="BracketsHtmlAndCss/dataDark.css" type="text/css">-->
-        <!--<link rel="stylesheet" href="BracketsHtmlAndCss/dataWhite.css" type="text/css">-->
-
-
 <script type="text/javascript">
 
     var fileDisplayArea;
 
-    function sadasdas() {
+    function MakeCalls() {
 
         $.get("api/foo/?a=dfds", function(response) {});
 
@@ -25,6 +18,10 @@
 
     function localButton(){
         window.open('http://127.0.0.1:5000/', 'http://127.0.0.1:5000/'); return false
+    }
+
+    function SaveChanges(){
+
     }
 
 
@@ -39,9 +36,6 @@ function readTextFile(file)
             if(rawFile.status === 200 || rawFile.status == 0)
             {
                 var allText = rawFile.responseText;
-
-//                alert(allText);
-
                 fileDisplayArea = String(allText);
             }
         }
@@ -49,20 +43,7 @@ function readTextFile(file)
     rawFile.send(null);
 }
 
-
-
-
-
 $(document).ready(function(){
-
-//var height;
-//if(myCodeMirror.lineCount() > 5) {
-//    height = 50;
-//} else {
-//    height = 20 * myCodeMirror.lineCount();
-//}
-
-//myCodeMirror.setSize(500, height);
 
     textArea = document.getElementById('mainDiv');
 	var code = $(".codemirror-textarea")[0];
@@ -70,8 +51,6 @@ $(document).ready(function(){
 		lineNumbers : true,
         gutter: true,
         viewportMargin: 5000
-
-//        lineWrapping: true
 	});
 
     var height;
@@ -82,18 +61,7 @@ $(document).ready(function(){
     }
 
     editor.setSize(50000, height);
-
-//    var editor = CodeMirror.fromTextArea(document.getElementById("mainDiv"), {
-//        lineNumbers: true,
-//        gutter: true,
-//        lineWrapping: true,
-//        value: startingValue
-//    });
-
     readTextFile("BracketsHtmlAndCss/dataDark.css");
-
-//    editor.setValue(startingValue);
-
     editor.getDoc().setValue(fileDisplayArea);
 
     });
@@ -114,8 +82,9 @@ $(document).ready(function(){
 
 
     <div id="container">
-        <input type="button" value="www.facebook.com" href='http://127.0.0.1:5000/' onclick="localButton()" />
-        <input type="button" value="www.facebook.com" href='http://127.0.0.1:5000/' onclick="sadasdas()" />
+        <input type="button" value="Go back" href='http://127.0.0.1:5000/' onclick="localButton()" />
+        <input type="button" value="Make calls" href='http://127.0.0.1:5000/' onclick="MakeCalls()" />
+        <input type="button" value="Save changes" href='http://127.0.0.1:5000/' onclick="SaveChanges()" />
     </div>
 
 
