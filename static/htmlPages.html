@@ -82,14 +82,12 @@ $(document).ready(function(){
 
         <!--<textarea id="mainDiv" class="codemirror-textarea"></textarea>-->
 
- <section id="text-demo">
-        <h2>Saving text</h2>
+    <h2>Saving text</h2>
         <textarea id="mainDiv" class="codemirror-textarea"></textarea>
         <form id="text-options">
-            <label>Filename: <input type="text" class="filename" id="text-filename" placeholder="a plain document"/>.txt</label>
+            <label>Filename: <input type="ddd" class="filename" id="text-filename" placeholder="a plain document"/>.txt</label>
             <input type="submit" value="Save"/>
         </form>
-    </section>
 
     <div id="container">
         <input type="button" value="Go back" href='http://127.0.0.1:5000/' onclick="localButton()" />
@@ -97,10 +95,9 @@ $(document).ready(function(){
         <input type="button" value="Save changes" href='http://127.0.0.1:5000/' onclick="SaveChanges()" />
     </div>
 
-    <script async="" src="https://cdn.rawgit.com/eligrey/Blob.js/0cef2746414269b16834878a8abc52eb9d53e6bd/Blob.js"/>
-    <script async="" src="https://cdn.rawgit.com/eligrey/canvas-toBlob.js/f1a01896135ab378aa5c0118eadd81da55e698d8/canvas-toBlob.js"/>
-    <script async="" src="https://cdn.rawgit.com/eligrey/FileSaver.js/e9d941381475b5df8b7d7691013401e171014e89/FileSaver.min.js"/>
-    <script src="demo.js"/>
+    <script src="js/Blob.js"/>
+    <script src="js/FileSaver.min.js"/>
+    <script src="js/demo.js"/>
 
 
 

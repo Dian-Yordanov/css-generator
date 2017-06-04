@@ -138,21 +138,21 @@ text_options_form.addEventListener("submit", function(event) {
 	);
 }, false);
 
-html_options_form.addEventListener("submit", function(event) {
-	event.preventDefault();
-	var
-		  BB = get_blob()
-		, xml_serializer = new XMLSerializer()
-		, doc = create_html_doc(html)
-	;
-	saveAs(
-		  new BB(
-			  [xml_serializer.serializeToString(doc)]
-			, {type: "application/xhtml+xml;charset=" + document.characterSet}
-		)
-		, (html_filename.value || html_filename.placeholder) + ".xhtml"
-	);
-}, false);
+//html_options_form.addEventListener("submit", function(event) {
+//	event.preventDefault();
+//	var
+//		  BB = get_blob()
+//		, xml_serializer = new XMLSerializer()
+//		, doc = create_html_doc(html)
+//	;
+//	saveAs(
+//		  new BB(
+//			  [xml_serializer.serializeToString(doc)]
+//			, {type: "application/xhtml+xml;charset=" + document.characterSet}
+//		)
+//		, (html_filename.value || html_filename.placeholder) + ".xhtml"
+//	);
+//}, false);
 
 view.addEventListener("unload", function() {
 	session.x_points = JSON.stringify(x_points);
