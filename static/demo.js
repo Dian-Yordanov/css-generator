@@ -39,16 +39,6 @@ var
 	, html_options_form = $("html-options")
 	, html_filename = $("html-filename")
 
-	, ctx = canvas.getContext("2d")
-	, drawing = false
-	, x_points = session.x_points || []
-	, y_points = session.y_points || []
-	, drag_points = session.drag_points || []
-	, add_point = function(x, y, dragging) {
-		x_points.push(x);
-		y_points.push(y);
-		drag_points.push(dragging);
-	}
 	, draw = function(){
 		canvas.width = canvas.width;
 		ctx.lineWidth = 6;
@@ -116,8 +106,6 @@ var
 		return doc;
 	}
 ;
-canvas.width = 500;
-canvas.height = 300;
 
   if (typeof x_points === "string") {
 	x_points = JSON.parse(x_points);
@@ -136,42 +124,6 @@ canvas.height = 300;
 } if (session.html_filename) {
 	html_filename.value = session.html_filename;
 }
-
-drawing = true;
-draw();
-drawing = false;
-
-canvas_clear_button.addEventListener("click", function() {
-	canvas.width = canvas.width;
-	x_points.length =
-	y_points.length =
-	drag_points.length =
-		0;
-}, false);
-canvas.addEventListener("mousedown", function(event) {
-	event.preventDefault();
-	drawing = true;
-	add_point(event.pageX - canvas.offsetLeft, event.pageY - canvas.offsetTop, false);
-	draw();
-}, false);
-canvas.addEventListener("mousemove", function(event) {
-	if (drawing) {
-		add_point(event.pageX - canvas.offsetLeft, event.pageY - canvas.offsetTop, true);
-		draw();
-	}
-}, false);
-canvas.addEventListener("mouseup", stop_drawing, false);
-canvas.addEventListener("mouseout", stop_drawing, false);
-
-canvas_options_form.addEventListener("submit", function(event) {
-	event.preventDefault();
-	canvas.toBlobHD(function(blob) {
-		saveAs(
-			  blob
-			, (canvas_filename.value || canvas_filename.placeholder) + ".png"
-		);
-	}, "image/png");
-}, false);
 
 text_options_form.addEventListener("submit", function(event) {
 	event.preventDefault();
@@ -195,7 +147,7 @@ html_options_form.addEventListener("submit", function(event) {
 	saveAs(
 		  new BB(
 			  [xml_serializer.serializeToString(doc)]
-			, {type: "text/plain;charset=" + document.characterSet}
+			, {type: "application/xhtml+xml;charset=" + document.characterSet}
 		)
 		, (html_filename.value || html_filename.placeholder) + ".xhtml"
 	);
