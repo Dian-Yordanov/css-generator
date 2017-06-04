@@ -25,28 +25,8 @@
         window.open('http://127.0.0.1:5000/', 'http://127.0.0.1:5000/'); return false
     }
 
-//    function readTextFile(file, fileDisplayArea)
-//    {
-//        var rawFile = new XMLHttpRequest();
-//        rawFile.open("GET", file, false);
-//        rawFile.onreadystatechange = function ()
-//        {
-//            if(rawFile.readyState === 4)
-//            {
-//                if(rawFile.status === 200 || rawFile.status == 0)
-//                {
-//                    var allText = rawFile.responseText;
-//                    fileDisplayArea = allText
-//                }
-//            }
-//        }
-//        rawFile.send(null);
-//    }
 
-
-
-
-function readTextFile(file, fileDisplayArea)
+function readTextFile(file)
 {
     var rawFile = new XMLHttpRequest();
     rawFile.open("GET", file, false);
@@ -57,8 +37,10 @@ function readTextFile(file, fileDisplayArea)
             if(rawFile.status === 200 || rawFile.status == 0)
             {
                 var allText = rawFile.responseText;
-               alert(allText);
-                fileDisplayArea = allText;
+
+//                alert(allText);
+
+                fileDisplayArea = String(allText);
             }
         }
     }
