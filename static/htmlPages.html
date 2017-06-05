@@ -126,6 +126,11 @@ $(document).ready(function(){
     variblePassedFromParent = variblePassedFromParent.replace("buttonForLaunchingSecondWindow-", "");
     console.log(variblePassedFromParent);
 
+    var booleanValiable = false;
+    if(variblePassedFromParent=='data'){
+        booleanValiable = true;
+    }
+
     var textArea = document.getElementById('mainDiv');
 	var code = $(".codemirror-textarea")[0];
 	editor = CodeMirror.fromTextArea(code, {
@@ -143,7 +148,13 @@ $(document).ready(function(){
 
     editor.setSize(20000, height);
 
-    variableToSendBack = "BracketsHtmlAndCss/"+variblePassedFromParent+".css";
+    if(!booleanValiable) {
+        variableToSendBack = "BracketsHtmlAndCss/" + variblePassedFromParent + ".css";
+    }
+    if(booleanValiable) {
+        variableToSendBack = "static/" + variblePassedFromParent + ".css";
+    }
+
     console.log(variableToSendBack);
     readTextFile(variableToSendBack);
 

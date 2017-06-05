@@ -55,6 +55,10 @@ def send_css(path):
 def dfdsfdsfds(path):
     return send_from_directory('BracketsHtmlAndCss', path)
 
+@app.route('/static/<path:path>')
+def dddd(path):
+    return send_from_directory('static', path)
+
 @app.route('/check_selected', methods=['GET','POST'])
 def check_selected():
     # global selected

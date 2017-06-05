@@ -81,9 +81,16 @@ function resetCss() {
         document.getElementById("Pointer").checked = false;
         document.getElementById("specific").checked = false;
 }
-function showGeneratedCss() {
-        $.get("api/foo/?a=showGeneratedCss", function(response) {});
+function showGeneratedCss(typeOfCssFile) {
+    
+    var newWindow = window.open('htmlPages',typeOfCssFile.id,'width=1100,height=1000');
+    newWindow.my_special_setting = typeOfCssFile.id;
 
+    window.somefunction = function(){
+        // alert('sdasdas');
+        location.reload();
+    }
+    
 }
 
 
