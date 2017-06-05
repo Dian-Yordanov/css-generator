@@ -4,13 +4,7 @@ import webbrowser
 import os.path
 import json
 
-import flask
-import shutil
-from flask import Flask, request
-from flask import render_template
-from flask import Flask, send_from_directory
 from flask import Flask, current_app
-from flask import Flask
 from flask import Response
 
 from flask import Flask, render_template, request, redirect, url_for, send_from_directory
@@ -21,7 +15,6 @@ from flask import Flask, send_file
 from io import BytesIO
 
 app = Flask(__name__)
-# CORS(app)
 filenames = []
 
 dirCss = '/media/dianlinux/LinuxExt4/pythonglobalcssgeneratorforstylish/BracketsHtmlAndCss/'
@@ -31,25 +24,8 @@ def foo():
 
     bar = request.args.to_dict()
     deciceWhichFunctionToRun(bar)
-
-    # resp = flask.Response("Foo bar baz")
-    # # resp.headers['Access-Control-Allow-Origin'] = '*'
-    # return resp
-
-    # @app.route("/")
-    # def home():
     resp = Response("")
-    # resp.headers['Access-Control-Allow-Origin'] = '*'
     return resp
-
-    # if __name__ == "__main__":
-    #     app.run()
-
-    # deciceWhichFunctionToRun(bar)
-    #
-    # # response.set_data(json.dumps(d))
-    #
-    # return 'success', 200
 
 @app.route('/webpageexample/')
 def hello(name=None):
