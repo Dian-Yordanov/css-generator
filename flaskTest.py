@@ -88,10 +88,17 @@ def saveCSSLocally(jsdata):
     firstLine = jsdata.split('\n', 1)[0].replace("|||", "")
     print(firstLine)
 
-    print('ggggggggggggggggg')
+    # print('ggggggggggggggggg')
     i = jsdata.index('\n')
     secondLine = jsdata[i+1:]
+
     print(secondLine)
+
+    if (os.path.exists(firstLine)):
+        os.remove(firstLine)
+    with open(firstLine, 'a') as the_file:
+        the_file.write(secondLine)
+
     # print(jsdata)
 
 def run(runfile):
