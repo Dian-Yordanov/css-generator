@@ -30,9 +30,13 @@
       $.post('/check_selected', {javascript_data: data}, function(result) {
 
         if(result === 'yes') {
-          alert('Its true! Hurraaay!');
+//          alert('Its true! Hurraaay!');
           test = true;
-          alert('Im alive!!!');
+//        opener.somefunction(); //or
+//        opener.document.getElementById('someid').innerHTML = 'update content of parent window';
+
+        window.close();
+//          alert('Im alive!!!');
         } else {
           test = false;
           alert('Awww....');
