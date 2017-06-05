@@ -224,7 +224,7 @@ function callParentWindowToEditCss(typeOfCssFile){
     //     OpenWindow.init();
     // });
 
-
+    alert(typeOfCssFile.value);
     window.open('htmlPages','childWindow','width=1100,height=1000');
 
 
