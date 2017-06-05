@@ -40,6 +40,10 @@
         $.post( "/postmethod", {
             javascript_data: data
         });
+
+//        opener.somefunction(); //or
+//        opener.document.getElementById('someid').innerHTML = 'update content of parent window';
+
         window.close();
     }
 
@@ -75,9 +79,12 @@ function readTextFile(file)
 
 $(document).ready(function(){
 
-//    alert(window.my_special_setting);
-    
-    textArea = document.getElementById('mainDiv');
+    fileDisplayArea = "";
+    editor = "";
+
+    console.log(window.my_special_setting);
+
+    var textArea = document.getElementById('mainDiv');
 	var code = $(".codemirror-textarea")[0];
 	editor = CodeMirror.fromTextArea(code, {
 		lineNumbers : true,
@@ -95,6 +102,8 @@ $(document).ready(function(){
     editor.setSize(20000, height);
     readTextFile("BracketsHtmlAndCss/dataDark.css");
     editor.getDoc().setValue(fileDisplayArea);
+
+
 
     });
 
