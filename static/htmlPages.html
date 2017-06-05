@@ -155,7 +155,27 @@ $(document).ready(function(){
 
 </script>
 
-
+<style>
+.myButton {
+	background-color:#c123de;
+	border:1px solid #a511c0;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:12px;
+	padding:9px 14px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #9b14b3;
+}
+.myButton:hover {
+	background-color:#a20dbd;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+</style>
 
 <head>
     <meta charset="UTF-8">
@@ -170,9 +190,9 @@ $(document).ready(function(){
         <!--<textarea id="mainDiv" class="codemirror-textarea"></textarea>-->
 
     <div id="container">
-        <input type="button" value="Go back" href='http://127.0.0.1:5000/' onclick="localButton()" />
+        <input type="button" value="Go back" href='http://127.0.0.1:5000/' class="myButton" onclick="localButton()" />
         <!--<input type="button" value="Make calls" href='http://127.0.0.1:5000/' onclick="MakeCalls()" />-->
-        <input type="button" value="Save changes" href='http://127.0.0.1:5000/' onclick="SaveChanges()" />
+        <input type="button" value="Save changes" href='http://127.0.0.1:5000/' class="myButton" onclick="SaveChanges()" />
     </div>
     <textarea id="mainDiv" class="codemirror-textarea"></textarea>
 
