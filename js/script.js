@@ -81,6 +81,11 @@ function resetCss() {
         document.getElementById("Pointer").checked = false;
         document.getElementById("specific").checked = false;
 }
+function showGeneratedCss() {
+        $.get("api/foo/?a=showGeneratedCss", function(response) {});
+
+}
+
 
 function colourPickerFunction() {
     var x = document.getElementById("myColor").value;
