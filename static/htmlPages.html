@@ -14,6 +14,7 @@
 
 
     var fileDisplayArea;
+    var editor;
 
     function MakeCalls() {
 
@@ -25,8 +26,16 @@
         window.open('http://127.0.0.1:5000/', 'http://127.0.0.1:5000/'); return false
     }
 
-    function SaveChanges(varToSave){
-        data = varToSave;
+    function SaveChanges(){
+
+//        textArea = document.getElementById('mainDiv');
+
+        var data;
+        data = editor.getDoc().getValue();
+//        data = document.getElementById("mainDiv").value;
+
+
+
         $.post( "/postmethod", {
             javascript_data: data
         });
@@ -54,7 +63,7 @@ function readTextFile(file)
             if(rawFile.status === 200 || rawFile.status == 0)
             {
                 var allText = rawFile.responseText;
-                SaveChanges(String(allText));
+//                SaveChanges(String(allText));
                 fileDisplayArea = String(allText);
             }
         }
@@ -66,7 +75,7 @@ $(document).ready(function(){
 
     textArea = document.getElementById('mainDiv');
 	var code = $(".codemirror-textarea")[0];
-	var editor = CodeMirror.fromTextArea(code, {
+	editor = CodeMirror.fromTextArea(code, {
 		lineNumbers : true,
         gutter: true,
         viewportMargin: 5000
@@ -101,16 +110,16 @@ $(document).ready(function(){
 
         <!--<textarea id="mainDiv" class="codemirror-textarea"></textarea>-->
 
-
-        <textarea id="mainDiv" class="codemirror-textarea"></textarea>
-
-    <!--<a class="label label-primary"  onclick="myFunction(this)" > Compare</a>-->
-
     <div id="container">
         <input type="button" value="Go back" href='http://127.0.0.1:5000/' onclick="localButton()" />
         <input type="button" value="Make calls" href='http://127.0.0.1:5000/' onclick="MakeCalls()" />
         <input type="button" value="Save changes" href='http://127.0.0.1:5000/' onclick="SaveChanges()" />
     </div>
+    <textarea id="mainDiv" class="codemirror-textarea"></textarea>
+
+    <!--<a class="label label-primary"  onclick="myFunction(this)" > Compare</a>-->
+
+
 
 
 
