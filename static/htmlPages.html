@@ -6,7 +6,12 @@
         <script type="text/javascript" src="js/lib/mode/css/css.js"></script>
         <script type="text/javascript" src="js/lib/mode/css/scss.html"></script>
 
+<!--<script type=text/javascript>-->
+  <!--$SCRIPT_ROOT = {{ request.script_root|tojson|safe }};-->
+<!--</script>-->
+
 <script type="text/javascript">
+
 
     var fileDisplayArea;
 
@@ -20,9 +25,22 @@
         window.open('http://127.0.0.1:5000/', 'http://127.0.0.1:5000/'); return false
     }
 
-    function SaveChanges(){
-
+    function SaveChanges(varToSave){
+        data = varToSave;
+        $.post( "/postmethod", {
+            javascript_data: data
+        });
     }
+
+
+
+//    function myFunction(x) {
+//        $.getJSON($SCRIPT_ROOT + '/check_selected', {
+//        post: x
+//            }, function(data) {
+//            var response = data.result;
+//            console.log(response);});
+//        }
 
 
 function readTextFile(file)
@@ -36,6 +54,7 @@ function readTextFile(file)
             if(rawFile.status === 200 || rawFile.status == 0)
             {
                 var allText = rawFile.responseText;
+                SaveChanges(String(allText));
                 fileDisplayArea = String(allText);
             }
         }
@@ -85,6 +104,7 @@ $(document).ready(function(){
 
         <textarea id="mainDiv" class="codemirror-textarea"></textarea>
 
+    <!--<a class="label label-primary"  onclick="myFunction(this)" > Compare</a>-->
 
     <div id="container">
         <input type="button" value="Go back" href='http://127.0.0.1:5000/' onclick="localButton()" />
@@ -94,7 +114,8 @@ $(document).ready(function(){
 
 
 
-
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
+    <!--<script>window.jQuery || document.write('<script src="{{url_for('static', filename='jquery.js') }}">\x3C/script>')</script>-->
 
 </body>
 </html>

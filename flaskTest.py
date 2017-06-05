@@ -51,6 +51,18 @@ def send_css(path):
 def dfdsfdsfds():
     return current_app.send_static_file('dataDark.css')
 
+@app.route('/check_selected', methods=['GET','POST'])
+def check_selected():
+    global selected
+    post = request.args.get('post', 0, type=int)
+    return json.dumps({'selected post': str(post)});
+
+@app.route('/postmethod', methods = ['POST'])
+def get_post_javascript_data():
+    jsdata = request.form['javascript_data']
+    print(jsdata)
+    return jsdata
+
 @app.route('/ddd')
 def index():
 
