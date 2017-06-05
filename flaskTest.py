@@ -39,6 +39,10 @@ def controol(name=None):
 def hello_world():
     return current_app.send_static_file('htmlPages.html')
 
+@app.route('/bootstrap/<path:path>')
+def static_file(path):
+    return send_from_directory('bootstrap', path)
+
 @app.route('/js/<path:path>')
 def send_js(path):
     return send_from_directory('js', path)
