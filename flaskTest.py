@@ -61,7 +61,7 @@ def check_selected():
     # post = request.args.get('post', 0, type=int)
     # # json.dumps({'selected post': str(post)});
     jsdata = request.form['javascript_data']
-    print(jsdata)
+    saveCSSLocally(jsdata)
     return 'yes'
 
 
@@ -85,7 +85,14 @@ def index():
     # shutil.move("/home/dianlinux/Downloads/testing.txt", dirCss+"/testing.txt")
 
 def saveCSSLocally(jsdata):
-    print(jsdata)
+    firstLine = jsdata.split('\n', 1)[0].replace("|||", "")
+    print(firstLine)
+
+    print('ggggggggggggggggg')
+    i = jsdata.index('\n')
+    secondLine = jsdata[i+1:]
+    print(secondLine)
+    # print(jsdata)
 
 def run(runfile):
     with open(runfile, "r") as rnf:
