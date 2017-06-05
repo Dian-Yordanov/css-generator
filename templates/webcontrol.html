@@ -5,7 +5,10 @@
 <script src="http://zeptojs.com/zepto.min.js"></script>
 
 <script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
 <link rel="stylesheet" href="css/layout.css" type="text/css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css">
+
 
 
 
@@ -25,6 +28,9 @@
                                     class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span>
                                 </label>
                     </div>
+                </div>
+                <div class="button">
+                    <input type="button" id="buttonForLaunchingSecondWindow" value="Edit CSS" onclick="callParentWindowToEditCss(this)" />
                 </div>
             </div>
 
@@ -228,8 +234,6 @@
             </div>
 
         </div>
-
-        <input type="button" id="buttonForLaunchingSecondWindow" value="www.facebook.com" onclick="callParentWindowToEditCss(this)" />
 
     </div>
 

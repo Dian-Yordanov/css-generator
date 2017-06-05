@@ -16,11 +16,11 @@
     var fileDisplayArea;
     var editor;
 
-    function MakeCalls() {
-
-        $.get("api/foo/?a=dfds", function(response) {});
-
-    }
+//    function MakeCalls() {
+//
+//        $.get("api/foo/?a=dfds", function(response) {});
+//
+//    }
 
     function localButton(){
         window.close();
@@ -40,6 +40,7 @@
         $.post( "/postmethod", {
             javascript_data: data
         });
+        window.close();
     }
 
 
@@ -113,7 +114,7 @@ $(document).ready(function(){
 
     <div id="container">
         <input type="button" value="Go back" href='http://127.0.0.1:5000/' onclick="localButton()" />
-        <input type="button" value="Make calls" href='http://127.0.0.1:5000/' onclick="MakeCalls()" />
+        <!--<input type="button" value="Make calls" href='http://127.0.0.1:5000/' onclick="MakeCalls()" />-->
         <input type="button" value="Save changes" href='http://127.0.0.1:5000/' onclick="SaveChanges()" />
     </div>
     <textarea id="mainDiv" class="codemirror-textarea"></textarea>
