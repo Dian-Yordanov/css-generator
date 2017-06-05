@@ -24,6 +24,8 @@
 
     function localButton(){
         window.close();
+        opener.somefunction(); //or
+        opener.document.getElementById('someid').innerHTML = 'update content of parent window';
 //        window.open('http://127.0.0.1:5000/', 'http://127.0.0.1:5000/'); return false
     }
 

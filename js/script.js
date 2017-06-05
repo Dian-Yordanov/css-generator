@@ -228,10 +228,10 @@ function callParentWindowToEditCss(typeOfCssFile){
     var newWindow = window.open('htmlPages',typeOfCssFile.id,'width=1100,height=1000');
     newWindow.my_special_setting = typeOfCssFile.id;
 
-    // window.somefunction = function(){
-    //     // alert('sdasdas');
-    //     location.reload();
-    // }
+    window.somefunction = function(){
+        // alert('sdasdas');
+        location.reload();
+    }
 
 
 
