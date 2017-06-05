@@ -68,7 +68,7 @@ def check_selected():
 @app.route('/postmethod', methods = ['POST'])
 def get_post_javascript_data():
     jsdata = request.form['javascript_data']
-    print(jsdata)
+    saveCSSLocally(jsdata)
     return jsdata
 
 @app.route('/ddd')
@@ -83,6 +83,9 @@ def index():
                      as_attachment=True)
 # def function2():
     # shutil.move("/home/dianlinux/Downloads/testing.txt", dirCss+"/testing.txt")
+
+def saveCSSLocally(jsdata):
+    print(jsdata)
 
 def run(runfile):
     with open(runfile, "r") as rnf:

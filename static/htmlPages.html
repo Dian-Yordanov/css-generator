@@ -16,6 +16,7 @@
     var fileDisplayArea;
     var editor;
     var variblePassedFromParent;
+    var variableToSendBack;
 
 //    function MakeCalls() {
 //
@@ -27,6 +28,7 @@
 
     // Just so we can use the method again
     function postSomething(data) {
+        data="|||"+variableToSendBack+"|||"+"\n"+data;
       $.post('/check_selected', {javascript_data: data}, function(result) {
 
         if(result === 'yes') {
@@ -141,8 +143,9 @@ $(document).ready(function(){
 
     editor.setSize(20000, height);
 
-    console.log("BracketsHtmlAndCss/"+variblePassedFromParent+".css");
-    readTextFile("BracketsHtmlAndCss/"+variblePassedFromParent+".css");
+    variableToSendBack = "BracketsHtmlAndCss/"+variblePassedFromParent+".css";
+    console.log(variableToSendBack);
+    readTextFile(variableToSendBack);
 
     editor.getDoc().setValue(fileDisplayArea);
 
