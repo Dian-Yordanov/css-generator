@@ -57,9 +57,13 @@ def dfdsfdsfds(path):
 
 @app.route('/check_selected', methods=['GET','POST'])
 def check_selected():
-    global selected
-    post = request.args.get('post', 0, type=int)
-    return json.dumps({'selected post': str(post)});
+    # global selected
+    # post = request.args.get('post', 0, type=int)
+    # # json.dumps({'selected post': str(post)});
+    jsdata = request.form['javascript_data']
+    print(jsdata)
+    return 'yes'
+
 
 @app.route('/postmethod', methods = ['POST'])
 def get_post_javascript_data():

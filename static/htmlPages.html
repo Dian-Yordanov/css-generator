@@ -23,6 +23,23 @@
 //
 //    }
 
+    var test = false; // NOW it's global
+
+    // Just so we can use the method again
+    function postSomething(data) {
+      $.post('/check_selected', {javascript_data: data}, function(result) {
+
+        if(result === 'yes') {
+          alert('Its true! Hurraaay!');
+          test = true;
+          alert('Im alive!!!');
+        } else {
+          test = false;
+          alert('Awww....');
+        }
+      });
+    }
+
     function localButton(){
         window.close();
         opener.somefunction(); //or
@@ -38,16 +55,31 @@
         data = editor.getDoc().getValue();
 //        data = document.getElementById("mainDiv").value;
 
+        postSomething(data);
 
 
-        $.post( "/postmethod", {
-            javascript_data: data
-        });
+//            console.log(test);
+
+
+//        $.post( "/postmethod", {
+//            javascript_data: data
+//        });
+
+
+//        $.ajax({
+//          type: "POST",
+//          url: "/postmethod",
+//          data: data,
+//          success: success,
+//          dataType: dataType
+//        });
+
+
 
 //        opener.somefunction(); //or
 //        opener.document.getElementById('someid').innerHTML = 'update content of parent window';
 
-        window.close();
+//        window.close();
     }
 
 
