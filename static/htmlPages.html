@@ -23,7 +23,8 @@
     }
 
     function localButton(){
-        window.open('http://127.0.0.1:5000/', 'http://127.0.0.1:5000/'); return false
+        window.close();
+//        window.open('http://127.0.0.1:5000/', 'http://127.0.0.1:5000/'); return false
     }
 
     function SaveChanges(){
@@ -88,7 +89,7 @@ $(document).ready(function(){
         height = 2000 * editor.lineCount();
     }
 
-    editor.setSize(50000, height);
+    editor.setSize(20000, height);
     readTextFile("BracketsHtmlAndCss/dataDark.css");
     editor.getDoc().setValue(fileDisplayArea);
 
