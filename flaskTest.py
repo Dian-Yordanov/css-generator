@@ -80,7 +80,7 @@ def index():
 
 #     function1()
 #     # function2()
-# 
+#
 # def function1():
     return send_file(BytesIO('Hello from Dan Jfsdfsdfsdacob and Stephane Wirtel !'.encode()),
                      attachment_filename="testing.txt",
