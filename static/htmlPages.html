@@ -15,6 +15,7 @@
 
     var fileDisplayArea;
     var editor;
+    var variblePassedFromParent;
 
 //    function MakeCalls() {
 //
@@ -83,8 +84,9 @@ $(document).ready(function(){
 
     fileDisplayArea = "";
     editor = "";
-
-    console.log(window.my_special_setting);
+    variblePassedFromParent = window.my_special_setting;
+    variblePassedFromParent = variblePassedFromParent.replace("buttonForLaunchingSecondWindow-", "");
+    console.log(variblePassedFromParent);
 
     var textArea = document.getElementById('mainDiv');
 	var code = $(".codemirror-textarea")[0];
@@ -102,7 +104,10 @@ $(document).ready(function(){
     }
 
     editor.setSize(20000, height);
-    readTextFile("BracketsHtmlAndCss/dataDark.css");
+
+    console.log("BracketsHtmlAndCss/"+variblePassedFromParent+".css");
+    readTextFile("BracketsHtmlAndCss/"+variblePassedFromParent+".css");
+
     editor.getDoc().setValue(fileDisplayArea);
 
 

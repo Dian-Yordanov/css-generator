@@ -51,9 +51,9 @@ def send_js(path):
 def send_css(path):
     return send_from_directory('css', path)
 
-@app.route('/BracketsHtmlAndCss/dataDark.css')
-def dfdsfdsfds():
-    return current_app.send_static_file('dataDark.css')
+@app.route('/BracketsHtmlAndCss/<path:path>')
+def dfdsfdsfds(path):
+    return send_from_directory('BracketsHtmlAndCss', path)
 
 @app.route('/check_selected', methods=['GET','POST'])
 def check_selected():
