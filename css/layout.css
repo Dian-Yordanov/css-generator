@@ -144,30 +144,51 @@
     grid-row: 14;
 }
 
-.resetCss{
-    display: table;
-    margin: 5 auto;
-    grid-column: 3 / 4;
+
+#clickable {
+    display: grid;
+    text-align: left;
+    grid-column: 1 / 5;
+    grid-template-columns: repeat(4, 1fr);
     grid-row: 15;
 }
 
 .showGeneratedCss{
     display: table;
-    margin: 5 auto;
+    /*margin: auto;*/
     grid-column: 1 / 2;
-    grid-row: 15;
+    grid-row: 1;
 }
 
 .generateCss{
     display: table;
-    margin: 5 auto;
+    /*margin: auto;*/
     grid-column: 2 / 3;
-    grid-row: 15;
+    grid-row: 1;
 }
+
+
+
+.resetCss{
+    display: table;
+    /*margin: auto;*/
+    grid-column: 3 / 4;
+    grid-row: 1;
+}
+
+
 
 .getCssFromJson{
     display: table;
+    /*margin: auto;*/
     grid-column: 1 / 2;
+    grid-row: 16;
+}
+
+.GetExternalCss{
+    display: table;
+    /*margin: auto;*/
+    grid-column: 2 / 3;
     grid-row: 16;
 }
 

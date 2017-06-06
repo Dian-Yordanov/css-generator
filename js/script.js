@@ -253,7 +253,9 @@ function callParentWindowToEditCss(typeOfCssFile){
     // window.open('http://127.0.0.1:5000/htmlPages', 'http://127.0.0.1:5000/htmlPages'); return false
 }
 
-
+function GetExternalCss(thisDiv) {
+    console.log('pressed');
+}
 
 
 
