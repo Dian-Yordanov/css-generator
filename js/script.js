@@ -231,12 +231,17 @@ function callParentWindowToEditCss(typeOfCssFile){
 
 }
 
-
-
 function GetExternalCss(thisDiv) {
     console.log('pressed');
 }
 
+function AddNewCssFunction(thisDiv) {
+    console.log('AddNewCssFunction');
+}
+
+function RemoveNewCssFunction(thisDiv) {
+    console.log('RemoveNewCssFunction');
+}
 
 
 
