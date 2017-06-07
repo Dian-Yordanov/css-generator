@@ -35,20 +35,20 @@
 
 
 
-$( "#dialog" ).dialog({ autoOpen: false });
+$( "#dialogAddNewCssFunction" ).dialog({ autoOpen: false });
     });
 
-function dialogFunction(thisDiv) {
-    // console.log('AddNewCssFunction');
-     console.log('kbjbjhb');
-  $( "#dialog" ).dialog( "open" );
-}
-
-function executeFunctionTest(thisDiv) {
-    // console.log('AddNewCssFunction');
-     console.log('sssssssssss');
-    $( "#dialog" ).dialog( "close" );
-}
+// function dialogFunction(thisDiv) {
+//     // console.log('AddNewCssFunction');
+//      console.log('kbjbjhb');
+//   $( "#dialog" ).dialog( "open" );
+// }
+//
+// function executeFunctionTest(thisDiv) {
+//     // console.log('AddNewCssFunction');
+//      console.log('sssssssssss');
+//     $( "#dialog" ).dialog( "close" );
+// }
 
 // $( "#btnExample" ).click(function() {
 //     console.log('kbjbjhb');

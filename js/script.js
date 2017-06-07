@@ -246,12 +246,26 @@ function GetExternalCss(thisDiv) {
 //   $( "#dialog" ).dialog( "open" );
 // });
 
+// function dialogFunction(thisDiv) {
+//     // console.log('AddNewCssFunction');
+//      console.log('kbjbjhb');
+//   $( "#dialog" ).dialog( "open" );
+// }
+
+function executeFunctionTest(thisDiv) {
+    // console.log('AddNewCssFunction');
+    //  console.log('sssssssssss');
+    $( "#dialogAddNewCssFunction" ).dialog( "close" );
+    location.reload();
+    $.get("api/foo/?a=AddNewCssFunction"+$( "#dialogAddNewCssFunction" ).value, function(response) {});
+}
+
 function AddNewCssFunction(thisDiv) {
     // console.log('AddNewCssFunction');
-    
-    location.reload();
-    $.get("api/foo/?a=AddNewCssFunction", function(response) {});
 
+    // location.reload();
+    // $.get("api/foo/?a=AddNewCssFunction", function(response) {});
+    $( "#dialogAddNewCssFunction" ).dialog( "open" );
 
 }
 
