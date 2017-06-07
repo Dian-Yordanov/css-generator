@@ -1,5 +1,6 @@
 var obj;
 var w;
+var AddNewCssFunctionBoolean;
 const MAX_SENSORS = 4;
 const SLEEPING = 0;
 const ACTIVE = 1;
@@ -18,7 +19,7 @@ window.onload = function() {
     document.getElementById("embededModifications").checked = false;
     document.getElementById("facebookSpecificModifications").checked = false;
     document.getElementById("redditSpecificModifications").checked = false;
-    
+    AddNewCssFunctionBoolean = false;
 }
 
 function mutuallyExclusive(id, id1) {
@@ -255,6 +256,7 @@ function GetExternalCss(thisDiv) {
 function executeFunctionTest(thisDiv) {
     // console.log('AddNewCssFunction');
     //  console.log('sssssssssss');
+    AddNewCssFunctionBoolean = true;
     $( "#dialogAddNewCssFunction" ).dialog( "close" );
     location.reload();
     postSomethingType2( $( "#fieldForDialog" ).val() );
@@ -263,7 +265,14 @@ function executeFunctionTest(thisDiv) {
 
 function postSomethingType2(data) {
     // data="|||"+variableToSendBack+"|||"+"\n"+data;
-  $.post('/api2', {javascript_data: data}, function(result) {
+    var dataToBePosted;
+     if(AddNewCssFunctionBoolean == true){
+        dataToBePosted = 'AddNewCssFunction'+'|||SPLITTER|||' + data;
+        }
+    if(AddNewCssFunctionBoolean == false){
+        dataToBePosted = 'RemoveNewCssFunction'+'|||SPLITTER|||' + data;
+        }
+  $.post('/api2', {javascript_data: dataToBePosted}, function(result) {
 
 //     if(result === 'yes') {
 // //          alert('Its true! Hurraaay!');
@@ -285,14 +294,17 @@ function AddNewCssFunction(thisDiv) {
 
     // location.reload();
     // $.get("api/foo/?a=AddNewCssFunction", function(response) {});
+
     $( "#dialogAddNewCssFunction" ).dialog( "open" );
 
 }
 
 function RemoveNewCssFunction(thisDiv) {
     // console.log('RemoveNewCssFunction');
+    AddNewCssFunctionBoolean = false;
     location.reload();
-    $.get("api/foo/?a=RemoveNewCssFunction", function(response) {});
+    postSomethingType2('NODATA');
+    // $.get("api/foo/?a=RemoveNewCssFunction", function(response) {});
 
 
 }

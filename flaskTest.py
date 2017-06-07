@@ -84,6 +84,7 @@ def index():
 def getNameFromPost():
     jsdata = request.form['javascript_data']
     print(jsdata)
+    deciceWhichFunctionToRunPostedDataToAPI2(jsdata.split("|||SPLITTER|||")[0],jsdata.split("|||SPLITTER|||")[1])
     return 'yes'
 
 def saveCSSLocally(jsdata):
@@ -287,11 +288,13 @@ def deciceWhichFunctionToRun(bar):
 
         booleanSetter(redditSpecificModifications, 'redditSpecificModifications', False)
 
-    if (data['a'] == 'AddNewCssFunction'):
+def deciceWhichFunctionToRunPostedDataToAPI2(typeOfData,nameOfField):
+
+    if (typeOfData == 'AddNewCssFunction'):
 
         changeHtmlDynamically('AddNewCssFunction')
 
-    if (data['a'] == 'RemoveNewCssFunction'):
+    if (typeOfData == 'RemoveNewCssFunction'):
 
         changeHtmlDynamically('RemoveNewCssFunction')
 
