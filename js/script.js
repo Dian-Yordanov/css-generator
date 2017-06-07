@@ -237,12 +237,18 @@ function GetExternalCss(thisDiv) {
 
 function AddNewCssFunction(thisDiv) {
     // console.log('AddNewCssFunction');
+    location.reload();
     $.get("api/foo/?a=AddNewCssFunction", function(response) {});
+
+
 }
 
 function RemoveNewCssFunction(thisDiv) {
     // console.log('RemoveNewCssFunction');
+    location.reload();
     $.get("api/foo/?a=RemoveNewCssFunction", function(response) {});
+
+
 }
 
 
