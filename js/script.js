@@ -257,7 +257,27 @@ function executeFunctionTest(thisDiv) {
     //  console.log('sssssssssss');
     $( "#dialogAddNewCssFunction" ).dialog( "close" );
     location.reload();
-    $.get("api/foo/?a=AddNewCssFunction"+$( "#dialogAddNewCssFunction" ).value, function(response) {});
+    postSomethingType2( $( "#fieldForDialog" ).val() );
+    // $.get("api/foo/?a=AddNewCssFunction"+$( "#dialogAddNewCssFunction" ).value, function(response) {});
+}
+
+function postSomethingType2(data) {
+    // data="|||"+variableToSendBack+"|||"+"\n"+data;
+  $.post('/api2', {javascript_data: data}, function(result) {
+
+//     if(result === 'yes') {
+// //          alert('Its true! Hurraaay!');
+//       test = true;
+// //        opener.somefunction(); //or
+// //        opener.document.getElementById('someid').innerHTML = 'update content of parent window';
+//
+//     window.close();
+// //          alert('Im alive!!!');
+//     } else {
+//       test = false;
+//       alert('Awww....');
+//     }
+  });
 }
 
 function AddNewCssFunction(thisDiv) {

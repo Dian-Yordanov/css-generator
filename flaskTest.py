@@ -76,10 +76,15 @@ def get_post_javascript_data():
 
 @app.route('/ddd')
 def index():
-
     return send_file(BytesIO('Hello from Dan Jfsdfsdfsdacob and Stephane Wirtel !'.encode()),
                      attachment_filename="testing.txt",
                      as_attachment=True)
+
+@app.route('/api2', methods=['GET','POST'])
+def getNameFromPost():
+    jsdata = request.form['javascript_data']
+    print(jsdata)
+    return 'yes'
 
 def saveCSSLocally(jsdata):
     firstLine = jsdata.split('\n', 1)[0].replace("|||", "")
