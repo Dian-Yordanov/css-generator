@@ -236,12 +236,13 @@ function GetExternalCss(thisDiv) {
 }
 
 function AddNewCssFunction(thisDiv) {
-    console.log('AddNewCssFunction');
-    $('<div class="iviewer_image_mask" style="background: url(http://somesite.com/path/to/image.jpg);"></div>').appendTo(this.container);
+    // console.log('AddNewCssFunction');
+    $.get("api/foo/?a=AddNewCssFunction", function(response) {});
 }
 
 function RemoveNewCssFunction(thisDiv) {
-    console.log('RemoveNewCssFunction');
+    // console.log('RemoveNewCssFunction');
+    $.get("api/foo/?a=RemoveNewCssFunction", function(response) {});
 }
 
 

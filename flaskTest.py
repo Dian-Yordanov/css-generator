@@ -3,6 +3,8 @@ import os
 import webbrowser
 import os.path
 import json
+import fileinput
+
 
 from flask import Flask, current_app
 from flask import Response
@@ -61,9 +63,6 @@ def dddd(path):
 
 @app.route('/check_selected', methods=['GET','POST'])
 def check_selected():
-    # global selected
-    # post = request.args.get('post', 0, type=int)
-    # # json.dumps({'selected post': str(post)});
     jsdata = request.form['javascript_data']
     saveCSSLocally(jsdata)
     return 'yes'
@@ -78,15 +77,9 @@ def get_post_javascript_data():
 @app.route('/ddd')
 def index():
 
-#     function1()
-#     # function2()
-#
-# def function1():
     return send_file(BytesIO('Hello from Dan Jfsdfsdfsdacob and Stephane Wirtel !'.encode()),
                      attachment_filename="testing.txt",
                      as_attachment=True)
-# def function2():
-    # shutil.move("/home/dianlinux/Downloads/testing.txt", dirCss+"/testing.txt")
 
 def saveCSSLocally(jsdata):
     firstLine = jsdata.split('\n', 1)[0].replace("|||", "")
@@ -289,6 +282,14 @@ def deciceWhichFunctionToRun(bar):
 
         booleanSetter(redditSpecificModifications, 'redditSpecificModifications', False)
 
+    if (data['a'] == 'AddNewCssFunction'):
+
+        changeHtmlDynamically('AddNewCssFunction')
+
+    if (data['a'] == 'RemoveNewCssFunction'):
+
+        changeHtmlDynamically('RemoveNewCssFunction')
+
 
 def getCssFromJson():
     os.system('python CSSgen.py')
@@ -459,8 +460,46 @@ def resetCss():
     if (os.path.exists('static/data.css')):
         os.remove('static/data.css')
 
+def changeHtmlDynamically(CssFunction):
+
+    textToInput = '<textarea id="INSERTEDLINE-mainDiv" class="codemirror-textarea"></textarea>'
+    if (CssFunction == 'AddNewCssFunction'):
+        with open('templates/webcontrol.html', 'r') as f, open("templates/newfile",'w') as f1:
+           for line in f:
+               if 'IBTL1' in line:
+                  f1.write(textToInput+"\n")  # Move f1.write(line) above, to write above instead
+               f1.write(line)
+        os.remove('templates/webcontrol.html')  # For windows only
+        os.rename("templates/newfile", 'templates/webcontrol.html')  # Rename the new file
+
+    if (CssFunction == 'RemoveNewCssFunction'):
+        # with open('templates/webcontrol.html', 'r') as f:
+        f = open("templates/webcontrol.html","r+")
+        done = 0
+        d = f.readlines()
+        f.seek(0)
+        for i in d:
+            # print(i)
+
+            if textToInput not in i:
+                f.write(i)
+
+            else:
+                if done == 0:
+                    done = 1
+                    continue
+                else:
+                    # if textToInput not in i:
+                    f.write(i)
+
+
+
+        f.truncate()
+        f.close()
+
 if __name__ == "__main__":
 
+    app.config['TEMPLATES_AUTO_RELOAD'] = True
     app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
     app.static_folder = 'static'
 
