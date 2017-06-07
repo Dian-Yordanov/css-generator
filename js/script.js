@@ -237,6 +237,7 @@ function GetExternalCss(thisDiv) {
 
 function AddNewCssFunction(thisDiv) {
     console.log('AddNewCssFunction');
+    $('<div class="iviewer_image_mask" style="background: url(http://somesite.com/path/to/image.jpg);"></div>').appendTo(this.container);
 }
 
 function RemoveNewCssFunction(thisDiv) {
