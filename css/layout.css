@@ -4,19 +4,16 @@
 
 #page-wrap {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    /*grid-template-columns: repeat(1, 1fr);*/
     text-align: left;
-
-
 }
 
 #page-wrap1 {
 
     display: grid;
     text-align: left;
-    grid-column: 1 / 5;
-    grid-template-columns: repeat(10, 1fr);
-
+    grid-column: 1 / 3;
+    /*grid-template-columns: repeat(1, 1fr);*/
 
 }
 
@@ -24,8 +21,8 @@
 
     display: grid;
     text-align: left;
-    grid-column: 5 / 6;
-    grid-template-columns: repeat(10, 1fr);
+    grid-column: 3 / 6;
+    grid-template-columns: repeat(1, 1fr);
     margin-left: 20px;
 }
 
@@ -35,7 +32,7 @@
 
     margin-right: 10px;
     grid-column: 1 / 5;
-    grid-row: 1;
+    grid-row: 4;
 }
 
 .id2 {
@@ -43,11 +40,11 @@
     text-align: left;
     margin-right: 10px;
     grid-column: 1 / 5;
-    grid-row: 2;
+    grid-row: 5;
 }
 
 .EmptySpace {
-    grid-row: 3;
+    grid-row: 6;
 }
 
 .id3 {
@@ -55,7 +52,7 @@
     text-align: left;
     margin-right: 10px;
     grid-column: 1 / 5;
-    grid-row: 4;
+    grid-row: 7;
 }
 
 .id4 {
@@ -63,11 +60,11 @@
     text-align: left;
     margin-right: 10px;
     grid-column: 1 / 5;
-    grid-row: 5;
+    grid-row: 8;
 }
 
 .EmptySpace2 {
-    grid-row: 6;
+    grid-row: 9;
 }
 
 .DarkMinimalisticScrollbar {
@@ -75,7 +72,7 @@
     text-align: left;
     margin-right: 10px;
     grid-column: 1 / 5;
-    grid-row: 7;
+    grid-row: 10;
 }
 
 .YouTubeCustomColors {
@@ -83,11 +80,11 @@
     text-align: left;
     margin-right: 10px;
     grid-column: 1 / 5;
-    grid-row: 8;
+    grid-row: 11;
 }
 
 .EmptySpace3 {
-    grid-row: 9;
+    grid-row: 12;
 }
 
 .embededModifications {
@@ -95,7 +92,7 @@
     text-align: left;
     margin-right: 10px;
     grid-column: 1 / 5;
-    grid-row: 10;
+    grid-row: 13;
 }
 
 .facebookSpecificModifications {
@@ -103,7 +100,7 @@
     text-align: left;
     margin-right: 10px;
     grid-column: 1 / 5;
-    grid-row: 11;
+    grid-row: 14;
 }
 
 .redditSpecificModifications {
@@ -111,11 +108,19 @@
     text-align: left;
     margin-right: 10px;
     grid-column: 1 / 5;
-    grid-row: 12;
+    grid-row: 15;
 }
 
 .EmptySpace4 {
-    grid-row: 13;
+    grid-row: 16;
+}
+
+.colourPicker {
+    display: grid;
+    text-align: left;
+    margin-right: 10px;
+    grid-column: 1 / 5;
+    grid-row: 17;
 }
 
 .text {
@@ -136,98 +141,10 @@
     grid-column: 4 / 5;
 }
 
-.colourPicker {
-    display: grid;
-    text-align: left;
-    margin-right: 10px;
-    grid-column: 1 / 5;
-    grid-row: 14;
-}
-
-#clickableType2 {
-    display: grid;
-    text-align: left;
-    grid-column: 1 / 2;
-    grid-template-columns: repeat(2, 1fr);
-    grid-row: 15;
-}
-
-
-#clickable {
-    display: grid;
-    text-align: left;
-    grid-column: 1 / 5;
-    grid-template-columns: repeat(4, 1fr);
-    grid-row: 16;
-}
-
-.showGeneratedCss{
-    display: table;
-    /*margin: auto;*/
-    grid-column: 1 / 2;
-    grid-row: 1;
-}
-
-.generateCss{
-    display: table;
-    /*margin: auto;*/
-    grid-column: 2 / 3;
-    grid-row: 1;
-}
-
-.resetCss{
-    display: table;
-    /*margin: auto;*/
-    grid-column: 3 / 4;
-    grid-row: 1;
-}
-
-.getCssFromJson{
-    display: table;
-    /*margin: auto;*/
-    grid-column: 1 / 2;
-    grid-row: 17;
-}
-
-.GetExternalCss{
-    display: table;
-    /*margin: auto;*/
-    grid-column: 2 / 3;
-    grid-row: 17;
-}
-
-.buttonForExampleWebpage1 {
-    display: table;
-    grid-column: 1 / 2;
-        grid-row: 1;
-}
-
-.buttonForExampleWebpage2 {
-    display: table;
-    grid-column: 2 / 3;
-        grid-row: 1;
-}
-
-.buttonForExampleWebpage3 {
-    display: table;
-    grid-column: 3 / 4;
-        grid-row: 1;
-}
-.buttonForExampleWebpage4 {
-    display: table;
-    grid-column: 4 / 5;
-        grid-row: 1;
-}
-.buttonForExampleWebpageOpen {
-    display: table;
-    grid-column: 5 / 6;
-        grid-row: 1;
-}
-
 .webpageexample {
-    display: grid;
+    display: table;
     text-align: left;
-    grid-column: 1 / 5;
+    grid-column: 1 / 6;
     grid-row: 2;
 }
 
@@ -406,15 +323,110 @@
 	top:1px;
 }
 
+#ButtonGroup1 {
+    display: grid;
+    /*text-align: left;*/
+    grid-column: 1 / 4;
+    /*grid-template-columns: repeat(1, 1fr);*/
+    grid-row: 1;
+}
+
+#ButtonGroup2 {
+    display: grid;
+    /*text-align: left;*/
+    grid-column: 1 / 3;
+    /*grid-template-columns: repeat(1, 1fr);*/
+    grid-row: 2;
+}
+
+#ButtonGroup3 {
+    display: grid;
+    /*text-align: left;*/
+    grid-column: 1 / 2;
+    /*grid-template-columns: repeat(1, 1fr);*/
+    grid-row: 3;
+}
+
+
+#ButtonGroup4 {
+    display: grid;
+    /*text-align: left;*/
+    /*grid-column: 1 / 6;*/
+    grid-template-columns: repeat(1, 1fr);
+    grid-row: 1;
+}
+
+.showGeneratedCss{
+    display: table;
+    /*margin: auto;*/
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+
+.generateCss{
+    display: table;
+    /*margin: auto;*/
+    grid-column: 2 / 3;
+    grid-row: 1;
+}
+
+.resetCss{
+    display: table;
+    /*margin: auto;*/
+    grid-column: 3 / 4;
+    grid-row: 1;
+}
+
+.getCssFromJson{
+    display: table;
+    /*margin: auto;*/
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+
+.GetExternalCss{
+    display: table;
+    /*margin: auto;*/
+    grid-column: 2 / 3;
+    grid-row: 1;
+}
+
 .AddNewCssFunction{
     display: table;
-    /*grid-column: 1 / 2;*/
-    grid-row: 1;
+    grid-column: 1 / 2;
+    /*grid-row: 1;*/
 }
 
 .RemoveNewCssFunction{
     display: table;
-    /*grid-column: 2 / 3;*/
-    grid-row: 1;
+    grid-column: 2 / 3;
+    /*grid-row: 1;*/
 }
 
+.buttonForExampleWebpage1 {
+    display: inline-flex;
+    grid-column: 1 / 2;
+        grid-row: 1;
+}
+
+.buttonForExampleWebpage2 {
+    display: inline-flex;
+    grid-column: 2 / 3;
+        grid-row: 1;
+}
+
+.buttonForExampleWebpage3 {
+    display: inline-flex;
+    grid-column: 3 / 4;
+        grid-row: 1;
+}
+.buttonForExampleWebpage4 {
+    display: inline-flex;
+    grid-column: 4 / 5;
+        grid-row: 1;
+}
+.buttonForExampleWebpageOpen {
+    display: inline-flex;
+    grid-column: 5 / 6;
+        grid-row: 1;
+}

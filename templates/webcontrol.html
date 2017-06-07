@@ -217,20 +217,11 @@
                 </div>
             </div>
 
-            <div class="EmptySpace5">
-                &emsp;
-            </div>
+            <!--<div class="EmptySpace5">-->
+                <!--&emsp;-->
+            <!--</div>-->
 
-            <div id="clickableType2">
-                <div class="AddNewCssFunction">
-                    <input type="button" value="+" class="myButton2" onclick="AddNewCssFunction()" />
-                </div>
-                <div class="RemoveNewCssFunction">
-                    <input type="button" value="-" class="myButton2" onclick="RemoveNewCssFunction()" />
-                </div>
-            </div>
-
-            <div id="clickable">
+            <div id="ButtonGroup1">
                 <div class="generateCss">
                     <input type="button" value="Generate Css" class="myButton" onclick="generateCss()" />
                 </div>
@@ -244,42 +235,57 @@
                 </div>
             </div>
 
-            <div class="getCssFromJson">
-                <input type="button" value="Get Css From Json" class="myButton" onclick="getCssFromJson()" />
+            <div id="ButtonGroup2">
+                <div class="getCssFromJson">
+                    <input type="button" value="Get Css From Json" class="myButton" onclick="getCssFromJson()" />
+                </div>
+
+                 <div class="GetExternalCss">
+                    <input type="button" id="GetExternalCss" value="Get External Css" class="myButton" onclick="GetExternalCss(this)" />
+                </div>
             </div>
 
-             <div class="GetExternalCss">
-                <input type="button" id="GetExternalCss" value="Get External Css" class="myButton" onclick="GetExternalCss(this)" />
+            <div id="ButtonGroup3">
+                <div class="AddNewCssFunction">
+                    <input type="button" value="+" class="myButton2" onclick="AddNewCssFunction()" />
+                </div>
+                <div class="RemoveNewCssFunction">
+                    <input type="button" value="-" class="myButton2" onclick="RemoveNewCssFunction()" />
+                </div>
             </div>
 
 
         </div>
 
         <div id="page-wrap2">
-            <div class="buttonForExampleWebpage1">
-                <input type="button" value="www.theguardian.com/" class="myButton" onclick="GoToWebsite1()" />
-            </div>
-            <div class="buttonForExampleWebpage2">
-                <input type="button" value="www.reddit.com" class="myButton" onclick="GoToWebsite2()" />
-            </div>
-            <div class="buttonForExampleWebpage3">
-                <input type="button" value="www.youtube.com" class="myButton" onclick="GoToWebsite3()" />
-            </div>
-            <div class="buttonForExampleWebpage4">
-                <input type="button" value="www.facebook.com" class="myButton" onclick="GoToWebsite4()" />
-            </div>
 
-             <div class="buttonForExampleWebpageOpen">
-                <form action="javascript:completeAndRedirect(Edit1);">
-                    <div class="text2">
-                            <input type="text" id="Edit1" font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif; font-size:22px">
-                    </div>
+            <div class="ButtonGroup4">
+                <div class="buttonForExampleWebpage1">
+                    <input type="button" value="www.theguardian.com/" class="myButton" onclick="GoToWebsite1()" />
+                </div>
+                <div class="buttonForExampleWebpage2">
+                    <input type="button" value="www.reddit.com" class="myButton" onclick="GoToWebsite2()" />
+                </div>
+                <div class="buttonForExampleWebpage3">
+                    <input type="button" value="www.youtube.com" class="myButton" onclick="GoToWebsite3()" />
+                </div>
+                <div class="buttonForExampleWebpage4">
+                    <input type="button" value="www.facebook.com" class="myButton" onclick="GoToWebsite4()" />
+                </div>
 
-                    <div class="object2">
-                            <input type="submit" value="Submit">
-                    </div>
-                </form>
+                 <div class="buttonForExampleWebpageOpen">
+                    <form action="javascript:completeAndRedirect(Edit1);">
+                        <div class="text2">
+                                <input type="text" id="Edit1" font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif; font-size:22px">
+                        </div>
+
+                        <div class="object2">
+                                <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                 </div>
              </div>
+
 
             <div class="webpageexample">
                 <iframe src="http://127.0.0.1:5000/webpageexample" width="1300" height="900" id="webpageexampleId">
