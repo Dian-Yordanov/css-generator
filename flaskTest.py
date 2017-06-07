@@ -290,7 +290,6 @@ def deciceWhichFunctionToRun(bar):
 
         changeHtmlDynamically('RemoveNewCssFunction')
 
-
 def getCssFromJson():
     os.system('python CSSgen.py')
 
@@ -460,9 +459,15 @@ def resetCss():
     if (os.path.exists('static/data.css')):
         os.remove('static/data.css')
 
+def readFileAndReturnA1LineStringOfIT(nameOfFile):
+    with open(nameOfFile, 'r') as myfile:
+        data=myfile.read().replace('\n', '')
+    return data
+
+
 def changeHtmlDynamically(CssFunction):
 
-    textToInput = '<textarea id="INSERTEDLINE-mainDiv" class="codemirror-textarea"></textarea>'
+    textToInput = readFileAndReturnA1LineStringOfIT('htmlFileTemplateForDivs.html')
     if (CssFunction == 'AddNewCssFunction'):
         with open('templates/webcontrol.html', 'r') as f, open("templates/newfile",'w') as f1:
            for line in f:
