@@ -2,9 +2,17 @@
 <header>
     <title>Alarmsystem</title>
 </header>
-<script src="http://zeptojs.com/zepto.min.js"></script>
+<!--<script src="http://zeptojs.com/zepto.min.js"></script>-->
+<script type="text/javascript" src="js/jquery-ui-1.12.1/external/jquery/jquery.js"></script>
+
+
+<script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui.js"></script>
+<link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.css" type="text/css">
 
 <script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/popupScripts.js"></script>
+
+
 
 <!--<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>-->
 
@@ -14,7 +22,7 @@
 <!--<link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css">-->
 <!--<link rel="stylesheet" href="bootstrap/css/custom.css" />-->
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
 
   <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
   <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
@@ -247,12 +255,28 @@
 
             <div id="ButtonGroup3">
                 <div class="AddNewCssFunction">
-                    <input type="button" value="+" class="myButton2" onclick="AddNewCssFunction()" />
+                    <!--<button value="-" class="myButton2" onclick="RemoveNewCssFunction()" />-->
+                    <!--<div id="dialog">-->
+                        <!--<button id="buttonInPopUp">buttonInPopUp</button>-->
+                    <!--</div>-->
+
+                    <div class="AddNewCssFunction">
+                        <!--<input type="button" value="+" class="myButton2" onclick="AddNewCssFunction()" />-->
+                        <button id="btnExample" class="myButton2" onclick="AddNewCssFunction()" />+</button>
+                    </div>
+
+
+                    <!--<input type="button" value="+" class="myButton2" id="btnExample" />-->
+                    <!--<div id="dialog">-->
+                        <!--<button id="buttonInPopUp">buttonInPopUp</button>-->
+                    <!--</div>-->
                 </div>
                 <div class="RemoveNewCssFunction">
                     <input type="button" value="-" class="myButton2" onclick="RemoveNewCssFunction()" />
                 </div>
             </div>
+
+
 
 
         </div>
@@ -284,6 +308,14 @@
                         </div>
                     </form>
                  </div>
+
+
+                <button id="btnExample" onclick="dialogFunction()" />Open dialog</button>
+                <!--<button id="btnExample">open the dialog</button>-->
+                <div id="dialog" title="Randy">
+                    <input type="button" value="www.facebook.com" class="myButton" onclick="executeFunctionTest()" />
+                </div>
+
              </div>
 
 
@@ -301,6 +333,16 @@
         </div>
 
     </div>
+
+    <!--<script>-->
+            <!--$( document ).ready(function() {-->
+        <!--$( "#dialog" ).dialog({ autoOpen: false });-->
+        <!--$( "#btnExample" ).click(function() {-->
+        <!--$( "#dialog" ).dialog( "open" );-->
+        <!--});-->
+        <!--});-->
+    <!--</script>-->
+
 
 </body>
 

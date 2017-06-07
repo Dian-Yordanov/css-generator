@@ -18,8 +18,7 @@ window.onload = function() {
     document.getElementById("embededModifications").checked = false;
     document.getElementById("facebookSpecificModifications").checked = false;
     document.getElementById("redditSpecificModifications").checked = false;
-
-
+    
 }
 
 function mutuallyExclusive(id, id1) {
@@ -235,8 +234,21 @@ function GetExternalCss(thisDiv) {
     console.log('pressed');
 }
 
+
+// $( "#btnExample" ).click(function() {
+//   $( "#dialog" ).dialog( "open" );
+// });
+
+// $( "#dialog" ).dialog({ autoOpen: false });
+
+// $( "#dialog" ).dialog({ autoOpen: false });
+// $( "#btnExample" ).click(function() {
+//   $( "#dialog" ).dialog( "open" );
+// });
+
 function AddNewCssFunction(thisDiv) {
     // console.log('AddNewCssFunction');
+    
     location.reload();
     $.get("api/foo/?a=AddNewCssFunction", function(response) {});
 
