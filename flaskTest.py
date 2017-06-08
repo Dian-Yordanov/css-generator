@@ -511,11 +511,12 @@ def changeHtmlDynamically(CssFunction, nameOfField):
         done = 0
         d = f.readlines()
         f.seek(0)
-        for i in d:
+        listToBeAppended = []
+        for i in reversed(d):
             # print(i)
 
-            if textToInput not in i:
-                f.write(i)
+            if 'THISSTRINGMAKESTHISLINEDELETABLE' not in i:
+                listToBeAppended.append(i)
 
             else:
                 if done == 0:
@@ -523,8 +524,11 @@ def changeHtmlDynamically(CssFunction, nameOfField):
                     continue
                 else:
                     # if textToInput not in i:
-                    f.write(i)
+                    listToBeAppended.append(i)
 
+        listToBeAppended = reversed(listToBeAppended)
+        for ii in listToBeAppended:
+            f.write(ii)
 
 
         f.truncate()
