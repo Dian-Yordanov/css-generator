@@ -10,15 +10,24 @@ const OFF = 0;
 const ON = 1;
 
 window.onload = function() {
-    document.getElementById("Black").checked = false;
-    document.getElementById("White").checked = false;
-    document.getElementById("Pointer").checked = false;
-    document.getElementById("specific").checked = false;
-    document.getElementById("DarkMinimalisticScrollbar").checked = false;
-    document.getElementById("YouTubeCustomColors").checked = false;
-    document.getElementById("embededModifications").checked = false;
-    document.getElementById("facebookSpecificModifications").checked = false;
-    document.getElementById("redditSpecificModifications").checked = false;
+    // document.getElementById("Black").checked = false;
+    // document.getElementById("White").checked = false;
+    // document.getElementById("Pointer").checked = false;
+    // document.getElementById("specific").checked = false;
+    // document.getElementById("DarkMinimalisticScrollbar").checked = false;
+    // document.getElementById("YouTubeCustomColors").checked = false;
+    // document.getElementById("embededModifications").checked = false;
+    // document.getElementById("facebookSpecificModifications").checked = false;
+    // document.getElementById("redditSpecificModifications").checked = false;
+    
+// var checkboxes = document.getElementsByTagName('input');
+//
+// for (var i=0; i<checkboxes.length; i++)  {
+//   if (checkboxes[i].type == 'checkbox')   {
+//     checkboxes[i].checked = false;
+//   }
+// }
+    
     AddNewCssFunctionBoolean = false;
 }
 

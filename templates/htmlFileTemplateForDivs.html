@@ -1,9 +1,19 @@
 <!--THISSTRINGMAKESTHISLINEDELETABLE-->
 <script>
-document.getElementById("{{InputId}}").checked = false;
 function {{CallFunctionForThisButton}}(thisDiv) {
     console.log('{{SpecificNameForThisFunction}}');
 }
+//function func1() {
+////document.getElementById("{{InputId}}").checked = false;
+////var checkboxes = document.getElementsByTagName('input');
+////
+////for (var i=0; i<checkboxes.length; i++)  {
+////  if (checkboxes[i].type == 'checkbox')   {
+////    checkboxes[i].checked = false;
+////  }
+////}
+//}
+//window.onload=func1;
 </script>
 <span class="{{SpanClassId}}">
     <div class="text">
@@ -13,9 +23,10 @@ function {{CallFunctionForThisButton}}(thisDiv) {
     </div>
     <div class="object">
         <div class="onoffswitch">
-            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="{{InputId}}" checked onchange="Black(this)"> <label class="onoffswitch-label" for="{{InputId}}"> <span
-                        class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span>
-                    </label>
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="{{InputId}}"  checked onchange="Black(this)">
+            <label class="onoffswitch-label" for="{{InputId}}">
+                <span class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span>
+            </label>
         </div>
     </div>
     <div class="button">
