@@ -487,6 +487,26 @@ def resetCss():
 
 def getAndSaveJsonDataToLocalFileInOrderToBuildCssFields(nameOfField):
 
+    fileNameAndLocation = 'static/jsonDataForFields.json'
+    indexInt = 0
+    nameOfField = 34
+
+    # stringS= ''
+    # with open(fileNameAndLocation) as f: stringS = f.read()
+    # print(stringS)
+    with open(fileNameAndLocation) as data_file:
+        data = json.load(data_file)
+
+    for dataIndexer in data:
+        if(dataIndexer['id']==nameOfField):
+            break
+        indexInt = indexInt + 1
+
+
+    print(data[indexInt]['ip_address'])
+    print(data[indexInt]['id'])
+    print(data[indexInt])
+
     return 'ff'
 
 def readFileAndReturnA1LineStringOfIT(nameOfFile,nameOfField):
