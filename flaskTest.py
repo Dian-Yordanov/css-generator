@@ -303,13 +303,6 @@ def deciceWhichFunctionToRun(bar):
 def deciceWhichFunctionToRunForRandomJsonData(dataa, jsonObject):
 
     jsonObject['jsonObject']['CssFileNameForUseWithDeciceWhichFunctionToRunFunction'] = None
-    # varToString = json.dumps(jsonObject['jsonObject']['CssFileNameForUseWithDeciceWhichFunctionToRunFunction'])
-    #
-    # # print(jsonObject['index'])
-    # # print(jsonObject['jsonObject'])
-    #
-    # print(varToString)
-    # print(dataa)
 
     if (dataa == jsonObject['jsonObject']['SpanClassId']+'on'):
 
@@ -318,6 +311,28 @@ def deciceWhichFunctionToRunForRandomJsonData(dataa, jsonObject):
     if (dataa == jsonObject['jsonObject']['SpanClassId']+'off'):
 
         booleanSetter(jsonObject['jsonObject']['CssFileNameForUseWithDeciceWhichFunctionToRunFunction'], dataa.replace("on", "").replace("off", ""), False)
+
+def DoTheWithOpenForTheArrayOfCssCustomFiles():
+
+    # I think it should be a cycle of all the booleans and it may be just better to redo the whole system
+    with open("pythonStaticBooleans/PointerCss", "r") as f:
+        PointerCss = f.read()
+
+        if (PointerCss == "True"):
+            filenames.append("BracketsHtmlAndCss/pointer.css")
+
+        if ("BracketsHtmlAndCss/pointer.css" in filenames):
+            if (PointerCss == "False"):
+                filenames.remove("BracketsHtmlAndCss/pointer.css")
+
+    # varToString = json.dumps(jsonObject['jsonObject']['CssFileNameForUseWithDeciceWhichFunctionToRunFunction'])
+    #
+    # # print(jsonObject['index'])
+    # # print(jsonObject['jsonObject'])
+    #
+    # print(varToString)
+    # print(dataa)
+
     return  'bb'
 
 def deciceWhichFunctionToRunPostedDataToAPI2(typeOfData,nameOfField):
@@ -446,6 +461,8 @@ def generateCss():
         if ("BracketsHtmlAndCss/redditSpecificModifications.css" in filenames):
             if (redditSpecificModifications == "False"):
                 filenames.remove("BracketsHtmlAndCss/redditSpecificModifications.css")
+
+    DoTheWithOpenForTheArrayOfCssCustomFiles()
 
     print(BlackCss, WhiteCss, PointerCss, specificCss, CustomCSS, DarkMinimalisticScrollbar, YouTubeCustomColors,
           embededModifications, facebookSpecificModifications, redditSpecificModifications)
