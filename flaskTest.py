@@ -173,131 +173,135 @@ def deciceWhichFunctionToRun(bar):
     bar = str(bar).replace("\'", "\"")
     data = json.loads(bar)
 
-    readDatafromJsonFile(data['a'].replace("on", "").replace("off", ""))
-
     print(data['a'])
 
+    if(readDatafromJsonFile(data['a'].replace("on", "").replace("off", ""))):
+        deciceWhichFunctionToRunForRandomJsonData(data['a'])
 
-    if (data['a'] == 'Blackon'):
+    else:
+        if (data['a'] == 'Blackon'):
 
-        booleanSetter(BlackCss,'BlackCss', True)
-        booleanSetter(WhiteCss,'WhiteCss', False)
-        booleanSetter(CustomCSS, 'CustomCSS', False)
+            booleanSetter(BlackCss,'BlackCss', True)
+            booleanSetter(WhiteCss,'WhiteCss', False)
+            booleanSetter(CustomCSS, 'CustomCSS', False)
 
-    if (data['a'] == 'Blackoff'):
+        if (data['a'] == 'Blackoff'):
 
-        booleanSetter(BlackCss, 'BlackCss', False)
+            booleanSetter(BlackCss, 'BlackCss', False)
 
-    if (data['a'] == 'Whiteon'):
+        if (data['a'] == 'Whiteon'):
 
-        booleanSetter(WhiteCss, 'WhiteCss', True)
-        booleanSetter(BlackCss, 'BlackCss', False)
-        booleanSetter(CustomCSS, 'CustomCSS', False)
+            booleanSetter(WhiteCss, 'WhiteCss', True)
+            booleanSetter(BlackCss, 'BlackCss', False)
+            booleanSetter(CustomCSS, 'CustomCSS', False)
 
-    if (data['a'] == 'Whiteoff'):
+        if (data['a'] == 'Whiteoff'):
 
-        booleanSetter(WhiteCss, 'WhiteCss', False)
+            booleanSetter(WhiteCss, 'WhiteCss', False)
 
-    if (data['a'] == 'Pointeron'):
+        if (data['a'] == 'Pointeron'):
 
-        booleanSetter(PointerCss, 'PointerCss', True)
+            booleanSetter(PointerCss, 'PointerCss', True)
 
-    if (data['a'] == 'Pointeroff'):
+        if (data['a'] == 'Pointeroff'):
 
-        booleanSetter(PointerCss, 'PointerCss', False)
+            booleanSetter(PointerCss, 'PointerCss', False)
 
-    if (data['a'] == 'specificon'):
+        if (data['a'] == 'specificon'):
 
-        booleanSetter(specificCss, 'specificCss', True)
+            booleanSetter(specificCss, 'specificCss', True)
 
-    if (data['a'] == 'specificoff'):
+        if (data['a'] == 'specificoff'):
 
-        booleanSetter(specificCss, 'specificCss', False)
+            booleanSetter(specificCss, 'specificCss', False)
 
-    if (data['a'] == 'getCssFromJson'):
-        getCssFromJson()
-    if (data['a'] == 'generateCss'):
-        generateCss()
-    if (data['a'] == 'resetCss'):
-        resetCss()
+        if (data['a'] == 'getCssFromJson'):
+            getCssFromJson()
+        if (data['a'] == 'generateCss'):
+            generateCss()
+        if (data['a'] == 'resetCss'):
+            resetCss()
 
-    if ('colour' in data['a']):
-        colourExtractor = '#' + str(data['a']).replace("colour", "")
-        rgbColour = hex_to_rgb(colourExtractor)
-        rgbaColour = 'rgba' + str(rgbColour)[:-1] + ',1)'
+        if ('colour' in data['a']):
+            colourExtractor = '#' + str(data['a']).replace("colour", "")
+            rgbColour = hex_to_rgb(colourExtractor)
+            rgbaColour = 'rgba' + str(rgbColour)[:-1] + ',1)'
 
-        complementColour = 'rgba' + str(complement(rgbColour[0], rgbColour[1], rgbColour[2]))[:-1] + ',1)'
-        oppositeColour = 'rgba' + str(oppositeColours(rgbColour[0], rgbColour[1], rgbColour[2]))[:-1] + ',1)'
+            complementColour = 'rgba' + str(complement(rgbColour[0], rgbColour[1], rgbColour[2]))[:-1] + ',1)'
+            oppositeColour = 'rgba' + str(oppositeColours(rgbColour[0], rgbColour[1], rgbColour[2]))[:-1] + ',1)'
 
-        complementColour = complementColour.replace(" ", "")
-        oppositeColour = oppositeColour.replace(" ", "")
-        rgbaColour = rgbaColour.replace(" ", "")
+            complementColour = complementColour.replace(" ", "")
+            oppositeColour = oppositeColour.replace(" ", "")
+            rgbaColour = rgbaColour.replace(" ", "")
 
-        with open("BracketsHtmlAndCss/templateCSS.css") as f:
-            lines = f.readlines()
-            lines = [l for l in lines if "ROW" in l]
-            with open("BracketsHtmlAndCss/dataCustom.css", "w") as f1:
-                f1.writelines(lines)
+            with open("BracketsHtmlAndCss/templateCSS.css") as f:
+                lines = f.readlines()
+                lines = [l for l in lines if "ROW" in l]
+                with open("BracketsHtmlAndCss/dataCustom.css", "w") as f1:
+                    f1.writelines(lines)
 
-        with open("BracketsHtmlAndCss/templateCSS.css", "rt") as fin:
-            with open("BracketsHtmlAndCss/dataCustom.css", "wt") as fout:
+            with open("BracketsHtmlAndCss/templateCSS.css", "rt") as fin:
+                with open("BracketsHtmlAndCss/dataCustom.css", "wt") as fout:
 
-                for line in fin:
-                    if('Colour1ForReplacing' in line):
-                        fout.write(line.replace('Colour1ForReplacing', str(rgbaColour)))
+                    for line in fin:
+                        if('Colour1ForReplacing' in line):
+                            fout.write(line.replace('Colour1ForReplacing', str(rgbaColour)))
 
-                    elif('Colour2ForReplacing' in line):
-                        fout.write(line.replace('Colour2ForReplacing', str(oppositeColour)))
-                    else:
-                        fout.write(line)
+                        elif('Colour2ForReplacing' in line):
+                            fout.write(line.replace('Colour2ForReplacing', str(oppositeColour)))
+                        else:
+                            fout.write(line)
 
-        print(complementColour)
-        print(oppositeColour)
-        print(rgbaColour)
+            print(complementColour)
+            print(oppositeColour)
+            print(rgbaColour)
 
-        booleanSetter(CustomCSS, 'CustomCSS', True)
-        booleanSetter(BlackCss, 'BlackCss', False)
-        booleanSetter(WhiteCss, 'WhiteCss', False)
+            booleanSetter(CustomCSS, 'CustomCSS', True)
+            booleanSetter(BlackCss, 'BlackCss', False)
+            booleanSetter(WhiteCss, 'WhiteCss', False)
 
-    if (data['a'] == 'DarkMinimalisticScrollbaron'):
+        if (data['a'] == 'DarkMinimalisticScrollbaron'):
 
-        booleanSetter(DarkMinimalisticScrollbar, 'DarkMinimalisticScrollbar', True)
+            booleanSetter(DarkMinimalisticScrollbar, 'DarkMinimalisticScrollbar', True)
 
-    if (data['a'] == 'DarkMinimalisticScrollbaroff'):
+        if (data['a'] == 'DarkMinimalisticScrollbaroff'):
 
-        booleanSetter(DarkMinimalisticScrollbar, 'DarkMinimalisticScrollbar', False)
+            booleanSetter(DarkMinimalisticScrollbar, 'DarkMinimalisticScrollbar', False)
 
-    if (data['a'] == 'YouTubeCustomColorson'):
+        if (data['a'] == 'YouTubeCustomColorson'):
 
-        booleanSetter(YouTubeCustomColors, 'YouTubeCustomColors', True)
+            booleanSetter(YouTubeCustomColors, 'YouTubeCustomColors', True)
 
-    if (data['a'] == 'YouTubeCustomColorsoff'):
+        if (data['a'] == 'YouTubeCustomColorsoff'):
 
-        booleanSetter(YouTubeCustomColors, 'YouTubeCustomColors', False)
+            booleanSetter(YouTubeCustomColors, 'YouTubeCustomColors', False)
 
-    if (data['a'] == 'embededModificationson'):
+        if (data['a'] == 'embededModificationson'):
 
-        booleanSetter(embededModifications, 'embededModifications', True)
+            booleanSetter(embededModifications, 'embededModifications', True)
 
-    if (data['a'] == 'embededModificationsoff'):
+        if (data['a'] == 'embededModificationsoff'):
 
-        booleanSetter(embededModifications, 'embededModifications', False)
+            booleanSetter(embededModifications, 'embededModifications', False)
 
-    if (data['a'] == 'facebookSpecificModificationson'):
+        if (data['a'] == 'facebookSpecificModificationson'):
 
-        booleanSetter(facebookSpecificModifications, 'facebookSpecificModifications', True)
+            booleanSetter(facebookSpecificModifications, 'facebookSpecificModifications', True)
 
-    if (data['a'] == 'facebookSpecificModificationsoff'):
+        if (data['a'] == 'facebookSpecificModificationsoff'):
 
-        booleanSetter(facebookSpecificModifications, 'facebookSpecificModifications', False)
+            booleanSetter(facebookSpecificModifications, 'facebookSpecificModifications', False)
 
-    if (data['a'] == 'redditSpecificModificationson'):
+        if (data['a'] == 'redditSpecificModificationson'):
 
-        booleanSetter(redditSpecificModifications, 'redditSpecificModifications', True)
+            booleanSetter(redditSpecificModifications, 'redditSpecificModifications', True)
 
-    if (data['a'] == 'redditSpecificModificationsoff'):
+        if (data['a'] == 'redditSpecificModificationsoff'):
 
-        booleanSetter(redditSpecificModifications, 'redditSpecificModifications', False)
+            booleanSetter(redditSpecificModifications, 'redditSpecificModifications', False)
+
+def deciceWhichFunctionToRunForRandomJsonData(dataa):
+    return  'bb'
 
 def deciceWhichFunctionToRunPostedDataToAPI2(typeOfData,nameOfField):
 
