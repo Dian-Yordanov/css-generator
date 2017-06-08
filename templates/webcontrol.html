@@ -27,316 +27,318 @@
   <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
   <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
 
+
 <body>
     <div id="page-wrap">
-        <div id="page-wrap1">
+        <div class='relative'>
+            <div id="page-wrap1">
 
-            <div class="id1">
-                <div class="text">
-                    <p>
-                        <b>Black theme</b>
-                    </p>
-                </div>
-                <div class="object">
-                    <div class="onoffswitch">
-                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="Black" checked onchange="Black(this)"> <label class="onoffswitch-label" for="Black"> <span
+                    <div class="id1">
+
+                        <div class="text">
+                            <p>
+                                <b>Black theme</b>
+                            </p>
+                        </div>
+                        <div class="object">
+                            <div class="onoffswitch">
+                                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="Black" checked onchange="Black(this)"> <label class="onoffswitch-label" for="Black"> <span
+                                            class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span>
+                                        </label>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <input type="button" id="buttonForLaunchingSecondWindow-dataDark" value="Edit CSS" class="btn" onclick="callParentWindowToEditCss(this)" />
+                        </div>
+                    </div>
+
+                    <div class="id2">
+                        <div class="text">
+                            <p>
+                                <b>White theme</b>
+                            </p>
+                        </div>
+                        <div class="object">
+                            <div class="onoffswitch">
+                                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="White" checked onchange="White(this)"> <label class="onoffswitch-label" for="White"> <span
                                     class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span>
                                 </label>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <input type="button" id="buttonForLaunchingSecondWindow-dataWhite" value="Edit CSS" class="btn" onclick="callParentWindowToEditCss(this)" />
+                        </div>
                     </div>
-                </div>
-                <div class="button">
-                    <input type="button" id="buttonForLaunchingSecondWindow-dataDark" value="Edit CSS" class="btn" onclick="callParentWindowToEditCss(this)" />
-                </div>
-            </div>
 
-            <div class="id2">
-                <div class="text">
-                    <p>
-                        <b>White theme</b>
-                    </p>
-                </div>
-                <div class="object">
-                    <div class="onoffswitch">
-                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="White" checked onchange="White(this)"> <label class="onoffswitch-label" for="White"> <span
-                            class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span>
-                        </label>
+                    <div class="EmptySpace">
+                        &emsp;
                     </div>
-                </div>
-                <div class="button">
-                    <input type="button" id="buttonForLaunchingSecondWindow-dataWhite" value="Edit CSS" class="btn" onclick="callParentWindowToEditCss(this)" />
-                </div>
-            </div>
 
-            <div class="EmptySpace">
-                &emsp;
-            </div>
+                    <div class="id3">
+                        <div class="text">
+                            <p>
+                                <b>Pointer modifications</b>
+                            </p>
+                        </div>
+                        <div class="object">
+                            <div class="onoffswitch">
+                                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="Pointer" checked onchange="Pointer(this)"> <label class="onoffswitch-label" for="Pointer"> <span
+                                            class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span>
+                                        </label>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <input type="button" id="buttonForLaunchingSecondWindow-pointer" value="Edit CSS" class="btn" onclick="callParentWindowToEditCss(this)" />
+                        </div>
+                    </div>
 
-            <div class="id3">
-                <div class="text">
-                    <p>
-                        <b>Pointer modifications</b>
-                    </p>
-                </div>
-                <div class="object">
-                    <div class="onoffswitch">
-                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="Pointer" checked onchange="Pointer(this)"> <label class="onoffswitch-label" for="Pointer"> <span
+                    <div class="id4">
+                        <div class="text">
+                            <p>
+                                <b>Webpage specific modifications</b>
+                            </p>
+                        </div>
+                        <div class="object">
+                            <div class="onoffswitch">
+                                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="specific" checked onchange="specific(this)"> <label class="onoffswitch-label" for="specific"> <span
                                     class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span>
                                 </label>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <input type="button" id="buttonForLaunchingSecondWindow-webSiteSpecific" value="Edit CSS" class="btn" onclick="callParentWindowToEditCss(this)" />
+                        </div>
                     </div>
-                </div>
-                <div class="button">
-                    <input type="button" id="buttonForLaunchingSecondWindow-pointer" value="Edit CSS" class="btn" onclick="callParentWindowToEditCss(this)" />
-                </div>
-            </div>
 
-            <div class="id4">
-                <div class="text">
-                    <p>
-                        <b>Webpage specific modifications</b>
-                    </p>
-                </div>
-                <div class="object">
-                    <div class="onoffswitch">
-                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="specific" checked onchange="specific(this)"> <label class="onoffswitch-label" for="specific"> <span
-                            class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span>
-                        </label>
+                    <div class="EmptySpace2">
+                        &emsp;
                     </div>
-                </div>
-                <div class="button">
-                    <input type="button" id="buttonForLaunchingSecondWindow-webSiteSpecific" value="Edit CSS" class="btn" onclick="callParentWindowToEditCss(this)" />
-                </div>
-            </div>
 
-            <div class="EmptySpace2">
-                &emsp;
-            </div>
+                    <div class="colourPicker">
+                        <div class="text">
+                            <p>
+                                <b>Custom Page Colours</b>
+                            </p>
+                        </div>
+                        <div class="object">
+                            <br/>
+                            <input type="color" id="myColor" onchange="colourPickerFunction()"  />
+                            <p id="demo"></p>
+                        </div>
+                        <div class="button">
+                            <input type="button" id="buttonForLaunchingSecondWindow-templateCSS" value="Edit CSS" class="btn" onclick="callParentWindowToEditCss(this)" />
+                        </div>
+                    </div>
 
-            <div class="colourPicker">
-                <div class="text">
-                    <p>
-                        <b>Custom Page Colours</b>
-                    </p>
-                </div>
-                <div class="object">
-                    <br/>
-                    <input type="color" id="myColor" onchange="colourPickerFunction()"  />
-                    <p id="demo"></p>
-                </div>
-                <div class="button">
-                    <input type="button" id="buttonForLaunchingSecondWindow-templateCSS" value="Edit CSS" class="btn" onclick="callParentWindowToEditCss(this)" />
-                </div>
-            </div>
+                    <div class="EmptySpace3">
+                        &emsp;
+                    </div>
 
-            <div class="EmptySpace3">
-                &emsp;
-            </div>
+                    <div class="DarkMinimalisticScrollbar">
+                        <div class="text">
+                            <p>
+                                <b>Dark minimalistic scrollbar</b>
+                            </p>
+                        </div>
+                        <div class="object">
+                            <div class="onoffswitch">
+                                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="DarkMinimalisticScrollbar" checked onchange="DarkMinimalisticScrollbar(this)"> <label class="onoffswitch-label" for="DarkMinimalisticScrollbar"> <span
+                                            class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span>
+                                        </label>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <input type="button" id="buttonForLaunchingSecondWindow-DarkMinimalisticScrollbar" value="Edit CSS" class="btn" onclick="callParentWindowToEditCss(this)" />
+                        </div>
+                    </div>
 
-            <div class="DarkMinimalisticScrollbar">
-                <div class="text">
-                    <p>
-                        <b>Dark minimalistic scrollbar</b>
-                    </p>
-                </div>
-                <div class="object">
-                    <div class="onoffswitch">
-                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="DarkMinimalisticScrollbar" checked onchange="DarkMinimalisticScrollbar(this)"> <label class="onoffswitch-label" for="DarkMinimalisticScrollbar"> <span
+                    <div class="YouTubeCustomColors">
+                        <div class="text">
+                            <p>
+                                <b>YouTube - Custom colors video progress bar </b>
+                            </p>
+                        </div>
+                        <div class="object">
+                            <div class="onoffswitch">
+                                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="YouTubeCustomColors" checked onchange="YouTubeCustomColors(this)"> <label class="onoffswitch-label" for="YouTubeCustomColors"> <span
                                     class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span>
                                 </label>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <input type="button" id="buttonForLaunchingSecondWindow-YouTubeCustomColors" value="Edit CSS" class="btn" onclick="callParentWindowToEditCss(this)" />
+                        </div>
                     </div>
-                </div>
-                <div class="button">
-                    <input type="button" id="buttonForLaunchingSecondWindow-DarkMinimalisticScrollbar" value="Edit CSS" class="btn" onclick="callParentWindowToEditCss(this)" />
-                </div>
-            </div>
 
-            <div class="YouTubeCustomColors">
-                <div class="text">
-                    <p>
-                        <b>YouTube - Custom colors video progress bar </b>
-                    </p>
-                </div>
-                <div class="object">
-                    <div class="onoffswitch">
-                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="YouTubeCustomColors" checked onchange="YouTubeCustomColors(this)"> <label class="onoffswitch-label" for="YouTubeCustomColors"> <span
-                            class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span>
-                        </label>
+                    <div class="EmptySpace4">
+                        &emsp;
                     </div>
-                </div>
-                <div class="button">
-                    <input type="button" id="buttonForLaunchingSecondWindow-YouTubeCustomColors" value="Edit CSS" class="btn" onclick="callParentWindowToEditCss(this)" />
-                </div>
-            </div>
 
-            <div class="EmptySpace4">
-                &emsp;
-            </div>
+                    <div class="embededModifications">
+                        <div class="text">
+                            <p>
+                                <b>Embedded Modifications</b>
+                            </p>
+                        </div>
+                        <div class="object">
+                            <div class="onoffswitch">
+                                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="embededModifications" checked onchange="embededModifications(this)"> <label class="onoffswitch-label" for="embededModifications"> <span
+                                            class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span>
+                                        </label>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <input type="button" id="buttonForLaunchingSecondWindow-embededModifications" value="Edit CSS" class="btn" onclick="callParentWindowToEditCss(this)" />
+                        </div>
+                    </div>
 
-            <div class="embededModifications">
-                <div class="text">
-                    <p>
-                        <b>Embedded Modifications</b>
-                    </p>
-                </div>
-                <div class="object">
-                    <div class="onoffswitch">
-                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="embededModifications" checked onchange="embededModifications(this)"> <label class="onoffswitch-label" for="embededModifications"> <span
+                    <div class="facebookSpecificModifications">
+                        <div class="text">
+                            <p>
+                                <b>Facebook Specific Modifications</b>
+                            </p>
+                        </div>
+                        <div class="object">
+                            <div class="onoffswitch">
+                                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="facebookSpecificModifications" checked onchange="facebookSpecificModifications(this)"> <label class="onoffswitch-label" for="facebookSpecificModifications"> <span
+                                            class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span>
+                                        </label>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <input type="button" id="buttonForLaunchingSecondWindow-facebookSpecificModifications" value="Edit CSS" class="btn" onclick="callParentWindowToEditCss(this)" />
+                        </div>
+                    </div>
+
+                    <div class="redditSpecificModifications">
+                        <div class="text">
+                            <p>
+                                <b>Reddit Specific Modifications</b>
+                            </p>
+                        </div>
+                        <div class="object">
+                            <div class="onoffswitch">
+                                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="redditSpecificModifications" checked onchange="redditSpecificModifications(this)"> <label class="onoffswitch-label" for="redditSpecificModifications"> <span
                                     class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span>
                                 </label>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <input type="button" id="buttonForLaunchingSecondWindow-redditSpecificModifications" value="Edit CSS" class="btn" onclick="callParentWindowToEditCss(this)" />
+                        </div>
                     </div>
-                </div>
-                <div class="button">
-                    <input type="button" id="buttonForLaunchingSecondWindow-embededModifications" value="Edit CSS" class="btn" onclick="callParentWindowToEditCss(this)" />
-                </div>
-            </div>
-
-            <div class="facebookSpecificModifications">
-                <div class="text">
-                    <p>
-                        <b>Facebook Specific Modifications</b>
-                    </p>
-                </div>
-                <div class="object">
-                    <div class="onoffswitch">
-                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="facebookSpecificModifications" checked onchange="facebookSpecificModifications(this)"> <label class="onoffswitch-label" for="facebookSpecificModifications"> <span
-                                    class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span>
-                                </label>
-                    </div>
-                </div>
-                <div class="button">
-                    <input type="button" id="buttonForLaunchingSecondWindow-facebookSpecificModifications" value="Edit CSS" class="btn" onclick="callParentWindowToEditCss(this)" />
-                </div>
-            </div>
-
-            <div class="redditSpecificModifications">
-                <div class="text">
-                    <p>
-                        <b>Reddit Specific Modifications</b>
-                    </p>
-                </div>
-                <div class="object">
-                    <div class="onoffswitch">
-                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="redditSpecificModifications" checked onchange="redditSpecificModifications(this)"> <label class="onoffswitch-label" for="redditSpecificModifications"> <span
-                            class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span>
-                        </label>
-                    </div>
-                </div>
-                <div class="button">
-                    <input type="button" id="buttonForLaunchingSecondWindow-redditSpecificModifications" value="Edit CSS" class="btn" onclick="callParentWindowToEditCss(this)" />
-                </div>
-            </div>
 
 
 
 
 
-            <!--<div class="EmptySpace5">-->
-                <!--&emsp;-->
-            <!--</div>-->
-
-            <div id="ButtonGroup1">
-                <div class="generateCss">
-                    <input type="button" value="Generate Css" class="myButton" onclick="generateCss()" />
-                </div>
-
-                <div class="resetCss">
-                    <input type="button" value="Reset Css" class="myButton" onclick="resetCss()" />
-                </div>
-
-                <div class="showGeneratedCss">
-                    <input type="button" id="buttonForLaunchingSecondWindow-data" value="Show Generated Css" class="myButton" onclick="showGeneratedCss(this)" />
-                </div>
-            </div>
-
-            <div id="ButtonGroup2">
-                <div class="getCssFromJson">
-                    <input type="button" value="Get Css From Json" class="myButton" onclick="getCssFromJson()" />
-                </div>
-
-                 <div class="GetExternalCss">
-                    <input type="button" id="GetExternalCss" value="Get External Css" class="myButton" onclick="GetExternalCss(this)" />
-                </div>
-            </div>
-
-            <div id="ButtonGroup3">
-                <div class="AddNewCssFunction">
-                    <!--<button value="-" class="myButton2" onclick="RemoveNewCssFunction()" />-->
-                    <!--<div id="dialog">-->
-                        <!--<button id="buttonInPopUp">buttonInPopUp</button>-->
+                    <!--<div class="EmptySpace5">-->
+                        <!--&emsp;-->
                     <!--</div>-->
 
-                    <div class="AddNewCssFunction">
-                        <!--<input type="button" value="+" class="myButton2" onclick="AddNewCssFunction()" />-->
-                        <button id="btnExample" class="myButton2" onclick="AddNewCssFunction()" />+</button>
+                    <div id="ButtonGroup1">
+                        <div class="generateCss">
+                            <input type="button" value="Generate Css" class="myButton" onclick="generateCss()" />
+                        </div>
+
+                        <div class="resetCss">
+                            <input type="button" value="Reset Css" class="myButton" onclick="resetCss()" />
+                        </div>
+
+                        <div class="showGeneratedCss">
+                            <input type="button" id="buttonForLaunchingSecondWindow-data" value="Show Generated Css" class="myButton" onclick="showGeneratedCss(this)" />
+                        </div>
                     </div>
 
+                    <div id="ButtonGroup2">
+                        <div class="getCssFromJson">
+                            <input type="button" value="Get Css From Json" class="myButton" onclick="getCssFromJson()" />
+                        </div>
 
-                    <!--<input type="button" value="+" class="myButton2" id="btnExample" />-->
-                    <!--<div id="dialog">-->
-                        <!--<button id="buttonInPopUp">buttonInPopUp</button>-->
-                    <!--</div>-->
+                         <div class="GetExternalCss">
+                            <input type="button" id="GetExternalCss" value="Get External Css" class="myButton" onclick="GetExternalCss(this)" />
+                        </div>
+                    </div>
+
+                    <div id="ButtonGroup3">
+                        <div class="AddNewCssFunction">
+                            <!--<button value="-" class="myButton2" onclick="RemoveNewCssFunction()" />-->
+                            <!--<div id="dialog">-->
+                                <!--<button id="buttonInPopUp">buttonInPopUp</button>-->
+                            <!--</div>-->
+
+                            <div class="AddNewCssFunction">
+                                <!--<input type="button" value="+" class="myButton2" onclick="AddNewCssFunction()" />-->
+                                <button id="btnExample" class="myButton2" onclick="AddNewCssFunction()" />+</button>
+                            </div>
+
+
+                            <!--<input type="button" value="+" class="myButton2" id="btnExample" />-->
+                            <!--<div id="dialog">-->
+                                <!--<button id="buttonInPopUp">buttonInPopUp</button>-->
+                            <!--</div>-->
+                        </div>
+                        <div class="RemoveNewCssFunction">
+                            <input type="button" value="-" class="myButton2" onclick="RemoveNewCssFunction()" />
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+
+        <div class='fixed'>
+            <div id="page-wrap2">
+
+                    <div class="ButtonGroup4">
+                        <div class="buttonForExampleWebpage1">
+                            <input type="button" value="www.theguardian.com/" class="myButton" onclick="GoToWebsite1()" />
+                        </div>
+                        <div class="buttonForExampleWebpage2">
+                            <input type="button" value="www.reddit.com" class="myButton" onclick="GoToWebsite2()" />
+                        </div>
+                        <div class="buttonForExampleWebpage3">
+                            <input type="button" value="www.youtube.com" class="myButton" onclick="GoToWebsite3()" />
+                        </div>
+                        <div class="buttonForExampleWebpage4">
+                            <input type="button" value="www.facebook.com" class="myButton" onclick="GoToWebsite4()" />
+                        </div>
+
+                         <div class="buttonForExampleWebpageOpen">
+                            <form action="javascript:completeAndRedirect(Edit1);">
+                                <div class="text2">
+                                        <input type="text" id="Edit1" font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif; font-size:22px">
+                                </div>
+
+                                <div class="object2">
+                                        <input type="submit" value="Submit">
+                                </div>
+                            </form>
+                         </div>
+
+
+                        <!--<button id="btnExample" onclick="dialogFunction()" />Open dialog</button>-->
+                        <!--<button id="btnExample">open the dialog</button>-->
+                        <div class="controlDiv">
+                        <div id="dialogAddNewCssFunction" title="Create new css option">
+                            <input type="text" id="fieldForDialog"  />
+                            <input type="button" id="ButtonForDialog" value="Add css field" class="myButton" onclick="executeFunctionTest()" />
+                        </div>
+                         </div>
+
+                    <div class="webpageexample">
+                        <iframe src="http://127.0.0.1:5000/webpageexample" width="1300" height="900" id="webpageexampleId">
+                            alternative content for browsers which do not support iframe.
+                        </iframe>
+                    </div>
                 </div>
-                <div class="RemoveNewCssFunction">
-                    <input type="button" value="-" class="myButton2" onclick="RemoveNewCssFunction()" />
-                </div>
+
             </div>
 
         </div>
 
-        <div id="page-wrap2">
-
-            <div class="ButtonGroup4">
-                <div class="buttonForExampleWebpage1">
-                    <input type="button" value="www.theguardian.com/" class="myButton" onclick="GoToWebsite1()" />
-                </div>
-                <div class="buttonForExampleWebpage2">
-                    <input type="button" value="www.reddit.com" class="myButton" onclick="GoToWebsite2()" />
-                </div>
-                <div class="buttonForExampleWebpage3">
-                    <input type="button" value="www.youtube.com" class="myButton" onclick="GoToWebsite3()" />
-                </div>
-                <div class="buttonForExampleWebpage4">
-                    <input type="button" value="www.facebook.com" class="myButton" onclick="GoToWebsite4()" />
-                </div>
-
-                 <div class="buttonForExampleWebpageOpen">
-                    <form action="javascript:completeAndRedirect(Edit1);">
-                        <div class="text2">
-                                <input type="text" id="Edit1" font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif; font-size:22px">
-                        </div>
-
-                        <div class="object2">
-                                <input type="submit" value="Submit">
-                        </div>
-                    </form>
-                 </div>
-
-
-                <!--<button id="btnExample" onclick="dialogFunction()" />Open dialog</button>-->
-                <!--<button id="btnExample">open the dialog</button>-->
-                <div class="controlDiv">
-                <div id="dialogAddNewCssFunction" title="Create new css option">
-                    <input type="text" id="fieldForDialog"  />
-                    <input type="button" id="ButtonForDialog" value="Add css field" class="myButton" onclick="executeFunctionTest()" />
-                </div>
-                 </div>
-
-             </div>
-
-
-            <div class="webpageexample">
-                <iframe src="http://127.0.0.1:5000/webpageexample" width="1300" height="900" id="webpageexampleId">
-                    alternative content for browsers which do not support iframe.
-                </iframe>
-            </div>
-
-
-
-        </div>
-
-    </div>
-
-    <div id="page-wrap4">
-        <div id="page-wrap5">
+        <div class='relative2'>
+            <div id="page-wrap4">
+                <div id="page-wrap5">
 
 
 
@@ -345,17 +347,24 @@
 
 <!--THISSTRINGMAKESTHISLINEDELETABLE--><script>function buttonFunctionfff(thisDiv) {    console.log('ddd');}function func1() {//document.getElementById("hbhbh").checked = false;var checkboxes = document.getElementsByTagName('input');for (var i=0; i<checkboxes.length; i++)  {  if (checkboxes[i].type == 'checkbox')   {    checkboxes[i].checked = false;  }}}window.onload=func1;</script><span class="hhh">    <div class="text">        <p>            <b></b>        </p>    </div>    <div class="object">        <div class="onoffswitch">            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="hbhbh"  checked onchange="Black(this)">            <label class="onoffswitch-label" for="hbhbh">                <span class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span>            </label>        </div>    </div>    <div class="button">        <input type="button" id="buttonForLaunchingSecondWindow-hbhbh" value="Edit CSS" class="btn" onclick="buttonFunctionfff(this)" />    </div></span><style>.hhh {    display: grid;    text-align: left;    margin-right: 10px;    grid-column: 1 / 5;}</style>
 <!--THISSTRINGMAKESTHISLINEDELETABLE--><script>function buttonFunctionfff(thisDiv) {    console.log('ddd');}function func1() {//document.getElementById("hbhbh").checked = false;var checkboxes = document.getElementsByTagName('input');for (var i=0; i<checkboxes.length; i++)  {  if (checkboxes[i].type == 'checkbox')   {    checkboxes[i].checked = false;  }}}window.onload=func1;</script><span class="hhh">    <div class="text">        <p>            <b></b>        </p>    </div>    <div class="object">        <div class="onoffswitch">            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="hbhbh"  checked onchange="Black(this)">            <label class="onoffswitch-label" for="hbhbh">                <span class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span>            </label>        </div>    </div>    <div class="button">        <input type="button" id="buttonForLaunchingSecondWindow-hbhbh" value="Edit CSS" class="btn" onclick="buttonFunctionfff(this)" />    </div></span><style>.hhh {    display: grid;    text-align: left;    margin-right: 10px;    grid-column: 1 / 5;}</style>
+<!--THISSTRINGMAKESTHISLINEDELETABLE--><script>function buttonFunctionfff(thisDiv) {    console.log('ddd');}//function func1() {////document.getElementById("hbhbh").checked = false;////var checkboxes = document.getElementsByTagName('input');////////for (var i=0; i<checkboxes.length; i++)  {////  if (checkboxes[i].type == 'checkbox')   {////    checkboxes[i].checked = false;////  }////}//}//window.onload=func1;</script><span class="hhh">    <div class="text">        <p>            <b></b>        </p>    </div>    <div class="object">        <div class="onoffswitch">            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="hbhbh"  checked onchange="Black(this)">            <label class="onoffswitch-label" for="hbhbh">                <span class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span>            </label>        </div>    </div>    <div class="button">        <input type="button" id="buttonForLaunchingSecondWindow-hbhbh" value="Edit CSS" class="btn" onclick="buttonFunctionfff(this)" />    </div></span><style>.hhh {    display: grid;    text-align: left;    margin-right: 10px;    grid-column: 1 / 5;}</style>
+<!--THISSTRINGMAKESTHISLINEDELETABLE--><script>function buttonFunctionfff(thisDiv) {    console.log('ddd');}//function func1() {////document.getElementById("hbhbh").checked = false;////var checkboxes = document.getElementsByTagName('input');////////for (var i=0; i<checkboxes.length; i++)  {////  if (checkboxes[i].type == 'checkbox')   {////    checkboxes[i].checked = false;////  }////}//}//window.onload=func1;</script><span class="hhh">    <div class="text">        <p>            <b></b>        </p>    </div>    <div class="object">        <div class="onoffswitch">            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="hbhbh"  checked onchange="Black(this)">            <label class="onoffswitch-label" for="hbhbh">                <span class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span>            </label>        </div>    </div>    <div class="button">        <input type="button" id="buttonForLaunchingSecondWindow-hbhbh" value="Edit CSS" class="btn" onclick="buttonFunctionfff(this)" />    </div></span><style>.hhh {    display: grid;    text-align: left;    margin-right: 10px;    grid-column: 1 / 5;}</style>
+<!--THISSTRINGMAKESTHISLINEDELETABLE--><script>function buttonFunctionfff(thisDiv) {    console.log('ddd');}//function func1() {////document.getElementById("hbhbh").checked = false;////var checkboxes = document.getElementsByTagName('input');////////for (var i=0; i<checkboxes.length; i++)  {////  if (checkboxes[i].type == 'checkbox')   {////    checkboxes[i].checked = false;////  }////}//}//window.onload=func1;</script><span class="hhh">    <div class="text">        <p>            <b></b>        </p>    </div>    <div class="object">        <div class="onoffswitch">            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="hbhbh"  checked onchange="Black(this)">            <label class="onoffswitch-label" for="hbhbh">                <span class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span>            </label>        </div>    </div>    <div class="button">        <input type="button" id="buttonForLaunchingSecondWindow-hbhbh" value="Edit CSS" class="btn" onclick="buttonFunctionfff(this)" />    </div></span><style>.hhh {    display: grid;    text-align: left;    margin-right: 10px;    grid-column: 1 / 5;}</style>
 <!--THISSTRINGMAKESTHISLINEDELETABLE--><script>function buttonFunctionfff(thisDiv) {    console.log('ddd');}//function func1() {////document.getElementById("hbhbh").checked = false;////var checkboxes = document.getElementsByTagName('input');////////for (var i=0; i<checkboxes.length; i++)  {////  if (checkboxes[i].type == 'checkbox')   {////    checkboxes[i].checked = false;////  }////}//}//window.onload=func1;</script><span class="hhh">    <div class="text">        <p>            <b></b>        </p>    </div>    <div class="object">        <div class="onoffswitch">            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="hbhbh"  checked onchange="Black(this)">            <label class="onoffswitch-label" for="hbhbh">                <span class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span>            </label>        </div>    </div>    <div class="button">        <input type="button" id="buttonForLaunchingSecondWindow-hbhbh" value="Edit CSS" class="btn" onclick="buttonFunctionfff(this)" />    </div></span><style>.hhh {    display: grid;    text-align: left;    margin-right: 10px;    grid-column: 1 / 5;}</style>
 <!--THISSTRINGMAKESTHISLINEDELETABLE--><script>function buttonFunctionfff(thisDiv) {    console.log('ddd');}//function func1() {////document.getElementById("hbhbh").checked = false;////var checkboxes = document.getElementsByTagName('input');////////for (var i=0; i<checkboxes.length; i++)  {////  if (checkboxes[i].type == 'checkbox')   {////    checkboxes[i].checked = false;////  }////}//}//window.onload=func1;</script><span class="hhh">    <div class="text">        <p>            <b></b>        </p>    </div>    <div class="object">        <div class="onoffswitch">            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="hbhbh"  checked onchange="Black(this)">            <label class="onoffswitch-label" for="hbhbh">                <span class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span>            </label>        </div>    </div>    <div class="button">        <input type="button" id="buttonForLaunchingSecondWindow-hbhbh" value="Edit CSS" class="btn" onclick="buttonFunctionfff(this)" />    </div></span><style>.hhh {    display: grid;    text-align: left;    margin-right: 10px;    grid-column: 1 / 5;}</style>
 <!--THISSTRINGMAKESTHISLINEDELETABLE--><script>function buttonFunctionfff(thisDiv) {    console.log('ddd');}//function func1() {////document.getElementById("hbhbh").checked = false;////var checkboxes = document.getElementsByTagName('input');////////for (var i=0; i<checkboxes.length; i++)  {////  if (checkboxes[i].type == 'checkbox')   {////    checkboxes[i].checked = false;////  }////}//}//window.onload=func1;</script><span class="hhh">    <div class="text">        <p>            <b></b>        </p>    </div>    <div class="object">        <div class="onoffswitch">            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="hbhbh"  checked onchange="Black(this)">            <label class="onoffswitch-label" for="hbhbh">                <span class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span>            </label>        </div>    </div>    <div class="button">        <input type="button" id="buttonForLaunchingSecondWindow-hbhbh" value="Edit CSS" class="btn" onclick="buttonFunctionfff(this)" />    </div></span><style>.hhh {    display: grid;    text-align: left;    margin-right: 10px;    grid-column: 1 / 5;}</style>
             <!-- INSERT ABOVE THIS LINE IBTL1 -->
 
 
-
+                </div>
+            </div>
         </div>
-        <div id="page-wrap6">
+
+        <div class='fixed2'>
+            <div id="page-wrap6">
 
 
+            </div>
         </div>
     </div>
 

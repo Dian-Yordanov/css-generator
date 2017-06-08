@@ -1,13 +1,13 @@
 var obj;
 var w;
 var AddNewCssFunctionBoolean;
-const MAX_SENSORS = 4;
-const SLEEPING = 0;
-const ACTIVE = 1;
-const OFFLINE = 2;
-const ALARM = 3;
-const OFF = 0;
-const ON = 1;
+// const MAX_SENSORS = 4;
+// const SLEEPING = 0;
+// const ACTIVE = 1;
+// const OFFLINE = 2;
+// const ALARM = 3;
+// const OFF = 0;
+// const ON = 1;
 
 window.onload = function() {
     // document.getElementById("Black").checked = false;

@@ -486,7 +486,7 @@ def resetCss():
         os.remove('static/data.css')
 
 def getAndSaveJsonDataToLocalFileInOrderToBuildCssFields(nameOfField):
-    
+
     return 'ff'
 
 def readFileAndReturnA1LineStringOfIT(nameOfFile,nameOfField):
