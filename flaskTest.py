@@ -175,8 +175,8 @@ def deciceWhichFunctionToRun(bar):
 
     print(data['a'])
 
-    if(readDatafromJsonFile(data['a'].replace("on", "").replace("off", ""))):
-        deciceWhichFunctionToRunForRandomJsonData(data['a'])
+    if(readDatafromJsonFile(data['a'].replace("on", "").replace("off", ""))['boolean']):
+        deciceWhichFunctionToRunForRandomJsonData(data['a'], readDatafromJsonFile(data['a'].replace("on", "").replace("off", "")))
 
     else:
         if (data['a'] == 'Blackon'):
@@ -300,7 +300,16 @@ def deciceWhichFunctionToRun(bar):
 
             booleanSetter(redditSpecificModifications, 'redditSpecificModifications', False)
 
-def deciceWhichFunctionToRunForRandomJsonData(dataa):
+def deciceWhichFunctionToRunForRandomJsonData(dataa, jsonObject):
+    print(jsonObject['index'])
+    print(jsonObject['jsonObject'])
+    if (dataa == 'Pointeron'):
+
+        booleanSetter(PointerCss, 'PointerCss', True)
+
+    if (dataa == 'Pointeroff'):
+
+        booleanSetter(PointerCss, 'PointerCss', False)
     return  'bb'
 
 def deciceWhichFunctionToRunPostedDataToAPI2(typeOfData,nameOfField):
@@ -486,7 +495,7 @@ def readDatafromJsonFile(SpanClassIdGiven):
     print(SpanClassIdGiven)
 
     fileNameAndLocation = 'static/jsonDataForFields.json'
-    # indexInt = 0
+
     # nameOfField = 34
     #
     # stringS= ''
@@ -494,20 +503,33 @@ def readDatafromJsonFile(SpanClassIdGiven):
     # print(stringS)
 
     booleanToReturn = None
+    indexInt = 0
 
     with open(fileNameAndLocation) as data_file:
         data = json.load(data_file)
 
     for dataIndexer in data:
+
         if(dataIndexer['SpanClassId']==SpanClassIdGiven):
             booleanToReturn = True
+            break
+        indexInt = indexInt + 1
 
+
+    data1 = {}
+    data1['boolean'] = booleanToReturn
+    data1['index'] = indexInt
+    try:
+        data1['jsonObject'] = data[indexInt]
+    except IndexError:
+        data1['jsonObject'] = 'null'
+    
 
     # print(data[indexInt]['ip_address'])
     # print(data[indexInt]['id'])
-    print(booleanToReturn)
+    print(data1['boolean'])
 
-    return booleanToReturn
+    return data1
 
 def id_generator(size=15, chars=string.ascii_uppercase):
     return ''.join(random.choice(chars) for _ in range(size))
@@ -539,7 +561,7 @@ def getAndSaveJsonDataToLocalFileInOrderToBuildCssFields(nameOfField):
         entry = {'SpanClassId': id_generator(),
                  'InputId': id_generator(),
                  'CallFunctionForThisButton': id_generator(),
-                 'SpecificNameForThisFunction': id_generator(),
+                 'CssFileNameForUseWithDeciceWhichFunctionToRunFunction': id_generator(),
                  'nameOfCssConstructor': nameOfField}
 
 
@@ -575,7 +597,7 @@ def readFileAndReturnA1LineStringOfIT(nameOfFile,nameOfField):
                              SpanClassId=jsonObject['SpanClassId'],
                              InputId=jsonObject['InputId'],
                              CallFunctionForThisButton =jsonObject['CallFunctionForThisButton'],
-                             SpecificNameForThisFunction=jsonObject['SpecificNameForThisFunction'])
+                             CssFileNameForUseWithDeciceWhichFunctionToRunFunction=jsonObject['CssFileNameForUseWithDeciceWhichFunctionToRunFunction'])
 
     # print(myfile)
 
