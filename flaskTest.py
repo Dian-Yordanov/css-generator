@@ -94,18 +94,6 @@ def hello_world2(user=None):
     user = user or 'Shalabh'
     user1 = 'Shalaasasadasdasdasabh'
     return render_template('test.html', user=user,user1=user1)
-    # print(render_template('webcontrol.html', user=user))
-    # return '''
-    # <html>
-    #     <head>
-    #         <title>Templating in Flask</title>
-    #     </head>
-    #     <body>
-    #         <h1>Hello {{ user1 }}</h1>
-    #         <h1>Hello {{ user }}</h1>
-    #         <p>Welcome to the world of Flask!</p>
-    #     </body>
-    # </html>'''
 
 def saveCSSLocally(jsdata):
     firstLine = jsdata.split('\n', 1)[0].replace("|||", "")
@@ -185,7 +173,10 @@ def deciceWhichFunctionToRun(bar):
     bar = str(bar).replace("\'", "\"")
     data = json.loads(bar)
 
+    readDatafromJsonFile(data['a'].replace("on", "").replace("off", ""))
+
     print(data['a'])
+
 
     if (data['a'] == 'Blackon'):
 
@@ -487,31 +478,38 @@ def resetCss():
     if (os.path.exists('static/data.css')):
         os.remove('static/data.css')
 
-def readDatafromJsonFile(nameOfField):
-    fileNameAndLocation = 'static/jsonDataForFields.json'
-    indexInt = 0
-    nameOfField = 34
+def readDatafromJsonFile(SpanClassIdGiven):
+    print(SpanClassIdGiven)
 
+    fileNameAndLocation = 'static/jsonDataForFields.json'
+    # indexInt = 0
+    # nameOfField = 34
+    #
     # stringS= ''
     # with open(fileNameAndLocation) as f: stringS = f.read()
     # print(stringS)
+
+    booleanToReturn = None
+
     with open(fileNameAndLocation) as data_file:
         data = json.load(data_file)
 
     for dataIndexer in data:
-        if(dataIndexer['id']==nameOfField):
-            break
-        indexInt = indexInt + 1
+        if(dataIndexer['SpanClassId']==SpanClassIdGiven):
+            booleanToReturn = True
 
 
-    print(data[indexInt]['ip_address'])
-    print(data[indexInt]['id'])
-    print(data[indexInt])
+    # print(data[indexInt]['ip_address'])
+    # print(data[indexInt]['id'])
+    print(booleanToReturn)
 
-    return 'ff'
+    return booleanToReturn
 
 def id_generator(size=15, chars=string.ascii_uppercase):
     return ''.join(random.choice(chars) for _ in range(size))
+
+def is_non_zero_file(fpath):
+    return os.path.isfile(fpath) and os.path.getsize(fpath) > 0
 
 def getAndSaveJsonDataToLocalFileInOrderToBuildCssFields(nameOfField):
 
@@ -527,8 +525,12 @@ def getAndSaveJsonDataToLocalFileInOrderToBuildCssFields(nameOfField):
     # # json_data = json.dumps(data)
     # json_data = json.dumps(data)
 
-    with open(fileNameAndLocation, mode='r', encoding='utf-8') as feedsjson:
-        feeds = json.load(feedsjson)
+    feeds =[]
+    if is_non_zero_file(fileNameAndLocation):
+        with open(fileNameAndLocation, mode='r', encoding='utf-8') as feedsjson:
+            feeds = json.load(feedsjson)
+    else:
+        pass
     with open(fileNameAndLocation, mode='w', encoding='utf-8') as feedsjson:
         entry = {'SpanClassId': id_generator(),
                  'InputId': id_generator(),
@@ -561,6 +563,7 @@ def readFileAndReturnA1LineStringOfIT(nameOfFile,nameOfField):
     # print(jsonObject['SpecificNameForThisFunction'])
     # print(jsonObject['nameOfCssConstructor'])
 
+    print(jsonObject['SpanClassId'])
 
 
     myfile = render_template(nameOfFile,
