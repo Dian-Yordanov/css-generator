@@ -485,7 +485,15 @@ def resetCss():
     if (os.path.exists('static/data.css')):
         os.remove('static/data.css')
 
+def getAndSaveJsonDataToLocalFileInOrderToBuildCssFields(nameOfField):
+    
+    return 'ff'
+
 def readFileAndReturnA1LineStringOfIT(nameOfFile,nameOfField):
+
+    # takes nameOfField and returns a json object with SpanClassId='hhh',InputId='hbhbh', CallFunctionForThisButton ='buttonFunctionfff', SpecificNameForThisFunction='ddd')
+    getAndSaveJsonDataToLocalFileInOrderToBuildCssFields(nameOfField)
+
     myfile = render_template(nameOfFile, nameOfCssConstructor=nameOfField,
                              SpanClassId='hhh',InputId='hbhbh', CallFunctionForThisButton ='buttonFunctionfff', SpecificNameForThisFunction='ddd')
 
