@@ -87,6 +87,24 @@ def getNameFromPost():
     deciceWhichFunctionToRunPostedDataToAPI2(jsdata.split("|||SPLITTER|||")[0],jsdata.split("|||SPLITTER|||")[1])
     return 'yes'
 
+@app.route('/hello')
+def hello_world2(user=None):
+    user = user or 'Shalabh'
+    user1 = 'Shalaasasadasdasdasabh'
+    return render_template('test.html', user=user,user1=user1)
+    # print(render_template('webcontrol.html', user=user))
+    # return '''
+    # <html>
+    #     <head>
+    #         <title>Templating in Flask</title>
+    #     </head>
+    #     <body>
+    #         <h1>Hello {{ user1 }}</h1>
+    #         <h1>Hello {{ user }}</h1>
+    #         <p>Welcome to the world of Flask!</p>
+    #     </body>
+    # </html>'''
+
 def saveCSSLocally(jsdata):
     firstLine = jsdata.split('\n', 1)[0].replace("|||", "")
     print(firstLine)
@@ -292,11 +310,11 @@ def deciceWhichFunctionToRunPostedDataToAPI2(typeOfData,nameOfField):
 
     if (typeOfData == 'AddNewCssFunction'):
 
-        changeHtmlDynamically('AddNewCssFunction')
+        changeHtmlDynamically('AddNewCssFunction',nameOfField)
 
     if (typeOfData == 'RemoveNewCssFunction'):
 
-        changeHtmlDynamically('RemoveNewCssFunction')
+        changeHtmlDynamically('RemoveNewCssFunction',nameOfField)
 
 def getCssFromJson():
     os.system('python CSSgen.py')
@@ -467,15 +485,17 @@ def resetCss():
     if (os.path.exists('static/data.css')):
         os.remove('static/data.css')
 
-def readFileAndReturnA1LineStringOfIT(nameOfFile):
-    with open(nameOfFile, 'r') as myfile:
-        data=myfile.read().replace('\n', '')
+def readFileAndReturnA1LineStringOfIT(nameOfFile,nameOfField):
+    myfile = render_template(nameOfFile, nameOfCssConstructor=nameOfField)
+
+    # with open(nameOfFile, 'r') as myfile:
+    data=myfile.replace('\n', '')
     return data
 
 
-def changeHtmlDynamically(CssFunction):
+def changeHtmlDynamically(CssFunction, nameOfField):
 
-    textToInput = readFileAndReturnA1LineStringOfIT('htmlFileTemplateForDivs.html')
+    textToInput = readFileAndReturnA1LineStringOfIT('htmlFileTemplateForDivs.html', nameOfField)
     if (CssFunction == 'AddNewCssFunction'):
         with open('templates/webcontrol.html', 'r') as f, open("templates/newfile",'w') as f1:
            for line in f:
