@@ -119,7 +119,7 @@ def run(runfile):
 def booleanSetter(boolean, strboolean, value):
 
     boolean = value
-    print('pythonStaticBooleans/'+ strboolean)
+    # print('pythonStaticBooleans/'+ strboolean)
 
     if (os.path.exists('pythonStaticBooleans/'+ strboolean)):
         os.remove('pythonStaticBooleans/'+ strboolean)
@@ -301,15 +301,23 @@ def deciceWhichFunctionToRun(bar):
             booleanSetter(redditSpecificModifications, 'redditSpecificModifications', False)
 
 def deciceWhichFunctionToRunForRandomJsonData(dataa, jsonObject):
-    print(jsonObject['index'])
-    print(jsonObject['jsonObject'])
-    if (dataa == 'Pointeron'):
 
-        booleanSetter(PointerCss, 'PointerCss', True)
+    jsonObject['jsonObject']['CssFileNameForUseWithDeciceWhichFunctionToRunFunction'] = None
+    # varToString = json.dumps(jsonObject['jsonObject']['CssFileNameForUseWithDeciceWhichFunctionToRunFunction'])
+    #
+    # # print(jsonObject['index'])
+    # # print(jsonObject['jsonObject'])
+    #
+    # print(varToString)
+    # print(dataa)
 
-    if (dataa == 'Pointeroff'):
+    if (dataa == jsonObject['jsonObject']['SpanClassId']+'on'):
 
-        booleanSetter(PointerCss, 'PointerCss', False)
+        booleanSetter(jsonObject['jsonObject']['CssFileNameForUseWithDeciceWhichFunctionToRunFunction'], dataa.replace("on", "").replace("off", ""), True)
+
+    if (dataa == jsonObject['jsonObject']['SpanClassId']+'off'):
+
+        booleanSetter(jsonObject['jsonObject']['CssFileNameForUseWithDeciceWhichFunctionToRunFunction'], dataa.replace("on", "").replace("off", ""), False)
     return  'bb'
 
 def deciceWhichFunctionToRunPostedDataToAPI2(typeOfData,nameOfField):
@@ -492,7 +500,7 @@ def resetCss():
         os.remove('static/data.css')
 
 def readDatafromJsonFile(SpanClassIdGiven):
-    print(SpanClassIdGiven)
+    # print(SpanClassIdGiven)
 
     fileNameAndLocation = 'static/jsonDataForFields.json'
 
@@ -523,11 +531,11 @@ def readDatafromJsonFile(SpanClassIdGiven):
         data1['jsonObject'] = data[indexInt]
     except IndexError:
         data1['jsonObject'] = 'null'
-    
+
 
     # print(data[indexInt]['ip_address'])
     # print(data[indexInt]['id'])
-    print(data1['boolean'])
+    # print(data1['boolean'])
 
     return data1
 
