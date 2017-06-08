@@ -1,20 +1,14 @@
 <!--THISSTRINGMAKESTHISLINEDELETABLE-->
-<!--<script>-->
-<!--function {{CallFunctionForThisButton}}(thisDiv) {-->
-    <!--console.log('{{SpecificNameForThisFunction}}');-->
-<!--}-->
-<!--//function func1() {-->
-<!--////document.getElementById("{{InputId}}").checked = false;-->
-<!--////var checkboxes = document.getElementsByTagName('input');-->
-<!--////-->
-<!--////for (var i=0; i<checkboxes.length; i++)  {-->
-<!--////  if (checkboxes[i].type == 'checkbox')   {-->
-<!--////    checkboxes[i].checked = false;-->
-<!--////  }-->
-<!--////}-->
-<!--//}-->
-<!--//window.onload=func1;-->
-<!--</script>-->
+<script>
+function {{SpanClassId}}(checkbox) {
+    if (checkbox.checked) {
+        $.get("api/foo/?a={{SpanClassId}}on", function(response) {});
+    }
+    if (!checkbox.checked) {
+        $.get("api/foo/?a={{SpanClassId}}off", function(response) {});
+    }
+}
+</script>
 <span class="{{SpanClassId}}">
     <div class="text">
         <p>
@@ -23,14 +17,14 @@
     </div>
     <div class="object">
         <div class="onoffswitch">
-            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="{{InputId}}"  checked onchange="Black(this)">
-            <label class="onoffswitch-label" for="{{InputId}}">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="{{SpanClassId}}"  checked onchange="{{SpanClassId}}(this)">
+            <label class="onoffswitch-label" for="{{SpanClassId}}">
                 <span class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span>
             </label>
         </div>
     </div>
     <div class="button">
-        <input type="button" id="buttonForLaunchingSecondWindow-{{InputId}}" value="Edit CSS" class="btn" onclick="callParentWindowToEditCss(this)" />
+        <input type="button" id="buttonForLaunchingSecondWindow-{{SpanClassId}}" value="Edit CSS" class="btn" onclick="callParentWindowToEditCss(this)" />
     </div>
 </span>
 <style>
