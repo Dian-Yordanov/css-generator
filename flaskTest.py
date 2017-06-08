@@ -1,5 +1,7 @@
 from __future__ import print_function
 import os
+import random
+import string
 import webbrowser
 import os.path
 import json
@@ -508,37 +510,67 @@ def readDatafromJsonFile(nameOfField):
 
     return 'ff'
 
+def id_generator(size=15, chars=string.ascii_uppercase):
+    return ''.join(random.choice(chars) for _ in range(size))
+
 def getAndSaveJsonDataToLocalFileInOrderToBuildCssFields(nameOfField):
 
     fileNameAndLocation = 'static/jsonDataForFields.json'
-    indexInt = 0
-    nameOfField = 34
 
-    # stringS= ''
-    # with open(fileNameAndLocation) as f: stringS = f.read()
-    # print(stringS)
-    with open(fileNameAndLocation) as data_file:
-        data = json.load(data_file)
+    # data = {}
+    # data['SpanClassId'] = id_generator()
+    # data['InputId'] = id_generator()
+    # data['CallFunctionForThisButton'] = id_generator()
+    # data['SpecificNameForThisFunction'] = id_generator()
+    # data['nameOfCssConstructor'] = nameOfField
+    #
+    # # json_data = json.dumps(data)
+    # json_data = json.dumps(data)
 
-    for dataIndexer in data:
-        if(dataIndexer['id']==nameOfField):
-            break
-        indexInt = indexInt + 1
+    with open(fileNameAndLocation, mode='r', encoding='utf-8') as feedsjson:
+        feeds = json.load(feedsjson)
+    with open(fileNameAndLocation, mode='w', encoding='utf-8') as feedsjson:
+        entry = {'SpanClassId': id_generator(),
+                 'InputId': id_generator(),
+                 'CallFunctionForThisButton': id_generator(),
+                 'SpecificNameForThisFunction': id_generator(),
+                 'nameOfCssConstructor': nameOfField}
 
 
-    print(data[indexInt]['ip_address'])
-    print(data[indexInt]['id'])
-    print(data[indexInt])
+        feeds.append(entry)
+        json.dump(feeds, feedsjson)
 
-    return 'ff'
+    # print(id_generator())
+    # print(id_generator())
+    # print(id_generator())
+
+    # print(entry)
+
+    return entry
 
 def readFileAndReturnA1LineStringOfIT(nameOfFile,nameOfField):
 
     # takes nameOfField and returns a json object with SpanClassId='hhh',InputId='hbhbh', CallFunctionForThisButton ='buttonFunctionfff', SpecificNameForThisFunction='ddd')
-    readDatafromJsonFile(nameOfField)
+    # readDatafromJsonFile(nameOfField)
 
-    myfile = render_template(nameOfFile, nameOfCssConstructor=nameOfField,
-                             SpanClassId='hhh',InputId='hbhbh', CallFunctionForThisButton ='buttonFunctionfff', SpecificNameForThisFunction='ddd')
+    jsonObject = getAndSaveJsonDataToLocalFileInOrderToBuildCssFields(nameOfField)
+
+    # print(jsonObject['SpanClassId'])
+    # print(jsonObject['InputId'])
+    # print(jsonObject['CallFunctionForThisButton'])
+    # print(jsonObject['SpecificNameForThisFunction'])
+    # print(jsonObject['nameOfCssConstructor'])
+
+
+
+    myfile = render_template(nameOfFile,
+                             nameOfCssConstructor=nameOfField,
+                             SpanClassId=jsonObject['SpanClassId'],
+                             InputId=jsonObject['InputId'],
+                             CallFunctionForThisButton =jsonObject['CallFunctionForThisButton'],
+                             SpecificNameForThisFunction=jsonObject['SpecificNameForThisFunction'])
+
+    # print(myfile)
 
     # with open(nameOfFile, 'r') as myfile:
     data=myfile.replace('\n', '')
