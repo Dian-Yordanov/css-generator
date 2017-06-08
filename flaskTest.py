@@ -486,7 +486,8 @@ def resetCss():
         os.remove('static/data.css')
 
 def readFileAndReturnA1LineStringOfIT(nameOfFile,nameOfField):
-    myfile = render_template(nameOfFile, nameOfCssConstructor=nameOfField)
+    myfile = render_template(nameOfFile, nameOfCssConstructor=nameOfField,
+                             SpanClassId='hhh',InputId='hbhbh', CallFunctionForThisButton ='buttonFunctionfff', SpecificNameForThisFunction='ddd')
 
     # with open(nameOfFile, 'r') as myfile:
     data=myfile.replace('\n', '')

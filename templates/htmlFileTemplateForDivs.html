@@ -1,11 +1,11 @@
 <!--THISSTRINGMAKESTHISLINEDELETABLE-->
 <script>
-document.getElementById("Blacksssssssss").checked = false;
-function callParentWindowToEditCsssssssssss(thisDiv) {
-    console.log('callParentWindowToEditCsssssssssss');
+document.getElementById("{{InputId}}").checked = false;
+function {{CallFunctionForThisButton}}(thisDiv) {
+    console.log('{{SpecificNameForThisFunction}}');
 }
 </script>
-<span class="id1sssssssss">
+<span class="{{SpanClassId}}">
     <div class="text">
         <p>
             <b>{{nameOfCssConstructor}}</b>
@@ -13,21 +13,20 @@ function callParentWindowToEditCsssssssssss(thisDiv) {
     </div>
     <div class="object">
         <div class="onoffswitch">
-            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="Blacksssssssss" checked onchange="Black(this)"> <label class="onoffswitch-label" for="Blacksssssssss"> <span
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="{{InputId}}" checked onchange="Black(this)"> <label class="onoffswitch-label" for="{{InputId}}"> <span
                         class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span>
                     </label>
         </div>
     </div>
     <div class="button">
-        <input type="button" id="buttonForLaunchingSecondWindow-dataDarksssssssss" value="Edit CSS" class="btn" onclick="callParentWindowToEditCsssssssssss(this)" />
+        <input type="button" id="buttonForLaunchingSecondWindow-{{InputId}}" value="Edit CSS" class="btn" onclick="{{CallFunctionForThisButton}}(this)" />
     </div>
 </span>
 <style>
-.id1sssssssss {
+.{{SpanClassId}} {
     display: grid;
     text-align: left;
     margin-right: 10px;
     grid-column: 1 / 5;
-    /*grid-row: 17;*/
 }
 </style>
