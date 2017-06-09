@@ -332,11 +332,11 @@ def DoTheWithOpenForTheArrayOfCssCustomFiles():
     #             filenames.remove("BracketsHtmlAndCss/pointer.css")
 
     onlyfiles = [f for f in listdir('pythonStaticBooleans/') if isfile(join('pythonStaticBooleans/', f))]
+    jsonObjectFetched = []
+    list3 = [x for x in onlyfiles if x not in fileNamesOfStartingFields]
 
     # print(onlyfiles)
     # print(fileNamesOfStartingFields)
-    jsonObjectFetched = []
-    list3 = [x for x in onlyfiles if x not in fileNamesOfStartingFields]
     # print(list3)
 
     for indexedBoolean in list3:
@@ -552,6 +552,18 @@ def resetCss():
     filenames.clear()
     if (os.path.exists('static/data.css')):
         os.remove('static/data.css')
+
+    onlyfiles = [f for f in listdir('pythonStaticBooleans/') if isfile(join('pythonStaticBooleans/', f))]
+    jsonObjectFetched = []
+    list3 = [x for x in onlyfiles if x not in fileNamesOfStartingFields]
+
+    for indexedBoolean in list3:
+        print(indexedBoolean)
+
+        if (os.path.exists("BracketsHtmlAndCss/"+indexedBoolean+".css")):
+            os.remove("BracketsHtmlAndCss/"+indexedBoolean+".css")
+        if (os.path.exists('pythonStaticBooleans/'+indexedBoolean)):
+            os.remove('pythonStaticBooleans/'+indexedBoolean)
 
 def readDatafromJsonFile(SpanClassIdGiven):
     # print(SpanClassIdGiven)
