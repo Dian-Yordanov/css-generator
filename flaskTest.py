@@ -6,6 +6,8 @@ import webbrowser
 import os.path
 import json
 import fileinput
+from os import listdir
+
 
 
 from flask import Flask, current_app
@@ -13,6 +15,7 @@ from flask import Response
 
 from flask import Flask, render_template, request, redirect, url_for, send_from_directory
 from werkzeug import secure_filename
+from os.path import isfile, join
 
 from flask import Flask, send_file
 
@@ -21,6 +24,9 @@ from io import BytesIO
 app = Flask(__name__)
 filenames = []
 
+fileNamesOfStartingFields = ['BlackCss', 'CustomCSS','DarkMinimalisticScrollbar','embededModifications',
+                             'facebookSpecificModifications','PointerCss','redditSpecificModifications',
+                             'specificCss','WhiteCss','YouTubeCustomColors']
 dirCss = '/media/dianlinux/LinuxExt4/pythonglobalcssgeneratorforstylish/BracketsHtmlAndCss/'
 
 @app.route('/api/foo/', methods=['GET'])
@@ -315,15 +321,46 @@ def deciceWhichFunctionToRunForRandomJsonData(dataa, jsonObject):
 def DoTheWithOpenForTheArrayOfCssCustomFiles():
 
     # I think it should be a cycle of all the booleans and it may be just better to redo the whole system
-    with open("pythonStaticBooleans/PointerCss", "r") as f:
-        PointerCss = f.read()
+    # with open("pythonStaticBooleans/PointerCss", "r") as f:
+    #     PointerCss = f.read()
+    #
+    #     if (PointerCss == "True"):
+    #         filenames.append("BracketsHtmlAndCss/pointer.css")
+    #
+    #     if ("BracketsHtmlAndCss/pointer.css" in filenames):
+    #         if (PointerCss == "False"):
+    #             filenames.remove("BracketsHtmlAndCss/pointer.css")
 
-        if (PointerCss == "True"):
-            filenames.append("BracketsHtmlAndCss/pointer.css")
+    onlyfiles = [f for f in listdir('pythonStaticBooleans/') if isfile(join('pythonStaticBooleans/', f))]
 
-        if ("BracketsHtmlAndCss/pointer.css" in filenames):
-            if (PointerCss == "False"):
-                filenames.remove("BracketsHtmlAndCss/pointer.css")
+    # print(onlyfiles)
+    # print(fileNamesOfStartingFields)
+    jsonObjectFetched = []
+    list3 = [x for x in onlyfiles if x not in fileNamesOfStartingFields]
+    # print(list3)
+
+    for indexedBoolean in list3:
+
+        jsonObjectFetched = readDatafromJsonFile(indexedBoolean)
+        # print(jsonObjectFetched)
+        # print(indexedBoolean)
+
+        with open("pythonStaticBooleans/"+indexedBoolean, "r") as f:
+            jsonObjectFetched['jsonObject']['CssFileNameForUseWithDeciceWhichFunctionToRunFunction'] = f.read()
+
+            if (jsonObjectFetched['jsonObject']['CssFileNameForUseWithDeciceWhichFunctionToRunFunction'] == "True"):
+                if not os.path.exists("BracketsHtmlAndCss/"+indexedBoolean+".css"):
+                    os.mknod("BracketsHtmlAndCss/"+indexedBoolean+".css")
+                filenames.append("BracketsHtmlAndCss/"+indexedBoolean+".css")
+
+            if ("BracketsHtmlAndCss/"+indexedBoolean+".css" in filenames):
+                if (jsonObjectFetched['jsonObject']['CssFileNameForUseWithDeciceWhichFunctionToRunFunction'] == "False"):
+                    filenames.remove("BracketsHtmlAndCss/"+indexedBoolean+".css")
+
+        print(jsonObjectFetched['jsonObject']['CssFileNameForUseWithDeciceWhichFunctionToRunFunction'])
+
+
+            # onlyfiles = [f for f in listdir('pythonStaticBooleans/') if isfile(join('pythonStaticBooleans/', f))]
 
     # varToString = json.dumps(jsonObject['jsonObject']['CssFileNameForUseWithDeciceWhichFunctionToRunFunction'])
     #
@@ -333,7 +370,7 @@ def DoTheWithOpenForTheArrayOfCssCustomFiles():
     # print(varToString)
     # print(dataa)
 
-    return  'bb'
+    # return  'bb'
 
 def deciceWhichFunctionToRunPostedDataToAPI2(typeOfData,nameOfField):
 
