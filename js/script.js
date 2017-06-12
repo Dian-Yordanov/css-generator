@@ -318,5 +318,9 @@ function RemoveNewCssFunction(thisDiv) {
 
 }
 
+function getCssFromStylish(thisDiv) {
+        console.log('pressed');
+
+}
 
 
