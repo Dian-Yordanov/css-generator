@@ -234,12 +234,14 @@ var loadURL = function (src, iframe) {
 var loadHTML = function (html, iframe) {
     if (iframe === 'null') { iframe = document.getElementById('webpageexampleId');
     }
+    iframe = document.getElementById('webpageexampleId');
     // if(Object.keys(iframe).length === 0 && iframe.constructor === Object){}
-    var iframe2 = iframe;
+    // var iframe2 = iframe;
     // iframe2.src = 'about:blank';
-    iframe2.src = '';
+    // iframe2.src = '';
+    // iframe2.src = iframe.src;
     // iframe2.attr('src', '');
-    iframe2.contentWindow.document.open();
+    iframe.contentWindow.document.open();
 
     // var linkToStaticCss = "<link ".concat('rel="stylesheet" ').concat('type="text/css" ').concat('href="/static/data.css" />');
     var htmlText = html.replace(/<head>/i, '<head><base href="' + url + '"><scr'
@@ -259,8 +261,8 @@ var loadHTML = function (html, iframe) {
     // console.log(linkToStaticCss);
     console.log(htmlText);
 
-    iframe2.contentWindow.document.write(htmlText);
-    iframe2.contentWindow.document.close();
+    iframe.contentWindow.document.write(htmlText);
+    iframe.contentWindow.document.close();
 }
 
 function getCssFromStylish(thisDiv) {
