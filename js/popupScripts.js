@@ -1,6 +1,3 @@
-/**
- * Created by dianlinux on 6/7/17.
- */
 
  $( document ).ready(function() {
      var checkboxes = document.getElementsByTagName('input');
