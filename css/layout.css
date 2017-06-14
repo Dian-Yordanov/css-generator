@@ -424,22 +424,7 @@
 
 
 }
-#ButtonGroup6{
-    display: grid;
-    /*text-align: left;*/
-    /*grid-column: 1 / 6;*/
 
-    grid-template-columns: repeat(1, 1fr);
-    grid-row: 1;
-      grid-template-rows: 40px;
-
-
-
-}
-
-div.col-1-2 {
-    width: 60%;
-}
 /*div.col-1-2 {*/
     /*!*float: left;*!*/
     /*width: 50%!important;*/
@@ -522,11 +507,7 @@ div.col-1-2 {
         grid-row: 1;
 }
 
-.buttonForExampleWebpage5{
-    /*display: inline-flex;*/
-    /*grid-column: 9 / 10;*/
-        grid-row: 1;
-}
+
 
 .buttonForExampleWebpageOpen {
     display: inline-flex;
@@ -632,4 +613,37 @@ div.col-1-2 {
 
     /*float: left;*/
     /*width: 30%;*/
+}
+
+
+div.ButtonGroup6{
+    display: grid;
+    /*text-align: left;*/
+    /*grid-column: 1 / 6;*/
+
+    /*grid-template-columns: repeat(1, 1fr);*/
+    grid-row: 1;
+      /*grid-template-rows: 40px;*/
+
+
+
+}
+
+div.col-1-2-1 {
+    width: 100%;
+    grid-row: 1;
+}
+
+div.col-1-2-2 {
+    width: 100%;
+    float:right;
+    display:inline-block;
+    text-align:right;
+    grid-row: 1;
+}
+
+.buttonForExampleWebpage5{
+    /*display: inline-flex;*/
+    /*grid-column: 9 / 10;*/
+        grid-row: 1;
 }
