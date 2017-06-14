@@ -329,22 +329,23 @@ function callParentWindowToGetCss(typeOfCssFile){
     console.log(typeOfCssFile.id);
 
     if('buttonForLaunchingSecondWindow-Button1'==typeOfCssFile.id){
-        var iframe = document.getElementById('webpageexampleId');
-        var site = 'https://userstyles.org/';
-        loadURL(site, iframe);
+        // var iframe = document.getElementById('webpageexampleId');
+        // var site = 'https://userstyles.org/';
+        // loadURL(site, iframe);
+        window.open('https://userstyles.org/styles/', 'test', 'width=1100,height=1000');
     }
     if('buttonForLaunchingSecondWindow-Button2'==typeOfCssFile.id){
-        // var iframe = document.getElementById('webpageexampleId');
-        // var site = 'https://userstyles.org/styles/100478/004-diymyfonts-chinese-firefoxchromeedge-catcat520';
-        // loadURL(site, iframe);
+        var iframe = document.getElementById('webpageexampleId');
+        var site = 'https://freestyler.ws';
+        loadURL(site, iframe);
         // window.open('https://userstyles.org/styles/100478/004-diymyfonts-chinese-firefoxchromeedge-catcat520', 'test', 'width=400, height=400');
-        
-        var newWindow = window.open('https://userstyles.org/styles/100478/004-diymyfonts-chinese-firefoxchromeedge-catcat520',typeOfCssFile.id,'width=1100,height=1000');
-        newWindow.my_special_setting = typeOfCssFile.id;
 
-        window.somefunction = function(){
-            location.reload();
-        }
+        // var newWindow = window.open('https://freestyler.ws/style/142951/youtube-umbra',typeOfCssFile.id,'width=1100,height=1000');
+        // newWindow.my_special_setting = typeOfCssFile.id;
+        //
+        // window.somefunction = function(){
+        //     location.reload();
+        // }
 
     }
 }

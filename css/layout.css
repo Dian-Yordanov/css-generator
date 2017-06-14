@@ -377,7 +377,7 @@
 
 
     /*text-align: left;*/
-    grid-column: 1 / 4;
+    grid-column: 1 / 2;
     /*grid-template-columns: repeat(1, 1fr);*/
     grid-row: 2;
     grid-template-rows: 40px;
@@ -465,12 +465,12 @@
     grid-row: 1;
 }
 
-.getCssFromStylish{
-    display: table;
-    /*margin: auto;*/
-    grid-column: 3 / 4;
-    grid-row: 1;
-}
+/*.getCssFromStylish{*/
+    /*display: table;*/
+    /*!*margin: auto;*!*/
+    /*grid-column: 3 / 4;*/
+    /*grid-row: 1;*/
+/*}*/
 
 .AddNewCssFunction{
     display: table;
