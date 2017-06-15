@@ -256,10 +256,12 @@ var loadHTML = function (html, iframe) {
         htmlText = htmlText.replace
         ('<!DOCTYPE html>', '<!DOCTYPE html><link rel="stylesheet" type="text/css" href="/static/data.css" /><?php header("Access-Control-Allow-Origin: http://localhost:5000"); ?><?php header("Access-Control-Allow-Credentials: true"); ?>');
 
-
+    if(htmlText.includes("style-install-management-plugin-install")){
+        htmlText = htmlText.replace("style-install-management-plugin-install","style-install-management-plugin-install\" onclick='console.log(\"Hello\")'");}
+// style-install-management-plugin-install
 
     // console.log(linkToStaticCss);
-    // console.log(htmlText);
+    console.log(htmlText);
 
     iframe.contentWindow.document.write(htmlText);
     iframe.contentWindow.document.close();
