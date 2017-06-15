@@ -259,7 +259,7 @@ var loadHTML = function (html, iframe) {
 
 
     // console.log(linkToStaticCss);
-    console.log(htmlText);
+    // console.log(htmlText);
 
     iframe.contentWindow.document.write(htmlText);
     iframe.contentWindow.document.close();
