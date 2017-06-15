@@ -256,8 +256,15 @@ var loadHTML = function (html, iframe) {
         htmlText = htmlText.replace
         ('<!DOCTYPE html>', '<!DOCTYPE html><link rel="stylesheet" type="text/css" href="/static/data.css" /><?php header("Access-Control-Allow-Origin: http://localhost:5000"); ?><?php header("Access-Control-Allow-Credentials: true"); ?>');
 
-    if(htmlText.includes("style-install-management-plugin-install")){
-        htmlText = htmlText.replace("style-install-management-plugin-install","style-install-management-plugin-install\" onclick='console.log(\"Hello\")'");}
+    var textX = "heading heading-violet heading_dropdown  opened";
+    if(htmlText.includes(textX)){
+
+        console.log(textX+"\" onclick=alert('Hello');return false;");
+        console.log(textX);
+
+        htmlText = htmlText.replace(textX,textX+"\" onclick=alert('Hello');return false;");
+        // htmlText = htmlText.replace(textX,textX+"\" onclick=alert('Hello');return false;");
+        }
 // style-install-management-plugin-install
 
     // console.log(linkToStaticCss);
@@ -334,7 +341,12 @@ function callParentWindowToGetCss(typeOfCssFile){
         // var iframe = document.getElementById('webpageexampleId');
         // var site = 'https://userstyles.org/';
         // loadURL(site, iframe);
+
         window.open('https://userstyles.org/styles/', 'test', 'width=1100,height=1000');
+
+        // var iframe = document.getElementById('webpageexampleId');
+        // var site = 'https://userstyles.org/styles/';
+        // loadURL(site, iframe);
     }
     if('buttonForLaunchingSecondWindow-Button2'==typeOfCssFile.id){
         var iframe = document.getElementById('webpageexampleId');

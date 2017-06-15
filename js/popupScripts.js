@@ -34,6 +34,10 @@ $('#webpageexampleId').iframeTracker({
 		_overId: null
 	});
 
+	 window.addEventListener("message", function(event) {
+    console.log("Hello from " + event.data);
+});
+
         // $('<div class="alert alert-info">').html('Click on iframe : #' + this._overId).appendTo('#consoleDebug').delay(3000).fadeOut();
         // Do something when the iframe is clicked (like firing an XHR request)
 
