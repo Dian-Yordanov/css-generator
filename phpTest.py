@@ -52,7 +52,7 @@ def display_date(loop):
         # response = urllib.urlopen('http://pastebin.com/api/api_post.php', urllib.urlencode(pastebin_vars))
         # url = response.read()
         # print(url)
-    #     os.system("php test.php")
+
     #     print(datetime.datetime.now())
         if (loop.time() + 1.0) >= end_time:
             break
