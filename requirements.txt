@@ -1,3 +1,4 @@
+dotenv
 aniso8601==1.2.1
 asyncio==3.4.3
 attrs==15.2.0
