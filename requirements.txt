@@ -17,7 +17,6 @@ cryptography==1.2.3
 css==0.1
 cssselect==1.0.1
 dill==0.2.6
-duplicity==0.7.6
 ecdsa==0.13
 enum34==1.1.2
 feedparser==5.1.3
