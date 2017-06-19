@@ -28,10 +28,10 @@ from flask import Flask
 
 
 app = Flask(__name__)
-env = Environments(self.app)
 
-env.from_object('myapp.config')
-env = Environments(self.app, var_name='CUSTOM_VAR_NAME', default_env='CUSTOM_ENV')
+
+
+
 
 filenames = []
 
