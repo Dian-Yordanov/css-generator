@@ -73,8 +73,8 @@
       <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="85" column="14" selection-start-line="85" selection-start-column="14" selection-end-line="85" selection-end-column="14" />
+            <state relative-caret-position="516">
+              <caret line="89" column="12" selection-start-line="89" selection-start-column="12" selection-end-line="89" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -881,7 +881,14 @@
       <option name="project" value="LOCAL" />
       <updated>1497918359607</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="uTidylib==0.2">
+      <created>1497918472371</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1497918472371</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -932,7 +939,8 @@
     <MESSAGE value="query-string==0.0.0" />
     <MESSAGE value="request==0.0.0" />
     <MESSAGE value="setupfiles==0.0.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="setupfiles==0.0.0" />
+    <MESSAGE value="uTidylib==0.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="uTidylib==0.2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1218,8 +1226,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="85" column="14" selection-start-line="85" selection-start-column="14" selection-end-line="85" selection-end-column="14" />
+        <state relative-caret-position="516">
+          <caret line="89" column="12" selection-start-line="89" selection-start-column="12" selection-end-line="89" selection-end-column="12" />
           <folding />
         </state>
       </provider>
