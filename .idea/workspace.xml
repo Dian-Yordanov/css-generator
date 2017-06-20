@@ -73,8 +73,8 @@
       <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="68" column="16" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="16" />
+            <state relative-caret-position="90">
+              <caret line="70" column="20" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -839,7 +839,21 @@
       <option name="project" value="LOCAL" />
       <updated>1497917776414</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="python-apt==1.1.0b1">
+      <created>1497917892735</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1497917892735</updated>
+    </task>
+    <task id="LOCAL-00026" summary="python-debian==0.1.27">
+      <created>1497917972976</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1497917972976</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -884,7 +898,9 @@
     <MESSAGE value="public" />
     <MESSAGE value="pygobject" />
     <MESSAGE value="pyparted" />
-    <option name="LAST_COMMIT_MESSAGE" value="pyparted" />
+    <MESSAGE value="python-apt==1.1.0b1" />
+    <MESSAGE value="python-debian==0.1.27" />
+    <option name="LAST_COMMIT_MESSAGE" value="python-debian==0.1.27" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1170,8 +1186,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="68" column="16" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="16" />
+        <state relative-caret-position="90">
+          <caret line="70" column="20" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
           <folding />
         </state>
       </provider>
