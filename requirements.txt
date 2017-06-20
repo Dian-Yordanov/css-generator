@@ -67,7 +67,6 @@ PyJWT==1.3.0
 pyOpenSSL==0.15.1
 pyserial==3.0.1
 pysmbc==1.0.15.5
-python-apt==1.1.0b1
 python-dateutil==2.6.0
 python-debian==0.1.27
 python-openid==2.2.5
