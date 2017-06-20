@@ -33,7 +33,6 @@ Flask-WTF==0.14.2
 gevent==1.0.1
 greenlet==0.4.12
 gunicorn==19.7.1
-gyp==0.1
 httplib2==0.9.1
 humanize==0.5.1
 idna==2.0
