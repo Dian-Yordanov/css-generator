@@ -84,7 +84,6 @@ Twisted==16.0.0
 Unidecode==0.4.20
 update-checker==0.16
 urlopen==1.0.0
-uTidylib==0.2
 virtualenv==15.1.0
 w3lib==1.17.0
 Werkzeug==0.12.2
