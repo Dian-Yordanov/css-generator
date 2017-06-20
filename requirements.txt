@@ -68,7 +68,6 @@ pyOpenSSL==0.15.1
 pyserial==3.0.1
 pysmbc==1.0.15.5
 python-dateutil==2.6.0
-python-debian==0.1.27
 python-openid==2.2.5
 python-xlib==0.14
 pytz==2017.2
