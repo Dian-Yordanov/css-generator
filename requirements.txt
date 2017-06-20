@@ -59,7 +59,6 @@ ptyprocess==0.5
 pyasn1==0.1.9
 pyasn1-modules==0.0.7
 pycrypto==2.6.1
-pycups==1.9.73
 pycurl==7.43.0
 PyDispatcher==2.0.5
 pyinotify==0.9.6
