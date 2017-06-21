@@ -515,13 +515,12 @@ def generateCss():
 
     # print(BlackCss, WhiteCss, PointerCss, specificCss, CustomCSS, DarkMinimalisticScrollbar, YouTubeCustomColors,
     #       embededModifications, facebookSpecificModifications, redditSpecificModifications)
-    # print(filenames)
+    print(filenames)
 
     with open('static/data.css', 'w') as outfile:
         for fname in filenames:
             with open(fname) as infile:
                 for line in infile:
-                    print('executed')
                     outfile.write(line)
 
 def resetElement(boolean, booleanName):
