@@ -1,1 +1,1 @@
-web: gunicorn wrong.wsgi --log-file -
+web: gunicorn main.py --log-file -
