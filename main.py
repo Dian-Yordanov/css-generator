@@ -398,7 +398,7 @@ def getCssFromJson():
     os.system('python CSSgen.py')
 
 def generateCss():
-    print('generateCss')
+    # print('generateCss')
 
     filenames.clear()
     if (os.path.exists('static/data.css')):
@@ -513,14 +513,15 @@ def generateCss():
 
     DoTheWithOpenForTheArrayOfCssCustomFiles()
 
-    print(BlackCss, WhiteCss, PointerCss, specificCss, CustomCSS, DarkMinimalisticScrollbar, YouTubeCustomColors,
-          embededModifications, facebookSpecificModifications, redditSpecificModifications)
-    print(filenames)
+    # print(BlackCss, WhiteCss, PointerCss, specificCss, CustomCSS, DarkMinimalisticScrollbar, YouTubeCustomColors,
+    #       embededModifications, facebookSpecificModifications, redditSpecificModifications)
+    # print(filenames)
 
     with open('static/data.css', 'w') as outfile:
         for fname in filenames:
             with open(fname) as infile:
                 for line in infile:
+                    print('executed')
                     outfile.write(line)
 
 def resetElement(boolean, booleanName):
