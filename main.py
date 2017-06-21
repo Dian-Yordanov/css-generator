@@ -27,8 +27,9 @@ from flask import Flask
 
 
 
-app = Flask(__name__)
 
+app = Flask(__name__)
+cwd = os.getcwd()
 
 
 
@@ -38,7 +39,7 @@ filenames = []
 fileNamesOfStartingFields = ['BlackCss', 'CustomCSS','DarkMinimalisticScrollbar','embededModifications',
                              'facebookSpecificModifications','PointerCss','redditSpecificModifications',
                              'specificCss','WhiteCss','YouTubeCustomColors']
-dirCss = '/media/dianlinux/LinuxExt4/pythonglobalcssgeneratorforstylish/BracketsHtmlAndCss/'
+dirCss = cwd+'/BracketsHtmlAndCss/'
 
 @app.route('/api/foo/', methods=['GET'])
 def foo():
@@ -516,7 +517,7 @@ def generateCss():
           embededModifications, facebookSpecificModifications, redditSpecificModifications)
     print(filenames)
 
-    with open('/media/dianlinux/LinuxExt4/pythonglobalcssgeneratorforstylish/static/data.css', 'w') as outfile:
+    with open(cwd+'/static/data.css', 'w') as outfile:
         for fname in filenames:
             with open(fname) as infile:
                 for line in infile:
