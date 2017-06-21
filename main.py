@@ -39,7 +39,7 @@ filenames = []
 fileNamesOfStartingFields = ['BlackCss', 'CustomCSS','DarkMinimalisticScrollbar','embededModifications',
                              'facebookSpecificModifications','PointerCss','redditSpecificModifications',
                              'specificCss','WhiteCss','YouTubeCustomColors']
-dirCss = cwd+'/BracketsHtmlAndCss/'
+# dirCss = cwd+'/BracketsHtmlAndCss/'
 
 @app.route('/api/foo/', methods=['GET'])
 def foo():
