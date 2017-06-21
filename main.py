@@ -517,7 +517,7 @@ def generateCss():
     #       embededModifications, facebookSpecificModifications, redditSpecificModifications)
     print(filenames)
 
-    with open(cwd+'/static/data.css', 'w') as outfile:
+    with open('app/static/data.css', 'w') as outfile:
         for fname in filenames:
             with open(fname) as infile:
                 for line in infile:
