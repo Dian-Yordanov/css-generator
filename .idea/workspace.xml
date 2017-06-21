@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="99d7b7d2-ef8a-459d-85e8-498993b4e186" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Procfile" afterPath="$PROJECT_DIR$/Procfile" />
-    </list>
+    <list default="true" id="99d7b7d2-ef8a-459d-85e8-498993b4e186" name="Default" comment="" />
     <ignored path="pythonglobalcssgeneratorforstylish.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
